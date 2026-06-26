@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" data-theme="dark">
+<html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,7 +8,6 @@
   <meta name="referrer" content="no-referrer" />
   <link rel="icon" href="icons/self-store.png" />
   <title>SelfStore — Eigener App-Store für Self-Projekte</title>
-  <meta name="description" content="SelfStore: eigener App-Store für alle Self-Projekte. Installiere und aktualisiere deine Self-Apps direkt auf der TV-Box – ohne Google Play." />
   <style>
     :root{
       --bg-0:#080c11; --bg-1:#0d1117; --bg-2:#161b22; --bg-3:#1c2333;
@@ -23,9 +22,13 @@
     body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#10212a,var(--bg-0));
       color:var(--text);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
     .wrap{max-width:920px;margin:0 auto;padding:0 22px}
-    header{padding:64px 0 28px;text-align:center}
-    .mark{font-family:var(--mono);font-weight:700;font-size:clamp(34px,7vw,60px);letter-spacing:-.5px}
-    .mark .s1{color:var(--ice)} .mark .s2{color:var(--teal-br)}
+    .langbar{display:flex;justify-content:flex-end;gap:6px;padding-top:18px}
+    .lang{background:transparent;border:1px solid var(--line-2);color:var(--text-2);
+      font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.08em;
+      padding:5px 12px;border-radius:7px;cursor:pointer;transition:all .15s}
+    .lang:hover{color:var(--text)}
+    .lang.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+    header{padding:28px 0 28px;text-align:center}
     .logo{width:min(320px,82%);height:auto;display:block;margin:0 auto 8px}
     .tag{color:var(--text-2);margin-top:6px;font-size:clamp(14px,2.4vw,18px)}
     section{margin:30px 0}
@@ -39,7 +42,7 @@
       font-family:var(--mono);font-weight:700;font-size:14px}
     .step b{color:var(--text)}
     .step code{background:var(--bg-0);border:1px solid var(--line-2);border-radius:6px;
-      padding:2px 7px;font-family:var(--mono);color:var(--teal-br);font-size:.9em}
+      padding:2px 7px;font-family:var(--mono);color:var(--teal-br);font-size:.9em;word-break:break-all}
     .btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;
       padding:11px 20px;border-radius:9px;font-weight:700;border:0}
     .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line-2)}
@@ -58,33 +61,39 @@
 </head>
 <body>
   <div class="wrap">
+    <div class="langbar">
+      <button type="button" class="lang" data-lang="de">DE</button>
+      <button type="button" class="lang" data-lang="en">EN</button>
+    </div>
+
     <header>
       <img class="logo" src="self-store-logo.png" alt="SelfStore" width="320" height="251" />
-      <div class="tag">Dein eigener App-Store für alle Self-Projekte — ohne Google Play.</div>
+      <div class="tag" data-i18n="tagline">Dein eigener App-Store für alle Self-Projekte — ohne Google Play.</div>
     </header>
 
     <section>
-      <h2>1 · SelfStore auf die TV-Box holen</h2>
+      <h2 data-i18n="h2_install">1 · SelfStore auf die TV-Box holen</h2>
       <div class="card">
         <div class="steps">
-          <div class="step"><div>Auf der Box <b>„Unbekannte Apps zulassen"</b> erlauben (Einstellungen → Sicherheit, bzw. später beim Installieren bestätigen).</div></div>
-          <div class="step"><div>Die App <b>„Downloader"</b> (von AFTVnews) aus dem Box-Store installieren.</div></div>
-          <div class="step"><div>In Downloader diese Adresse eingeben: <code id="self-url">…</code></div></div>
-          <div class="step"><div>SelfStore installieren — fertig. Ab jetzt verwaltest du alle Self-Apps direkt in SelfStore.</div></div>
+          <div class="step"><div data-i18n-html="step1"></div></div>
+          <div class="step"><div data-i18n-html="step2"></div></div>
+          <div class="step"><div><span data-i18n="step3">In Downloader diese Adresse eingeben:</span> <code id="self-url">…</code></div></div>
+          <div class="step"><div data-i18n-html="step4"></div></div>
         </div>
         <p style="margin:16px 0 0">
-          <a class="btn" id="dl-self" href="#">SelfStore-APK herunterladen</a>
+          <a class="btn" id="dl-self" data-i18n="btn_download" href="#">SelfStore-APK herunterladen</a>
         </p>
       </div>
     </section>
 
     <section>
-      <h2>2 · Enthaltene Apps</h2>
-      <div class="apps" id="apps"><div class="card">Lade Katalog …</div></div>
+      <h2 data-i18n="h2_apps">2 · Enthaltene Apps</h2>
+      <div class="apps" id="apps"><div class="card" data-i18n="apps_loading">Lade Katalog …</div></div>
     </section>
 
     <footer>
-      SelfStore · <span id="updated"></span> · Quelle:
+      SelfStore · <span id="updated"></span> ·
+      <span data-i18n="footer_src">Quelle</span>:
       <a href="https://github.com/s3lfcod3r/selfstore">github.com/s3lfcod3r/selfstore</a>
     </footer>
   </div>
