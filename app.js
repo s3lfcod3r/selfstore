@@ -4,8 +4,7 @@
 (function () {
   "use strict";
 
-  var SELF_APK =
-    "https://github.com/s3lfcod3r/selfstore/releases/latest/download/selfstore.apk";
+  var SELF_APK = "https://store.selfcoder.de/selfstore.apk";
 
   var I18N = {
     de: {
