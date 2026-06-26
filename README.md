@@ -60,6 +60,19 @@ Block in `catalog.json` → `apps` anhängen:
 
 ---
 
+## Release-Konvention (APK-Dateinamen)
+
+Pro Release **zwei Assets** hochladen:
+
+- **`<App>-v<Version>.apk`** (z. B. `SelfStore-v1.0.1.apk`) — versioniert, wird in
+  `catalog.json` verlinkt. Einheitlich mit den anderen Self-Apps.
+- **`selfstore.apk`** (stabiler Name, nur fürs Store-Repo selbst) — damit der
+  Bootstrap-Link der Landingpage `…/releases/latest/download/selfstore.apk` immer
+  funktioniert (zum Weitergeben/QR).
+
+> `latest/download/<name>` funktioniert nur mit **stabilem** Dateinamen. Versionierte
+> Dateien immer per `releases/download/<tag>/<datei>` verlinken.
+
 ## Icons
 
 Quadratische PNGs (512×512, dunkler Self-Hintergrund) unter `icons/`. Erzeugt aus
