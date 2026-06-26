@@ -1,0 +1,33 @@
+{
+  "store": "SelfStore",
+  "updated": "2026-06-26",
+  "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht.",
+  "apps": [
+    {
+      "id": "com.selfstore.app",
+      "name": "SelfStore",
+      "tagline": "Der Self App-Store",
+      "description": "Zentraler Store fuer alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box – ohne Google Play.",
+      "icon": "icons/self-store.png",
+      "category": "System",
+      "author": "SelfCoder",
+      "versionName": "1.0.0",
+      "versionCode": 1,
+      "changelog": "Erste Version.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/latest/download/selfstore.apk"
+    },
+    {
+      "id": "com.selfmailer.viewer",
+      "name": "SelfMailer",
+      "tagline": "Dein eigener Mail-Client",
+      "description": "Multi-User Mail-Client (IMAP/POP3/SMTP) mit Kalender und Kontakten. Verbindet sich mit deinem self-hosted SelfMailer-Server.",
+      "icon": "icons/self-mailer.png",
+      "category": "Produktivitaet",
+      "author": "SelfCoder",
+      "versionName": "1.36.0",
+      "versionCode": 44,
+      "changelog": "Aktuelle Version.",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/latest/download/selfmailer.apk"
+    }
+  ]
+}

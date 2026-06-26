@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SelfStore — Eigener App-Store für Self-Projekte</title>
+  <meta name="description" content="SelfStore: eigener App-Store für alle Self-Projekte. Installiere und aktualisiere deine Self-Apps direkt auf der TV-Box – ohne Google Play." />
+  <style>
+    :root{
+      --bg-0:#080c11; --bg-1:#0d1117; --bg-2:#161b22; --bg-3:#1c2333;
+      --line:rgba(157,189,208,.10); --line-2:rgba(157,189,208,.22);
+      --teal:#33a78c; --teal-br:#43d3ad; --ice:#9dbdd0;
+      --text:#eef4f7; --text-2:#8a9caa; --text-3:#556673;
+      --amber:#d29922; --radius:12px;
+      --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
+      --sans:"Exo 2",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#10212a,var(--bg-0));
+      color:var(--text);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+    header{padding:64px 0 28px;text-align:center}
+    .mark{font-family:var(--mono);font-weight:700;font-size:clamp(34px,7vw,60px);letter-spacing:-.5px}
+    .mark .s1{color:var(--ice)} .mark .s2{color:var(--teal-br)}
+    .tag{color:var(--text-2);margin-top:6px;font-size:clamp(14px,2.4vw,18px)}
+    section{margin:30px 0}
+    h2{font-size:13px;text-transform:uppercase;letter-spacing:.18em;color:var(--text-3);
+      font-family:var(--mono);font-weight:600;margin:0 0 14px}
+    .card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+    .steps{counter-reset:s;display:grid;gap:12px}
+    .step{display:flex;gap:14px;align-items:flex-start}
+    .step::before{counter-increment:s;content:counter(s);flex:0 0 28px;height:28px;border-radius:8px;
+      display:grid;place-items:center;background:var(--bg-3);color:var(--teal-br);
+      font-family:var(--mono);font-weight:700;font-size:14px}
+    .step b{color:var(--text)}
+    .step code{background:var(--bg-0);border:1px solid var(--line-2);border-radius:6px;
+      padding:2px 7px;font-family:var(--mono);color:var(--teal-br);font-size:.9em}
+    .btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;
+      padding:11px 20px;border-radius:9px;font-weight:700;border:0}
+    .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line-2)}
+    .apps{display:grid;gap:14px}
+    .app{display:flex;gap:16px;align-items:center;background:var(--bg-2);
+      border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+    .app img{width:60px;height:60px;border-radius:14px;background:var(--bg-0);flex:0 0 60px}
+    .app .meta{flex:1;min-width:0}
+    .app .name{font-weight:700;font-size:17px}
+    .app .tl{color:var(--teal-br);font-size:13px}
+    .app .desc{color:var(--text-2);font-size:13px;margin-top:4px}
+    .app .ver{color:var(--text-3);font-family:var(--mono);font-size:12px;margin-top:6px}
+    footer{color:var(--text-3);text-align:center;padding:40px 0 60px;font-size:13px}
+    a{color:var(--teal-br)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark"><span class="s1">Self</span><span class="s2">Store</span></div>
+      <div class="tag">Dein eigener App-Store für alle Self-Projekte — ohne Google Play.</div>
+    </header>
+
+    <section>
+      <h2>1 · SelfStore auf die TV-Box holen</h2>
+      <div class="card">
+        <div class="steps">
+          <div class="step"><div>Auf der Box <b>„Unbekannte Apps zulassen"</b> erlauben (Einstellungen → Sicherheit, bzw. später beim Installieren bestätigen).</div></div>
+          <div class="step"><div>Die App <b>„Downloader"</b> (von AFTVnews) aus dem Box-Store installieren.</div></div>
+          <div class="step"><div>In Downloader diese Adresse eingeben: <code id="self-url">…</code></div></div>
+          <div class="step"><div>SelfStore installieren — fertig. Ab jetzt verwaltest du alle Self-Apps direkt in SelfStore.</div></div>
+        </div>
+        <p style="margin:16px 0 0">
+          <a class="btn" id="dl-self" href="#">SelfStore-APK herunterladen</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>2 · Enthaltene Apps</h2>
+      <div class="apps" id="apps"><div class="card">Lade Katalog …</div></div>
+    </section>
+
+    <footer>
+      SelfStore · <span id="updated"></span> · Quelle:
+      <a href="https://github.com/s3lfcod3r/selfstore">github.com/s3lfcod3r/selfstore</a>
+    </footer>
+  </div>
+
+  <script>
+    const SELF_APK = "https://github.com/s3lfcod3r/selfstore/releases/latest/download/selfstore.apk";
+    document.getElementById("dl-self").href = SELF_APK;
+    document.getElementById("self-url").textContent = SELF_APK;
+
+    fetch("catalog.json", { cache: "no-cache" })
+      .then(r => r.json())
+      .then(cat => {
+        document.getElementById("updated").textContent = "Stand " + (cat.updated || "");
+        const host = document.getElementById("apps");
+        host.innerHTML = "";
+        (cat.apps || []).forEach(a => {
+          const apk = a.apk || (a.abis && (a.abis["arm64-v8a"] || a.abis["armeabi-v7a"])) || "#";
+          const el = document.createElement("div");
+          el.className = "app";
+          el.innerHTML = `
+            <img src="${a.icon || ""}" alt="" onerror="this.style.visibility='hidden'">
+            <div class="meta">
+              <div class="name">${a.name || a.id}</div>
+              <div class="tl">${a.tagline || ""}</div>
+              <div class="desc">${a.description || ""}</div>
+              <div class="ver">v${a.versionName || "?"} · ${a.category || "App"}</div>
+            </div>
+            <a class="btn ghost" href="${apk}">APK</a>`;
+          host.appendChild(el);
+        });
+      })
+      .catch(() => {
+        document.getElementById("apps").innerHTML =
+          '<div class="card">Katalog konnte nicht geladen werden.</div>';
+      });
+  </script>
+</body>
+</html>
