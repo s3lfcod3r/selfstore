@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
+    content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; base-uri 'none'; form-action 'none'" />
   <meta name="referrer" content="no-referrer" />
   <link rel="icon" href="icons/self-store.png" />
   <title>SelfStore — Eigener App-Store für Self-Projekte</title>
@@ -75,10 +75,10 @@
       <h2 data-i18n="h2_install">1 · SelfStore auf die TV-Box holen</h2>
       <div class="card">
         <div class="steps">
-          <div class="step"><div data-i18n-html="step1"></div></div>
-          <div class="step"><div data-i18n-html="step2"></div></div>
+          <div class="step"><div data-i18n-html="step1">Auf der Box <b>„Unbekannte Apps zulassen"</b> erlauben (Einstellungen → Sicherheit, bzw. später beim Installieren bestätigen).</div></div>
+          <div class="step"><div data-i18n-html="step2">Die App <b>„Downloader"</b> (von AFTVnews) aus dem Box-Store installieren.</div></div>
           <div class="step"><div><span data-i18n="step3">In Downloader diese Adresse eingeben:</span> <code id="self-url">…</code></div></div>
-          <div class="step"><div data-i18n-html="step4"></div></div>
+          <div class="step"><div data-i18n-html="step4">SelfStore installieren — fertig. Ab jetzt verwaltest du alle Self-Apps direkt in SelfStore.</div></div>
         </div>
         <p style="margin:16px 0 0">
           <a class="btn" id="dl-self" data-i18n="btn_download" href="#">SelfStore-APK herunterladen</a>
@@ -98,6 +98,6 @@
     </footer>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
