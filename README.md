@@ -15,6 +15,8 @@ Installiere und aktualisiere deine self-hosted Apps direkt auf Handy & TV-Box.
 
 [**Store öffnen**](https://s3lfcod3r.github.io/selfstore/) · [Apps](#-enthaltene-apps) · [Installieren](#-installation-auf-der-tv-box) · [App hinzufügen](#-eine-app-in-den-store-legen) · [Security](#-security)
 
+🌐 **Deutsch** · [English](README.en.md)
+
 </div>
 
 ---
