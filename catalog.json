@@ -100,10 +100,10 @@
       "category": "Werkzeuge",
       "categoryEn": "Tools",
       "author": "SelfCoder",
-      "versionName": "1.0.1",
-      "versionCode": 2,
-      "changelog": "Fixes: hint_rect-Anzeige, Handy-Kopfzeile, Datei-Leiste auf Android ausgeblendet, Volumen-Umbruch.",
-      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.1/selfpooltracker-1.0.1.apk"
+      "versionName": "1.0.2",
+      "versionCode": 3,
+      "changelog": "Mobile-Feinschliff: Tabellen passen aufs Handy (Messwerte als Karten), Marken-Schrift Orbitron, Footer mit GitHub/Webseite.",
+      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.2/selfpooltracker-1.0.2.apk"
     }
   ]
 }
