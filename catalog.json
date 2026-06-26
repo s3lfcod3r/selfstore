@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.0.2",
-      "versionCode": 3,
-      "changelog": "Security-Haertung: nur HTTPS/GitHub als Quelle, generische Fehlermeldungen.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.2/SelfStore-v1.0.2.apk"
+      "versionName": "1.0.3",
+      "versionCode": 4,
+      "changelog": "Schild-Logo im Kopf + Marken-Schrift (Orbitron) fuer den Schriftzug.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.3/SelfStore-v1.0.3.apk"
     },
     {
       "id": "com.selfmailer.viewer",
