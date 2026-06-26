@@ -5,6 +5,7 @@
   "apps": [
     {
       "id": "com.selfstore.app",
+      "source": "s3lfcod3r/selfstore",
       "name": "SelfStore",
       "tagline": "Der Self App-Store",
       "description": "Zentraler Store fuer alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box – ohne Google Play.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "com.selfmailer.viewer",
+      "source": "s3lfcod3r/selfmailer",
       "name": "SelfMailer",
       "tagline": "Dein eigener Mail-Client",
       "description": "Multi-User Mail-Client (IMAP/POP3/SMTP) mit Kalender und Kontakten. Verbindet sich mit deinem self-hosted SelfMailer-Server.",
@@ -31,6 +33,7 @@
     },
     {
       "id": "com.selfauthenticator.viewer",
+      "source": "s3lfcod3r/selfauthenticator",
       "name": "SelfAuthenticator",
       "tagline": "Dein 2FA-/TOTP-Tresor",
       "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschluesselt mit deinem self-hosted Server.",
@@ -44,6 +47,7 @@
     },
     {
       "id": "com.selfdashboard.viewer.debug",
+      "source": "s3lfcod3r/selfdashboard",
       "name": "SelfDashboard",
       "tagline": "Deine Self-Zentrale",
       "description": "App-Zugang zu deinem SelfDashboard - der Uebersicht ueber deine Self-Dienste.",
