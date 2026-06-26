@@ -83,10 +83,10 @@
       "category": "Medien",
       "categoryEn": "Media",
       "author": "SelfCoder",
-      "versionName": "0.2.0",
-      "versionCode": 10,
-      "changelog": "TV-Fokus-Hervorhebung (Fernbedienung/D-Pad), Live pausieren/zurueckspulen (Timeshift).",
-      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.2.0/SelfPlayer-v0.2.0.apk"
+      "versionName": "0.2.1",
+      "versionCode": 11,
+      "changelog": "Fix: eingefrorenes Bild beim Senderwechsel. Neu: Tages-Leiste im Programmverlauf (mehrere Tage).",
+      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.2.1/SelfPlayer-v0.2.1.apk"
     },
     {
       "id": "com.selfpooltracker.app",
