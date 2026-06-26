@@ -83,10 +83,10 @@
       "category": "Medien",
       "categoryEn": "Media",
       "author": "SelfCoder",
-      "versionName": "0.1.4",
-      "versionCode": 5,
-      "changelog": "Catchup/Rueckblick: Sender lange druecken oeffnet Programmverlauf, vergangene Sendungen abspielbar.",
-      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.1.4/SelfPlayer-v0.1.4.apk"
+      "versionName": "0.1.5",
+      "versionCode": 6,
+      "changelog": "Player: Sender hoch/runter, Tonspur, Untertitel, Bildformat/Zoom.",
+      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.1.5/SelfPlayer-v0.1.5.apk"
     },
     {
       "id": "com.selfpooltracker.app",
