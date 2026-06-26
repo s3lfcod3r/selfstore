@@ -100,10 +100,10 @@
       "category": "Werkzeuge",
       "categoryEn": "Tools",
       "author": "SelfCoder",
-      "versionName": "1.0.3",
-      "versionCode": 4,
-      "changelog": "Messverlauf-Karten passen jetzt wirklich aufs Handy (waren faelschlich 860px breit); lange Empfehlungen stapeln statt rauszuragen.",
-      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.3/selfpooltracker-1.0.3.apk"
+      "versionName": "1.0.4",
+      "versionCode": 5,
+      "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export laesst den Speicherort waehlen. Auch als Webseite unter pool.selfcoder.de.",
+      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.4/selfpooltracker-1.0.4.apk"
     }
   ]
 }
