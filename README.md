@@ -140,6 +140,22 @@ Pro Release **zwei Assets** hochladen:
 > `latest/download/<name>` klappt nur mit **stabilem** Dateinamen; versionierte
 > Dateien per `releases/download/<tag>/<datei>` verlinken.
 
+### 🤖 Automatischer Katalog-Sync
+
+Ein GitHub-Workflow ([`.github/workflows/sync-catalog.yml`](.github/workflows/sync-catalog.yml))
+hält die **Versionen bestehender Apps** automatisch aktuell: er liest periodisch
+(alle 6 h bzw. manuell per *Run workflow*) das neueste Release jedes App-Repos,
+zieht `versionCode`/`versionName`/`applicationId` direkt aus dem Release-APK und
+aktualisiert `catalog.json`.
+
+Voraussetzung je Eintrag: ein Feld **`"source": "<owner>/<repo>"`** (von der App
+ignoriert). Damit gilt für Updates: **APK bauen → Release hochladen → fertig** — der
+Katalog zieht von selbst nach.
+
+> **Neue Apps** müssen weiterhin **einmalig von Hand** angelegt werden (Name,
+> Beschreibung, Icon, korrekte `id`/`applicationId`, `source`). Danach laufen ihre
+> Versions-Updates automatisch.
+
 ## 🔧 Android-App bauen
 
 Build über die mitgelieferte Toolchain (kein Android Studio nötig):
