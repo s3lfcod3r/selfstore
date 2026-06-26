@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.0.6",
-      "versionCode": 7,
-      "changelog": "Weniger Play-Protect-Warnungen (enge <queries> statt QUERY_ALL_PACKAGES).",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.6/SelfStore-v1.0.6.apk"
+      "versionName": "1.0.7",
+      "versionCode": 8,
+      "changelog": "Versions-/Update-Anzeige nicht mehr abgeschnitten.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.7/SelfStore-v1.0.7.apk"
     },
     {
       "id": "com.selfmailer.viewer",
