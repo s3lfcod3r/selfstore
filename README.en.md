@@ -59,7 +59,7 @@ The current list lives in [`catalog.json`](catalog.json) and is live at
 1. Allow **"install unknown apps"** on the box (Settings → Security, or confirm later
    during install).
 2. Install the **"Downloader"** app (by AFTVnews) from the box's store.
-3. In Downloader, open this address: **`s3lfcod3r.github.io/selfstore`**
+3. In Downloader, open this address: **`store.selfcoder.de`**
 4. Download and install the **SelfStore APK**.
 5. Open SelfStore → all Self apps are ready to install / update.
 

@@ -60,7 +60,7 @@ Die aktuelle Liste steht in [`catalog.json`](catalog.json) und ist live unter
 1. Auf der Box **„Unbekannte Apps zulassen"** erlauben (Einstellungen → Sicherheit,
    bzw. später beim Installieren bestätigen).
 2. Die App **„Downloader"** (von AFTVnews) aus dem Box-Store installieren.
-3. In Downloader diese Adresse öffnen: **`s3lfcod3r.github.io/selfstore`**
+3. In Downloader diese Adresse öffnen: **`store.selfcoder.de`**
 4. **SelfStore-APK** herunterladen und installieren.
 5. SelfStore öffnen → alle Self-Apps stehen zum Installieren / Aktualisieren bereit.
 
