@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.0.9",
-      "versionCode": 10,
+      "versionName": "1.0.10",
+      "versionCode": 11,
       "changelog": "SelfPlayer im Katalog; Install-Erkennung dafuer ergaenzt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.9/SelfStore-v1.0.9.apk"
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.10/SelfStore-v1.0.10.apk"
     },
     {
       "id": "com.selfmailer.viewer",
