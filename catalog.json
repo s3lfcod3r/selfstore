@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.0.8",
-      "versionCode": 9,
-      "changelog": "SelfStream Player im Katalog; Install-Erkennung dafuer ergaenzt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.8/SelfStore-v1.0.8.apk"
+      "versionName": "1.0.9",
+      "versionCode": 10,
+      "changelog": "SelfPlayer im Katalog; Install-Erkennung dafuer ergaenzt.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.9/SelfStore-v1.0.9.apk"
     },
     {
       "id": "com.selfmailer.viewer",
@@ -72,21 +72,21 @@
       "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.3/SelfDashboard-v1.0.3.apk"
     },
     {
-      "id": "com.selfstream.player",
-      "source": "s3lfcod3r/selfstream-player",
-      "name": "SelfStream Player",
+      "id": "com.selfplayer.app",
+      "source": "s3lfcod3r/selfplayer",
+      "name": "SelfPlayer",
       "tagline": "Dein eigener IPTV-Player",
       "taglineEn": "Your own IPTV player",
       "description": "Nativer IPTV-/Live-TV-Player fuer Handy, Tablet und Android-TV. Laedt M3U-Playlists und spielt deine Sender ueber die Media3/ExoPlayer-Engine ab.",
       "descriptionEn": "Native IPTV / live-TV player for phone, tablet and Android TV. Loads M3U playlists and plays your channels via the Media3 / ExoPlayer engine.",
-      "icon": "icons/self-stream.png",
+      "icon": "icons/self-player.png",
       "category": "Medien",
       "categoryEn": "Media",
       "author": "SelfCoder",
       "versionName": "0.1.0",
       "versionCode": 1,
       "changelog": "Erste Version.",
-      "apk": "https://github.com/s3lfcod3r/selfstream-player/releases/download/v0.1.0/SelfStream-Player-v0.1.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.1.0/SelfPlayer-v0.1.0.apk"
     },
     {
       "id": "com.selfpooltracker.app",
