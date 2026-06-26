@@ -83,10 +83,10 @@
       "category": "Medien",
       "categoryEn": "Media",
       "author": "SelfCoder",
-      "versionName": "0.1.2",
-      "versionCode": 3,
-      "changelog": "Wiedergabe-Fix (HLS), Kategorien-Menue, Sender-Logos, Suche.",
-      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.1.2/SelfPlayer-v0.1.2.apk"
+      "versionName": "0.1.3",
+      "versionCode": 4,
+      "changelog": "EPG/Programmfuehrer (jetzt-laeuft + Overlay), Einstellungen fuer Playlist/EPG, Reconnect gegen Standbild.",
+      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.1.3/SelfPlayer-v0.1.3.apk"
     },
     {
       "id": "com.selfpooltracker.app",
