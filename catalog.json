@@ -100,10 +100,10 @@
       "category": "Werkzeuge",
       "categoryEn": "Tools",
       "author": "SelfCoder",
-      "versionName": "1.0.2",
-      "versionCode": 3,
-      "changelog": "Mobile-Feinschliff: Tabellen passen aufs Handy (Messwerte als Karten), Marken-Schrift Orbitron, Footer mit GitHub/Webseite.",
-      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.2/selfpooltracker-1.0.2.apk"
+      "versionName": "1.0.3",
+      "versionCode": 4,
+      "changelog": "Messverlauf-Karten passen jetzt wirklich aufs Handy (waren faelschlich 860px breit); lange Empfehlungen stapeln statt rauszuragen.",
+      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.3/selfpooltracker-1.0.3.apk"
     }
   ]
 }
