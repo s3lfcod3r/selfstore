@@ -28,6 +28,32 @@
       "versionCode": 44,
       "changelog": "Aktuelle Version.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.36.0/SelfMailer-v1.36.0.apk"
+    },
+    {
+      "id": "com.selfauthenticator.viewer",
+      "name": "SelfAuthenticator",
+      "tagline": "Dein 2FA-/TOTP-Tresor",
+      "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschluesselt mit deinem self-hosted Server.",
+      "icon": "icons/self-authenticator.png",
+      "category": "Sicherheit",
+      "author": "SelfCoder",
+      "versionName": "2.2.0",
+      "versionCode": 17,
+      "changelog": "Aktuelle Version.",
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.2.0/SelfAuthenticator-v2.2.0.apk"
+    },
+    {
+      "id": "com.selfdashboard.viewer.debug",
+      "name": "SelfDashboard",
+      "tagline": "Deine Self-Zentrale",
+      "description": "App-Zugang zu deinem SelfDashboard - der Uebersicht ueber deine Self-Dienste.",
+      "icon": "icons/self-dashboard.png",
+      "category": "System",
+      "author": "SelfCoder",
+      "versionName": "1.0.3",
+      "versionCode": 4,
+      "changelog": "Aktuelle Version.",
+      "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.3/SelfDashboard-v1.0.3.apk"
     }
   ]
 }
