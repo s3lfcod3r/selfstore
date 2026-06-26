@@ -51,6 +51,7 @@ def main():
         cat = json.load(f)
 
     changed = False
+    selfstore_updated = False
     for app in cat.get("apps", []):
         src = app.get("source")
         if not src:
@@ -80,7 +81,20 @@ def main():
         app["versionCode"] = vc
         app["apk"] = url
         changed = True
+        if app["id"] == "com.selfstore.app":
+            selfstore_updated = True
         print(f"UPDATE {app['name']}: v{vn} ({vc}) -> {asset['name']}")
+
+    # Bootstrap-APK auf der eigenen Domain aktuell halten (store.selfcoder.de/selfstore.apk)
+    if selfstore_updated:
+        try:
+            rel = gh_api("/repos/s3lfcod3r/selfstore/releases/latest")
+            a = next((x for x in rel.get("assets", []) if x["name"] == "selfstore.apk"), None)
+            if a:
+                download(a["browser_download_url"], "selfstore.apk")
+                print("selfstore.apk (Bootstrap) aktualisiert")
+        except Exception as e:
+            print(f"WARN selfstore.apk: {e}")
 
     if changed:
         cat["updated"] = os.environ.get("SYNC_DATE", cat.get("updated", ""))
