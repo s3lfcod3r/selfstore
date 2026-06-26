@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
+  <meta name="referrer" content="no-referrer" />
   <title>SelfStore — Eigener App-Store für Self-Projekte</title>
   <meta name="description" content="SelfStore: eigener App-Store für alle Self-Projekte. Installiere und aktualisiere deine Self-Apps direkt auf der TV-Box – ohne Google Play." />
   <style>
@@ -84,37 +87,6 @@
     </footer>
   </div>
 
-  <script>
-    const SELF_APK = "https://github.com/s3lfcod3r/selfstore/releases/latest/download/selfstore.apk";
-    document.getElementById("dl-self").href = SELF_APK;
-    document.getElementById("self-url").textContent = SELF_APK;
-
-    fetch("catalog.json", { cache: "no-cache" })
-      .then(r => r.json())
-      .then(cat => {
-        document.getElementById("updated").textContent = "Stand " + (cat.updated || "");
-        const host = document.getElementById("apps");
-        host.innerHTML = "";
-        (cat.apps || []).forEach(a => {
-          const apk = a.apk || (a.abis && (a.abis["arm64-v8a"] || a.abis["armeabi-v7a"])) || "#";
-          const el = document.createElement("div");
-          el.className = "app";
-          el.innerHTML = `
-            <img src="${a.icon || ""}" alt="" onerror="this.style.visibility='hidden'">
-            <div class="meta">
-              <div class="name">${a.name || a.id}</div>
-              <div class="tl">${a.tagline || ""}</div>
-              <div class="desc">${a.description || ""}</div>
-              <div class="ver">v${a.versionName || "?"} · ${a.category || "App"}</div>
-            </div>
-            <a class="btn ghost" href="${apk}">APK</a>`;
-          host.appendChild(el);
-        });
-      })
-      .catch(() => {
-        document.getElementById("apps").innerHTML =
-          '<div class="card">Katalog konnte nicht geladen werden.</div>';
-      });
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
