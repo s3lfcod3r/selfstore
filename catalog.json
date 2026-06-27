@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-06-26",
+  "updated": "2026-06-27",
   "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur fuer die Landing-Sprachumschaltung; die App ignoriert sie.",
   "apps": [
     {
@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.0.10",
-      "versionCode": 11,
-      "changelog": "SelfPlayer im Katalog; Install-Erkennung dafuer ergaenzt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.0.10/SelfStore-v1.0.10.apk"
+      "versionName": "1.1.0",
+      "versionCode": 12,
+      "changelog": "Eigene Quellen: private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer und App-Passwort hinzufuegen; Zugangsdaten verschluesselt gespeichert, nur HTTPS, automatische Update-Erkennung.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.0/SelfStore-v1.1.0.apk"
     },
     {
       "id": "com.selfmailer.viewer",

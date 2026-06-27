@@ -40,6 +40,7 @@ GitHub Pages. The Android app's source code lives separately.
 - 📺 **TV-ready** – appears on the Android TV home (Leanback), remote-friendly.
 - 🧩 **armv7 + armv8** – automatically picks the right APK per box.
 - 🌐 **No own server needed** – catalog + APKs run entirely on GitHub.
+- 🔒 **Custom sources** – add private app repos (e.g. NextCloud/WebDAV) with username + app password; credentials stored encrypted, HTTPS only.
 - 🎨 **Self branding** – consistent Self look (teal, dark).
 
 ## 📲 Included apps
