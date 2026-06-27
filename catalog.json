@@ -16,10 +16,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.1.7",
-      "versionCode": 19,
-      "changelog": "Neu: Per Web hinzufuegen - Quelle am PC/Handy im Browser eingeben (store.selfcoder.de/pair), die TV-Box uebernimmt sie automatisch per Code. Inkl. Sicherheits-Haertung (8-Zeichen-Code, HTTPS-Pflicht, Bestaetigung) und mehrere Stabilitaets-Fixes.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.7/SelfStore-v1.1.7.apk"
+      "versionName": "1.1.8",
+      "versionCode": 20,
+      "changelog": "Neu: Automatischer Update-Hinweis. SelfStore prueft jetzt ca. 2x taeglich im Hintergrund auf neue Versionen und schickt eine Benachrichtigung, wenn Updates bereitstehen. Installiert wird weiterhin nur nach deiner Bestaetigung.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.8/SelfStore-v1.1.8.apk"
     },
     {
       "id": "com.selfmailer.viewer",
