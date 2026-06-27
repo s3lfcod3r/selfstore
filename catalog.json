@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.1.3",
-      "versionCode": 15,
-      "changelog": "Geraete-Filter: Auf dem Fernseher werden nur TV-taugliche Apps angezeigt (reine Handy-Apps wie Mailer/Authenticator/Dashboard/PoolTracker bleiben dort ausgeblendet). Auf Handy/Tablet weiterhin alles.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.3/SelfStore-v1.1.3.apk"
+      "versionName": "1.1.4",
+      "versionCode": 16,
+      "changelog": "Besser auf dem Fernseher bedienbar: Der per Fernbedienung ausgewaehlte Button bekommt jetzt einen deutlich sichtbaren Fokus-Rahmen — man sieht sofort, wo man steht.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.4/SelfStore-v1.1.4.apk"
     },
     {
       "id": "com.selfmailer.viewer",
