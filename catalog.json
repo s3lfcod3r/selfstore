@@ -1,6 +1,7 @@
 {
   "store": "SelfStore",
   "updated": "2026-06-27",
+  "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur fuer die Landing-Sprachumschaltung; die App ignoriert sie.",
   "apps": [
     {
