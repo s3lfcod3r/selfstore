@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.1.4",
-      "versionCode": 16,
-      "changelog": "Besser auf dem Fernseher bedienbar: Der per Fernbedienung ausgewaehlte Button bekommt jetzt einen deutlich sichtbaren Fokus-Rahmen — man sieht sofort, wo man steht.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.4/SelfStore-v1.1.4.apk"
+      "versionName": "1.1.5",
+      "versionCode": 17,
+      "changelog": "TV-Eingabe angenehmer: Beim Quelle-Hinzufuegen oeffnet sich die Bildschirmtastatur auf dem Fernseher jetzt erst, wenn man OK drueckt — nicht mehr automatisch bei jedem Feld. Auf Handy/Tablet unveraendert.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.5/SelfStore-v1.1.5.apk"
     },
     {
       "id": "com.selfmailer.viewer",
