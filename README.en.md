@@ -163,10 +163,10 @@ So for updates: **build APK → upload release → done** — the catalog follow
 Build via the bundled toolchain (no Android Studio needed):
 
 ```powershell
-$env:JAVA_HOME    = "F:\09_Cloude\Github SelfCoder\Android\jdk21"
-$env:ANDROID_HOME = "F:\09_Cloude\Github SelfCoder\Android\sdk"
-& "F:\09_Cloude\Github SelfCoder\Android\gradle-8.10.2\bin\gradle.bat" `
-    -p "F:\09_Cloude\Github SelfCoder\Android\selfstore-app" `
+$env:JAVA_HOME    = "<TOOLCHAIN>\jdk21"
+$env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
+& "<TOOLCHAIN>\gradle-8.10.2\bin\gradle.bat" `
+    -p "<PATH-TO-APP>" `
     :app:assembleRelease --no-daemon --console=plain
 ```
 
