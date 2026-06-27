@@ -15,10 +15,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.1.0",
-      "versionCode": 12,
-      "changelog": "Eigene Quellen: private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer und App-Passwort hinzufuegen; Zugangsdaten verschluesselt gespeichert, nur HTTPS, automatische Update-Erkennung.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.0/SelfStore-v1.1.0.apk"
+      "versionName": "1.1.1",
+      "versionCode": 13,
+      "changelog": "Eigene Quellen: private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer und App-Passwort hinzufuegen; Zugangsdaten verschluesselt gespeichert, nur HTTPS, automatische Update-Erkennung. Kopfzeile korrigiert (kompakte Symbol-Buttons).",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.1/SelfStore-v1.1.1.apk"
     },
     {
       "id": "com.selfmailer.viewer",
