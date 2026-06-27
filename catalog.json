@@ -72,23 +72,6 @@
       "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.3/SelfDashboard-v1.0.3.apk"
     },
     {
-      "id": "com.selfplayer.app",
-      "source": "s3lfcod3r/selfplayer",
-      "name": "SelfPlayer",
-      "tagline": "Dein eigener IPTV-Player",
-      "taglineEn": "Your own IPTV player",
-      "description": "Nativer IPTV-/Live-TV-Player fuer Handy, Tablet und Android-TV. Laedt M3U-Playlists und spielt deine Sender ueber die Media3/ExoPlayer-Engine ab.",
-      "descriptionEn": "Native IPTV / live-TV player for phone, tablet and Android TV. Loads M3U playlists and plays your channels via the Media3 / ExoPlayer engine.",
-      "icon": "icons/self-player.png",
-      "category": "Medien",
-      "categoryEn": "Media",
-      "author": "SelfCoder",
-      "versionName": "0.2.4",
-      "versionCode": 14,
-      "changelog": "EPG nach Datum/Uhrzeit waehlbar; Player-Menue: sperren, Drehung, Bild-in-Bild, Stream-Info; Programm-Uhrzeit im Overlay.",
-      "apk": "https://github.com/s3lfcod3r/selfplayer/releases/download/v0.2.4/SelfPlayer-v0.2.4.apk"
-    },
-    {
       "id": "com.selfpooltracker.app",
       "source": "s3lfcod3r/selfpooltracker",
       "name": "SelfPoolTracker",
