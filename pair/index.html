@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>SelfStore – Quelle koppeln</title>
+  <style>
+    :root {
+      --bg: #0c1116; --bg1: #121a22; --surface: #18232d;
+      --text: #e8f0f5; --text2: #9fb3c2; --text3: #5f7689;
+      --accent: #33a78c; --ice: #9dd6ec; --red: #e06666; --border: #24323d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      display: flex; justify-content: center; padding: 24px;
+    }
+    .card {
+      width: 100%; max-width: 460px; background: var(--bg1);
+      border: 1px solid var(--border); border-radius: 18px; padding: 26px;
+    }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    h1 .a { color: var(--accent); }
+    p.lead { color: var(--text2); font-size: 14px; line-height: 1.5; margin: 0 0 20px; }
+    label { display: block; font-size: 12px; color: var(--text3); margin: 14px 0 5px; }
+    input {
+      width: 100%; padding: 12px 14px; font-size: 16px;
+      background: var(--bg); color: var(--text);
+      border: 1px solid var(--border); border-radius: 10px; outline: none;
+    }
+    input:focus { border-color: var(--accent); }
+    #code { letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+    button {
+      width: 100%; margin-top: 22px; padding: 14px; font-size: 16px; font-weight: 700;
+      background: var(--accent); color: #fff; border: 0; border-radius: 999px; cursor: pointer;
+    }
+    button:disabled { opacity: .5; cursor: default; }
+    .msg { margin-top: 16px; font-size: 14px; padding: 12px 14px; border-radius: 10px; display: none; }
+    .msg.ok { display: block; background: rgba(51,167,140,.15); color: var(--ice); }
+    .msg.err { display: block; background: rgba(224,102,102,.15); color: var(--red); }
+    .hint { color: var(--text3); font-size: 12px; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Self<span class="a">Store</span> · Quelle koppeln</h1>
+    <p class="lead">
+      Gib den <b>Code</b> ein, der auf deinem Fernseher angezeigt wird, dazu den
+      <b>Link</b> und das <b>Passwort</b>, die du bekommen hast. SelfStore auf dem TV
+      übernimmt die Quelle dann automatisch – kein Tippen auf der Fernbedienung.
+    </p>
+
+    <label for="code">Code vom Fernseher</label>
+    <input id="code" maxlength="8" autocomplete="off" placeholder="z. B. 7K2Q9X" />
+
+    <label for="link">Link</label>
+    <input id="link" autocomplete="off" placeholder="https://…/s/…  oder  …/catalog.json" />
+
+    <label for="pw">Passwort</label>
+    <input id="pw" type="password" autocomplete="off" placeholder="Link-/App-Passwort" />
+
+    <label for="name">Name (optional)</label>
+    <input id="name" autocomplete="off" placeholder="z. B. Meine NextCloud" />
+
+    <button id="send">An den Fernseher senden</button>
+    <div id="msg" class="msg"></div>
+    <div class="hint">Die Daten werden nur kurz übertragen und nach dem Abruf sofort gelöscht.</div>
+  </div>
+
+  <script>
+    // Worker-Adresse kommt aus der catalog.json (Feld "pairEndpoint") – eine
+    // einzige Stelle zum Konfigurieren für App UND Webseite.
+    let ENDPOINT = null;
+    fetch("/catalog.json", { cache: "no-store" })
+      .then(r => r.json())
+      .then(j => { ENDPOINT = (j && j.pairEndpoint) ? j.pairEndpoint.replace(/\/+$/, "") : null; })
+      .catch(() => {});
+
+    // NextCloud-Freigabe-Link erkennen → WebDAV-Adresse + Token ableiten.
+    function parseShare(input) {
+      const m = input.trim().match(/^https:\/\/([^/]+)\/(?:index\.php\/)?s\/([A-Za-z0-9._-]+)\/?$/);
+      if (!m) return null;
+      return { url: "https://" + m[1] + "/public.php/webdav/catalog.json", user: m[2] };
+    }
+
+    const $ = id => document.getElementById(id);
+    function show(kind, text) { const m = $("msg"); m.className = "msg " + kind; m.textContent = text; }
+
+    $("send").addEventListener("click", async () => {
+      const code = $("code").value.trim().toUpperCase();
+      const rawLink = $("link").value.trim();
+      const pw = $("pw").value;
+      const name = $("name").value.trim();
+
+      if (!/^[A-Z0-9]{6,8}$/.test(code)) return show("err", "Bitte den Code vom Fernseher eingeben.");
+      if (!rawLink.startsWith("https://")) return show("err", "Der Link muss mit https:// beginnen.");
+      if (!pw) return show("err", "Bitte das Passwort eingeben.");
+      if (!ENDPOINT) return show("err", "Dienst noch nicht konfiguriert. Bitte später erneut versuchen.");
+
+      const share = parseShare(rawLink);
+      const url = share ? share.url : rawLink;
+      const user = share ? share.user : "";
+
+      $("send").disabled = true;
+      try {
+        const res = await fetch(ENDPOINT + "/pair", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code, url, user, pw, label: name }),
+        });
+        if (res.ok) {
+          show("ok", "Gesendet! Auf dem Fernseher erscheint die Quelle gleich automatisch.");
+        } else {
+          show("err", "Senden fehlgeschlagen. Code korrekt? Sonst neu starten.");
+          $("send").disabled = false;
+        }
+      } catch (e) {
+        show("err", "Keine Verbindung zum Dienst. Internet prüfen und erneut versuchen.");
+        $("send").disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
