@@ -12,6 +12,7 @@ Install and update your self-hosted apps right on phone & TV box.
 [![Store](https://img.shields.io/website?url=https%3A%2F%2Fs3lfcod3r.github.io%2Fselfstore%2F&up_color=33a78c&up_message=online&label=Catalog)](https://s3lfcod3r.github.io/selfstore/)
 ![Platform](https://img.shields.io/badge/Android-6.0%2B%20·%20armv7%20%2B%20armv8-33a78c)
 ![TV](https://img.shields.io/badge/Android%20TV-Leanback-9dbdd0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-33a78c)](LICENSE)
 
 [**Open store**](https://s3lfcod3r.github.io/selfstore/) · [Apps](#-included-apps) · [Install](#-install-on-the-tv-box) · [Add an app](#-add-an-app-to-the-store) · [Security](#-security)
 
@@ -31,7 +32,8 @@ boxes** that have no Google Play, or where it isn't wanted.
 > **SelfStream Player** is intentionally **not** included.
 
 This repository provides the **server side** (catalog + bootstrap landing page) via
-GitHub Pages. The Android app's source code lives separately.
+GitHub Pages. The Android app's source code is maintained separately and is not part
+of this repo.
 
 ## ✨ Features
 
@@ -88,11 +90,16 @@ flowchart LR
 
 ```
 selfstore/
-├── catalog.json     # app list (source of truth)
-├── index.html       # bootstrap landing page (Self look)
-├── app.js           # landing logic (renders the catalog XSS-safe)
-├── icons/           # app icons (512×512, dark Self background)
-└── .nojekyll        # GitHub Pages: serve files as-is
+├── catalog.json              # app list (source of truth)
+├── index.html                # bootstrap landing page (Self look)
+├── app.js                    # landing logic (renders the catalog XSS-safe)
+├── icons/                    # app icons (512×512, dark Self background)
+├── tools/
+│   └── sync_catalog.py       # auto-sync: pulls release versions into catalog.json
+├── .github/workflows/
+│   └── sync-catalog.yml      # workflow that runs the auto-sync every 6 h
+├── LICENSE                   # MIT
+└── .nojekyll                 # GitHub Pages: serve files as-is
 ```
 
 ## ➕ Add an app to the store

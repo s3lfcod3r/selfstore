@@ -12,6 +12,7 @@ Installiere und aktualisiere deine self-hosted Apps direkt auf Handy & TV-Box.
 [![Store](https://img.shields.io/website?url=https%3A%2F%2Fs3lfcod3r.github.io%2Fselfstore%2F&up_color=33a78c&up_message=online&label=Katalog)](https://s3lfcod3r.github.io/selfstore/)
 ![Platform](https://img.shields.io/badge/Android-6.0%2B%20·%20armv7%20%2B%20armv8-33a78c)
 ![TV](https://img.shields.io/badge/Android%20TV-Leanback-9dbdd0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-33a78c)](LICENSE)
 
 [**Store öffnen**](https://s3lfcod3r.github.io/selfstore/) · [Apps](#-enthaltene-apps) · [Installieren](#-installation-auf-der-tv-box) · [App hinzufügen](#-eine-app-in-den-store-legen) · [Security](#-security)
 
@@ -32,7 +33,8 @@ gibt oder gar nicht erwünscht ist.
 > **SelfStream Player** ist bewusst **nicht** enthalten.
 
 Dieses Repository liefert die **Server-Seite** (Katalog + Bootstrap-Landingpage) über
-GitHub Pages. Der Quellcode der Android-App liegt separat.
+GitHub Pages. Der Quellcode der Android-App wird separat gepflegt und ist nicht Teil
+dieses Repos.
 
 ## ✨ Features
 
@@ -89,11 +91,16 @@ flowchart LR
 
 ```
 selfstore/
-├── catalog.json     # App-Liste (Quelle der Wahrheit)
-├── index.html       # Bootstrap-Landingpage (Self-Look)
-├── app.js           # Landing-Logik (rendert den Katalog XSS-sicher)
-├── icons/           # App-Icons (512×512, dunkler Self-Hintergrund)
-└── .nojekyll        # GitHub Pages: Dateien unverändert ausliefern
+├── catalog.json              # App-Liste (Quelle der Wahrheit)
+├── index.html                # Bootstrap-Landingpage (Self-Look)
+├── app.js                    # Landing-Logik (rendert den Katalog XSS-sicher)
+├── icons/                    # App-Icons (512×512, dunkler Self-Hintergrund)
+├── tools/
+│   └── sync_catalog.py       # Auto-Sync: zieht Release-Versionen in catalog.json
+├── .github/workflows/
+│   └── sync-catalog.yml      # Workflow, der den Auto-Sync alle 6 h ausführt
+├── LICENSE                   # MIT
+└── .nojekyll                 # GitHub Pages: Dateien unverändert ausliefern
 ```
 
 ## ➕ Eine App in den Store legen
