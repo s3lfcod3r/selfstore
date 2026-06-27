@@ -41,7 +41,9 @@ GitHub Pages. Der Quellcode der Android-App liegt separat.
 - 📺 **TV-tauglich** – erscheint im Android-TV-Start (Leanback), per Fernbedienung bedienbar.
 - 🧩 **armv7 + armv8** – wählt automatisch die passende APK je Box.
 - 🌐 **Kein eigener Server nötig** – Katalog + APKs laufen komplett über GitHub.
-- 🔒 **Eigene Quellen** – private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer + App-Passwort einbinden; Zugangsdaten verschlüsselt gespeichert, nur HTTPS.
+- 🔒 **Eigene Quellen** – private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer + App-Passwort einbinden; Zugangsdaten verschlüsselt gespeichert (Android-Keystore), nur HTTPS. → [Anleitung](docs/EIGENE-QUELLEN.md)
+- 🔗 **Per Web hinzufügen** – Quelle am PC/Handy im Browser (`store.selfcoder.de/pair`) eingeben; die TV-Box übernimmt sie per Code automatisch, kein Tippen auf der Fernbedienung. → [Einrichtung](docs/WEB-KOPPLUNG-SETUP.md)
+- 📱 **Geräte-Filter** – auf dem Fernseher erscheinen nur TV-taugliche Apps; reine Handy-Apps bleiben dort ausgeblendet (Katalog-Feld `platforms`).
 - 🎨 **Self-Branding** – durchgängig im Self-Look (Teal, dark).
 
 ## 📲 Enthaltene Apps
