@@ -41,6 +41,7 @@ GitHub Pages. Der Quellcode der Android-App liegt separat.
 - 📺 **TV-tauglich** – erscheint im Android-TV-Start (Leanback), per Fernbedienung bedienbar.
 - 🧩 **armv7 + armv8** – wählt automatisch die passende APK je Box.
 - 🌐 **Kein eigener Server nötig** – Katalog + APKs laufen komplett über GitHub.
+- 🔒 **Eigene Quellen** – private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer + App-Passwort einbinden; Zugangsdaten verschlüsselt gespeichert, nur HTTPS.
 - 🎨 **Self-Branding** – durchgängig im Self-Look (Teal, dark).
 
 ## 📲 Enthaltene Apps
