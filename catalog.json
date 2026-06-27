@@ -16,10 +16,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.1.5",
-      "versionCode": 17,
-      "changelog": "TV-Eingabe angenehmer: Beim Quelle-Hinzufuegen oeffnet sich die Bildschirmtastatur auf dem Fernseher jetzt erst, wenn man OK drueckt — nicht mehr automatisch bei jedem Feld. Auf Handy/Tablet unveraendert.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.5/SelfStore-v1.1.5.apk"
+      "versionName": "1.1.7",
+      "versionCode": 19,
+      "changelog": "Neu: Per Web hinzufuegen - Quelle am PC/Handy im Browser eingeben (store.selfcoder.de/pair), die TV-Box uebernimmt sie automatisch per Code. Inkl. Sicherheits-Haertung (8-Zeichen-Code, HTTPS-Pflicht, Bestaetigung) und mehrere Stabilitaets-Fixes.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.7/SelfStore-v1.1.7.apk"
     },
     {
       "id": "com.selfmailer.viewer",

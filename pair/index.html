@@ -53,7 +53,7 @@
     </p>
 
     <label for="code">Code vom Fernseher</label>
-    <input id="code" maxlength="8" autocomplete="off" placeholder="z. B. 7K2Q9X" />
+    <input id="code" maxlength="10" autocomplete="off" placeholder="z. B. 7K2Q9XAB" />
 
     <label for="link">Link</label>
     <input id="link" autocomplete="off" placeholder="https://…/s/…  oder  …/catalog.json" />
@@ -75,8 +75,11 @@
     let ENDPOINT = null;
     fetch("/catalog.json", { cache: "no-store" })
       .then(r => r.json())
-      .then(j => { ENDPOINT = (j && j.pairEndpoint) ? j.pairEndpoint.replace(/\/+$/, "") : null; })
-      .catch(() => {});
+      .then(j => {
+        const ep = j && j.pairEndpoint;
+        if (typeof ep === "string" && /^https:\/\/.+/.test(ep)) ENDPOINT = ep.replace(/\/+$/, "");
+      })
+      .catch(e => console.error("[SelfStore] catalog.json nicht ladbar:", e));
 
     // NextCloud-Freigabe-Link erkennen → WebDAV-Adresse + Token ableiten.
     function parseShare(input) {
@@ -94,7 +97,7 @@
       const pw = $("pw").value;
       const name = $("name").value.trim();
 
-      if (!/^[A-Z0-9]{6,8}$/.test(code)) return show("err", "Bitte den Code vom Fernseher eingeben.");
+      if (!/^[A-Z0-9]{6,10}$/.test(code)) return show("err", "Bitte den Code vom Fernseher eingeben.");
       if (!rawLink.startsWith("https://")) return show("err", "Der Link muss mit https:// beginnen.");
       if (!pw) return show("err", "Bitte das Passwort eingeben.");
       if (!ENDPOINT) return show("err", "Dienst noch nicht konfiguriert. Bitte später erneut versuchen.");
