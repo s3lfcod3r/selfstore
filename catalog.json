@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-06-27",
+  "updated": "2026-06-29",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur fuer die Landing-Sprachumschaltung; die App ignoriert sie.",
   "apps": [
@@ -25,7 +25,9 @@
       "id": "com.selfmailer.viewer",
       "source": "s3lfcod3r/selfmailer",
       "name": "SelfMailer",
-      "platforms": ["phone"],
+      "platforms": [
+        "phone"
+      ],
       "tagline": "Dein eigener Mail-Client",
       "taglineEn": "Your own mail client",
       "description": "Multi-User Mail-Client (IMAP/POP3/SMTP) mit Kalender und Kontakten. Verbindet sich mit deinem self-hosted SelfMailer-Server.",
@@ -34,16 +36,18 @@
       "category": "Produktivitaet",
       "categoryEn": "Productivity",
       "author": "SelfCoder",
-      "versionName": "1.36.0",
-      "versionCode": 44,
+      "versionName": "1.37.0",
+      "versionCode": 45,
       "changelog": "Aktuelle Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.36.0/SelfMailer-v1.36.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.37.0/SelfMailer-v1.37.0.apk"
     },
     {
       "id": "com.selfauthenticator.viewer",
       "source": "s3lfcod3r/selfauthenticator",
       "name": "SelfAuthenticator",
-      "platforms": ["phone"],
+      "platforms": [
+        "phone"
+      ],
       "tagline": "Dein 2FA-/TOTP-Tresor",
       "taglineEn": "Your 2FA / TOTP vault",
       "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschluesselt mit deinem self-hosted Server.",
@@ -61,7 +65,9 @@
       "id": "com.selfdashboard.viewer.debug",
       "source": "s3lfcod3r/selfdashboard",
       "name": "SelfDashboard",
-      "platforms": ["phone"],
+      "platforms": [
+        "phone"
+      ],
       "tagline": "Deine Self-Zentrale",
       "taglineEn": "Your Self hub",
       "description": "App-Zugang zu deinem SelfDashboard - der Uebersicht ueber deine Self-Dienste.",
@@ -79,7 +85,9 @@
       "id": "com.selfpooltracker.app",
       "source": "s3lfcod3r/selfpooltracker",
       "name": "SelfPoolTracker",
-      "platforms": ["phone"],
+      "platforms": [
+        "phone"
+      ],
       "tagline": "Deine Pool-Wasserwerte im Griff",
       "taglineEn": "Your pool water values under control",
       "description": "Pool-Wasserqualitaet tracken: pH, Chlor, Redox und Temperatur mit Ampel-Status und Dosierempfehlungen. Speichert lokal auf dem Geraet, kein Server, keine Cloud.",
