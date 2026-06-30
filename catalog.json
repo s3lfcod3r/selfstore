@@ -16,10 +16,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.1.9",
-      "versionCode": 21,
-      "changelog": "Update-Erkennung jetzt auch fuer private Quellen-Apps (z. B. SelfStream Player aus NextCloud): SelfStore vergleicht die installierte Version mit dem Katalog und meldet neue Versionen. Voraussetzung: in der catalog.json den versionCode hochsetzen.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.1.9/SelfStore-v1.1.9.apk"
+      "versionName": "1.2.0",
+      "versionCode": 22,
+      "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergaenzt): Installieren/Oeffnen/Aktualisieren wird korrekt angezeigt.",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.2.0/SelfStore-v1.2.0.apk"
     },
     {
       "id": "com.selfmailer.viewer",
