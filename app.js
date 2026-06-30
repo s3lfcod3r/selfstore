@@ -1,6 +1,6 @@
 // SelfStore Landing — DE/EN + XSS-sicheres Katalog-Rendering (textContent,
 // nur HTTPS-Links). i18n-Strings sind hartkodierte Konstanten (kein User-Input),
-// daher ist innerHTML fuer die [data-i18n-html]-Elemente unbedenklich.
+// daher ist innerHTML für die [data-i18n-html]-Elemente unbedenklich.
 (function () {
   "use strict";
 

@@ -2,7 +2,7 @@
   "store": "SelfStore",
   "updated": "2026-06-30",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
-  "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur fuer die Landing-Sprachumschaltung; die App ignoriert sie.",
+  "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhängen. 'apk' = Universal-APK (läuft auf armv7 UND armv8). Für Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur für die Landing-Sprachumschaltung; die App ignoriert sie.",
   "apps": [
     {
       "id": "com.selfstore.app",
@@ -10,7 +10,7 @@
       "name": "SelfStore",
       "tagline": "Der Self App-Store",
       "taglineEn": "The Self app store",
-      "description": "Zentraler Store fuer alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box – ohne Google Play.",
+      "description": "Zentraler Store für alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box – ohne Google Play.",
       "descriptionEn": "Central store for all Self projects. Installs and updates your Self apps right on the TV box – without Google Play.",
       "icon": "icons/self-store.png",
       "category": "System",
@@ -18,7 +18,7 @@
       "author": "SelfCoder",
       "versionName": "1.2.0",
       "versionCode": 22,
-      "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergaenzt): Installieren/Oeffnen/Aktualisieren wird korrekt angezeigt.",
+      "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
       "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.2.0/SelfStore-v1.2.0.apk"
     },
     {
@@ -33,7 +33,7 @@
       "description": "Multi-User Mail-Client (IMAP/POP3/SMTP) mit Kalender und Kontakten. Verbindet sich mit deinem self-hosted SelfMailer-Server.",
       "descriptionEn": "Multi-user mail client (IMAP/POP3/SMTP) with calendar and contacts. Connects to your self-hosted SelfMailer server.",
       "icon": "icons/self-mailer.png",
-      "category": "Produktivitaet",
+      "category": "Produktivität",
       "categoryEn": "Productivity",
       "author": "SelfCoder",
       "versionName": "1.38.0",
@@ -50,7 +50,7 @@
       ],
       "tagline": "Dein 2FA-/TOTP-Tresor",
       "taglineEn": "Your 2FA / TOTP vault",
-      "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschluesselt mit deinem self-hosted Server.",
+      "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschlüsselt mit deinem self-hosted Server.",
       "descriptionEn": "Zero-knowledge 2FA / TOTP code store with fingerprint unlock and QR scanner. Syncs encrypted with your self-hosted server.",
       "icon": "icons/self-authenticator.png",
       "category": "Sicherheit",
@@ -58,7 +58,7 @@
       "author": "SelfCoder",
       "versionName": "2.3.0",
       "versionCode": 18,
-      "changelog": "Eintraege bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
+      "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.3.0/SelfAuthenticator-v2.3.0.apk"
     },
     {
@@ -70,7 +70,7 @@
       ],
       "tagline": "Deine Self-Zentrale",
       "taglineEn": "Your Self hub",
-      "description": "App-Zugang zu deinem SelfDashboard - der Uebersicht ueber deine Self-Dienste.",
+      "description": "App-Zugang zu deinem SelfDashboard - der Übersicht über deine Self-Dienste.",
       "descriptionEn": "App access to your SelfDashboard - the overview of your Self services.",
       "icon": "icons/self-dashboard.png",
       "category": "System",
@@ -90,7 +90,7 @@
       ],
       "tagline": "Deine Pool-Wasserwerte im Griff",
       "taglineEn": "Your pool water values under control",
-      "description": "Pool-Wasserqualitaet tracken: pH, Chlor, Redox und Temperatur mit Ampel-Status und Dosierempfehlungen. Speichert lokal auf dem Geraet, kein Server, keine Cloud.",
+      "description": "Pool-Wasserqualität tracken: pH, Chlor, Redox und Temperatur mit Ampel-Status und Dosierempfehlungen. Speichert lokal auf dem Gerät, kein Server, keine Cloud.",
       "descriptionEn": "Track pool water quality: pH, chlorine, redox and temperature with traffic-light status and dosing recommendations. Stores locally on the device, no server, no cloud.",
       "icon": "icons/self-pooltracker.png",
       "category": "Werkzeuge",
@@ -98,7 +98,7 @@
       "author": "SelfCoder",
       "versionName": "1.0.4",
       "versionCode": 5,
-      "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export laesst den Speicherort waehlen. Auch als Webseite unter pool.selfcoder.de.",
+      "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lässt den Speicherort wählen. Auch als Webseite unter pool.selfcoder.de.",
       "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.4/selfpooltracker-1.0.4.apk"
     },
     {
@@ -110,7 +110,7 @@
       ],
       "tagline": "WireGuard, der oben bleibt",
       "taglineEn": "WireGuard that stays up",
-      "description": "Eigenstaendiger WireGuard-Client mit Auto-Reconnect-Waechter: verbindet nach der taeglichen Zwangstrennung automatisch neu, sobald sich die Server-IP aendert. Mehrere Tunnel, App-Split-Tunnel, Editor mit beschrifteten Feldern, Fingerabdruck-Schutz.",
+      "description": "Eigenständiger WireGuard-Client mit Auto-Reconnect-Wächter: verbindet nach der täglichen Zwangstrennung automatisch neu, sobald sich die Server-IP ändert. Mehrere Tunnel, App-Split-Tunnel, Editor mit beschrifteten Feldern, Fingerabdruck-Schutz.",
       "descriptionEn": "Standalone WireGuard client with an auto-reconnect watchdog: reconnects automatically after the daily forced IP change. Multiple tunnels, per-app split tunnel, labeled-field editor, fingerprint lock.",
       "icon": "icons/self-wg.png",
       "category": "Netzwerk",
