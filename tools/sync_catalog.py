@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """SelfStore Katalog-Auto-Sync.
 
-Liest fuer jede App mit "source": "<owner>/<repo>" das neueste GitHub-Release,
+Liest für jede App mit "source": "<owner>/<repo>" das neueste GitHub-Release,
 holt versionCode/versionName/Paketname direkt aus dem Release-APK und aktualisiert
 catalog.json. Nur Versions-Updates BESTEHENDER Apps — neue Apps werden weiterhin
 von Hand angelegt (Beschreibung/Icon/applicationId).
@@ -37,7 +37,7 @@ def download(url, dest):
 
 def pick_apk(assets):
     apks = [a for a in assets if a["name"].lower().endswith(".apk")]
-    # bevorzugt das versionierte Asset (enthaelt "-v"), sonst das erste APK
+    # bevorzugt das versionierte Asset (enthält "-v"), sonst das erste APK
     for a in apks:
         if "-v" in a["name"].lower():
             return a
@@ -75,7 +75,7 @@ def main():
             apk = APK(apkp)
             vc, vn, pkg = int(apk.version_code), apk.version_name, apk.package
         if app.get("id") != pkg:
-            print(f"WARN {src}: id '{app.get('id')}' != APK-Package '{pkg}' — uebersprungen")
+            print(f"WARN {src}: id '{app.get('id')}' != APK-Package '{pkg}' — übersprungen")
             continue
         app["versionName"] = vn
         app["versionCode"] = vc
@@ -103,7 +103,7 @@ def main():
             f.write("\n")
         print("catalog.json aktualisiert")
     else:
-        print("keine Aenderungen")
+        print("keine Änderungen")
 
 
 if __name__ == "__main__":

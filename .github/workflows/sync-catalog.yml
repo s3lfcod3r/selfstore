@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Abhaengigkeiten
+      - name: Abhängigkeiten
         run: pip install --quiet pyaxmlparser
 
       - name: Katalog synchronisieren
@@ -33,7 +33,7 @@ jobs:
           export SYNC_DATE="$(date -u +%F)"
           python tools/sync_catalog.py
 
-      - name: Aenderungen committen
+      - name: Änderungen committen
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "selfstore-bot"
@@ -42,5 +42,5 @@ jobs:
             git commit -m "chore: Katalog Auto-Sync (Release-Versionen + Bootstrap-APK)"
             git push
           else
-            echo "Keine Aenderungen am Katalog."
+            echo "Keine Änderungen am Katalog."
           fi
