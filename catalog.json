@@ -100,6 +100,26 @@
       "versionCode": 5,
       "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export laesst den Speicherort waehlen. Auch als Webseite unter pool.selfcoder.de.",
       "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.4/selfpooltracker-1.0.4.apk"
+    },
+    {
+      "id": "com.selfwg.app",
+      "source": "s3lfcod3r/selfwg",
+      "name": "SelfWG",
+      "platforms": [
+        "phone"
+      ],
+      "tagline": "WireGuard, der oben bleibt",
+      "taglineEn": "WireGuard that stays up",
+      "description": "Eigenstaendiger WireGuard-Client mit Auto-Reconnect-Waechter: verbindet nach der taeglichen Zwangstrennung automatisch neu, sobald sich die Server-IP aendert. Mehrere Tunnel, App-Split-Tunnel, Editor mit beschrifteten Feldern, Fingerabdruck-Schutz.",
+      "descriptionEn": "Standalone WireGuard client with an auto-reconnect watchdog: reconnects automatically after the daily forced IP change. Multiple tunnels, per-app split tunnel, labeled-field editor, fingerprint lock.",
+      "icon": "icons/self-wg.png",
+      "category": "Netzwerk",
+      "categoryEn": "Network",
+      "author": "SelfCoder",
+      "versionName": "1.2.1",
+      "versionCode": 4,
+      "changelog": "Erste Store-Version.",
+      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.1/SelfWG-v1.2.1.apk"
     }
   ]
 }
