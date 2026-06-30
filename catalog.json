@@ -16,10 +16,10 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.2.0",
-      "versionCode": 22,
+      "versionName": "1.2.1",
+      "versionCode": 23,
       "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.2.0/SelfStore-v1.2.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.2.1/SelfStore-v1.2.1.apk"
     },
     {
       "id": "com.selfmailer.viewer",
@@ -36,10 +36,10 @@
       "category": "Produktivität",
       "categoryEn": "Productivity",
       "author": "SelfCoder",
-      "versionName": "1.39.0",
-      "versionCode": 47,
+      "versionName": "1.39.1",
+      "versionCode": 48,
       "changelog": "Aktuelle Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.39.0/SelfMailer-v1.39.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.39.1/SelfMailer-v1.39.1.apk"
     },
     {
       "id": "com.selfauthenticator.viewer",
@@ -56,10 +56,10 @@
       "category": "Sicherheit",
       "categoryEn": "Security",
       "author": "SelfCoder",
-      "versionName": "2.3.0",
-      "versionCode": 18,
+      "versionName": "2.3.1",
+      "versionCode": 19,
       "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
-      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.3.0/SelfAuthenticator-v2.3.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.3.1/SelfAuthenticator-v2.3.1.apk"
     },
     {
       "id": "com.selfdashboard.viewer.debug",
@@ -96,10 +96,10 @@
       "category": "Werkzeuge",
       "categoryEn": "Tools",
       "author": "SelfCoder",
-      "versionName": "1.0.4",
-      "versionCode": 5,
+      "versionName": "1.0.5",
+      "versionCode": 6,
       "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lässt den Speicherort wählen. Auch als Webseite unter pool.selfcoder.de.",
-      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.4/selfpooltracker-1.0.4.apk"
+      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.0.5/selfpooltracker-1.0.5.apk"
     },
     {
       "id": "com.selfwg.app",
@@ -116,10 +116,10 @@
       "category": "Netzwerk",
       "categoryEn": "Network",
       "author": "SelfCoder",
-      "versionName": "1.2.1",
-      "versionCode": 4,
+      "versionName": "1.2.2",
+      "versionCode": 5,
       "changelog": "Erste Store-Version.",
-      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.1/SelfWG-v1.2.1.apk"
+      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.2/SelfWG-v1.2.2.apk"
     }
   ]
 }
