@@ -36,10 +36,10 @@
       "category": "Produktivität",
       "categoryEn": "Productivity",
       "author": "SelfCoder",
-      "versionName": "1.38.0",
-      "versionCode": 46,
+      "versionName": "1.39.0",
+      "versionCode": 47,
       "changelog": "Aktuelle Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.38.0/SelfMailer-v1.38.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.39.0/SelfMailer-v1.39.0.apk"
     },
     {
       "id": "com.selfauthenticator.viewer",
