@@ -22,7 +22,11 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      # Immer main auschecken — bei release-Triggern wäre es sonst der Tag
+      # (detached HEAD) und der spätere git push würde fehlschlagen.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
