@@ -16,11 +16,11 @@
       "category": "System",
       "categoryEn": "System",
       "author": "SelfCoder",
-      "versionName": "1.4.1",
-      "versionCode": 26,
+      "versionName": "1.4.2",
+      "versionCode": 27,
       "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.1/SelfStore-v1.4.1.apk",
-      "sha256": "7358d36c2917ae45b89db89d4a285713acb2626d82c635b4263562fd4c48635f"
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.2/SelfStore-v1.4.2.apk",
+      "sha256": "396ae6efcc0fc4332f2d4ee28b4a10dcca8a1d4b42455013cb494bcfca62d267"
     },
     {
       "id": "com.selfmailer.viewer",
