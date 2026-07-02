@@ -3,9 +3,12 @@
 
 Liest für jede App mit "source": "<owner>/<repo>" das neueste GitHub-Release,
 holt versionCode/versionName/Paketname direkt aus dem Release-APK und aktualisiert
-catalog.json. Nur Versions-Updates BESTEHENDER Apps — neue Apps werden weiterhin
-von Hand angelegt (Beschreibung/Icon/applicationId).
+catalog.json. Zusätzlich wird der SHA-256 der APK-Datei berechnet und als "sha256"
+im Katalog hinterlegt — die SelfStore-App prüft ihn vor der Installation
+(Integritätsschutz). Nur Versions-Updates BESTEHENDER Apps — neue Apps werden
+weiterhin von Hand angelegt (Beschreibung/Icon/applicationId).
 """
+import hashlib
 import json
 import os
 import sys
@@ -33,6 +36,14 @@ def download(url, dest):
     req = urllib.request.Request(url, headers={"User-Agent": "selfstore-sync"})
     with urllib.request.urlopen(req) as r, open(dest, "wb") as f:
         f.write(r.read())
+
+
+def sha256_of(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def pick_apk(assets):
@@ -66,24 +77,26 @@ def main():
             print(f"WARN {src}: kein APK-Asset gefunden")
             continue
         url = asset["browser_download_url"]
-        if app.get("apk") == url:
-            print(f"OK   {app['name']}: schon aktuell")
-            continue
+        # Immer herunterladen: liefert Paketname/Version UND SHA-256. So wird der
+        # sha256-Hash auch bei unveränderter Version einmalig nachgetragen.
         with tempfile.TemporaryDirectory() as td:
             apkp = os.path.join(td, "app.apk")
             download(url, apkp)
             apk = APK(apkp)
             vc, vn, pkg = int(apk.version_code), apk.version_name, apk.package
+            sha = sha256_of(apkp)
         if app.get("id") != pkg:
             print(f"WARN {src}: id '{app.get('id')}' != APK-Package '{pkg}' — übersprungen")
             continue
-        app["versionName"] = vn
-        app["versionCode"] = vc
-        app["apk"] = url
-        changed = True
-        if app["id"] == "com.selfstore.app":
-            selfstore_updated = True
-        print(f"UPDATE {app['name']}: v{vn} ({vc}) -> {asset['name']}")
+        new = {"versionName": vn, "versionCode": vc, "apk": url, "sha256": sha}
+        if any(app.get(k) != v for k, v in new.items()):
+            app.update(new)
+            changed = True
+            if app["id"] == "com.selfstore.app":
+                selfstore_updated = True
+            print(f"UPDATE {app['name']}: v{vn} ({vc}) sha256={sha[:12]}… -> {asset['name']}")
+        else:
+            print(f"OK   {app['name']}: schon aktuell")
 
     # Bootstrap-APK auf der eigenen Domain aktuell halten (store.selfcoder.de/selfstore.apk)
     if selfstore_updated:
