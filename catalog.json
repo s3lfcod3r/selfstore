@@ -58,11 +58,11 @@
       "category": "Sicherheit",
       "categoryEn": "Security",
       "author": "SelfCoder",
-      "versionName": "2.5.0",
-      "versionCode": 21,
+      "versionName": "2.5.1",
+      "versionCode": 22,
       "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
-      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.5.0/SelfAuthenticator-v2.5.0.apk",
-      "sha256": "4635a2480cbc4fda82bc312063727abb7725050c8897786cf2fb68bbfd5eac2a"
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.5.1/SelfAuthenticator-v2.5.1.apk",
+      "sha256": "9910e76cf22728eda2cc253d41444542d0dc337cddce6e22ac204a8c057a35ed"
     },
     {
       "id": "com.selfdashboard.viewer.debug",
