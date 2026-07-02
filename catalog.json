@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-06-30",
+  "updated": "2026-07-02",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhängen. 'apk' = Universal-APK (läuft auf armv7 UND armv8). Für Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur für die Landing-Sprachumschaltung; die App ignoriert sie.",
   "apps": [
@@ -96,10 +96,10 @@
       "category": "Werkzeuge",
       "categoryEn": "Tools",
       "author": "SelfCoder",
-      "versionName": "1.1.0",
-      "versionCode": 7,
+      "versionName": "1.2.0",
+      "versionCode": 8,
       "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lässt den Speicherort wählen. Auch als Webseite unter pool.selfcoder.de.",
-      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.1.0/selfpooltracker-1.1.0.apk"
+      "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.2.0/selfpooltracker-1.2.0.apk"
     },
     {
       "id": "com.selfwg.app",
