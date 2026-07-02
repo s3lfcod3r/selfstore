@@ -6,6 +6,8 @@ on:
   # dafür braucht das App-Repo ein PAT-Secret mit actions:write auf dieses Repo.
   repository_dispatch:
     types: [app-released]
+  release:
+    types: [published]   # eigenes SelfStore-Release löst den Sync direkt aus
   schedule:
     - cron: "*/15 * * * *"   # alle 15 Minuten (Sync lädt nur bei echter Änderung)
 
