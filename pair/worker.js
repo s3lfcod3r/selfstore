@@ -7,14 +7,18 @@
  *   2. Browser-Formular schickt POST /pair { code, url, user, pw, label }
  *   3. SelfStore holt die Daten ab → werden dabei SOFORT gelöscht (einmalig)
  *
- * Sicherheit: CORS nur für die eigene Domain; POST ist pro IP rate-limitiert;
- * Daten max. TTL Sekunden im KV, bei Abholung gelöscht.
+ * Sicherheit: CORS nur für die eigene Domain; POST und GET sind pro IP
+ * rate-limitiert; Daten max. TTL Sekunden im KV, bei Abholung gelöscht.
+ * Zusätzlich wird ein Code nach wenigen Fehlversuchen invalidiert
+ * (Schutz gegen Brute-Force des Codes).
  *
  * Einrichtung: KV-Namespace als Binding "PAIR" an diesen Worker binden.
  */
 
 const TTL = 180;          // Lebensdauer eines Slots (Sekunden)
 const POST_RL_MAX = 20;   // erlaubte POSTs pro IP und Minute (gegen Brute-Force)
+const GET_RL_MAX = 30;    // erlaubte GETs pro IP und Minute (gegen Brute-Force)
+const MAX_MISSES = 5;     // Fehlversuche pro Code, danach wird der Code invalidiert
 
 const ALLOWED_ORIGINS = [
   "https://store.selfcoder.de",
@@ -72,12 +76,32 @@ export default {
     }
 
     // TV holt Daten ab (einmalig, danach gelöscht).
+    // Rate-limitiert pro IP + Fehlversuch-Zähler pro Code gegen Brute-Force.
     const m = url.pathname.match(/^\/pair\/([A-Z0-9]{6,10})$/);
     if (req.method === "GET" && m) {
+      const ip = req.headers.get("CF-Connecting-IP") || "unknown";
+      const rlKey = "rl-get:" + ip;
+      const n = parseInt((await env.PAIR.get(rlKey)) || "0", 10);
+      if (n >= GET_RL_MAX) return json({ error: "rate_limited" }, 429, req);
+      await env.PAIR.put(rlKey, String(n + 1), { expirationTtl: 60 });
+
       const code = m[1];
       const val = await env.PAIR.get("c:" + code);
-      if (!val) return json({ pending: true }, 200, req);
+      if (!val) {
+        // Fehlversuch zählen; nach MAX_MISSES den Slot invalidieren (falls noch vorhanden).
+        const missKey = "miss:" + code;
+        const misses = parseInt((await env.PAIR.get(missKey)) || "0", 10) + 1;
+        if (misses >= MAX_MISSES) {
+          await env.PAIR.delete("c:" + code);
+          await env.PAIR.delete(missKey);
+        } else {
+          await env.PAIR.put(missKey, String(misses), { expirationTtl: TTL });
+        }
+        return json({ pending: true }, 200, req);
+      }
+      // Erfolgreicher Abruf: Daten und Fehlversuch-Zähler löschen (einmalig).
       await env.PAIR.delete("c:" + code);
+      await env.PAIR.delete("miss:" + code);
       return new Response(val, {
         headers: { "Content-Type": "application/json", ...cors(req) },
       });
