@@ -77,8 +77,12 @@ def main():
             print(f"WARN {src}: kein APK-Asset gefunden")
             continue
         url = asset["browser_download_url"]
-        # Immer herunterladen: liefert Paketname/Version UND SHA-256. So wird der
-        # sha256-Hash auch bei unveränderter Version einmalig nachgetragen.
+        # Effizient: nur herunterladen, wenn sich die APK-URL geändert hat ODER der
+        # sha256 noch fehlt (einmaliges Nachtragen). Sonst ist alles aktuell — spart
+        # bei häufigem Cron-Lauf 6 überflüssige APK-Downloads pro Durchgang.
+        if app.get("apk") == url and app.get("sha256"):
+            print(f"OK   {app['name']}: schon aktuell")
+            continue
         with tempfile.TemporaryDirectory() as td:
             apkp = os.path.join(td, "app.apk")
             download(url, apkp)

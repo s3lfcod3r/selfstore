@@ -2,8 +2,12 @@ name: Katalog Auto-Sync
 
 on:
   workflow_dispatch: {}
+  # Von einem App-Repo per repository_dispatch (Event "app-released") auslösbar —
+  # dafür braucht das App-Repo ein PAT-Secret mit actions:write auf dieses Repo.
+  repository_dispatch:
+    types: [app-released]
   schedule:
-    - cron: "0 */6 * * *"   # alle 6 Stunden
+    - cron: "*/15 * * * *"   # alle 15 Minuten (Sync lädt nur bei echter Änderung)
 
 permissions:
   contents: write
