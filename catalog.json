@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-07-02",
+  "updated": "2026-07-03",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhängen. 'apk' = Universal-APK (läuft auf armv7 UND armv8). Für Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur für die Landing-Sprachumschaltung; die App ignoriert sie.",
   "apps": [
@@ -58,11 +58,11 @@
       "category": "Sicherheit",
       "categoryEn": "Security",
       "author": "SelfCoder",
-      "versionName": "2.5.1",
-      "versionCode": 22,
+      "versionName": "2.5.2",
+      "versionCode": 23,
       "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
-      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.5.1/SelfAuthenticator-v2.5.1.apk",
-      "sha256": "9910e76cf22728eda2cc253d41444542d0dc337cddce6e22ac204a8c057a35ed"
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.5.2/SelfAuthenticator-v2.5.2.apk",
+      "sha256": "ace4d5660322a3e0c5c4878a8d5fe3ad400a22a0623a2f561c782f2548bc5d44"
     },
     {
       "id": "com.selfdashboard.viewer.debug",
