@@ -2,25 +2,79 @@
   "store": "SelfStore",
   "updated": "2026-07-04",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
-  "_note": "Fester Katalog – nur Self-Projekte. Neue App = neuen Block in 'apps' anhängen. 'apk' = Universal-APK (läuft auf armv7 UND armv8). Für Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. *En-Felder (taglineEn/descriptionEn/categoryEn) sind nur für die Landing-Sprachumschaltung; die App ignoriert sie.",
+  "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
     {
       "id": "com.selfstore.app",
       "source": "s3lfcod3r/selfstore",
       "name": "SelfStore",
       "tagline": "Der Self App-Store",
-      "taglineEn": "The Self app store",
       "description": "Zentraler Store für alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box – ohne Google Play.",
-      "descriptionEn": "Central store for all Self projects. Installs and updates your Self apps right on the TV box – without Google Play.",
       "icon": "icons/self-store.png",
       "category": "System",
-      "categoryEn": "System",
       "author": "SelfCoder",
       "versionName": "1.4.2",
       "versionCode": 27,
       "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
       "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.2/SelfStore-v1.4.2.apk",
-      "sha256": "396ae6efcc0fc4332f2d4ee28b4a10dcca8a1d4b42455013cb494bcfca62d267"
+      "sha256": "396ae6efcc0fc4332f2d4ee28b4a10dcca8a1d4b42455013cb494bcfca62d267",
+      "i18n": {
+        "en": {
+          "tagline": "The Self app store",
+          "description": "Central store for all Self projects. Installs and updates your Self apps right on the TV box – without Google Play.",
+          "category": "System"
+        },
+        "fr": {
+          "tagline": "Le magasin d'applis Self",
+          "description": "Magasin central pour tous les projets Self. Installe et met à jour vos applis Self directement sur la box TV – sans Google Play.",
+          "category": "Système"
+        },
+        "es": {
+          "tagline": "La tienda de apps Self",
+          "description": "Tienda central para todos los proyectos Self. Instala y actualiza tus apps Self directamente en la TV box, sin Google Play.",
+          "category": "Sistema"
+        },
+        "it": {
+          "tagline": "Lo store di app Self",
+          "description": "Store centrale per tutti i progetti Self. Installa e aggiorna le tue app Self direttamente sul TV box – senza Google Play.",
+          "category": "Sistema"
+        },
+        "nl": {
+          "tagline": "De Self-appstore",
+          "description": "Centrale store voor alle Self-projecten. Installeert en werkt je Self-apps rechtstreeks op de TV-box bij – zonder Google Play.",
+          "category": "Systeem"
+        },
+        "pl": {
+          "tagline": "Sklep z aplikacjami Self",
+          "description": "Centralny sklep dla wszystkich projektów Self. Instaluje i aktualizuje Twoje aplikacje Self bezpośrednio na urządzeniu TV – bez Google Play.",
+          "category": "System"
+        },
+        "pt": {
+          "tagline": "A loja de aplicações Self",
+          "description": "Loja central para todos os projetos Self. Instala e atualiza as suas aplicações Self diretamente na caixa de TV – sem o Google Play.",
+          "category": "Sistema"
+        },
+        "sv": {
+          "tagline": "Self-appbutiken",
+          "description": "Central butik för alla Self-projekt. Installerar och uppdaterar dina Self-appar direkt på TV-boxen – utan Google Play.",
+          "category": "System"
+        },
+        "da": {
+          "tagline": "Self app-butikken",
+          "description": "Central butik til alle Self-projekter. Installerer og opdaterer dine Self-apps direkte på TV-boksen – uden Google Play.",
+          "category": "System"
+        },
+        "cs": {
+          "tagline": "Obchod s aplikacemi Self",
+          "description": "Centrální obchod pro všechny projekty Self. Instaluje a aktualizuje vaše aplikace Self přímo v TV boxu – bez Google Play.",
+          "category": "Systém"
+        },
+        "el": {
+          "tagline": "Το κατάστημα εφαρμογών Self",
+          "description": "Κεντρικό κατάστημα για όλα τα έργα Self. Εγκαθιστά και ενημερώνει τις εφαρμογές Self απευθείας στο TV box – χωρίς Google Play.",
+          "category": "Σύστημα"
+        }
+      }
     },
     {
       "id": "com.selfmailer.viewer",
@@ -30,18 +84,72 @@
         "phone"
       ],
       "tagline": "Dein eigener Mail-Client",
-      "taglineEn": "Your own mail client",
       "description": "Multi-User Mail-Client (IMAP/POP3/SMTP) mit Kalender und Kontakten. Verbindet sich mit deinem self-hosted SelfMailer-Server.",
-      "descriptionEn": "Multi-user mail client (IMAP/POP3/SMTP) with calendar and contacts. Connects to your self-hosted SelfMailer server.",
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
-      "categoryEn": "Productivity",
       "author": "SelfCoder",
       "versionName": "1.42.0",
       "versionCode": 51,
       "changelog": "Aktuelle Version.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.42.0/SelfMailer-v1.42.0.apk",
-      "sha256": "9449337dc0d316d5700e74c8b44501e67e9fd7efa6efb3c397a313d96534fc9b"
+      "sha256": "9449337dc0d316d5700e74c8b44501e67e9fd7efa6efb3c397a313d96534fc9b",
+      "i18n": {
+        "en": {
+          "tagline": "Your own mail client",
+          "description": "Multi-user mail client (IMAP/POP3/SMTP) with calendar and contacts. Connects to your self-hosted SelfMailer server.",
+          "category": "Productivity"
+        },
+        "fr": {
+          "tagline": "Votre propre client mail",
+          "description": "Client mail multi-utilisateur (IMAP/POP3/SMTP) avec calendrier et contacts. Se connecte à votre serveur SelfMailer auto-hébergé.",
+          "category": "Productivité"
+        },
+        "es": {
+          "tagline": "Tu propio cliente de correo",
+          "description": "Cliente de correo multiusuario (IMAP/POP3/SMTP) con calendario y contactos. Se conecta a tu servidor SelfMailer autoalojado.",
+          "category": "Productividad"
+        },
+        "it": {
+          "tagline": "Il tuo client di posta personale",
+          "description": "Client di posta multiutente (IMAP/POP3/SMTP) con calendario e contatti. Si collega al tuo server SelfMailer self-hosted.",
+          "category": "Produttività"
+        },
+        "nl": {
+          "tagline": "Je eigen mailclient",
+          "description": "Mailclient voor meerdere gebruikers (IMAP/POP3/SMTP) met agenda en contacten. Maakt verbinding met je zelf-gehoste SelfMailer-server.",
+          "category": "Productiviteit"
+        },
+        "pl": {
+          "tagline": "Twój własny klient poczty",
+          "description": "Wieloużytkownikowy klient poczty (IMAP/POP3/SMTP) z kalendarzem i kontaktami. Łączy się z Twoim własnym serwerem SelfMailer.",
+          "category": "Produktywność"
+        },
+        "pt": {
+          "tagline": "O seu próprio cliente de e-mail",
+          "description": "Cliente de e-mail multiutilizador (IMAP/POP3/SMTP) com calendário e contactos. Liga-se ao seu servidor SelfMailer alojado por si.",
+          "category": "Produtividade"
+        },
+        "sv": {
+          "tagline": "Din egen e-postklient",
+          "description": "Fleranvändar-e-postklient (IMAP/POP3/SMTP) med kalender och kontakter. Ansluter till din egen SelfMailer-server.",
+          "category": "Produktivitet"
+        },
+        "da": {
+          "tagline": "Din egen mailklient",
+          "description": "Mailklient til flere brugere (IMAP/POP3/SMTP) med kalender og kontakter. Forbinder til din selv-hostede SelfMailer-server.",
+          "category": "Produktivitet"
+        },
+        "cs": {
+          "tagline": "Váš vlastní e-mailový klient",
+          "description": "Víceuživatelský e-mailový klient (IMAP/POP3/SMTP) s kalendářem a kontakty. Připojuje se k vašemu vlastnímu serveru SelfMailer.",
+          "category": "Produktivita"
+        },
+        "el": {
+          "tagline": "Το δικό σου πρόγραμμα email",
+          "description": "Πρόγραμμα email πολλών χρηστών (IMAP/POP3/SMTP) με ημερολόγιο και επαφές. Συνδέεται με τον δικό σου self-hosted διακομιστή SelfMailer.",
+          "category": "Παραγωγικότητα"
+        }
+      }
     },
     {
       "id": "com.selfauthenticator.viewer",
@@ -51,18 +159,72 @@
         "phone"
       ],
       "tagline": "Dein 2FA-/TOTP-Tresor",
-      "taglineEn": "Your 2FA / TOTP vault",
       "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschlüsselt mit deinem self-hosted Server.",
-      "descriptionEn": "Zero-knowledge 2FA / TOTP code store with fingerprint unlock and QR scanner. Syncs encrypted with your self-hosted server.",
       "icon": "icons/self-authenticator.png",
       "category": "Sicherheit",
-      "categoryEn": "Security",
       "author": "SelfCoder",
       "versionName": "2.5.4",
       "versionCode": 25,
       "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.5.4/SelfAuthenticator-v2.5.4.apk",
-      "sha256": "f94d6e77cb67ecdb0bafe0112aaced289f988f495136823783b23c0cc02d1497"
+      "sha256": "f94d6e77cb67ecdb0bafe0112aaced289f988f495136823783b23c0cc02d1497",
+      "i18n": {
+        "en": {
+          "tagline": "Your 2FA / TOTP vault",
+          "description": "Zero-knowledge 2FA / TOTP code store with fingerprint unlock and QR scanner. Syncs encrypted with your self-hosted server.",
+          "category": "Security"
+        },
+        "fr": {
+          "tagline": "Votre coffre 2FA / TOTP",
+          "description": "Coffre de codes 2FA / TOTP à divulgation nulle avec déverrouillage par empreinte et scanner QR. Synchronisation chiffrée avec votre serveur auto-hébergé.",
+          "category": "Sécurité"
+        },
+        "es": {
+          "tagline": "Tu bóveda de 2FA / TOTP",
+          "description": "Almacén de códigos 2FA / TOTP de conocimiento cero con desbloqueo por huella y escáner de QR. Se sincroniza cifrado con tu servidor autoalojado.",
+          "category": "Seguridad"
+        },
+        "it": {
+          "tagline": "Il tuo caveau 2FA / TOTP",
+          "description": "Archivio zero-knowledge di codici 2FA / TOTP con sblocco tramite impronta digitale e scanner QR. Si sincronizza in modo cifrato con il tuo server self-hosted.",
+          "category": "Sicurezza"
+        },
+        "nl": {
+          "tagline": "Je 2FA-/TOTP-kluis",
+          "description": "Zero-knowledge 2FA-/TOTP-codekluis met vingerafdrukontgrendeling en QR-scanner. Synchroniseert versleuteld met je zelf-gehoste server.",
+          "category": "Beveiliging"
+        },
+        "pl": {
+          "tagline": "Twój sejf 2FA / TOTP",
+          "description": "Sejf na kody 2FA / TOTP w architekturze zero-knowledge, z odblokowaniem odciskiem palca i skanerem QR. Synchronizuje się w postaci zaszyfrowanej z Twoim własnym serwerem.",
+          "category": "Bezpieczeństwo"
+        },
+        "pt": {
+          "tagline": "O seu cofre 2FA / TOTP",
+          "description": "Cofre de códigos 2FA / TOTP zero-knowledge com desbloqueio por impressão digital e leitor de QR. Sincroniza de forma encriptada com o seu servidor alojado por si.",
+          "category": "Segurança"
+        },
+        "sv": {
+          "tagline": "Ditt 2FA-/TOTP-valv",
+          "description": "Zero-knowledge-lagring för 2FA-/TOTP-koder med fingeravtryckslås och QR-skanner. Synkroniseras krypterat med din egen server.",
+          "category": "Säkerhet"
+        },
+        "da": {
+          "tagline": "Dit 2FA-/TOTP-hvelv",
+          "description": "Zero-knowledge 2FA-/TOTP-kodelager med fingeraftrykslås og QR-scanner. Synkroniserer krypteret med din selv-hostede server.",
+          "category": "Sikkerhed"
+        },
+        "cs": {
+          "tagline": "Váš trezor pro 2FA / TOTP",
+          "description": "Úložiště kódů 2FA / TOTP s nulovou znalostí, odemykáním otiskem prstu a skenerem QR. Šifrovaně se synchronizuje s vaším vlastním serverem.",
+          "category": "Zabezpečení"
+        },
+        "el": {
+          "tagline": "Ο θησαυροφύλακάς σου 2FA / TOTP",
+          "description": "Zero-knowledge αποθήκη κωδικών 2FA / TOTP με ξεκλείδωμα με δακτυλικό αποτύπωμα και σαρωτή QR. Συγχρονίζεται κρυπτογραφημένα με τον δικό σου self-hosted διακομιστή.",
+          "category": "Ασφάλεια"
+        }
+      }
     },
     {
       "id": "com.selfdashboard.viewer.debug",
@@ -72,18 +234,72 @@
         "phone"
       ],
       "tagline": "Deine Self-Zentrale",
-      "taglineEn": "Your Self hub",
       "description": "App-Zugang zu deinem SelfDashboard - der Übersicht über deine Self-Dienste.",
-      "descriptionEn": "App access to your SelfDashboard - the overview of your Self services.",
       "icon": "icons/self-dashboard.png",
       "category": "System",
-      "categoryEn": "System",
       "author": "SelfCoder",
       "versionName": "1.0.4",
       "versionCode": 5,
       "changelog": "Aktuelle Version.",
       "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.4/SelfDashboard-v1.0.4.apk",
-      "sha256": "62d52579442d413987f382a5c048bcc0a3276651e786e25c592003459206427c"
+      "sha256": "62d52579442d413987f382a5c048bcc0a3276651e786e25c592003459206427c",
+      "i18n": {
+        "en": {
+          "tagline": "Your Self hub",
+          "description": "App access to your SelfDashboard - the overview of your Self services.",
+          "category": "System"
+        },
+        "fr": {
+          "tagline": "Votre hub Self",
+          "description": "Accès applicatif à votre SelfDashboard - la vue d'ensemble de vos services Self.",
+          "category": "Système"
+        },
+        "es": {
+          "tagline": "Tu centro Self",
+          "description": "Acceso desde la app a tu SelfDashboard, la vista general de tus servicios Self.",
+          "category": "Sistema"
+        },
+        "it": {
+          "tagline": "Il tuo hub Self",
+          "description": "Accesso da app al tuo SelfDashboard – la panoramica dei tuoi servizi Self.",
+          "category": "Sistema"
+        },
+        "nl": {
+          "tagline": "Je Self-hub",
+          "description": "App-toegang tot je SelfDashboard – het overzicht van je Self-diensten.",
+          "category": "Systeem"
+        },
+        "pl": {
+          "tagline": "Twoje centrum Self",
+          "description": "Dostęp z aplikacji do Twojego SelfDashboard – przeglądu wszystkich usług Self.",
+          "category": "System"
+        },
+        "pt": {
+          "tagline": "O seu centro Self",
+          "description": "Acesso por aplicação ao seu SelfDashboard - a visão geral dos seus serviços Self.",
+          "category": "Sistema"
+        },
+        "sv": {
+          "tagline": "Ditt Self-nav",
+          "description": "Appåtkomst till din SelfDashboard – översikten över dina Self-tjänster.",
+          "category": "System"
+        },
+        "da": {
+          "tagline": "Dit Self-knudepunkt",
+          "description": "App-adgang til dit SelfDashboard – overblikket over dine Self-tjenester.",
+          "category": "System"
+        },
+        "cs": {
+          "tagline": "Váš rozcestník Self",
+          "description": "Přístup k vašemu SelfDashboardu z aplikace – přehled vašich služeb Self.",
+          "category": "Systém"
+        },
+        "el": {
+          "tagline": "Ο κόμβος σου Self",
+          "description": "Πρόσβαση μέσω εφαρμογής στο SelfDashboard σου - την επισκόπηση των υπηρεσιών Self σου.",
+          "category": "Σύστημα"
+        }
+      }
     },
     {
       "id": "com.selfpooltracker.app",
@@ -93,18 +309,72 @@
         "phone"
       ],
       "tagline": "Deine Pool-Wasserwerte im Griff",
-      "taglineEn": "Your pool water values under control",
       "description": "Pool-Wasserqualität tracken: pH, Chlor, Redox und Temperatur mit Ampel-Status und Dosierempfehlungen. Speichert lokal auf dem Gerät, kein Server, keine Cloud.",
-      "descriptionEn": "Track pool water quality: pH, chlorine, redox and temperature with traffic-light status and dosing recommendations. Stores locally on the device, no server, no cloud.",
       "icon": "icons/self-pooltracker.png",
       "category": "Werkzeuge",
-      "categoryEn": "Tools",
       "author": "SelfCoder",
       "versionName": "1.2.1",
       "versionCode": 9,
       "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lässt den Speicherort wählen. Auch als Webseite unter pool.selfcoder.de.",
       "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.2.1/selfpooltracker-1.2.1.apk",
-      "sha256": "e253531c0962859d55a983c5d396406f2e33dde6e03f387c1f155b75e0d59757"
+      "sha256": "e253531c0962859d55a983c5d396406f2e33dde6e03f387c1f155b75e0d59757",
+      "i18n": {
+        "en": {
+          "tagline": "Your pool water values under control",
+          "description": "Track pool water quality: pH, chlorine, redox and temperature with traffic-light status and dosing recommendations. Stores locally on the device, no server, no cloud.",
+          "category": "Tools"
+        },
+        "fr": {
+          "tagline": "Les valeurs de l'eau de votre piscine sous contrôle",
+          "description": "Suivez la qualité de l'eau de la piscine : pH, chlore, redox et température avec statut en feux tricolores et recommandations de dosage. Stockage local sur l'appareil, sans serveur, sans cloud.",
+          "category": "Outils"
+        },
+        "es": {
+          "tagline": "Los valores del agua de tu piscina bajo control",
+          "description": "Controla la calidad del agua de la piscina: pH, cloro, redox y temperatura con estado tipo semáforo y recomendaciones de dosificación. Guarda los datos localmente en el dispositivo, sin servidor ni nube.",
+          "category": "Herramientas"
+        },
+        "it": {
+          "tagline": "I valori dell'acqua della tua piscina sotto controllo",
+          "description": "Tieni traccia della qualità dell'acqua della piscina: pH, cloro, redox e temperatura con stato a semaforo e consigli sul dosaggio. Salva i dati localmente sul dispositivo, senza server, senza cloud.",
+          "category": "Strumenti"
+        },
+        "nl": {
+          "tagline": "Je zwembadwaarden onder controle",
+          "description": "Houd de waterkwaliteit van je zwembad bij: pH, chloor, redox en temperatuur met stoplichtstatus en doseringsadviezen. Slaat lokaal op het apparaat op, geen server, geen cloud.",
+          "category": "Hulpmiddelen"
+        },
+        "pl": {
+          "tagline": "Wartości wody w basenie pod kontrolą",
+          "description": "Śledź jakość wody w basenie: pH, chlor, redoks i temperaturę, ze statusem w kolorach sygnalizacji świetlnej i zaleceniami dozowania. Zapisuje dane lokalnie na urządzeniu, bez serwera, bez chmury.",
+          "category": "Narzędzia"
+        },
+        "pt": {
+          "tagline": "Os valores da água da sua piscina sob controlo",
+          "description": "Acompanhe a qualidade da água da piscina: pH, cloro, redox e temperatura, com estado tipo semáforo e recomendações de dosagem. Guarda localmente no dispositivo, sem servidor, sem nuvem.",
+          "category": "Ferramentas"
+        },
+        "sv": {
+          "tagline": "Koll på poolens vattenvärden",
+          "description": "Håll koll på poolens vattenkvalitet: pH, klor, redox och temperatur med trafikljusstatus och doseringsrekommendationer. Sparas lokalt på enheten, ingen server, inget moln.",
+          "category": "Verktyg"
+        },
+        "da": {
+          "tagline": "Styr på dine poolvandværdier",
+          "description": "Følg poolvandets kvalitet: pH, klor, redox og temperatur med trafiklys-status og doseringsanbefalinger. Gemmer lokalt på enheden, ingen server, ingen sky.",
+          "category": "Værktøjer"
+        },
+        "cs": {
+          "tagline": "Hodnoty vody v bazénu pod kontrolou",
+          "description": "Sledujte kvalitu vody v bazénu: pH, chlor, redox a teplotu se semaforovým stavem a doporučeními pro dávkování. Ukládá lokálně v zařízení, žádný server, žádný cloud.",
+          "category": "Nástroje"
+        },
+        "el": {
+          "tagline": "Οι τιμές νερού της πισίνας σου υπό έλεγχο",
+          "description": "Παρακολούθησε την ποιότητα του νερού της πισίνας: pH, χλώριο, redox και θερμοκρασία με κατάσταση φαναριού και συστάσεις δοσολογίας. Αποθηκεύει τοπικά στη συσκευή, χωρίς διακομιστή, χωρίς cloud.",
+          "category": "Εργαλεία"
+        }
+      }
     },
     {
       "id": "com.selfwg.app",
@@ -114,18 +384,72 @@
         "phone"
       ],
       "tagline": "WireGuard, der oben bleibt",
-      "taglineEn": "WireGuard that stays up",
       "description": "Eigenständiger WireGuard-Client mit Auto-Reconnect-Wächter: verbindet nach der täglichen Zwangstrennung automatisch neu, sobald sich die Server-IP ändert. Mehrere Tunnel, App-Split-Tunnel, Editor mit beschrifteten Feldern, Fingerabdruck-Schutz.",
-      "descriptionEn": "Standalone WireGuard client with an auto-reconnect watchdog: reconnects automatically after the daily forced IP change. Multiple tunnels, per-app split tunnel, labeled-field editor, fingerprint lock.",
       "icon": "icons/self-wg.png",
       "category": "Netzwerk",
-      "categoryEn": "Network",
       "author": "SelfCoder",
       "versionName": "1.2.3",
       "versionCode": 6,
       "changelog": "Erste Store-Version.",
       "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.3/SelfWG-v1.2.3.apk",
-      "sha256": "034f59f5040e2625b3ea851b4ad474e58eb8bd926a45690e02ec6d6f62d61615"
+      "sha256": "034f59f5040e2625b3ea851b4ad474e58eb8bd926a45690e02ec6d6f62d61615",
+      "i18n": {
+        "en": {
+          "tagline": "WireGuard that stays up",
+          "description": "Standalone WireGuard client with an auto-reconnect watchdog: reconnects automatically after the daily forced IP change. Multiple tunnels, per-app split tunnel, labeled-field editor, fingerprint lock.",
+          "category": "Network"
+        },
+        "fr": {
+          "tagline": "WireGuard qui reste connecté",
+          "description": "Client WireGuard autonome avec un gardien de reconnexion automatique : se reconnecte tout seul après le changement d'IP forcé quotidien. Plusieurs tunnels, split tunnel par appli, éditeur à champs étiquetés, verrouillage par empreinte.",
+          "category": "Réseau"
+        },
+        "es": {
+          "tagline": "WireGuard que no se cae",
+          "description": "Cliente WireGuard independiente con un vigilante de reconexión automática: se reconecta solo tras el cambio de IP forzado diario. Múltiples túneles, split tunnel por app, editor de campos con etiquetas y bloqueo por huella.",
+          "category": "Red"
+        },
+        "it": {
+          "tagline": "WireGuard che resta connesso",
+          "description": "Client WireGuard autonomo con un watchdog di riconnessione automatica: si riconnette da solo dopo il cambio IP forzato quotidiano. Tunnel multipli, split tunnel per app, editor a campi etichettati, blocco con impronta digitale.",
+          "category": "Rete"
+        },
+        "nl": {
+          "tagline": "WireGuard die verbonden blijft",
+          "description": "Zelfstandige WireGuard-client met een automatische herverbindingswaakhond: verbindt automatisch opnieuw na de dagelijkse gedwongen IP-wissel. Meerdere tunnels, split-tunnel per app, editor met gelabelde velden, vingerafdrukvergrendeling.",
+          "category": "Netwerk"
+        },
+        "pl": {
+          "tagline": "WireGuard, który się nie rozłącza",
+          "description": "Samodzielny klient WireGuard z czuwakiem automatycznego ponownego łączenia: po codziennej wymuszonej zmianie IP łączy się z powrotem automatycznie. Wiele tuneli, dzielony tunel per aplikacja, edytor z opisanymi polami, blokada odciskiem palca.",
+          "category": "Sieć"
+        },
+        "pt": {
+          "tagline": "WireGuard que se mantém ativo",
+          "description": "Cliente WireGuard autónomo com um vigilante de reconexão automática: religa-se automaticamente após a mudança forçada de IP diária. Vários túneis, split tunnel por aplicação, editor de campos identificados e bloqueio por impressão digital.",
+          "category": "Rede"
+        },
+        "sv": {
+          "tagline": "WireGuard som håller sig uppe",
+          "description": "Fristående WireGuard-klient med en vakthund för automatisk återanslutning: återansluter automatiskt efter det dagliga påtvingade IP-bytet. Flera tunnlar, split tunnel per app, redigerare med namngivna fält, fingeravtryckslås.",
+          "category": "Nätverk"
+        },
+        "da": {
+          "tagline": "WireGuard, der bliver oppe",
+          "description": "Selvstændig WireGuard-klient med en vagthund til automatisk genforbindelse: genforbinder automatisk efter det daglige tvungne IP-skift. Flere tunneler, split tunnel pr. app, editor med navngivne felter, fingeraftrykslås.",
+          "category": "Netværk"
+        },
+        "cs": {
+          "tagline": "WireGuard, který drží spojení",
+          "description": "Samostatný klient WireGuard s hlídačem automatického znovupřipojení: po denní vynucené změně IP se připojí automaticky. Více tunelů, rozdělené tunelování podle aplikace, editor s pojmenovanými poli, zámek otiskem prstu.",
+          "category": "Síť"
+        },
+        "el": {
+          "tagline": "WireGuard που δεν πέφτει",
+          "description": "Αυτόνομο πρόγραμμα-πελάτης WireGuard με έναν επιτηρητή αυτόματης επανασύνδεσης: επανασυνδέεται αυτόματα μετά την καθημερινή αναγκαστική αλλαγή IP. Πολλαπλά tunnel, split tunnel ανά εφαρμογή, επεξεργαστής με πεδία με ετικέτες, κλείδωμα με δακτυλικό αποτύπωμα.",
+          "category": "Δίκτυο"
+        }
+      }
     }
   ]
 }

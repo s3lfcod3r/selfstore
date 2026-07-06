@@ -25,12 +25,15 @@
     body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#10212a,var(--bg-0));
       color:var(--text);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
     .wrap{max-width:920px;margin:0 auto;padding:0 22px}
-    .langbar{display:flex;justify-content:flex-end;gap:6px;padding-top:18px}
-    .lang{background:transparent;border:1px solid var(--line-2);color:var(--text-2);
-      font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.08em;
-      padding:5px 12px;border-radius:7px;cursor:pointer;transition:all .15s}
-    .lang:hover{color:var(--text)}
-    .lang.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+    .langbar{display:flex;justify-content:flex-end;padding-top:18px}
+    .lang-select{background:var(--bg-2);border:1px solid var(--line-2);color:var(--text);
+      font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;
+      padding:6px 30px 6px 12px;border-radius:7px;cursor:pointer;transition:border-color .15s;
+      -webkit-appearance:none;appearance:none;
+      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' fill='none' stroke='%238a9caa' stroke-width='1.5'/></svg>");
+      background-repeat:no-repeat;background-position:right 10px center}
+    .lang-select:hover,.lang-select:focus{border-color:var(--teal);outline:none}
+    .lang-select option{background:var(--bg-1);color:var(--text)}
     header{padding:28px 0 28px;text-align:center}
     .logo{width:min(320px,82%);height:auto;display:block;margin:0 auto 8px}
     .tag{color:var(--text-2);margin-top:6px;font-size:clamp(14px,2.4vw,18px)}
@@ -65,8 +68,7 @@
 <body>
   <div class="wrap">
     <div class="langbar">
-      <button type="button" class="lang" data-lang="de">DE</button>
-      <button type="button" class="lang" data-lang="en">EN</button>
+      <select class="lang-select" id="lang-select" aria-label="Sprache / Language"></select>
     </div>
 
     <header>
@@ -101,6 +103,6 @@
     </footer>
   </div>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
