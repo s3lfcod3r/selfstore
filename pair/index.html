@@ -58,6 +58,10 @@
     <label for="link">Link</label>
     <input id="link" autocomplete="off" placeholder="https://…/s/…  oder  …/catalog.json" />
 
+    <label for="user">Benutzername</label>
+    <input id="user" autocomplete="off" placeholder="bei Freigabe-Link (…/s/…) automatisch" />
+    <div class="hint">Nur nötig bei direkter WebDAV-Adresse. Bei einem NextCloud-Freigabe-Link leer lassen – der Benutzername wird automatisch erkannt.</div>
+
     <label for="pw">Passwort</label>
     <input id="pw" type="password" autocomplete="off" placeholder="Link-/App-Passwort" />
 
@@ -94,6 +98,7 @@
     $("send").addEventListener("click", async () => {
       const code = $("code").value.trim().toUpperCase();
       const rawLink = $("link").value.trim();
+      const manualUser = $("user").value.trim();
       const pw = $("pw").value;
       const name = $("name").value.trim();
 
@@ -104,7 +109,9 @@
 
       const share = parseShare(rawLink);
       const url = share ? share.url : rawLink;
-      const user = share ? share.user : "";
+      // Bei Freigabe-Link gewinnt der Token; sonst der manuell eingegebene Benutzername.
+      const user = share ? share.user : manualUser;
+      if (!user) return show("err", "Bitte einen Benutzernamen eingeben (bei einem Freigabe-Link …/s/… wird er automatisch erkannt).");
 
       $("send").disabled = true;
       try {
