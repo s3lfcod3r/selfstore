@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -13,11 +13,11 @@
       "icon": "icons/self-store.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "1.4.3",
-      "versionCode": 28,
+      "versionName": "1.3.0",
+      "versionCode": 24,
       "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.3/SelfStore-v1.4.3.apk",
-      "sha256": "8d799eab825852dc6e138cb3339d570f0788311d7ec8b4be2d145a7d8dd90486",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.3.0/SelfStore-v1.3.0.apk",
+      "sha256": "a3ca57586742fb545679f86e56b0232ff8c9ec71816aa99e76f1492313a054d1",
       "i18n": {
         "en": {
           "tagline": "The Self app store",
@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.44.0",
-      "versionCode": 53,
+      "versionName": "1.33.0",
+      "versionCode": 37,
       "changelog": "Aktuelle Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.44.0/SelfMailer-1.44.0.apk",
-      "sha256": "7589bbddcf59452c2ee2ec0c5940264bad4f4f29a842a840dcde4b18c41ec3c4",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.33.0/SelfMailer-v1.33.0.apk",
+      "sha256": "62c93edaaf0eab029b0e85cccaa1e5b4b43e16bcdc6e3e7c95dbb351ee1530d6",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
@@ -238,11 +238,11 @@
       "icon": "icons/self-dashboard.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "1.0.4",
-      "versionCode": 5,
+      "versionName": "1.0.3",
+      "versionCode": 4,
       "changelog": "Aktuelle Version.",
-      "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.4/SelfDashboard-v1.0.4.apk",
-      "sha256": "62d52579442d413987f382a5c048bcc0a3276651e786e25c592003459206427c",
+      "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.3/SelfDashboard-v1.0.3.apk",
+      "sha256": "052d0fcba69a4dad435682c317f737d505a60d95d2aa4572061d2738d30e280d",
       "i18n": {
         "en": {
           "tagline": "Your Self hub",
