@@ -165,7 +165,7 @@
       "author": "SelfCoder",
       "versionName": "2.6.1",
       "versionCode": 27,
-      "changelog": "Farbige Ablauf-Anzeige: Der Ring färbt die verbleibende Zeit (teal → gelb → rot) und pulsiert in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
+      "changelog": "Farbige Ablauf-Anzeige: Ring UND Code-Ziffern färben die verbleibende Zeit (teal → gelb → rot) und pulsieren in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.1/SelfAuthenticator-v2.6.1.apk",
       "sha256": "db1ab41c0eba0714424b006d60544cfa9999b3d6b48aa5ac812a2c3ab4bf3650",
       "i18n": {
