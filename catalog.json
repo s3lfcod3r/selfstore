@@ -163,11 +163,11 @@
       "icon": "icons/self-authenticator.png",
       "category": "Sicherheit",
       "author": "SelfCoder",
-      "versionName": "2.6.0",
-      "versionCode": 26,
+      "versionName": "2.6.1",
+      "versionCode": 27,
       "changelog": "Farbige Ablauf-Anzeige: Der Ring färbt die verbleibende Zeit (teal → gelb → rot) und pulsiert in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
-      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.0/SelfAuthenticator-v2.6.0.apk",
-      "sha256": "ab50fa79d3625f410050b7b99426685a4cf019864a9d15e14fd6fd44d37aacb5",
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.1/SelfAuthenticator-v2.6.1.apk",
+      "sha256": "db1ab41c0eba0714424b006d60544cfa9999b3d6b48aa5ac812a2c3ab4bf3650",
       "i18n": {
         "en": {
           "tagline": "Your 2FA / TOTP vault",
