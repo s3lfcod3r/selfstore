@@ -163,11 +163,11 @@
       "icon": "icons/self-authenticator.png",
       "category": "Sicherheit",
       "author": "SelfCoder",
-      "versionName": "2.5.4",
-      "versionCode": 25,
+      "versionName": "2.6.0",
+      "versionCode": 26,
       "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
-      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.5.4/SelfAuthenticator-v2.5.4.apk",
-      "sha256": "f94d6e77cb67ecdb0bafe0112aaced289f988f495136823783b23c0cc02d1497",
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.0/SelfAuthenticator-v2.6.0.apk",
+      "sha256": "ab50fa79d3625f410050b7b99426685a4cf019864a9d15e14fd6fd44d37aacb5",
       "i18n": {
         "en": {
           "tagline": "Your 2FA / TOTP vault",
