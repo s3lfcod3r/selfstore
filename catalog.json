@@ -165,7 +165,7 @@
       "author": "SelfCoder",
       "versionName": "2.6.0",
       "versionCode": 26,
-      "changelog": "Einträge bearbeiten (Name, Symbol, Farbe) + sortieren (eigene Reihenfolge per Ziehen, A-Z/Z-A, Favoriten anheften).",
+      "changelog": "Farbige Ablauf-Anzeige: Der Ring färbt die verbleibende Zeit (teal → gelb → rot) und pulsiert in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.0/SelfAuthenticator-v2.6.0.apk",
       "sha256": "ab50fa79d3625f410050b7b99426685a4cf019864a9d15e14fd6fd44d37aacb5",
       "i18n": {
