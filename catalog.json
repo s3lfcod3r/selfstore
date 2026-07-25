@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.59.0",
-      "versionCode": 67,
+      "versionName": "1.60.0",
+      "versionCode": 68,
       "changelog": "Aktuelle Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.59.0/SelfMailer-1.59.0.apk",
-      "sha256": "aaa3e87625ed153c1936fcba833993786e92962c0b56c81e72eacf2693221ccc",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.60.0/SelfMailer-1.60.0.apk",
+      "sha256": "b4cf11209d0cee758fc8063d6bce0ce4ac154e8998fb3627d364e55a89fc0566",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
