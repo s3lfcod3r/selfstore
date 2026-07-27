@@ -15,7 +15,7 @@
       "author": "SelfCoder",
       "versionName": "1.4.5",
       "versionCode": 30,
-      "changelog": "TV-Fix: Passwort- und Textfelder beim Quelle-Hinzufügen lassen sich jetzt zuverlässig tippen — die Bildschirmtastatur wird erzwungen und das Feld klappt nicht mehr sofort zu.",
+      "changelog": "Per Web hinzufügen zeigt jetzt einen Verbindungsstatus: grün = Pairing-Server erreichbar, rot = die Box erreicht den Server nicht (Internet/DNS) samt Hinweis, die Quelle direkt einzutippen. Plus der TV-Tastatur-Fix aus 1.4.4.",
       "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.5/SelfStore-v1.4.5.apk",
       "sha256": "e2881b4be52b9ccd4dd16e54785c974e45fe15c0bda83849ddf16dbd2fdc08a1",
       "i18n": {
