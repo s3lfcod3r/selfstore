@@ -13,11 +13,11 @@
       "icon": "icons/self-store.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "1.4.3",
-      "versionCode": 28,
+      "versionName": "1.4.4",
+      "versionCode": 29,
       "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.3/SelfStore-v1.4.3.apk",
-      "sha256": "8d799eab825852dc6e138cb3339d570f0788311d7ec8b4be2d145a7d8dd90486",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.4/SelfStore-v1.4.4.apk",
+      "sha256": "a79ef31f06be5dfc9576d96815d403b68790672668e1af37d4cb7eb728f84493",
       "i18n": {
         "en": {
           "tagline": "The Self app store",
