@@ -15,7 +15,7 @@
       "author": "SelfCoder",
       "versionName": "1.4.4",
       "versionCode": 29,
-      "changelog": "Erkennt jetzt SelfWG (Paket-Sichtbarkeit ergänzt): Installieren/Öffnen/Aktualisieren wird korrekt angezeigt.",
+      "changelog": "TV-Fix: Passwort- und Textfelder beim Quelle-Hinzufügen lassen sich jetzt zuverlässig tippen — die Bildschirmtastatur wird erzwungen und das Feld klappt nicht mehr sofort zu.",
       "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.4/SelfStore-v1.4.4.apk",
       "sha256": "a79ef31f06be5dfc9576d96815d403b68790672668e1af37d4cb7eb728f84493",
       "i18n": {
