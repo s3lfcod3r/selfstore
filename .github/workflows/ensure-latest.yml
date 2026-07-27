@@ -1,0 +1,41 @@
+name: Neueste Version = Latest
+
+# GitHub markiert "Latest" nach juengstem publishedAt, NICHT nach Versionsnummer.
+# Ein Massen-Re-Upload alter Releases kann das Flag daher an eine alte Version haengen.
+# Dieser Workflow setzt nach jedem Release-Ereignis IMMER die hoechste SemVer-Version
+# als "Latest" (idempotent). Loest NICHT auf "edited" aus -> keine Endlosschleife.
+
+on:
+  workflow_dispatch: {}
+  release:
+    types: [published, created, released]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ensure-latest
+  cancel-in-progress: false
+
+jobs:
+  ensure-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hoechste Version als Latest setzen
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # Alle veroeffentlichten, nicht-Vorab-Releases holen
+          mapfile -t tags < <(gh release list -R "$REPO" -L 200 \
+            --json tagName,isDraft,isPrerelease \
+            --jq '.[] | select(.isDraft==false and .isPrerelease==false) | .tagName')
+          if [ ${#tags[@]} -eq 0 ]; then
+            echo "Keine passenden Releases gefunden."; exit 0
+          fi
+          # SemVer-Sortierung (sort -V versteht auch fuehrendes v)
+          highest="$(printf '%s\n' "${tags[@]}" | sort -V | tail -1)"
+          echo "Hoechste Version: $highest"
+          gh release edit "$highest" -R "$REPO" --latest
+          echo "-> $highest als Latest gesetzt."
