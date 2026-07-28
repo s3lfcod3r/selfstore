@@ -17,8 +17,8 @@
 
 const TTL = 180;          // Lebensdauer eines Slots (Sekunden)
 const POST_RL_MAX = 20;   // erlaubte POSTs pro IP und Minute (gegen Brute-Force)
-const GET_RL_MAX = 30;    // erlaubte GETs pro IP und Minute (gegen Brute-Force)
-const MAX_MISSES = 5;     // Fehlversuche pro Code, danach wird der Code invalidiert
+const GET_RL_MAX = 120;   // erlaubte GETs pro IP und Minute – klar ueber der Poll-Rate
+                          // (Box pollt 20/min); haelt auch bei geteilter CGNAT-IP (Vodafone).
 
 const ALLOWED_ORIGINS = [
   "https://store.selfcoder.de",
@@ -75,8 +75,7 @@ export default {
       return json({ ok: true }, 200, req);
     }
 
-    // TV holt Daten ab (einmalig, danach gelöscht).
-    // Rate-limitiert pro IP + Fehlversuch-Zähler pro Code gegen Brute-Force.
+    // TV holt Daten ab (einmalig, danach gelöscht). Rate-limitiert pro IP.
     const m = url.pathname.match(/^\/pair\/([A-Z0-9]{6,10})$/);
     if (req.method === "GET" && m) {
       const ip = req.headers.get("CF-Connecting-IP") || "unknown";
@@ -87,21 +86,15 @@ export default {
 
       const code = m[1];
       const val = await env.PAIR.get("c:" + code);
-      if (!val) {
-        // Fehlversuch zählen; nach MAX_MISSES den Slot invalidieren (falls noch vorhanden).
-        const missKey = "miss:" + code;
-        const misses = parseInt((await env.PAIR.get(missKey)) || "0", 10) + 1;
-        if (misses >= MAX_MISSES) {
-          await env.PAIR.delete("c:" + code);
-          await env.PAIR.delete(missKey);
-        } else {
-          await env.PAIR.put(missKey, String(misses), { expirationTtl: TTL });
-        }
-        return json({ pending: true }, 200, req);
-      }
-      // Erfolgreicher Abruf: Daten und Fehlversuch-Zähler löschen (einmalig).
+      // Noch nichts abgelegt -> einfach weiter warten. Den Slot NICHT löschen!
+      // Der frühere Fehlversuch-Zähler (MAX_MISSES) konnte durch die KV-Konsistenz-
+      // Verzögerung zwischen Cloudflare-Rechenzentren die gerade erst abgelegte Quelle
+      // löschen, bevor der TV sie sah -> "erreichbar, aber es kommt nichts an", vor allem
+      // wenn Browser und TV in verschiedenen Haushalten/Regionen sind. Schutz gegen
+      // Erraten bleibt: Codespace 32^8, TTL 180s und das IP-Rate-Limit.
+      if (!val) return json({ pending: true }, 200, req);
+      // Erfolgreicher Abruf: einmalig ausliefern und löschen.
       await env.PAIR.delete("c:" + code);
-      await env.PAIR.delete("miss:" + code);
       return new Response(val, {
         headers: { "Content-Type": "application/json", ...cors(req) },
       });
