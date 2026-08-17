@@ -43,7 +43,7 @@ of this repo.
 - 🧩 **armv7 + armv8** – automatically picks the right APK per box.
 - 🌐 **No own server needed** – catalog + APKs run entirely on GitHub.
 - 🔒 **Custom sources** – add private app repos (e.g. NextCloud/WebDAV) with username + app password; credentials stored encrypted (Android Keystore), HTTPS only. → [guide](docs/EIGENE-QUELLEN.md)
-- 🔗 **Add via web** – enter a source in the browser on your PC/phone (`store.selfcoder.de/pair`); the TV box picks it up automatically via a code — no typing on the remote. → [setup](docs/WEB-KOPPLUNG-SETUP.md)
+- 🔗 **Add via web** – enter a source in the browser on your PC/phone (`store.selfcoder.de/pair`); the TV box picks it up automatically via a code — no typing on the remote. **End-to-end encrypted** (since v1.5.0): the two-part code `SLOT-KEY` sends only the slot to the service, leaving link and password unreadable to it. → [setup](docs/WEB-KOPPLUNG-SETUP.md)
 - 📱 **Device filter** – on a TV only TV-capable apps are shown; phone-only apps stay hidden there (catalog field `platforms`).
 - 🎨 **Self branding** – consistent Self look (teal, dark).
 
@@ -155,9 +155,10 @@ Upload **two assets** per release:
 
 A GitHub workflow ([`.github/workflows/sync-catalog.yml`](.github/workflows/sync-catalog.yml))
 keeps the **versions of existing apps** up to date automatically: it periodically
-(every 6 h, or manually via *Run workflow*) reads the latest release of each app repo,
-pulls `versionCode`/`versionName`/`applicationId` straight from the release APK and
-updates `catalog.json`.
+(every 15 min, on every release, and manually via *Run workflow*) reads the latest
+release of each app repo, pulls `versionCode`/`versionName`/`applicationId` straight
+from the release APK, computes its **SHA-256** and updates `catalog.json`. The app
+verifies that hash before every installation.
 
 Requirement per entry: a **`"source": "<owner>/<repo>"`** field (ignored by the app).
 So for updates: **build APK → upload release → done** — the catalog follows on its own.
@@ -182,25 +183,45 @@ $env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
 
 ## 🔒 Security
 
-A security review (ECC `security-reviewer`) was performed. **Hardening applied:**
+Last reviewed: **August 2026** (code **and** operations). **Hardening applied:**
 
-- **Transport:** the app loads catalog, APKs and icons **over HTTPS only** and only
-  from allowed hosts (`github.com`, `github.io`, `githubusercontent.com`). Tampered
-  catalog URLs pointing to foreign servers are rejected.
-- **Landing page:** catalog rendering is **XSS-safe** (`textContent` instead of
-  `innerHTML`), `https:`-only links, strict **Content-Security-Policy**
-  (`script-src 'self'`), `referrer: no-referrer`.
+- **Signature pinning (since v1.5.0):** an APK is installed only if it carries the
+  expected signing key. The fingerprints live **inside the app** (`SignerPins.kt`),
+  deliberately **not** in the catalog — anyone able to tamper with the catalog would
+  simply change an expected value stored there. Apps without a pin (private sources)
+  are checked against the signature of the already installed version.
+- **Integrity before install:** package name **and** the catalog's SHA-256 are verified
+  against the downloaded file; on mismatch it is deleted before the system installer
+  ever sees it. The hash is maintained by the auto-sync.
+- **Transport:** catalog, APKs and icons **over HTTPS only**, and only from allowed
+  hosts (`github.com`, `github.io`, `githubusercontent.com`, your own source hosts).
+  The address actually reached **after redirects** is re-checked, so redirects cannot
+  bypass the allow-list.
+- **End-to-end encrypted web pairing (since v1.5.0):** the TV shows `SLOT-KEY`; only
+  the slot reaches the pairing service, while the key part travels solely through the
+  user's eyes into the browser. There, link and password are encrypted with AES-256-GCM
+  (PBKDF2-HMAC-SHA256, 200,000 rounds) — **the relay only ever sees ciphertext**.
+  Unencrypted submissions are rejected.
+- **Credentials for custom sources** are stored in `EncryptedSharedPreferences`
+  (Android keystore), never in plaintext.
+- **Supply chain:** the auto-sync job can write the catalog and the bootstrap APK, so
+  GitHub Actions are pinned to **commit SHAs** and the Python dependencies are nailed
+  down in `tools/requirements.txt` with `--require-hashes`; the repository's default
+  workflow token is `read`.
+- **Web pages:** catalog rendering is **XSS-safe** (`textContent` instead of
+  `innerHTML`), `https:`-only links, a strict **CSP** with no inline script — including
+  the pairing page where passwords are typed — and `referrer: no-referrer`.
 - **App manifest:** `allowBackup=false`, FileProvider limited to `cache/downloads` and
-  not exported, no cleartext (Android default since targetSdk 28).
-- **Error output:** internal details only to the log, generic messages to the user.
+  not exported, no cleartext, and **no** `QUERY_ALL_PACKAGES` (a narrow `<queries>` list
+  instead, which also avoids Play Protect warnings).
 
 **Knowingly accepted / roadmap:**
 
-- 🔜 **Signature pinning** of installed APKs against known SelfCoder signers (strongest
-  protection against repo compromise) — planned.
-- 🔜 **SHA-256 per catalog entry** for post-download integrity checks.
-- ℹ️ `QUERY_ALL_PACKAGES` is legitimate for a store (app isn't distributed via Play).
+- ℹ️ The pairing service runs on Cloudflare — but with end-to-end encryption it is just
+  a mailbox with no visibility. Its rate limit is per IP and not atomic.
 - ℹ️ Keystore/passwords stay **local only** and are in `.gitignore` — never in the repo.
+- ℹ️ GitHub Pages cannot set HTTP headers, so `frame-ancestors` is unavailable by design
+  (a meta CSP cannot express it).
 
 Found a security issue? Please report it privately / directly to SelfCoder, not in
 public.
