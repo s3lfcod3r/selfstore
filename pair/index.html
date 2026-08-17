@@ -28,8 +28,14 @@
       width: 100%; max-width: 460px; background: var(--bg1);
       border: 1px solid var(--border); border-radius: 18px; padding: 26px;
     }
+    .topbar { display: flex; align-items: center; gap: 12px; justify-content: space-between; }
     h1 { font-size: 22px; margin: 0 0 4px; }
     h1 .a { color: var(--accent); }
+    select {
+      background: var(--bg); color: var(--text2); border: 1px solid var(--border);
+      border-radius: 999px; padding: 6px 10px; font-size: 12px; cursor: pointer;
+    }
+    select:focus { outline: none; border-color: var(--accent); }
     p.lead { color: var(--text2); font-size: 14px; line-height: 1.5; margin: 0 0 20px; }
     label { display: block; font-size: 12px; color: var(--text3); margin: 14px 0 5px; }
     input {
@@ -52,33 +58,37 @@
 </head>
 <body>
   <div class="card">
-    <h1>Self<span class="a">Store</span> · Quelle koppeln</h1>
+    <div class="topbar">
+      <h1>Self<span class="a">Store</span> · <span data-i18n="h1_suffix">Quelle koppeln</span></h1>
+      <select id="lang-select" aria-label="Sprache / Language">
+        <option value="de">Deutsch</option>
+        <option value="en">English</option>
+      </select>
+    </div>
     <p class="lead">
-      Gib den <b>Code</b> ein, der auf deinem Fernseher angezeigt wird, dazu den
-      <b>Link</b> und das <b>Passwort</b>, die du bekommen hast. SelfStore auf dem TV
-      übernimmt die Quelle dann automatisch – kein Tippen auf der Fernbedienung.
+      <span data-i18n="lead_1">Gib den </span><b data-i18n="lead_code">Code</b><span data-i18n="lead_2"> ein, der auf deinem Fernseher angezeigt wird, dazu den </span><b data-i18n="lead_link">Link</b><span data-i18n="lead_3"> und das </span><b data-i18n="lead_pw">Passwort</b><span data-i18n="lead_4">, die du bekommen hast. SelfStore auf dem TV übernimmt die Quelle dann automatisch – kein Tippen auf der Fernbedienung.</span>
     </p>
 
-    <label for="code">Code vom Fernseher</label>
+    <label for="code" data-i18n="label_code">Code vom Fernseher</label>
     <input id="code" maxlength="24" autocomplete="off" placeholder="z. B. 7K2Q9XAB-4H7PNM" />
-    <div class="hint">Kompletter Code inklusive Bindestrich. Der Teil hinter dem Bindestrich ist der Schlüssel und wird nicht an den Server geschickt.</div>
+    <div class="hint" data-i18n="hint_code">Kompletter Code inklusive Bindestrich. Der Teil hinter dem Bindestrich ist der Schlüssel und wird nicht an den Server geschickt.</div>
 
-    <label for="link">Link</label>
+    <label for="link" data-i18n="label_link">Link</label>
     <input id="link" autocomplete="off" placeholder="https://…/s/…  oder  …/catalog.json" />
 
-    <label for="user">Benutzername</label>
-    <input id="user" autocomplete="off" placeholder="bei Freigabe-Link (…/s/…) automatisch" />
-    <div class="hint">Nur nötig bei direkter WebDAV-Adresse. Bei einem NextCloud-Freigabe-Link leer lassen – der Benutzername wird automatisch erkannt.</div>
+    <label for="user" data-i18n="label_user">Benutzername</label>
+    <input id="user" autocomplete="off" data-i18n-ph="ph_user" placeholder="bei Freigabe-Link (…/s/…) automatisch" />
+    <div class="hint" data-i18n="hint_user">Nur nötig bei direkter WebDAV-Adresse. Bei einem NextCloud-Freigabe-Link leer lassen – der Benutzername wird automatisch erkannt.</div>
 
-    <label for="pw">Passwort</label>
-    <input id="pw" type="password" autocomplete="off" placeholder="Link-/App-Passwort" />
+    <label for="pw" data-i18n="label_pw">Passwort</label>
+    <input id="pw" type="password" autocomplete="off" data-i18n-ph="ph_pw" placeholder="Link-/App-Passwort" />
 
-    <label for="name">Name (optional)</label>
-    <input id="name" autocomplete="off" placeholder="z. B. Meine NextCloud" />
+    <label for="name" data-i18n="label_name">Name (optional)</label>
+    <input id="name" autocomplete="off" data-i18n-ph="ph_name" placeholder="z. B. Meine NextCloud" />
 
-    <button id="send">An den Fernseher senden</button>
+    <button id="send" data-i18n="send">An den Fernseher senden</button>
     <div id="msg" class="msg"></div>
-    <div class="hint">Link und Passwort werden hier im Browser verschlüsselt. Der Pairing-Dienst speichert nur den Geheimtext, höchstens 3 Minuten, und löscht ihn beim Abruf.</div>
+    <div class="hint" data-i18n="foot">Link und Passwort werden hier im Browser verschlüsselt. Der Pairing-Dienst speichert nur den Geheimtext, höchstens 3 Minuten, und löscht ihn beim Abruf.</div>
   </div>
 
   <script src="pair.js" defer></script>
