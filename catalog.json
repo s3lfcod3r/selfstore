@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -13,11 +13,11 @@
       "icon": "icons/self-store.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "1.4.6",
-      "versionCode": 31,
+      "versionName": "1.5.0",
+      "versionCode": 32,
       "changelog": "Per Web hinzufügen zeigt jetzt einen Verbindungsstatus: grün = Pairing-Server erreichbar, rot = die Box erreicht den Server nicht (Internet/DNS) samt Hinweis, die Quelle direkt einzutippen. Plus der TV-Tastatur-Fix aus 1.4.4.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.4.6/SelfStore-v1.4.6.apk",
-      "sha256": "f88637fccfb704fb9a56e64ca57a96ab68e029ff74810a67c6aac03ccf18f92d",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.5.0/SelfStore-v1.5.0.apk",
+      "sha256": "bfb7ba72604827a6c7e95dec796d349113444617765aa473cf8957ca855e2083",
       "i18n": {
         "en": {
           "tagline": "The Self app store",
