@@ -1,0 +1,25 @@
+# Gepinnte CI-Abhaengigkeiten fuer tools/sync_catalog.py.
+#
+# Warum: der Sync-Job hat Schreibrechte und veroeffentlicht catalog.json
+# und selfstore.apk. Eine kompromittierte oder getypesquattete Abhaengigkeit
+# koennte darueber die APK austauschen, die alle Nutzer installieren.
+# --require-hashes im Workflow laesst nur exakt diese Artefakte zu.
+#
+# Aktualisieren: node tools/gen_requirements.js > tools/requirements.txt
+# (Zielumgebung: ubuntu-latest, CPython 3.12, x86_64).
+
+pyaxmlparser==0.3.31 \
+    --hash=sha256:3c6609a48eb67e8a25d158243671c4f8b713d1fb10d9c5c45b1e62ddd8d8494f \
+    --hash=sha256:fecb858ff1fb456466f8dcdcd814207b4c15edb95f67cfe0a38c7d7cd4a28d4d
+
+lxml==6.1.1 \
+    --hash=sha256:54a7f95e4de5fb94e2f9f4b9055c6ba33bf3d628fd77a1d647c5923caa2cdcdc \
+    --hash=sha256:ebe6af670449830d6d9b752c256a983291c766a1365ba5d5460048f9e33a7818 \
+    --hash=sha256:ba96ae44888e0185281e937633a743ea90d5a196c6000f82565ebb0580012d40
+
+click==8.4.2 \
+    --hash=sha256:e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76 \
+    --hash=sha256:9a6cea6e60b17ebe0a44c5cc636d94f09bd66142c1cd7d8b4cd731c4917a15f6
+
+asn1crypto==1.5.1 \
+    --hash=sha256:13ae38502be632115abf8a24cbe5f4da52e3b5231990aff31123c805306ccb9c

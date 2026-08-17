@@ -54,7 +54,23 @@ Statt `…workers.dev` kannst du dem Worker später eine eigene Route geben (z. 
 zwei Klicks. Für den Start reicht die `workers.dev`-Adresse völlig.
 
 ## Sicherheit
-- Daten (Link + Passwort) liegen **max. 10 Minuten** im Briefkasten und werden bei
-  der Abholung durch den Fernseher **sofort gelöscht** (einmalig).
-- Übertragung nur über **HTTPS**.
+- **Ende-zu-Ende verschlüsselt (seit SelfStore 1.5.0).** Der Fernseher zeigt einen
+  Code in zwei Teilen: `SLOT-SCHLUESSEL` (z. B. `7K2Q9XAB-4H7PNM`). Nur der **Slot**
+  geht an den Worker; der **Schlüsselteil** gelangt ausschließlich über die Augen des
+  Nutzers in den Browser. Im Briefkasten liegt daher nur Geheimtext (AES-256-GCM,
+  Schlüssel via PBKDF2-HMAC-SHA256, 200 000 Runden) — **Worker und Cloudflare können
+  Link und Passwort nicht lesen**.
+- Der Worker nimmt **keine unverschlüsselten Beiträge mehr an** (`encryption_required`).
+- Daten liegen **max. 3 Minuten** (TTL 180 s) im Briefkasten und werden bei der
+  Abholung durch den Fernseher **sofort gelöscht** (einmalig).
+- Übertragung nur über **HTTPS**; die Pairing-Seite läuft mit strikter CSP und ohne
+  Inline-Skript.
 - Zusätzlich zeigt SelfStore die empfangene Quelle vor dem Anlegen **zur Bestätigung**.
+
+> ⚠️ **Kompatibilität:** Web-Pairing funktioniert nur mit SelfStore **ab v1.5.0**.
+> Ältere Installationen kennen das verschlüsselte Format nicht — dort erst SelfStore
+> aktualisieren oder die Quelle direkt am Fernseher eintippen.
+>
+> ⚠️ **Nach jeder Änderung an `pair/worker.js`:** Der Worker wird **nicht** per
+> Git-Push aktualisiert. dash.cloudflare.com → Workers & Pages → `selfstore-pair`
+> → **Edit code** → Inhalt von `pair/worker.js` einfügen → **Deploy**.

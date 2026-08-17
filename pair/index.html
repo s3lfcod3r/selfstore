@@ -3,6 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Auf dieser Seite werden Passwoerter eingegeben: kein Inline-Skript
+       (Logik in pair.js), nur eigene Quellen, Verbindungen ausschliesslich zum
+       eigenen Katalog und zum Pairing-Dienst. Aendert sich der Worker-Host,
+       muss er hier in connect-src mitgeaendert werden. -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://selfstore-pair.s3lfcod3r.workers.dev; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
+  <meta name="referrer" content="no-referrer" />
   <meta name="robots" content="noindex" />
   <title>SelfStore – Quelle koppeln</title>
   <style>
@@ -53,7 +60,8 @@
     </p>
 
     <label for="code">Code vom Fernseher</label>
-    <input id="code" maxlength="10" autocomplete="off" placeholder="z. B. 7K2Q9XAB" />
+    <input id="code" maxlength="24" autocomplete="off" placeholder="z. B. 7K2Q9XAB-4H7PNM" />
+    <div class="hint">Kompletter Code inklusive Bindestrich. Der Teil hinter dem Bindestrich ist der Schlüssel und wird nicht an den Server geschickt.</div>
 
     <label for="link">Link</label>
     <input id="link" autocomplete="off" placeholder="https://…/s/…  oder  …/catalog.json" />
@@ -70,67 +78,9 @@
 
     <button id="send">An den Fernseher senden</button>
     <div id="msg" class="msg"></div>
-    <div class="hint">Die Daten werden nur kurz übertragen und nach dem Abruf sofort gelöscht.</div>
+    <div class="hint">Link und Passwort werden hier im Browser verschlüsselt. Der Pairing-Dienst speichert nur den Geheimtext, höchstens 3 Minuten, und löscht ihn beim Abruf.</div>
   </div>
 
-  <script>
-    // Worker-Adresse kommt aus der catalog.json (Feld "pairEndpoint") – eine
-    // einzige Stelle zum Konfigurieren für App UND Webseite.
-    let ENDPOINT = null;
-    fetch("/catalog.json", { cache: "no-store" })
-      .then(r => r.json())
-      .then(j => {
-        const ep = j && j.pairEndpoint;
-        if (typeof ep === "string" && /^https:\/\/.+/.test(ep)) ENDPOINT = ep.replace(/\/+$/, "");
-      })
-      .catch(e => console.error("[SelfStore] catalog.json nicht ladbar:", e));
-
-    // NextCloud-Freigabe-Link erkennen → WebDAV-Adresse + Token ableiten.
-    function parseShare(input) {
-      const m = input.trim().match(/^https:\/\/([^/]+)\/(?:index\.php\/)?s\/([A-Za-z0-9._-]+)\/?$/);
-      if (!m) return null;
-      return { url: "https://" + m[1] + "/public.php/webdav/catalog.json", user: m[2] };
-    }
-
-    const $ = id => document.getElementById(id);
-    function show(kind, text) { const m = $("msg"); m.className = "msg " + kind; m.textContent = text; }
-
-    $("send").addEventListener("click", async () => {
-      const code = $("code").value.trim().toUpperCase();
-      const rawLink = $("link").value.trim();
-      const manualUser = $("user").value.trim();
-      const pw = $("pw").value;
-      const name = $("name").value.trim();
-
-      if (!/^[A-Z0-9]{6,10}$/.test(code)) return show("err", "Bitte den Code vom Fernseher eingeben.");
-      if (!rawLink.startsWith("https://")) return show("err", "Der Link muss mit https:// beginnen.");
-      if (!pw) return show("err", "Bitte das Passwort eingeben.");
-      if (!ENDPOINT) return show("err", "Dienst noch nicht konfiguriert. Bitte später erneut versuchen.");
-
-      const share = parseShare(rawLink);
-      const url = share ? share.url : rawLink;
-      // Bei Freigabe-Link gewinnt der Token; sonst der manuell eingegebene Benutzername.
-      const user = share ? share.user : manualUser;
-      if (!user) return show("err", "Bitte einen Benutzernamen eingeben (bei einem Freigabe-Link …/s/… wird er automatisch erkannt).");
-
-      $("send").disabled = true;
-      try {
-        const res = await fetch(ENDPOINT + "/pair", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ code, url, user, pw, label: name }),
-        });
-        if (res.ok) {
-          show("ok", "Gesendet! Auf dem Fernseher erscheint die Quelle gleich automatisch.");
-        } else {
-          show("err", "Senden fehlgeschlagen. Code korrekt? Sonst neu starten.");
-          $("send").disabled = false;
-        }
-      } catch (e) {
-        show("err", "Keine Verbindung zum Dienst. Internet prüfen und erneut versuchen.");
-        $("send").disabled = false;
-      }
-    });
-  </script>
+  <script src="pair.js" defer></script>
 </body>
 </html>
