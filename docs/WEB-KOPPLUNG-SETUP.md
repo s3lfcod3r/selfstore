@@ -1,5 +1,7 @@
 # Web-Kopplung einrichten (Cloudflare Worker)
 
+> 🇬🇧 **English version:** [WEB-KOPPLUNG-SETUP.en.md](WEB-KOPPLUNG-SETUP.en.md)
+
 Damit man eine Quelle **am PC/Handy im Browser** eingeben kann und SelfStore sie
 auf dem **Fernseher automatisch** übernimmt, braucht es einen winzigen, kostenlosen
 „Briefkasten"-Dienst. Den richtest du **einmalig** bei Cloudflare ein – alles im
@@ -42,16 +44,17 @@ Es sollte erscheinen:
 
 Wenn ja → der Briefkasten läuft. ✅
 
-## 6. Adresse eintragen lassen
-Schick mir die **Worker-Adresse** (die `…workers.dev`). Ich trage sie als
-`pairEndpoint` in die `catalog.json` ein – damit kennen **App und Webseite** den
-Dienst automatisch (eine einzige Stelle). Danach baue ich die
-„Per-Web-hinzufügen"-Funktion in SelfStore fertig.
+## 6. Adresse eintragen
+Die **Worker-Adresse** (die `…workers.dev`) als `pairEndpoint` in die `catalog.json`
+eintragen — **App und Webseite** lesen sie von dort (eine einzige Stelle zum
+Konfigurieren).
+
+> Ändert sich der Worker-Host, muss er auch in der `connect-src`-Direktive der
+> Content-Security-Policy in `pair/index.html` mitgeändert werden.
 
 ## Optional: schöne Adresse
 Statt `…workers.dev` kannst du dem Worker später eine eigene Route geben (z. B.
-`pair.selfcoder.de`) – falls du das willst, sag Bescheid, dann zeige ich dir die
-zwei Klicks. Für den Start reicht die `workers.dev`-Adresse völlig.
+`pair.selfcoder.de`). Für den Start reicht die `workers.dev`-Adresse völlig.
 
 ## Sicherheit
 - **Ende-zu-Ende verschlüsselt (seit SelfStore 1.5.0).** Der Fernseher zeigt einen

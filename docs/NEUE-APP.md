@@ -1,5 +1,7 @@
 # Neue App in den SelfStore aufnehmen
 
+> 🇬🇧 **English version:** [NEUE-APP.en.md](NEUE-APP.en.md)
+
 > Für **Updates bestehender Apps** ist nichts zu tun: APK bauen + GitHub-Release
 > hochladen, der Auto-Sync zieht Version/APK/SHA-256 automatisch (siehe
 > `tools/sync_catalog.py`). Diese Anleitung gilt nur für eine **komplett neue App**.
