@@ -29,8 +29,6 @@ SelfStore is a **lean, self-hosted app store** exclusively for the **Self projec
 catalog from GitHub Pages and installs/updates the apps directly – ideal for **TV
 boxes** that have no Google Play, or where it isn't wanted.
 
-> **SelfStream Player** is intentionally **not** included.
-
 This repository provides the **server side** (catalog + bootstrap landing page) via
 GitHub Pages. The Android app's source code is maintained separately and is not part
 of this repo.
@@ -253,8 +251,6 @@ SelfStore ist ein **schlanker, selbst gehosteter App-Store** ausschließlich fü
 Android-App liest einen festen Katalog von GitHub Pages und installiert bzw.
 aktualisiert die Apps direkt – ideal für **TV-Boxen**, auf denen es kein Google Play
 gibt oder gar nicht erwünscht ist.
-
-> **SelfStream Player** ist bewusst **nicht** enthalten.
 
 Dieses Repository liefert die **Server-Seite** (Katalog + Bootstrap-Landingpage) über
 GitHub Pages. Der Quellcode der Android-App wird separat gepflegt und ist nicht Teil

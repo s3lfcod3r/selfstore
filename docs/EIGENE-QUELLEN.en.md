@@ -33,7 +33,7 @@ Create a folder in NextCloud, e.g. `Apps/SelfStore/`, and put in it:
 ```
 Apps/SelfStore/
 ├── catalog.json
-├── example-0.1.6.apk
+├── example-1.0.0.apk
 ├── example.png
 └── … (more APKs + icons)
 ```
@@ -49,7 +49,7 @@ https://YOUR-NEXTCLOUD/remote.php/dav/files/USER/Apps/SelfStore/catalog.json
 That exact address goes into SelfStore as the **"Address of catalog.json"**, together
 with user + app password — done.
 
-> Relative paths inside `catalog.json` (e.g. `example-0.1.6.apk`) are resolved relative
+> Relative paths inside `catalog.json` (e.g. `example-1.0.0.apk`) are resolved relative
 > to that folder automatically. Just put the APK and icon in the same folder.
 
 ## Structure of catalog.json
@@ -67,10 +67,10 @@ with user + app password — done.
       "icon": "example.png",
       "category": "Media",
       "author": "SelfCoder",
-      "versionName": "0.1.6",
-      "versionCode": 16,
-      "changelog": "Multi-day EPG",
-      "apk": "example-0.1.6.apk"
+      "versionName": "1.0.0",
+      "versionCode": 10,
+      "changelog": "Minor improvements",
+      "apk": "example-1.0.0.apk"
     }
   ]
 }
@@ -82,7 +82,7 @@ with user + app password — done.
 |-------|----------|---------|
 | `id` | yes | package name of the app (e.g. `com.example.player`) |
 | `name` | yes | display name |
-| `versionName` | yes | visible version, e.g. `0.1.6` |
+| `versionName` | yes | visible version, e.g. `1.0.0` |
 | `versionCode` | yes | **number** that **increases** with every update |
 | `apk` | yes | APK file name (relative) or full HTTPS URL |
 | `icon` | no | logo (relative or URL) |
@@ -92,8 +92,8 @@ For separate 32/64-bit APKs use an `abis` object instead of `apk`:
 
 ```json
 "abis": {
-  "armeabi-v7a": "example-0.1.6-armv7.apk",
-  "arm64-v8a":   "example-0.1.6-armv8.apk"
+  "armeabi-v7a": "example-1.0.0-armv7.apk",
+  "arm64-v8a":   "example-1.0.0-armv8.apk"
 }
 ```
 

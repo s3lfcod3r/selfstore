@@ -35,8 +35,8 @@ Lege in NextCloud einen Ordner an, z. B. `Apps/SelfStore/`, und packe hinein:
 ```
 Apps/SelfStore/
 ├── catalog.json
-├── selfstream-0.1.6.apk
-├── selfstream.png
+├── beispiel-1.0.0.apk
+├── beispiel.png
 └── … (weitere APKs + Icons)
 ```
 
@@ -51,7 +51,7 @@ https://DEINE-NEXTCLOUD/remote.php/dav/files/BENUTZER/Apps/SelfStore/catalog.jso
 Genau diese Adresse trägst du in SelfStore als **„Adresse der catalog.json"**
 ein. Benutzer + App-Passwort dazu — fertig.
 
-> Relative Pfade in der `catalog.json` (z. B. `selfstream-0.1.6.apk`) werden
+> Relative Pfade in der `catalog.json` (z. B. `beispiel-1.0.0.apk`) werden
 > automatisch relativ zu diesem Ordner aufgelöst. APK + Icon einfach in
 > denselben Ordner legen.
 
@@ -63,17 +63,17 @@ ein. Benutzer + App-Passwort dazu — fertig.
   "updated": "2026-06-27",
   "apps": [
     {
-      "id": "com.selfstream.player",
-      "name": "SelfStream Player",
-      "tagline": "Privater IPTV-Player",
+      "id": "com.beispiel.player",
+      "name": "Beispiel-Player",
+      "tagline": "Privater Medienplayer",
       "description": "Mein persönlicher Player, nicht öffentlich.",
-      "icon": "selfstream.png",
+      "icon": "beispiel.png",
       "category": "Medien",
       "author": "SelfCoder",
-      "versionName": "0.1.6",
-      "versionCode": 16,
-      "changelog": "EPG über mehrere Tage",
-      "apk": "selfstream-0.1.6.apk"
+      "versionName": "1.0.0",
+      "versionCode": 10,
+      "changelog": "Kleinere Verbesserungen",
+      "apk": "beispiel-1.0.0.apk"
     }
   ]
 }
@@ -83,9 +83,9 @@ ein. Benutzer + App-Passwort dazu — fertig.
 
 | Feld | Pflicht | Bedeutung |
 |------|---------|-----------|
-| `id` | ja | Paketname der App (z. B. `com.selfstream.player`) |
+| `id` | ja | Paketname der App (z. B. `com.beispiel.player`) |
 | `name` | ja | Anzeigename |
-| `versionName` | ja | Sichtbare Version, z. B. `0.1.6` |
+| `versionName` | ja | Sichtbare Version, z. B. `1.0.0` |
 | `versionCode` | ja | **Zahl**, die bei jedem Update **größer** wird |
 | `apk` | ja | Dateiname der APK (relativ) oder volle HTTPS-URL |
 | `icon` | nein | Logo (relativ oder URL) |
@@ -95,8 +95,8 @@ Für getrennte 32-/64-Bit-APKs statt `apk` ein `abis`-Objekt nutzen:
 
 ```json
 "abis": {
-  "armeabi-v7a": "selfstream-0.1.6-armv7.apk",
-  "arm64-v8a":   "selfstream-0.1.6-armv8.apk"
+  "armeabi-v7a": "beispiel-1.0.0-armv7.apk",
+  "arm64-v8a":   "beispiel-1.0.0-armv8.apk"
 }
 ```
 
