@@ -4,7 +4,7 @@
 > hochladen, der Auto-Sync zieht Version/APK/SHA-256 automatisch (siehe
 > `tools/sync_catalog.py`). Diese Anleitung gilt nur für eine **komplett neue App**.
 
-Eine neue App braucht einmalig vier Schritte. Danach läuft sie vollautomatisch mit.
+Eine neue App braucht einmalig vier Schritte (Schritt 3 hat seit v1.5.0 einen Unterpunkt mehr: Signatur-Pin). Danach läuft sie vollautomatisch mit.
 
 ## 1. Katalog-Eintrag anlegen
 
@@ -57,10 +57,21 @@ aus — daher bewusst die enge `<queries>`-Liste.
 
 1. In `<selfstore-app>/app/src/main/AndroidManifest.xml` unter `<queries>` ergänzen:
    `<package android:name="com.beispiel.app" />`
-2. versionCode/versionName der SelfStore-App hochzählen und Release bauen (Toolchain:
+2. **Signatur-Fingerabdruck in `SignerPins.kt` eintragen** (seit v1.5.0). Ohne Eintrag
+   installiert der Store die App zwar, aber ungepinnt — sie ist dann nur durch Paketname
+   und SHA-256 aus dem Katalog geschützt. Fingerabdruck aus dem Release-APK holen:
+   ```bash
+   apksigner verify --print-certs <App>-v1.0.0.apk | grep "SHA-256 digest"
+   ```
+   Den Wert (ohne Leerzeichen, klein geschrieben) in
+   `<selfstore-app>/app/src/main/java/com/selfstore/app/SignerPins.kt` unter `PINS`
+   ergänzen: `"com.beispiel.app" to "<fingerabdruck>",`
+   > Der Wert gehört **in die App**, nicht in `catalog.json` — sonst könnte ein
+   > manipulierter Katalog den erwarteten Fingerabdruck einfach mitändern.
+3. versionCode/versionName der SelfStore-App hochzählen und Release bauen (Toolchain:
    siehe interne Notiz; Build `gradle --no-daemon :app:assembleRelease`, Release-Key
    `selfstore-release.jks`).
-3. Neues SelfStore-Release hochladen → der Katalog zieht die neue SelfStore-Version selbst.
+4. Neues SelfStore-Release hochladen → der Katalog zieht die neue SelfStore-Version selbst.
 
 ## 4. Instant-Trigger ins neue App-Repo
 
