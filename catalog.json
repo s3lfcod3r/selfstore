@@ -463,11 +463,11 @@
       "platforms": [
         "phone"
       ],
-      "versionName": "0.1.3",
-      "versionCode": 4,
+      "versionName": "0.1.4",
+      "versionCode": 5,
       "changelog": "Erste Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmessenger/releases/download/v0.1.3/SelfMessenger-0.1.3.apk",
-      "sha256": "c6da7c1854badd6a9003ead2bbf233ef675a7b0e0c138fcd46712177e31ee798",
+      "apk": "https://github.com/s3lfcod3r/selfmessenger/releases/download/v0.1.4/SelfMessenger-0.1.4.apk",
+      "sha256": "8b7193eac5131d1f3e94c88acbd750366b1c37deeb3780e17212a6eb8f5b5352",
       "i18n": {
         "en": {
           "tagline": "Your serverless messenger",
