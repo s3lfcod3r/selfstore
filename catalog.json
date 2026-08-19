@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-08-18",
+  "updated": "2026-08-19",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -463,11 +463,11 @@
       "platforms": [
         "phone"
       ],
-      "versionName": "0.1.12",
-      "versionCode": 13,
+      "versionName": "0.1.13",
+      "versionCode": 14,
       "changelog": "Erste Version.",
-      "apk": "https://github.com/s3lfcod3r/selfmessenger/releases/download/v0.1.12/SelfMessenger-0.1.12.apk",
-      "sha256": "a0ca9f18d37f591c8952c157a598196965842773c203941f0bb0b32a18200cd2",
+      "apk": "https://github.com/s3lfcod3r/selfmessenger/releases/download/v0.1.13/SelfMessenger-0.1.13.apk",
+      "sha256": "d36c57eb0f64e08a10197f9b42c4dfce1ec4bcc2ff0c19f39d60b8c7e88e29e1",
       "i18n": {
         "en": {
           "tagline": "Your serverless messenger",
