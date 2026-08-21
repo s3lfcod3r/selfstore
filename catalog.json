@@ -541,10 +541,10 @@
       "category": "Sicherheit",
       "categoryEn": "Security",
       "author": "SelfCoder",
-      "versionName": "0.6.0",
-      "versionCode": 6,
-      "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.6.0/SelfGuard-0.6.0.apk",
-      "sha256": "a69563b34294e73328c717caf3e93303998aa02c077b5ed1d4ad31a98f669ac2"
+      "versionName": "0.7.0",
+      "versionCode": 7,
+      "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.7.0/SelfGuard-0.7.0.apk",
+      "sha256": "210cc2e168cfea570bcf2eb3a7495d2d8f339d6729093b6dbd89d917a123bec3"
     }
   ]
 }
