@@ -525,6 +525,22 @@
           "description": "Peer-to-peer messenger με κρυπτογράφηση end-to-end. Μηνύματα, φωτογραφίες, ηχητικά μηνύματα και κλήσεις πάνε απευθείας από συσκευή σε συσκευή – κανένας διακομιστής δεν διαβάζει. Προσθέτεις φίλους μόνο από κοντά μέσω NFC ή QR. Κλείδωμα εφαρμογής (PIN/δαχτυλικό/πρόσωπο), κρυπτογράφηση στη συσκευή και προαιρετικό VPN."
         }
       }
+    },
+    {
+      "id": "com.selfguard.app",
+      "source": "s3lfcod3r/selfguard",
+      "name": "SelfGuard",
+      "platforms": [
+        "phone"
+      ],
+      "tagline": "Geräte-Check auf Spyware, Werbeblocker inklusive",
+      "taglineEn": "Device check for spyware, with ad blocker",
+      "description": "Prüft alle installierten Apps auf bekannte Schadsoftware und Überwachungsprogramme: Prüfsummen der Programmdateien, Signaturzertifikate und Berechtigungsprofile. Dazu ein Systemcheck auf offene Türen — nachträglich eingerichtete Wurzelzertifikate, aktive Bedienungshilfen, Geräteverwalter. Der Scan läuft vollständig offline. Eingebaut ist außerdem ein Werbe- und Trackerfilter, der Namensanfragen lokal beantwortet, ohne Verkehr an Dritte weiterzuleiten. Auffällige Apps lassen sich direkt entfernen oder deaktivieren. Staatliche Spionagesoftware erkennt keine App auf dieser Ebene — das steht auch so in der App.",
+      "descriptionEn": "Checks every installed app against known malware and monitoring software: file checksums, signing certificates and permission profiles. Adds a device check for open doors — user-installed root certificates, active accessibility services, device administrators. The scan runs entirely offline. Also includes an ad and tracker filter that answers name lookups locally without forwarding traffic to third parties. Suspicious apps can be removed or disabled straight away. No app at this level can detect state-grade spyware — and the app says so.",
+      "icon": "icons/selfguard.png",
+      "category": "Sicherheit",
+      "categoryEn": "Security",
+      "author": "SelfCoder"
     }
   ]
 }
