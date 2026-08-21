@@ -13,11 +13,11 @@
       "icon": "icons/self-store.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "1.5.1",
-      "versionCode": 33,
+      "versionName": "1.5.2",
+      "versionCode": 34,
       "changelog": "Per Web hinzufügen zeigt jetzt einen Verbindungsstatus: grün = Pairing-Server erreichbar, rot = die Box erreicht den Server nicht (Internet/DNS) samt Hinweis, die Quelle direkt einzutippen. Plus der TV-Tastatur-Fix aus 1.4.4.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.5.1/SelfStore-v1.5.1.apk",
-      "sha256": "2dd42f6dad2de4f4244ffb137af39f456583074fd6534e123bce9fa7a69723da",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.5.2/SelfStore-1.5.2.apk",
+      "sha256": "4f1de088b5e3913fab1769c7573cd99d2575dd998bfd4b0737b1b2b081fe1380",
       "i18n": {
         "en": {
           "tagline": "The Self app store",
