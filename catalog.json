@@ -1,4 +1,4 @@
-{
+﻿{
   "store": "SelfStore",
   "updated": "2026-08-21",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
@@ -9,25 +9,25 @@
       "source": "s3lfcod3r/selfstore",
       "name": "SelfStore",
       "tagline": "Der Self App-Store",
-      "description": "Zentraler Store für alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box – ohne Google Play.",
+      "description": "Zentraler Store fÃ¼r alle Self-Projekte. Installiert und aktualisiert deine Self-Apps direkt auf der TV-Box â€“ ohne Google Play.",
       "icon": "icons/self-store.png",
       "category": "System",
       "author": "SelfCoder",
       "versionName": "1.5.2",
       "versionCode": 34,
-      "changelog": "Per Web hinzufügen zeigt jetzt einen Verbindungsstatus: grün = Pairing-Server erreichbar, rot = die Box erreicht den Server nicht (Internet/DNS) samt Hinweis, die Quelle direkt einzutippen. Plus der TV-Tastatur-Fix aus 1.4.4.",
+      "changelog": "Per Web hinzufÃ¼gen zeigt jetzt einen Verbindungsstatus: grÃ¼n = Pairing-Server erreichbar, rot = die Box erreicht den Server nicht (Internet/DNS) samt Hinweis, die Quelle direkt einzutippen. Plus der TV-Tastatur-Fix aus 1.4.4.",
       "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.5.2/SelfStore-1.5.2.apk",
       "sha256": "4f1de088b5e3913fab1769c7573cd99d2575dd998bfd4b0737b1b2b081fe1380",
       "i18n": {
         "en": {
           "tagline": "The Self app store",
-          "description": "Central store for all Self projects. Installs and updates your Self apps right on the TV box – without Google Play.",
+          "description": "Central store for all Self projects. Installs and updates your Self apps right on the TV box â€“ without Google Play.",
           "category": "System"
         },
         "fr": {
           "tagline": "Le magasin d'applis Self",
-          "description": "Magasin central pour tous les projets Self. Installe et met à jour vos applis Self directement sur la box TV – sans Google Play.",
-          "category": "Système"
+          "description": "Magasin central pour tous les projets Self. Installe et met Ã  jour vos applis Self directement sur la box TV â€“ sans Google Play.",
+          "category": "SystÃ¨me"
         },
         "es": {
           "tagline": "La tienda de apps Self",
@@ -36,43 +36,43 @@
         },
         "it": {
           "tagline": "Lo store di app Self",
-          "description": "Store centrale per tutti i progetti Self. Installa e aggiorna le tue app Self direttamente sul TV box – senza Google Play.",
+          "description": "Store centrale per tutti i progetti Self. Installa e aggiorna le tue app Self direttamente sul TV box â€“ senza Google Play.",
           "category": "Sistema"
         },
         "nl": {
           "tagline": "De Self-appstore",
-          "description": "Centrale store voor alle Self-projecten. Installeert en werkt je Self-apps rechtstreeks op de TV-box bij – zonder Google Play.",
+          "description": "Centrale store voor alle Self-projecten. Installeert en werkt je Self-apps rechtstreeks op de TV-box bij â€“ zonder Google Play.",
           "category": "Systeem"
         },
         "pl": {
           "tagline": "Sklep z aplikacjami Self",
-          "description": "Centralny sklep dla wszystkich projektów Self. Instaluje i aktualizuje Twoje aplikacje Self bezpośrednio na urządzeniu TV – bez Google Play.",
+          "description": "Centralny sklep dla wszystkich projektÃ³w Self. Instaluje i aktualizuje Twoje aplikacje Self bezpoÅ›rednio na urzÄ…dzeniu TV â€“ bez Google Play.",
           "category": "System"
         },
         "pt": {
-          "tagline": "A loja de aplicações Self",
-          "description": "Loja central para todos os projetos Self. Instala e atualiza as suas aplicações Self diretamente na caixa de TV – sem o Google Play.",
+          "tagline": "A loja de aplicaÃ§Ãµes Self",
+          "description": "Loja central para todos os projetos Self. Instala e atualiza as suas aplicaÃ§Ãµes Self diretamente na caixa de TV â€“ sem o Google Play.",
           "category": "Sistema"
         },
         "sv": {
           "tagline": "Self-appbutiken",
-          "description": "Central butik för alla Self-projekt. Installerar och uppdaterar dina Self-appar direkt på TV-boxen – utan Google Play.",
+          "description": "Central butik fÃ¶r alla Self-projekt. Installerar och uppdaterar dina Self-appar direkt pÃ¥ TV-boxen â€“ utan Google Play.",
           "category": "System"
         },
         "da": {
           "tagline": "Self app-butikken",
-          "description": "Central butik til alle Self-projekter. Installerer og opdaterer dine Self-apps direkte på TV-boksen – uden Google Play.",
+          "description": "Central butik til alle Self-projekter. Installerer og opdaterer dine Self-apps direkte pÃ¥ TV-boksen â€“ uden Google Play.",
           "category": "System"
         },
         "cs": {
           "tagline": "Obchod s aplikacemi Self",
-          "description": "Centrální obchod pro všechny projekty Self. Instaluje a aktualizuje vaše aplikace Self přímo v TV boxu – bez Google Play.",
-          "category": "Systém"
+          "description": "CentrÃ¡lnÃ­ obchod pro vÅ¡echny projekty Self. Instaluje a aktualizuje vaÅ¡e aplikace Self pÅ™Ã­mo v TV boxu â€“ bez Google Play.",
+          "category": "SystÃ©m"
         },
         "el": {
-          "tagline": "Το κατάστημα εφαρμογών Self",
-          "description": "Κεντρικό κατάστημα για όλα τα έργα Self. Εγκαθιστά και ενημερώνει τις εφαρμογές Self απευθείας στο TV box – χωρίς Google Play.",
-          "category": "Σύστημα"
+          "tagline": "Î¤Î¿ ÎºÎ±Ï„Î¬ÏƒÏ„Î·Î¼Î± ÎµÏ†Î±ÏÎ¼Î¿Î³ÏŽÎ½ Self",
+          "description": "ÎšÎµÎ½Ï„ÏÎ¹ÎºÏŒ ÎºÎ±Ï„Î¬ÏƒÏ„Î·Î¼Î± Î³Î¹Î± ÏŒÎ»Î± Ï„Î± Î­ÏÎ³Î± Self. Î•Î³ÎºÎ±Î¸Î¹ÏƒÏ„Î¬ ÎºÎ±Î¹ ÎµÎ½Î·Î¼ÎµÏÏŽÎ½ÎµÎ¹ Ï„Î¹Ï‚ ÎµÏ†Î±ÏÎ¼Î¿Î³Î­Ï‚ Self Î±Ï€ÎµÏ…Î¸ÎµÎ¯Î±Ï‚ ÏƒÏ„Î¿ TV box â€“ Ï‡Ï‰ÏÎ¯Ï‚ Google Play.",
+          "category": "Î£ÏÏƒÏ„Î·Î¼Î±"
         }
       }
     },
@@ -86,13 +86,13 @@
       "tagline": "Dein eigener Mail-Client",
       "description": "Multi-User Mail-Client (IMAP/POP3/SMTP) mit Kalender und Kontakten. Verbindet sich mit deinem self-hosted SelfMailer-Server.",
       "icon": "icons/self-mailer.png",
-      "category": "Produktivität",
+      "category": "ProduktivitÃ¤t",
       "author": "SelfCoder",
       "versionName": "1.73.0",
       "versionCode": 81,
       "changelog": "Aktuelle Version.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.73.0/SelfMailer-1.73.0.apk",
-      "sha256": "f1e8aa85197b518071cac9a4541075ce941fc3c47d86cc194d83808f29de4c71",
+      "sha256": "a9dfaeda9d677ddd5195c44d1fd257507290a2e11ae27b9943806e88738dd725",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
@@ -101,8 +101,8 @@
         },
         "fr": {
           "tagline": "Votre propre client mail",
-          "description": "Client mail multi-utilisateur (IMAP/POP3/SMTP) avec calendrier et contacts. Se connecte à votre serveur SelfMailer auto-hébergé.",
-          "category": "Productivité"
+          "description": "Client mail multi-utilisateur (IMAP/POP3/SMTP) avec calendrier et contacts. Se connecte Ã  votre serveur SelfMailer auto-hÃ©bergÃ©.",
+          "category": "ProductivitÃ©"
         },
         "es": {
           "tagline": "Tu propio cliente de correo",
@@ -112,7 +112,7 @@
         "it": {
           "tagline": "Il tuo client di posta personale",
           "description": "Client di posta multiutente (IMAP/POP3/SMTP) con calendario e contatti. Si collega al tuo server SelfMailer self-hosted.",
-          "category": "Produttività"
+          "category": "ProduttivitÃ "
         },
         "nl": {
           "tagline": "Je eigen mailclient",
@@ -120,18 +120,18 @@
           "category": "Productiviteit"
         },
         "pl": {
-          "tagline": "Twój własny klient poczty",
-          "description": "Wieloużytkownikowy klient poczty (IMAP/POP3/SMTP) z kalendarzem i kontaktami. Łączy się z Twoim własnym serwerem SelfMailer.",
-          "category": "Produktywność"
+          "tagline": "TwÃ³j wÅ‚asny klient poczty",
+          "description": "WielouÅ¼ytkownikowy klient poczty (IMAP/POP3/SMTP) z kalendarzem i kontaktami. ÅÄ…czy siÄ™ z Twoim wÅ‚asnym serwerem SelfMailer.",
+          "category": "ProduktywnoÅ›Ä‡"
         },
         "pt": {
-          "tagline": "O seu próprio cliente de e-mail",
-          "description": "Cliente de e-mail multiutilizador (IMAP/POP3/SMTP) com calendário e contactos. Liga-se ao seu servidor SelfMailer alojado por si.",
+          "tagline": "O seu prÃ³prio cliente de e-mail",
+          "description": "Cliente de e-mail multiutilizador (IMAP/POP3/SMTP) com calendÃ¡rio e contactos. Liga-se ao seu servidor SelfMailer alojado por si.",
           "category": "Produtividade"
         },
         "sv": {
           "tagline": "Din egen e-postklient",
-          "description": "Fleranvändar-e-postklient (IMAP/POP3/SMTP) med kalender och kontakter. Ansluter till din egen SelfMailer-server.",
+          "description": "FleranvÃ¤ndar-e-postklient (IMAP/POP3/SMTP) med kalender och kontakter. Ansluter till din egen SelfMailer-server.",
           "category": "Produktivitet"
         },
         "da": {
@@ -140,14 +140,14 @@
           "category": "Produktivitet"
         },
         "cs": {
-          "tagline": "Váš vlastní e-mailový klient",
-          "description": "Víceuživatelský e-mailový klient (IMAP/POP3/SMTP) s kalendářem a kontakty. Připojuje se k vašemu vlastnímu serveru SelfMailer.",
+          "tagline": "VÃ¡Å¡ vlastnÃ­ e-mailovÃ½ klient",
+          "description": "VÃ­ceuÅ¾ivatelskÃ½ e-mailovÃ½ klient (IMAP/POP3/SMTP) s kalendÃ¡Å™em a kontakty. PÅ™ipojuje se k vaÅ¡emu vlastnÃ­mu serveru SelfMailer.",
           "category": "Produktivita"
         },
         "el": {
-          "tagline": "Το δικό σου πρόγραμμα email",
-          "description": "Πρόγραμμα email πολλών χρηστών (IMAP/POP3/SMTP) με ημερολόγιο και επαφές. Συνδέεται με τον δικό σου self-hosted διακομιστή SelfMailer.",
-          "category": "Παραγωγικότητα"
+          "tagline": "Î¤Î¿ Î´Î¹ÎºÏŒ ÏƒÎ¿Ï… Ï€ÏÏŒÎ³ÏÎ±Î¼Î¼Î± email",
+          "description": "Î ÏÏŒÎ³ÏÎ±Î¼Î¼Î± email Ï€Î¿Î»Î»ÏŽÎ½ Ï‡ÏÎ·ÏƒÏ„ÏŽÎ½ (IMAP/POP3/SMTP) Î¼Îµ Î·Î¼ÎµÏÎ¿Î»ÏŒÎ³Î¹Î¿ ÎºÎ±Î¹ ÎµÏ€Î±Ï†Î­Ï‚. Î£Ï…Î½Î´Î­ÎµÏ„Î±Î¹ Î¼Îµ Ï„Î¿Î½ Î´Î¹ÎºÏŒ ÏƒÎ¿Ï… self-hosted Î´Î¹Î±ÎºÎ¿Î¼Î¹ÏƒÏ„Î® SelfMailer.",
+          "category": "Î Î±ÏÎ±Î³Ï‰Î³Î¹ÎºÏŒÏ„Î·Ï„Î±"
         }
       }
     },
@@ -159,13 +159,13 @@
         "phone"
       ],
       "tagline": "Dein 2FA-/TOTP-Tresor",
-      "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschlüsselt mit deinem self-hosted Server.",
+      "description": "Zero-Knowledge 2FA-/TOTP-Codespeicher mit Fingerabdruck-Entsperrung und QR-Scanner. Synchronisiert verschlÃ¼sselt mit deinem self-hosted Server.",
       "icon": "icons/self-authenticator.png",
       "category": "Sicherheit",
       "author": "SelfCoder",
       "versionName": "2.6.1",
       "versionCode": 27,
-      "changelog": "Farbige Ablauf-Anzeige: Ring UND Code-Ziffern färben die verbleibende Zeit (teal → gelb → rot) und pulsieren in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
+      "changelog": "Farbige Ablauf-Anzeige: Ring UND Code-Ziffern fÃ¤rben die verbleibende Zeit (teal â†’ gelb â†’ rot) und pulsieren in den letzten Sekunden â€” man sieht sofort, wenn ein Code gleich ablÃ¤uft.",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.1/SelfAuthenticator-v2.6.1.apk",
       "sha256": "db1ab41c0eba0714424b006d60544cfa9999b3d6b48aa5ac812a2c3ab4bf3650",
       "i18n": {
@@ -176,12 +176,12 @@
         },
         "fr": {
           "tagline": "Votre coffre 2FA / TOTP",
-          "description": "Coffre de codes 2FA / TOTP à divulgation nulle avec déverrouillage par empreinte et scanner QR. Synchronisation chiffrée avec votre serveur auto-hébergé.",
-          "category": "Sécurité"
+          "description": "Coffre de codes 2FA / TOTP Ã  divulgation nulle avec dÃ©verrouillage par empreinte et scanner QR. Synchronisation chiffrÃ©e avec votre serveur auto-hÃ©bergÃ©.",
+          "category": "SÃ©curitÃ©"
         },
         "es": {
-          "tagline": "Tu bóveda de 2FA / TOTP",
-          "description": "Almacén de códigos 2FA / TOTP de conocimiento cero con desbloqueo por huella y escáner de QR. Se sincroniza cifrado con tu servidor autoalojado.",
+          "tagline": "Tu bÃ³veda de 2FA / TOTP",
+          "description": "AlmacÃ©n de cÃ³digos 2FA / TOTP de conocimiento cero con desbloqueo por huella y escÃ¡ner de QR. Se sincroniza cifrado con tu servidor autoalojado.",
           "category": "Seguridad"
         },
         "it": {
@@ -195,34 +195,34 @@
           "category": "Beveiliging"
         },
         "pl": {
-          "tagline": "Twój sejf 2FA / TOTP",
-          "description": "Sejf na kody 2FA / TOTP w architekturze zero-knowledge, z odblokowaniem odciskiem palca i skanerem QR. Synchronizuje się w postaci zaszyfrowanej z Twoim własnym serwerem.",
-          "category": "Bezpieczeństwo"
+          "tagline": "TwÃ³j sejf 2FA / TOTP",
+          "description": "Sejf na kody 2FA / TOTP w architekturze zero-knowledge, z odblokowaniem odciskiem palca i skanerem QR. Synchronizuje siÄ™ w postaci zaszyfrowanej z Twoim wÅ‚asnym serwerem.",
+          "category": "BezpieczeÅ„stwo"
         },
         "pt": {
           "tagline": "O seu cofre 2FA / TOTP",
-          "description": "Cofre de códigos 2FA / TOTP zero-knowledge com desbloqueio por impressão digital e leitor de QR. Sincroniza de forma encriptada com o seu servidor alojado por si.",
-          "category": "Segurança"
+          "description": "Cofre de cÃ³digos 2FA / TOTP zero-knowledge com desbloqueio por impressÃ£o digital e leitor de QR. Sincroniza de forma encriptada com o seu servidor alojado por si.",
+          "category": "SeguranÃ§a"
         },
         "sv": {
           "tagline": "Ditt 2FA-/TOTP-valv",
-          "description": "Zero-knowledge-lagring för 2FA-/TOTP-koder med fingeravtryckslås och QR-skanner. Synkroniseras krypterat med din egen server.",
-          "category": "Säkerhet"
+          "description": "Zero-knowledge-lagring fÃ¶r 2FA-/TOTP-koder med fingeravtryckslÃ¥s och QR-skanner. Synkroniseras krypterat med din egen server.",
+          "category": "SÃ¤kerhet"
         },
         "da": {
           "tagline": "Dit 2FA-/TOTP-hvelv",
-          "description": "Zero-knowledge 2FA-/TOTP-kodelager med fingeraftrykslås og QR-scanner. Synkroniserer krypteret med din selv-hostede server.",
+          "description": "Zero-knowledge 2FA-/TOTP-kodelager med fingeraftrykslÃ¥s og QR-scanner. Synkroniserer krypteret med din selv-hostede server.",
           "category": "Sikkerhed"
         },
         "cs": {
-          "tagline": "Váš trezor pro 2FA / TOTP",
-          "description": "Úložiště kódů 2FA / TOTP s nulovou znalostí, odemykáním otiskem prstu a skenerem QR. Šifrovaně se synchronizuje s vaším vlastním serverem.",
-          "category": "Zabezpečení"
+          "tagline": "VÃ¡Å¡ trezor pro 2FA / TOTP",
+          "description": "ÃšloÅ¾iÅ¡tÄ› kÃ³dÅ¯ 2FA / TOTP s nulovou znalostÃ­, odemykÃ¡nÃ­m otiskem prstu a skenerem QR. Å ifrovanÄ› se synchronizuje s vaÅ¡Ã­m vlastnÃ­m serverem.",
+          "category": "ZabezpeÄenÃ­"
         },
         "el": {
-          "tagline": "Ο θησαυροφύλακάς σου 2FA / TOTP",
-          "description": "Zero-knowledge αποθήκη κωδικών 2FA / TOTP με ξεκλείδωμα με δακτυλικό αποτύπωμα και σαρωτή QR. Συγχρονίζεται κρυπτογραφημένα με τον δικό σου self-hosted διακομιστή.",
-          "category": "Ασφάλεια"
+          "tagline": "ÎŸ Î¸Î·ÏƒÎ±Ï…ÏÎ¿Ï†ÏÎ»Î±ÎºÎ¬Ï‚ ÏƒÎ¿Ï… 2FA / TOTP",
+          "description": "Zero-knowledge Î±Ï€Î¿Î¸Î®ÎºÎ· ÎºÏ‰Î´Î¹ÎºÏŽÎ½ 2FA / TOTP Î¼Îµ Î¾ÎµÎºÎ»ÎµÎ¯Î´Ï‰Î¼Î± Î¼Îµ Î´Î±ÎºÏ„Ï…Î»Î¹ÎºÏŒ Î±Ï€Î¿Ï„ÏÏ€Ï‰Î¼Î± ÎºÎ±Î¹ ÏƒÎ±ÏÏ‰Ï„Î® QR. Î£Ï…Î³Ï‡ÏÎ¿Î½Î¯Î¶ÎµÏ„Î±Î¹ ÎºÏÏ…Ï€Ï„Î¿Î³ÏÎ±Ï†Î·Î¼Î­Î½Î± Î¼Îµ Ï„Î¿Î½ Î´Î¹ÎºÏŒ ÏƒÎ¿Ï… self-hosted Î´Î¹Î±ÎºÎ¿Î¼Î¹ÏƒÏ„Î®.",
+          "category": "Î‘ÏƒÏ†Î¬Î»ÎµÎ¹Î±"
         }
       }
     },
@@ -234,7 +234,7 @@
         "phone"
       ],
       "tagline": "Deine Self-Zentrale",
-      "description": "App-Zugang zu deinem SelfDashboard - der Übersicht über deine Self-Dienste.",
+      "description": "App-Zugang zu deinem SelfDashboard - der Ãœbersicht Ã¼ber deine Self-Dienste.",
       "icon": "icons/self-dashboard.png",
       "category": "System",
       "author": "SelfCoder",
@@ -251,8 +251,8 @@
         },
         "fr": {
           "tagline": "Votre hub Self",
-          "description": "Accès applicatif à votre SelfDashboard - la vue d'ensemble de vos services Self.",
-          "category": "Système"
+          "description": "AccÃ¨s applicatif Ã  votre SelfDashboard - la vue d'ensemble de vos services Self.",
+          "category": "SystÃ¨me"
         },
         "es": {
           "tagline": "Tu centro Self",
@@ -261,43 +261,43 @@
         },
         "it": {
           "tagline": "Il tuo hub Self",
-          "description": "Accesso da app al tuo SelfDashboard – la panoramica dei tuoi servizi Self.",
+          "description": "Accesso da app al tuo SelfDashboard â€“ la panoramica dei tuoi servizi Self.",
           "category": "Sistema"
         },
         "nl": {
           "tagline": "Je Self-hub",
-          "description": "App-toegang tot je SelfDashboard – het overzicht van je Self-diensten.",
+          "description": "App-toegang tot je SelfDashboard â€“ het overzicht van je Self-diensten.",
           "category": "Systeem"
         },
         "pl": {
           "tagline": "Twoje centrum Self",
-          "description": "Dostęp z aplikacji do Twojego SelfDashboard – przeglądu wszystkich usług Self.",
+          "description": "DostÄ™p z aplikacji do Twojego SelfDashboard â€“ przeglÄ…du wszystkich usÅ‚ug Self.",
           "category": "System"
         },
         "pt": {
           "tagline": "O seu centro Self",
-          "description": "Acesso por aplicação ao seu SelfDashboard - a visão geral dos seus serviços Self.",
+          "description": "Acesso por aplicaÃ§Ã£o ao seu SelfDashboard - a visÃ£o geral dos seus serviÃ§os Self.",
           "category": "Sistema"
         },
         "sv": {
           "tagline": "Ditt Self-nav",
-          "description": "Appåtkomst till din SelfDashboard – översikten över dina Self-tjänster.",
+          "description": "AppÃ¥tkomst till din SelfDashboard â€“ Ã¶versikten Ã¶ver dina Self-tjÃ¤nster.",
           "category": "System"
         },
         "da": {
           "tagline": "Dit Self-knudepunkt",
-          "description": "App-adgang til dit SelfDashboard – overblikket over dine Self-tjenester.",
+          "description": "App-adgang til dit SelfDashboard â€“ overblikket over dine Self-tjenester.",
           "category": "System"
         },
         "cs": {
-          "tagline": "Váš rozcestník Self",
-          "description": "Přístup k vašemu SelfDashboardu z aplikace – přehled vašich služeb Self.",
-          "category": "Systém"
+          "tagline": "VÃ¡Å¡ rozcestnÃ­k Self",
+          "description": "PÅ™Ã­stup k vaÅ¡emu SelfDashboardu z aplikace â€“ pÅ™ehled vaÅ¡ich sluÅ¾eb Self.",
+          "category": "SystÃ©m"
         },
         "el": {
-          "tagline": "Ο κόμβος σου Self",
-          "description": "Πρόσβαση μέσω εφαρμογής στο SelfDashboard σου - την επισκόπηση των υπηρεσιών Self σου.",
-          "category": "Σύστημα"
+          "tagline": "ÎŸ ÎºÏŒÎ¼Î²Î¿Ï‚ ÏƒÎ¿Ï… Self",
+          "description": "Î ÏÏŒÏƒÎ²Î±ÏƒÎ· Î¼Î­ÏƒÏ‰ ÎµÏ†Î±ÏÎ¼Î¿Î³Î®Ï‚ ÏƒÏ„Î¿ SelfDashboard ÏƒÎ¿Ï… - Ï„Î·Î½ ÎµÏ€Î¹ÏƒÎºÏŒÏ€Î·ÏƒÎ· Ï„Ï‰Î½ Ï…Ï€Î·ÏÎµÏƒÎ¹ÏŽÎ½ Self ÏƒÎ¿Ï….",
+          "category": "Î£ÏÏƒÏ„Î·Î¼Î±"
         }
       }
     },
@@ -309,13 +309,13 @@
         "phone"
       ],
       "tagline": "Deine Pool-Wasserwerte im Griff",
-      "description": "Pool-Wasserqualität tracken: pH, Chlor, Redox und Temperatur mit Ampel-Status und Dosierempfehlungen. Speichert lokal auf dem Gerät, kein Server, keine Cloud.",
+      "description": "Pool-WasserqualitÃ¤t tracken: pH, Chlor, Redox und Temperatur mit Ampel-Status und Dosierempfehlungen. Speichert lokal auf dem GerÃ¤t, kein Server, keine Cloud.",
       "icon": "icons/self-pooltracker.png",
       "category": "Werkzeuge",
       "author": "SelfCoder",
       "versionName": "1.2.1",
       "versionCode": 9,
-      "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lässt den Speicherort wählen. Auch als Webseite unter pool.selfcoder.de.",
+      "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lÃ¤sst den Speicherort wÃ¤hlen. Auch als Webseite unter pool.selfcoder.de.",
       "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.2.1/selfpooltracker-1.2.1.apk",
       "sha256": "e253531c0962859d55a983c5d396406f2e33dde6e03f387c1f155b75e0d59757",
       "i18n": {
@@ -325,18 +325,18 @@
           "category": "Tools"
         },
         "fr": {
-          "tagline": "Les valeurs de l'eau de votre piscine sous contrôle",
-          "description": "Suivez la qualité de l'eau de la piscine : pH, chlore, redox et température avec statut en feux tricolores et recommandations de dosage. Stockage local sur l'appareil, sans serveur, sans cloud.",
+          "tagline": "Les valeurs de l'eau de votre piscine sous contrÃ´le",
+          "description": "Suivez la qualitÃ© de l'eau de la piscine : pH, chlore, redox et tempÃ©rature avec statut en feux tricolores et recommandations de dosage. Stockage local sur l'appareil, sans serveur, sans cloud.",
           "category": "Outils"
         },
         "es": {
           "tagline": "Los valores del agua de tu piscina bajo control",
-          "description": "Controla la calidad del agua de la piscina: pH, cloro, redox y temperatura con estado tipo semáforo y recomendaciones de dosificación. Guarda los datos localmente en el dispositivo, sin servidor ni nube.",
+          "description": "Controla la calidad del agua de la piscina: pH, cloro, redox y temperatura con estado tipo semÃ¡foro y recomendaciones de dosificaciÃ³n. Guarda los datos localmente en el dispositivo, sin servidor ni nube.",
           "category": "Herramientas"
         },
         "it": {
           "tagline": "I valori dell'acqua della tua piscina sotto controllo",
-          "description": "Tieni traccia della qualità dell'acqua della piscina: pH, cloro, redox e temperatura con stato a semaforo e consigli sul dosaggio. Salva i dati localmente sul dispositivo, senza server, senza cloud.",
+          "description": "Tieni traccia della qualitÃ  dell'acqua della piscina: pH, cloro, redox e temperatura con stato a semaforo e consigli sul dosaggio. Salva i dati localmente sul dispositivo, senza server, senza cloud.",
           "category": "Strumenti"
         },
         "nl": {
@@ -345,34 +345,34 @@
           "category": "Hulpmiddelen"
         },
         "pl": {
-          "tagline": "Wartości wody w basenie pod kontrolą",
-          "description": "Śledź jakość wody w basenie: pH, chlor, redoks i temperaturę, ze statusem w kolorach sygnalizacji świetlnej i zaleceniami dozowania. Zapisuje dane lokalnie na urządzeniu, bez serwera, bez chmury.",
-          "category": "Narzędzia"
+          "tagline": "WartoÅ›ci wody w basenie pod kontrolÄ…",
+          "description": "ÅšledÅº jakoÅ›Ä‡ wody w basenie: pH, chlor, redoks i temperaturÄ™, ze statusem w kolorach sygnalizacji Å›wietlnej i zaleceniami dozowania. Zapisuje dane lokalnie na urzÄ…dzeniu, bez serwera, bez chmury.",
+          "category": "NarzÄ™dzia"
         },
         "pt": {
-          "tagline": "Os valores da água da sua piscina sob controlo",
-          "description": "Acompanhe a qualidade da água da piscina: pH, cloro, redox e temperatura, com estado tipo semáforo e recomendações de dosagem. Guarda localmente no dispositivo, sem servidor, sem nuvem.",
+          "tagline": "Os valores da Ã¡gua da sua piscina sob controlo",
+          "description": "Acompanhe a qualidade da Ã¡gua da piscina: pH, cloro, redox e temperatura, com estado tipo semÃ¡foro e recomendaÃ§Ãµes de dosagem. Guarda localmente no dispositivo, sem servidor, sem nuvem.",
           "category": "Ferramentas"
         },
         "sv": {
-          "tagline": "Koll på poolens vattenvärden",
-          "description": "Håll koll på poolens vattenkvalitet: pH, klor, redox och temperatur med trafikljusstatus och doseringsrekommendationer. Sparas lokalt på enheten, ingen server, inget moln.",
+          "tagline": "Koll pÃ¥ poolens vattenvÃ¤rden",
+          "description": "HÃ¥ll koll pÃ¥ poolens vattenkvalitet: pH, klor, redox och temperatur med trafikljusstatus och doseringsrekommendationer. Sparas lokalt pÃ¥ enheten, ingen server, inget moln.",
           "category": "Verktyg"
         },
         "da": {
-          "tagline": "Styr på dine poolvandværdier",
-          "description": "Følg poolvandets kvalitet: pH, klor, redox og temperatur med trafiklys-status og doseringsanbefalinger. Gemmer lokalt på enheden, ingen server, ingen sky.",
-          "category": "Værktøjer"
+          "tagline": "Styr pÃ¥ dine poolvandvÃ¦rdier",
+          "description": "FÃ¸lg poolvandets kvalitet: pH, klor, redox og temperatur med trafiklys-status og doseringsanbefalinger. Gemmer lokalt pÃ¥ enheden, ingen server, ingen sky.",
+          "category": "VÃ¦rktÃ¸jer"
         },
         "cs": {
-          "tagline": "Hodnoty vody v bazénu pod kontrolou",
-          "description": "Sledujte kvalitu vody v bazénu: pH, chlor, redox a teplotu se semaforovým stavem a doporučeními pro dávkování. Ukládá lokálně v zařízení, žádný server, žádný cloud.",
-          "category": "Nástroje"
+          "tagline": "Hodnoty vody v bazÃ©nu pod kontrolou",
+          "description": "Sledujte kvalitu vody v bazÃ©nu: pH, chlor, redox a teplotu se semaforovÃ½m stavem a doporuÄenÃ­mi pro dÃ¡vkovÃ¡nÃ­. UklÃ¡dÃ¡ lokÃ¡lnÄ› v zaÅ™Ã­zenÃ­, Å¾Ã¡dnÃ½ server, Å¾Ã¡dnÃ½ cloud.",
+          "category": "NÃ¡stroje"
         },
         "el": {
-          "tagline": "Οι τιμές νερού της πισίνας σου υπό έλεγχο",
-          "description": "Παρακολούθησε την ποιότητα του νερού της πισίνας: pH, χλώριο, redox και θερμοκρασία με κατάσταση φαναριού και συστάσεις δοσολογίας. Αποθηκεύει τοπικά στη συσκευή, χωρίς διακομιστή, χωρίς cloud.",
-          "category": "Εργαλεία"
+          "tagline": "ÎŸÎ¹ Ï„Î¹Î¼Î­Ï‚ Î½ÎµÏÎ¿Ï Ï„Î·Ï‚ Ï€Î¹ÏƒÎ¯Î½Î±Ï‚ ÏƒÎ¿Ï… Ï…Ï€ÏŒ Î­Î»ÎµÎ³Ï‡Î¿",
+          "description": "Î Î±ÏÎ±ÎºÎ¿Î»Î¿ÏÎ¸Î·ÏƒÎµ Ï„Î·Î½ Ï€Î¿Î¹ÏŒÏ„Î·Ï„Î± Ï„Î¿Ï… Î½ÎµÏÎ¿Ï Ï„Î·Ï‚ Ï€Î¹ÏƒÎ¯Î½Î±Ï‚: pH, Ï‡Î»ÏŽÏÎ¹Î¿, redox ÎºÎ±Î¹ Î¸ÎµÏÎ¼Î¿ÎºÏÎ±ÏƒÎ¯Î± Î¼Îµ ÎºÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï†Î±Î½Î±ÏÎ¹Î¿Ï ÎºÎ±Î¹ ÏƒÏ…ÏƒÏ„Î¬ÏƒÎµÎ¹Ï‚ Î´Î¿ÏƒÎ¿Î»Î¿Î³Î¯Î±Ï‚. Î‘Ï€Î¿Î¸Î·ÎºÎµÏÎµÎ¹ Ï„Î¿Ï€Î¹ÎºÎ¬ ÏƒÏ„Î· ÏƒÏ…ÏƒÎºÎµÏ…Î®, Ï‡Ï‰ÏÎ¯Ï‚ Î´Î¹Î±ÎºÎ¿Î¼Î¹ÏƒÏ„Î®, Ï‡Ï‰ÏÎ¯Ï‚ cloud.",
+          "category": "Î•ÏÎ³Î±Î»ÎµÎ¯Î±"
         }
       }
     },
@@ -384,7 +384,7 @@
         "phone"
       ],
       "tagline": "WireGuard, der oben bleibt",
-      "description": "Eigenständiger WireGuard-Client mit Auto-Reconnect-Wächter: verbindet nach der täglichen Zwangstrennung automatisch neu, sobald sich die Server-IP ändert. Mehrere Tunnel, App-Split-Tunnel, Editor mit beschrifteten Feldern, Fingerabdruck-Schutz.",
+      "description": "EigenstÃ¤ndiger WireGuard-Client mit Auto-Reconnect-WÃ¤chter: verbindet nach der tÃ¤glichen Zwangstrennung automatisch neu, sobald sich die Server-IP Ã¤ndert. Mehrere Tunnel, App-Split-Tunnel, Editor mit beschrifteten Feldern, Fingerabdruck-Schutz.",
       "icon": "icons/self-wg.png",
       "category": "Netzwerk",
       "author": "SelfCoder",
@@ -400,13 +400,13 @@
           "category": "Network"
         },
         "fr": {
-          "tagline": "WireGuard qui reste connecté",
-          "description": "Client WireGuard autonome avec un gardien de reconnexion automatique : se reconnecte tout seul après le changement d'IP forcé quotidien. Plusieurs tunnels, split tunnel par appli, éditeur à champs étiquetés, verrouillage par empreinte.",
-          "category": "Réseau"
+          "tagline": "WireGuard qui reste connectÃ©",
+          "description": "Client WireGuard autonome avec un gardien de reconnexion automatique : se reconnecte tout seul aprÃ¨s le changement d'IP forcÃ© quotidien. Plusieurs tunnels, split tunnel par appli, Ã©diteur Ã  champs Ã©tiquetÃ©s, verrouillage par empreinte.",
+          "category": "RÃ©seau"
         },
         "es": {
           "tagline": "WireGuard que no se cae",
-          "description": "Cliente WireGuard independiente con un vigilante de reconexión automática: se reconecta solo tras el cambio de IP forzado diario. Múltiples túneles, split tunnel por app, editor de campos con etiquetas y bloqueo por huella.",
+          "description": "Cliente WireGuard independiente con un vigilante de reconexiÃ³n automÃ¡tica: se reconecta solo tras el cambio de IP forzado diario. MÃºltiples tÃºneles, split tunnel por app, editor de campos con etiquetas y bloqueo por huella.",
           "category": "Red"
         },
         "it": {
@@ -420,34 +420,34 @@
           "category": "Netwerk"
         },
         "pl": {
-          "tagline": "WireGuard, który się nie rozłącza",
-          "description": "Samodzielny klient WireGuard z czuwakiem automatycznego ponownego łączenia: po codziennej wymuszonej zmianie IP łączy się z powrotem automatycznie. Wiele tuneli, dzielony tunel per aplikacja, edytor z opisanymi polami, blokada odciskiem palca.",
-          "category": "Sieć"
+          "tagline": "WireGuard, ktÃ³ry siÄ™ nie rozÅ‚Ä…cza",
+          "description": "Samodzielny klient WireGuard z czuwakiem automatycznego ponownego Å‚Ä…czenia: po codziennej wymuszonej zmianie IP Å‚Ä…czy siÄ™ z powrotem automatycznie. Wiele tuneli, dzielony tunel per aplikacja, edytor z opisanymi polami, blokada odciskiem palca.",
+          "category": "SieÄ‡"
         },
         "pt": {
-          "tagline": "WireGuard que se mantém ativo",
-          "description": "Cliente WireGuard autónomo com um vigilante de reconexão automática: religa-se automaticamente após a mudança forçada de IP diária. Vários túneis, split tunnel por aplicação, editor de campos identificados e bloqueio por impressão digital.",
+          "tagline": "WireGuard que se mantÃ©m ativo",
+          "description": "Cliente WireGuard autÃ³nomo com um vigilante de reconexÃ£o automÃ¡tica: religa-se automaticamente apÃ³s a mudanÃ§a forÃ§ada de IP diÃ¡ria. VÃ¡rios tÃºneis, split tunnel por aplicaÃ§Ã£o, editor de campos identificados e bloqueio por impressÃ£o digital.",
           "category": "Rede"
         },
         "sv": {
-          "tagline": "WireGuard som håller sig uppe",
-          "description": "Fristående WireGuard-klient med en vakthund för automatisk återanslutning: återansluter automatiskt efter det dagliga påtvingade IP-bytet. Flera tunnlar, split tunnel per app, redigerare med namngivna fält, fingeravtryckslås.",
-          "category": "Nätverk"
+          "tagline": "WireGuard som hÃ¥ller sig uppe",
+          "description": "FristÃ¥ende WireGuard-klient med en vakthund fÃ¶r automatisk Ã¥teranslutning: Ã¥teransluter automatiskt efter det dagliga pÃ¥tvingade IP-bytet. Flera tunnlar, split tunnel per app, redigerare med namngivna fÃ¤lt, fingeravtryckslÃ¥s.",
+          "category": "NÃ¤tverk"
         },
         "da": {
           "tagline": "WireGuard, der bliver oppe",
-          "description": "Selvstændig WireGuard-klient med en vagthund til automatisk genforbindelse: genforbinder automatisk efter det daglige tvungne IP-skift. Flere tunneler, split tunnel pr. app, editor med navngivne felter, fingeraftrykslås.",
-          "category": "Netværk"
+          "description": "SelvstÃ¦ndig WireGuard-klient med en vagthund til automatisk genforbindelse: genforbinder automatisk efter det daglige tvungne IP-skift. Flere tunneler, split tunnel pr. app, editor med navngivne felter, fingeraftrykslÃ¥s.",
+          "category": "NetvÃ¦rk"
         },
         "cs": {
-          "tagline": "WireGuard, který drží spojení",
-          "description": "Samostatný klient WireGuard s hlídačem automatického znovupřipojení: po denní vynucené změně IP se připojí automaticky. Více tunelů, rozdělené tunelování podle aplikace, editor s pojmenovanými poli, zámek otiskem prstu.",
-          "category": "Síť"
+          "tagline": "WireGuard, kterÃ½ drÅ¾Ã­ spojenÃ­",
+          "description": "SamostatnÃ½ klient WireGuard s hlÃ­daÄem automatickÃ©ho znovupÅ™ipojenÃ­: po dennÃ­ vynucenÃ© zmÄ›nÄ› IP se pÅ™ipojÃ­ automaticky. VÃ­ce tunelÅ¯, rozdÄ›lenÃ© tunelovÃ¡nÃ­ podle aplikace, editor s pojmenovanÃ½mi poli, zÃ¡mek otiskem prstu.",
+          "category": "SÃ­Å¥"
         },
         "el": {
-          "tagline": "WireGuard που δεν πέφτει",
-          "description": "Αυτόνομο πρόγραμμα-πελάτης WireGuard με έναν επιτηρητή αυτόματης επανασύνδεσης: επανασυνδέεται αυτόματα μετά την καθημερινή αναγκαστική αλλαγή IP. Πολλαπλά tunnel, split tunnel ανά εφαρμογή, επεξεργαστής με πεδία με ετικέτες, κλείδωμα με δακτυλικό αποτύπωμα.",
-          "category": "Δίκτυο"
+          "tagline": "WireGuard Ï€Î¿Ï… Î´ÎµÎ½ Ï€Î­Ï†Ï„ÎµÎ¹",
+          "description": "Î‘Ï…Ï„ÏŒÎ½Î¿Î¼Î¿ Ï€ÏÏŒÎ³ÏÎ±Î¼Î¼Î±-Ï€ÎµÎ»Î¬Ï„Î·Ï‚ WireGuard Î¼Îµ Î­Î½Î±Î½ ÎµÏ€Î¹Ï„Î·ÏÎ·Ï„Î® Î±Ï…Ï„ÏŒÎ¼Î±Ï„Î·Ï‚ ÎµÏ€Î±Î½Î±ÏƒÏÎ½Î´ÎµÏƒÎ·Ï‚: ÎµÏ€Î±Î½Î±ÏƒÏ…Î½Î´Î­ÎµÏ„Î±Î¹ Î±Ï…Ï„ÏŒÎ¼Î±Ï„Î± Î¼ÎµÏ„Î¬ Ï„Î·Î½ ÎºÎ±Î¸Î·Î¼ÎµÏÎ¹Î½Î® Î±Î½Î±Î³ÎºÎ±ÏƒÏ„Î¹ÎºÎ® Î±Î»Î»Î±Î³Î® IP. Î Î¿Î»Î»Î±Ï€Î»Î¬ tunnel, split tunnel Î±Î½Î¬ ÎµÏ†Î±ÏÎ¼Î¿Î³Î®, ÎµÏ€ÎµÎ¾ÎµÏÎ³Î±ÏƒÏ„Î®Ï‚ Î¼Îµ Ï€ÎµÎ´Î¯Î± Î¼Îµ ÎµÏ„Î¹ÎºÎ­Ï„ÎµÏ‚, ÎºÎ»ÎµÎ¯Î´Ï‰Î¼Î± Î¼Îµ Î´Î±ÎºÏ„Ï…Î»Î¹ÎºÏŒ Î±Ï€Î¿Ï„ÏÏ€Ï‰Î¼Î±.",
+          "category": "Î”Î¯ÎºÏ„Ï…Î¿"
         }
       }
     },
@@ -456,7 +456,7 @@
       "source": "s3lfcod3r/selfmessenger",
       "name": "SelfMessenger",
       "tagline": "Dein serverloser Messenger",
-      "description": "Ende-zu-Ende-verschlüsselter Peer-to-Peer-Messenger. Nachrichten, Fotos, Sprachnachrichten und Anrufe gehen direkt von Gerät zu Gerät – kein Server liest mit. Freunde fügst du nur persönlich per NFC oder QR hinzu. App-Sperre (PIN/Fingerabdruck/Gesicht), Verschlüsselung auf dem Gerät und optionales VPN.",
+      "description": "Ende-zu-Ende-verschlÃ¼sselter Peer-to-Peer-Messenger. Nachrichten, Fotos, Sprachnachrichten und Anrufe gehen direkt von GerÃ¤t zu GerÃ¤t â€“ kein Server liest mit. Freunde fÃ¼gst du nur persÃ¶nlich per NFC oder QR hinzu. App-Sperre (PIN/Fingerabdruck/Gesicht), VerschlÃ¼sselung auf dem GerÃ¤t und optionales VPN.",
       "icon": "icons/self-messenger.png",
       "category": "Kommunikation",
       "author": "SelfCoder",
@@ -472,57 +472,57 @@
         "en": {
           "tagline": "Your serverless messenger",
           "category": "Communication",
-          "description": "End-to-end-encrypted peer-to-peer messenger. Messages, photos, voice notes and calls go straight from device to device – no server can read along. You add friends only in person via NFC or QR. App lock (PIN/fingerprint/face), on-device encryption and an optional VPN."
+          "description": "End-to-end-encrypted peer-to-peer messenger. Messages, photos, voice notes and calls go straight from device to device â€“ no server can read along. You add friends only in person via NFC or QR. App lock (PIN/fingerprint/face), on-device encryption and an optional VPN."
         },
         "fr": {
           "tagline": "Ta messagerie sans serveur",
           "category": "Communication",
-          "description": "Messagerie pair-à-pair chiffrée de bout en bout. Messages, photos, notes vocales et appels vont directement d'un appareil à l'autre – aucun serveur ne peut lire. On ajoute des amis uniquement en personne via NFC ou QR. Verrouillage (PIN/empreinte/visage), chiffrement sur l'appareil et VPN optionnel."
+          "description": "Messagerie pair-Ã -pair chiffrÃ©e de bout en bout. Messages, photos, notes vocales et appels vont directement d'un appareil Ã  l'autre â€“ aucun serveur ne peut lire. On ajoute des amis uniquement en personne via NFC ou QR. Verrouillage (PIN/empreinte/visage), chiffrement sur l'appareil et VPN optionnel."
         },
         "es": {
-          "tagline": "Tu mensajería sin servidor",
-          "category": "Comunicación",
-          "description": "Mensajería entre pares cifrada de extremo a extremo. Mensajes, fotos, notas de voz y llamadas van directamente de un dispositivo a otro; ningún servidor puede leerlos. Los amigos se añaden solo en persona mediante NFC o QR. Bloqueo (PIN/huella/cara), cifrado en el dispositivo y VPN opcional."
+          "tagline": "Tu mensajerÃ­a sin servidor",
+          "category": "ComunicaciÃ³n",
+          "description": "MensajerÃ­a entre pares cifrada de extremo a extremo. Mensajes, fotos, notas de voz y llamadas van directamente de un dispositivo a otro; ningÃºn servidor puede leerlos. Los amigos se aÃ±aden solo en persona mediante NFC o QR. Bloqueo (PIN/huella/cara), cifrado en el dispositivo y VPN opcional."
         },
         "it": {
           "tagline": "Il tuo messenger senza server",
           "category": "Comunicazione",
-          "description": "Messenger peer-to-peer cifrato end-to-end. Messaggi, foto, note vocali e chiamate vanno direttamente da un dispositivo all'altro: nessun server può leggere. Gli amici si aggiungono solo di persona tramite NFC o QR. Blocco (PIN/impronta/volto), cifratura sul dispositivo e VPN opzionale."
+          "description": "Messenger peer-to-peer cifrato end-to-end. Messaggi, foto, note vocali e chiamate vanno direttamente da un dispositivo all'altro: nessun server puÃ² leggere. Gli amici si aggiungono solo di persona tramite NFC o QR. Blocco (PIN/impronta/volto), cifratura sul dispositivo e VPN opzionale."
         },
         "nl": {
           "tagline": "Jouw serverloze messenger",
           "category": "Communicatie",
-          "description": "Peer-to-peer messenger met end-to-end-versleuteling. Berichten, foto's, spraaknotities en gesprekken gaan rechtstreeks van apparaat naar apparaat – geen server leest mee. Vrienden voeg je alleen in persoon toe via NFC of QR. Appvergrendeling (pincode/vingerafdruk/gezicht), versleuteling op het apparaat en optionele VPN."
+          "description": "Peer-to-peer messenger met end-to-end-versleuteling. Berichten, foto's, spraaknotities en gesprekken gaan rechtstreeks van apparaat naar apparaat â€“ geen server leest mee. Vrienden voeg je alleen in persoon toe via NFC of QR. Appvergrendeling (pincode/vingerafdruk/gezicht), versleuteling op het apparaat en optionele VPN."
         },
         "pl": {
-          "tagline": "Twój komunikator bez serwera",
+          "tagline": "TwÃ³j komunikator bez serwera",
           "category": "Komunikacja",
-          "description": "Komunikator peer-to-peer z szyfrowaniem end-to-end. Wiadomości, zdjęcia, notatki głosowe i połączenia idą bezpośrednio z urządzenia na urządzenie – żaden serwer nie czyta. Znajomych dodajesz tylko osobiście przez NFC lub QR. Blokada aplikacji (PIN/odcisk/twarz), szyfrowanie na urządzeniu i opcjonalny VPN."
+          "description": "Komunikator peer-to-peer z szyfrowaniem end-to-end. WiadomoÅ›ci, zdjÄ™cia, notatki gÅ‚osowe i poÅ‚Ä…czenia idÄ… bezpoÅ›rednio z urzÄ…dzenia na urzÄ…dzenie â€“ Å¼aden serwer nie czyta. Znajomych dodajesz tylko osobiÅ›cie przez NFC lub QR. Blokada aplikacji (PIN/odcisk/twarz), szyfrowanie na urzÄ…dzeniu i opcjonalny VPN."
         },
         "pt": {
           "tagline": "O teu mensageiro sem servidor",
-          "category": "Comunicação",
-          "description": "Mensageiro peer-to-peer com encriptação ponta a ponta. Mensagens, fotos, notas de voz e chamadas vão diretamente de dispositivo para dispositivo – nenhum servidor consegue ler. Adicionas amigos só presencialmente via NFC ou QR. Bloqueio (PIN/impressão/rosto), encriptação no dispositivo e VPN opcional."
+          "category": "ComunicaÃ§Ã£o",
+          "description": "Mensageiro peer-to-peer com encriptaÃ§Ã£o ponta a ponta. Mensagens, fotos, notas de voz e chamadas vÃ£o diretamente de dispositivo para dispositivo â€“ nenhum servidor consegue ler. Adicionas amigos sÃ³ presencialmente via NFC ou QR. Bloqueio (PIN/impressÃ£o/rosto), encriptaÃ§Ã£o no dispositivo e VPN opcional."
         },
         "sv": {
-          "tagline": "Din serverlösa meddelandeapp",
+          "tagline": "Din serverlÃ¶sa meddelandeapp",
           "category": "Kommunikation",
-          "description": "Peer-to-peer-meddelandeapp med totalsträckskryptering. Meddelanden, foton, röstmeddelanden och samtal går direkt enhet till enhet – ingen server kan läsa med. Vänner lägger du bara till personligen via NFC eller QR. Applås (PIN/fingeravtryck/ansikte), kryptering på enheten och valfri VPN."
+          "description": "Peer-to-peer-meddelandeapp med totalstrÃ¤ckskryptering. Meddelanden, foton, rÃ¶stmeddelanden och samtal gÃ¥r direkt enhet till enhet â€“ ingen server kan lÃ¤sa med. VÃ¤nner lÃ¤gger du bara till personligen via NFC eller QR. ApplÃ¥s (PIN/fingeravtryck/ansikte), kryptering pÃ¥ enheten och valfri VPN."
         },
         "da": {
-          "tagline": "Din serverløse messenger",
+          "tagline": "Din serverlÃ¸se messenger",
           "category": "Kommunikation",
-          "description": "Peer-to-peer-messenger med ende-til-ende-kryptering. Beskeder, billeder, talebeskeder og opkald går direkte fra enhed til enhed – ingen server kan læse med. Venner tilføjer du kun personligt via NFC eller QR. App-lås (PIN/fingeraftryk/ansigt), kryptering på enheden og valgfri VPN."
+          "description": "Peer-to-peer-messenger med ende-til-ende-kryptering. Beskeder, billeder, talebeskeder og opkald gÃ¥r direkte fra enhed til enhed â€“ ingen server kan lÃ¦se med. Venner tilfÃ¸jer du kun personligt via NFC eller QR. App-lÃ¥s (PIN/fingeraftryk/ansigt), kryptering pÃ¥ enheden og valgfri VPN."
         },
         "cs": {
-          "tagline": "Tvůj messenger bez serveru",
+          "tagline": "TvÅ¯j messenger bez serveru",
           "category": "Komunikace",
-          "description": "Peer-to-peer messenger se šifrováním end-to-end. Zprávy, fotky, hlasové zprávy a hovory jdou přímo ze zařízení do zařízení – žádný server nečte. Přátele přidáváš jen osobně přes NFC nebo QR. Zámek aplikace (PIN/otisk/obličej), šifrování v zařízení a volitelná VPN."
+          "description": "Peer-to-peer messenger se Å¡ifrovÃ¡nÃ­m end-to-end. ZprÃ¡vy, fotky, hlasovÃ© zprÃ¡vy a hovory jdou pÅ™Ã­mo ze zaÅ™Ã­zenÃ­ do zaÅ™Ã­zenÃ­ â€“ Å¾Ã¡dnÃ½ server neÄte. PÅ™Ã¡tele pÅ™idÃ¡vÃ¡Å¡ jen osobnÄ› pÅ™es NFC nebo QR. ZÃ¡mek aplikace (PIN/otisk/obliÄej), Å¡ifrovÃ¡nÃ­ v zaÅ™Ã­zenÃ­ a volitelnÃ¡ VPN."
         },
         "el": {
-          "tagline": "Ο messenger σου χωρίς διακομιστή",
-          "category": "Επικοινωνία",
-          "description": "Peer-to-peer messenger με κρυπτογράφηση end-to-end. Μηνύματα, φωτογραφίες, ηχητικά μηνύματα και κλήσεις πάνε απευθείας από συσκευή σε συσκευή – κανένας διακομιστής δεν διαβάζει. Προσθέτεις φίλους μόνο από κοντά μέσω NFC ή QR. Κλείδωμα εφαρμογής (PIN/δαχτυλικό/πρόσωπο), κρυπτογράφηση στη συσκευή και προαιρετικό VPN."
+          "tagline": "ÎŸ messenger ÏƒÎ¿Ï… Ï‡Ï‰ÏÎ¯Ï‚ Î´Î¹Î±ÎºÎ¿Î¼Î¹ÏƒÏ„Î®",
+          "category": "Î•Ï€Î¹ÎºÎ¿Î¹Î½Ï‰Î½Î¯Î±",
+          "description": "Peer-to-peer messenger Î¼Îµ ÎºÏÏ…Ï€Ï„Î¿Î³ÏÎ¬Ï†Î·ÏƒÎ· end-to-end. ÎœÎ·Î½ÏÎ¼Î±Ï„Î±, Ï†Ï‰Ï„Î¿Î³ÏÎ±Ï†Î¯ÎµÏ‚, Î·Ï‡Î·Ï„Î¹ÎºÎ¬ Î¼Î·Î½ÏÎ¼Î±Ï„Î± ÎºÎ±Î¹ ÎºÎ»Î®ÏƒÎµÎ¹Ï‚ Ï€Î¬Î½Îµ Î±Ï€ÎµÏ…Î¸ÎµÎ¯Î±Ï‚ Î±Ï€ÏŒ ÏƒÏ…ÏƒÎºÎµÏ…Î® ÏƒÎµ ÏƒÏ…ÏƒÎºÎµÏ…Î® â€“ ÎºÎ±Î½Î­Î½Î±Ï‚ Î´Î¹Î±ÎºÎ¿Î¼Î¹ÏƒÏ„Î®Ï‚ Î´ÎµÎ½ Î´Î¹Î±Î²Î¬Î¶ÎµÎ¹. Î ÏÎ¿ÏƒÎ¸Î­Ï„ÎµÎ¹Ï‚ Ï†Î¯Î»Î¿Ï…Ï‚ Î¼ÏŒÎ½Î¿ Î±Ï€ÏŒ ÎºÎ¿Î½Ï„Î¬ Î¼Î­ÏƒÏ‰ NFC Î® QR. ÎšÎ»ÎµÎ¯Î´Ï‰Î¼Î± ÎµÏ†Î±ÏÎ¼Î¿Î³Î®Ï‚ (PIN/Î´Î±Ï‡Ï„Ï…Î»Î¹ÎºÏŒ/Ï€ÏÏŒÏƒÏ‰Ï€Î¿), ÎºÏÏ…Ï€Ï„Î¿Î³ÏÎ¬Ï†Î·ÏƒÎ· ÏƒÏ„Î· ÏƒÏ…ÏƒÎºÎµÏ…Î® ÎºÎ±Î¹ Ï€ÏÎ¿Î±Î¹ÏÎµÏ„Î¹ÎºÏŒ VPN."
         }
       }
     },
@@ -533,10 +533,10 @@
       "platforms": [
         "phone"
       ],
-      "tagline": "Geräte-Check auf Spyware, Werbeblocker inklusive",
+      "tagline": "GerÃ¤te-Check auf Spyware, Werbeblocker inklusive",
       "taglineEn": "Device check for spyware, with ad blocker",
-      "description": "Prüft alle installierten Apps auf bekannte Schadsoftware und Überwachungsprogramme: Prüfsummen der Programmdateien, Signaturzertifikate und Berechtigungsprofile. Dazu ein Systemcheck auf offene Türen — nachträglich eingerichtete Wurzelzertifikate, aktive Bedienungshilfen, Geräteverwalter. Der Scan läuft vollständig offline. Eingebaut ist außerdem ein Werbe- und Trackerfilter, der Namensanfragen lokal beantwortet, ohne Verkehr an Dritte weiterzuleiten. Auffällige Apps lassen sich direkt entfernen oder deaktivieren. Staatliche Spionagesoftware erkennt keine App auf dieser Ebene — das steht auch so in der App.",
-      "descriptionEn": "Checks every installed app against known malware and monitoring software: file checksums, signing certificates and permission profiles. Adds a device check for open doors — user-installed root certificates, active accessibility services, device administrators. The scan runs entirely offline. Also includes an ad and tracker filter that answers name lookups locally without forwarding traffic to third parties. Suspicious apps can be removed or disabled straight away. No app at this level can detect state-grade spyware — and the app says so.",
+      "description": "PrÃ¼ft alle installierten Apps auf bekannte Schadsoftware und Ãœberwachungsprogramme: PrÃ¼fsummen der Programmdateien, Signaturzertifikate und Berechtigungsprofile. Dazu ein Systemcheck auf offene TÃ¼ren â€” nachtrÃ¤glich eingerichtete Wurzelzertifikate, aktive Bedienungshilfen, GerÃ¤teverwalter. Der Scan lÃ¤uft vollstÃ¤ndig offline. Eingebaut ist auÃŸerdem ein Werbe- und Trackerfilter, der Namensanfragen lokal beantwortet, ohne Verkehr an Dritte weiterzuleiten. AuffÃ¤llige Apps lassen sich direkt entfernen oder deaktivieren. Staatliche Spionagesoftware erkennt keine App auf dieser Ebene â€” das steht auch so in der App.",
+      "descriptionEn": "Checks every installed app against known malware and monitoring software: file checksums, signing certificates and permission profiles. Adds a device check for open doors â€” user-installed root certificates, active accessibility services, device administrators. The scan runs entirely offline. Also includes an ad and tracker filter that answers name lookups locally without forwarding traffic to third parties. Suspicious apps can be removed or disabled straight away. No app at this level can detect state-grade spyware â€” and the app says so.",
       "icon": "icons/selfguard.png",
       "category": "Sicherheit",
       "categoryEn": "Security",
