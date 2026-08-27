@@ -167,7 +167,7 @@
       "versionCode": 27,
       "changelog": "Farbige Ablauf-Anzeige: Ring UND Code-Ziffern fÃ¤rben die verbleibende Zeit (teal â†’ gelb â†’ rot) und pulsieren in den letzten Sekunden â€” man sieht sofort, wenn ein Code gleich ablÃ¤uft.",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.1/SelfAuthenticator-v2.6.1.apk",
-      "sha256": "db1ab41c0eba0714424b006d60544cfa9999b3d6b48aa5ac812a2c3ab4bf3650",
+      "sha256": "443f4e4a035bd2377a99266fd957f518b27813b4218e26ba76dd4e3abef69932",
       "i18n": {
         "en": {
           "tagline": "Your 2FA / TOTP vault",
@@ -317,7 +317,7 @@
       "versionCode": 9,
       "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lÃ¤sst den Speicherort wÃ¤hlen. Auch als Webseite unter pool.selfcoder.de.",
       "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.2.1/selfpooltracker-1.2.1.apk",
-      "sha256": "e253531c0962859d55a983c5d396406f2e33dde6e03f387c1f155b75e0d59757",
+      "sha256": "2a97234d1d821f9af82cd5fca6c18d617ef45412aa98f87f35b445ac6a7188c3",
       "i18n": {
         "en": {
           "tagline": "Your pool water values under control",
@@ -392,7 +392,7 @@
       "versionCode": 6,
       "changelog": "Erste Store-Version.",
       "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.3/SelfWG-v1.2.3.apk",
-      "sha256": "034f59f5040e2625b3ea851b4ad474e58eb8bd926a45690e02ec6d6f62d61615",
+      "sha256": "0a505cf08460df8f7e2811935e697475021846b160685591862d3f81f7429d74",
       "i18n": {
         "en": {
           "tagline": "WireGuard that stays up",
@@ -467,7 +467,7 @@
       "versionCode": 19,
       "changelog": "Erste Version.",
       "apk": "https://github.com/s3lfcod3r/selfmessenger/releases/download/v0.1.18/selfmessenger-0.1.18.apk",
-      "sha256": "685639305d492c77f4d3074e75a464e7656bd62beebe505109dfa7b57901016d",
+      "sha256": "9570249094d0e0bf9793010e4b8df3ecf16c437cc105ca9a9b8014fb685c2b20",
       "i18n": {
         "en": {
           "tagline": "Your serverless messenger",
@@ -544,7 +544,7 @@
       "versionName": "0.7.0",
       "versionCode": 7,
       "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.7.0/SelfGuard-0.7.0.apk",
-      "sha256": "210cc2e168cfea570bcf2eb3a7495d2d8f339d6729093b6dbd89d917a123bec3"
+      "sha256": "37697c21519ff328f81e9c776d9799aa52e5afd4681c6bc1adcd848f8f50a862"
     }
   ]
 }
