@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.77.0",
       "versionCode": 85,
-      "changelog": "Fehlerbehebungen: Job-Status abrufbar, Absender als Kontakt speichern behaelt den Namen, Aufraeumen beim Konto-Loeschen.",
+      "changelog": "Gmail-Postfaecher oeffnen sich beim ersten Mal deutlich schneller. Aufgeraeumte Einstellungen: die App waehlt das Benachrichtigungs-Verfahren jetzt selbst.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.77.0/SelfMailer-1.77.0.apk",
       "sha256": "16bb56c8499ed6ef1663aac5838d17fdbf47ac3f78bfa4d58ab3357633aac833",
       "i18n": {
