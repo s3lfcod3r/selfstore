@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.78.0",
       "versionCode": 86,
-      "changelog": "Gmail-Postfaecher oeffnen sich beim ersten Mal deutlich schneller. Aufgeraeumte Einstellungen: die App waehlt das Benachrichtigungs-Verfahren jetzt selbst.",
+      "changelog": "Ruhigere Oberflaeche beim Lesen: der Kopf ueber einer Mail traegt jetzt vier Bedienelemente statt zwoelf, alles Weitere liegt gruppiert unter „Mehr“. Der Echtheits-Hinweis meldet sich nur noch, wenn wirklich etwas nicht stimmt. In der Mailliste erscheinen Auswahl und Stern erst, wenn man sie braucht.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.78.0/SelfMailer-1.78.0.apk",
       "sha256": "94bcef0375f3500af32e18840b9ce21047b94da7b8ddaed8c0ffc65bd4071632",
       "i18n": {
