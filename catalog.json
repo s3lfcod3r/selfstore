@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.76.0",
       "versionCode": 84,
-      "changelog": "Aktuelle Version.",
+      "changelog": "Fehlerbehebungen: Job-Status abrufbar, Absender als Kontakt speichern behaelt den Namen, Aufraeumen beim Konto-Loeschen.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.76.0/SelfMailer-1.76.0.apk",
       "sha256": "6f067b2423ce514abe6b283ce71566ab1576a7f4c7b43bc95ced2b784004b789",
       "i18n": {
