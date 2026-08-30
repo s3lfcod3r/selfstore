@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.77.0",
-      "versionCode": 85,
+      "versionName": "1.78.0",
+      "versionCode": 86,
       "changelog": "Gmail-Postfaecher oeffnen sich beim ersten Mal deutlich schneller. Aufgeraeumte Einstellungen: die App waehlt das Benachrichtigungs-Verfahren jetzt selbst.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.77.0/SelfMailer-1.77.0.apk",
-      "sha256": "16bb56c8499ed6ef1663aac5838d17fdbf47ac3f78bfa4d58ab3357633aac833",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.78.0/SelfMailer-1.78.0.apk",
+      "sha256": "94bcef0375f3500af32e18840b9ce21047b94da7b8ddaed8c0ffc65bd4071632",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
