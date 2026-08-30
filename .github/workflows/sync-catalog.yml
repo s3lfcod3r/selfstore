@@ -45,7 +45,6 @@ jobs:
       - name: Katalog synchronisieren
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SYNC_DATE: ${{ github.run_id }}
         run: |
           export SYNC_DATE="$(date -u +%F)"
           python tools/sync_catalog.py
@@ -61,7 +60,8 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "s3lfcod3r"
             git config user.email "info@selfcoder.de"
-            git add -A
+            # Gezielt: der Sync fasst nur diese beiden Dateien an.
+            git add catalog.json selfstore.apk
             git commit -m "chore: Katalog Auto-Sync (Release-Versionen + Bootstrap-APK)"
             git push
           else

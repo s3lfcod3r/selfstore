@@ -220,6 +220,20 @@ const APP_JS = `// SelfStore Landing - 12 Sprachen (i18n) + XSS-sicheres Katalog
 fs.writeFileSync(path.join(REPO, "app.js"), APP_JS, "utf8");
 console.log("app.js geschrieben (" + APP_JS.length + " Bytes)");
 
+// Cache-Busting: index.html laedt app.js mit ?v=<Kurz-Hash>. Ohne Anpassung
+// zeigt der Browser (und der 10-Minuten-CDN-Cache) nach einer Regenerierung
+// weiterhin die alte Datei.
+const APP_JS_HASH = require("crypto").createHash("sha256").update(APP_JS).digest("hex").slice(0, 8);
+const indexPath = path.join(REPO, "index.html");
+let indexHtml = fs.readFileSync(indexPath, "utf8");
+const indexPatched = indexHtml.replace(/app\.js(\?v=[A-Za-z0-9]+)?/g, "app.js?v=" + APP_JS_HASH);
+if (indexPatched !== indexHtml) {
+  fs.writeFileSync(indexPath, indexPatched, "utf8");
+  console.log("index.html: app.js?v=" + APP_JS_HASH);
+} else {
+  console.log("index.html: Versionsstempel unveraendert (" + APP_JS_HASH + ")");
+}
+
 // --- catalog.json patchen: *En raus, i18n rein ---
 const catPath = path.join(REPO, "catalog.json");
 const cat = JSON.parse(fs.readFileSync(catPath, "utf8"));
