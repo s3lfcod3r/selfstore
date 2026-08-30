@@ -217,6 +217,11 @@
         "tagline": "Your serverless messenger",
         "category": "Communication",
         "description": "End-to-end-encrypted peer-to-peer messenger. Messages, photos, voice notes and calls go straight from device to device – no server can read along. You add friends only in person via NFC or QR. App lock (PIN/fingerprint/face), on-device encryption and an optional VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Device check for spyware, ad blocker included",
+        "description": "Checks every installed app for known malware and stalkerware — file checksums, signing certificates and permission profiles — plus a system check for open doors such as added root certificates, active accessibility services and device admins. Runs completely offline and includes a local ad and tracker filter. State-grade spyware cannot be detected at this level, and the app says so.",
+        "category": "Security"
       }
     },
     "fr": {
@@ -254,6 +259,11 @@
         "tagline": "Ta messagerie sans serveur",
         "category": "Communication",
         "description": "Messagerie pair-à-pair chiffrée de bout en bout. Messages, photos, notes vocales et appels vont directement d'un appareil à l'autre – aucun serveur ne peut lire. On ajoute des amis uniquement en personne via NFC ou QR. Verrouillage (PIN/empreinte/visage), chiffrement sur l'appareil et VPN optionnel."
+      },
+      "com.selfguard.app": {
+        "tagline": "Contrôle de l’appareil contre les logiciels espions, bloqueur de pubs inclus",
+        "description": "Analyse toutes les applications installées à la recherche de logiciels malveillants et de stalkerware — sommes de contrôle, certificats de signature et profils d’autorisations — et vérifie le système : certificats racine ajoutés, services d’accessibilité actifs, administrateurs de l’appareil. Fonctionne entièrement hors ligne et intègre un filtre local de publicités et de traceurs. Les logiciels espions d’État ne sont pas détectables à ce niveau, et l’application le dit clairement.",
+        "category": "Sécurité"
       }
     },
     "es": {
@@ -291,6 +301,11 @@
         "tagline": "Tu mensajería sin servidor",
         "category": "Comunicación",
         "description": "Mensajería entre pares cifrada de extremo a extremo. Mensajes, fotos, notas de voz y llamadas van directamente de un dispositivo a otro; ningún servidor puede leerlos. Los amigos se añaden solo en persona mediante NFC o QR. Bloqueo (PIN/huella/cara), cifrado en el dispositivo y VPN opcional."
+      },
+      "com.selfguard.app": {
+        "tagline": "Revisión del dispositivo contra software espía, con bloqueador de anuncios",
+        "description": "Revisa todas las aplicaciones instaladas en busca de malware y stalkerware conocidos — sumas de verificación, certificados de firma y perfiles de permisos — además de un chequeo del sistema: certificados raíz añadidos, servicios de accesibilidad activos y administradores del dispositivo. Funciona totalmente sin conexión e incluye un filtro local de anuncios y rastreadores. El software espía estatal no se detecta a este nivel, y la aplicación lo indica.",
+        "category": "Seguridad"
       }
     },
     "it": {
@@ -328,6 +343,11 @@
         "tagline": "Il tuo messenger senza server",
         "category": "Comunicazione",
         "description": "Messenger peer-to-peer cifrato end-to-end. Messaggi, foto, note vocali e chiamate vanno direttamente da un dispositivo all'altro: nessun server può leggere. Gli amici si aggiungono solo di persona tramite NFC o QR. Blocco (PIN/impronta/volto), cifratura sul dispositivo e VPN opzionale."
+      },
+      "com.selfguard.app": {
+        "tagline": "Controllo del dispositivo contro spyware, con blocco pubblicità",
+        "description": "Controlla tutte le app installate alla ricerca di malware e stalkerware noti — checksum dei file, certificati di firma e profili di autorizzazioni — e verifica il sistema: certificati radice aggiunti, servizi di accessibilità attivi, amministratori del dispositivo. Funziona completamente offline e include un filtro locale per pubblicità e tracker. Lo spyware di livello statale non è rilevabile a questo livello, e l’app lo dichiara.",
+        "category": "Sicurezza"
       }
     },
     "nl": {
@@ -365,6 +385,11 @@
         "tagline": "Jouw serverloze messenger",
         "category": "Communicatie",
         "description": "Peer-to-peer messenger met end-to-end-versleuteling. Berichten, foto's, spraaknotities en gesprekken gaan rechtstreeks van apparaat naar apparaat – geen server leest mee. Vrienden voeg je alleen in persoon toe via NFC of QR. Appvergrendeling (pincode/vingerafdruk/gezicht), versleuteling op het apparaat en optionele VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Apparaatcontrole op spyware, advertentieblokkering inbegrepen",
+        "description": "Controleert alle geïnstalleerde apps op bekende malware en stalkerware — controlegetallen, ondertekeningscertificaten en rechtenprofielen — plus een systeemcontrole op openstaande deuren: toegevoegde hoofdcertificaten, actieve toegankelijkheidsdiensten en apparaatbeheerders. Werkt volledig offline en bevat een lokaal advertentie- en trackerfilter. Spyware van staatsniveau is op dit niveau niet te herkennen; de app zegt dat er ook bij.",
+        "category": "Beveiliging"
       }
     },
     "pl": {
@@ -402,6 +427,11 @@
         "tagline": "Twój komunikator bez serwera",
         "category": "Komunikacja",
         "description": "Komunikator peer-to-peer z szyfrowaniem end-to-end. Wiadomości, zdjęcia, notatki głosowe i połączenia idą bezpośrednio z urządzenia na urządzenie – żaden serwer nie czyta. Znajomych dodajesz tylko osobiście przez NFC lub QR. Blokada aplikacji (PIN/odcisk/twarz), szyfrowanie na urządzeniu i opcjonalny VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Kontrola urządzenia pod kątem programów szpiegujących, z blokadą reklam",
+        "description": "Sprawdza wszystkie zainstalowane aplikacje pod kątem znanego złośliwego oprogramowania i stalkerware — sumy kontrolne, certyfikaty podpisu i profile uprawnień — oraz kontroluje system: dodane certyfikaty główne, aktywne usługi ułatwień dostępu, administratorów urządzenia. Działa całkowicie offline i zawiera lokalny filtr reklam i modułów śledzących. Oprogramowania szpiegowskiego klasy państwowej nie wykryje na tym poziomie żadna aplikacja — i tak też jest napisane w aplikacji.",
+        "category": "Bezpieczeństwo"
       }
     },
     "pt": {
@@ -439,6 +469,11 @@
         "tagline": "O teu mensageiro sem servidor",
         "category": "Comunicação",
         "description": "Mensageiro peer-to-peer com encriptação ponta a ponta. Mensagens, fotos, notas de voz e chamadas vão diretamente de dispositivo para dispositivo – nenhum servidor consegue ler. Adicionas amigos só presencialmente via NFC ou QR. Bloqueio (PIN/impressão/rosto), encriptação no dispositivo e VPN opcional."
+      },
+      "com.selfguard.app": {
+        "tagline": "Verificação do dispositivo contra spyware, com bloqueador de anúncios",
+        "description": "Verifica todas as aplicações instaladas em busca de malware e stalkerware conhecidos — somas de verificação, certificados de assinatura e perfis de permissões — e faz uma verificação do sistema: certificados raiz adicionados, serviços de acessibilidade ativos e administradores do dispositivo. Funciona totalmente offline e inclui um filtro local de anúncios e rastreadores. Spyware de nível estatal não é detetável a este nível, e a aplicação diz isso mesmo.",
+        "category": "Segurança"
       }
     },
     "sv": {
@@ -476,6 +511,11 @@
         "tagline": "Din serverlösa meddelandeapp",
         "category": "Kommunikation",
         "description": "Peer-to-peer-meddelandeapp med totalsträckskryptering. Meddelanden, foton, röstmeddelanden och samtal går direkt enhet till enhet – ingen server kan läsa med. Vänner lägger du bara till personligen via NFC eller QR. Applås (PIN/fingeravtryck/ansikte), kryptering på enheten och valfri VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Enhetskontroll mot spionprogram, annonsblockerare ingår",
+        "description": "Kontrollerar alla installerade appar mot känd skadlig kod och stalkerware — kontrollsummor, signeringscertifikat och behörighetsprofiler — plus en systemkontroll av öppna dörrar: tillagda rotcertifikat, aktiva tillgänglighetstjänster och enhetsadministratörer. Körs helt offline och innehåller ett lokalt annons- och spårfilter. Spionprogram på statsnivå går inte att upptäcka på den här nivån, vilket appen också säger.",
+        "category": "Säkerhet"
       }
     },
     "da": {
@@ -513,6 +553,11 @@
         "tagline": "Din serverløse messenger",
         "category": "Kommunikation",
         "description": "Peer-to-peer-messenger med ende-til-ende-kryptering. Beskeder, billeder, talebeskeder og opkald går direkte fra enhed til enhed – ingen server kan læse med. Venner tilføjer du kun personligt via NFC eller QR. App-lås (PIN/fingeraftryk/ansigt), kryptering på enheden og valgfri VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Enhedstjek for spionprogrammer, annonceblokering inkluderet",
+        "description": "Tjekker alle installerede apps for kendt malware og stalkerware — kontrolsummer, signeringscertifikater og tilladelsesprofiler — plus et systemtjek for åbne døre: tilføjede rodcertifikater, aktive tilgængelighedstjenester og enhedsadministratorer. Kører helt offline og indeholder et lokalt annonce- og sporingsfilter. Spionprogrammer på statsniveau kan ikke opdages på dette niveau, og det siger appen også selv.",
+        "category": "Sikkerhed"
       }
     },
     "cs": {
@@ -550,6 +595,11 @@
         "tagline": "Tvůj messenger bez serveru",
         "category": "Komunikace",
         "description": "Peer-to-peer messenger se šifrováním end-to-end. Zprávy, fotky, hlasové zprávy a hovory jdou přímo ze zařízení do zařízení – žádný server nečte. Přátele přidáváš jen osobně přes NFC nebo QR. Zámek aplikace (PIN/otisk/obličej), šifrování v zařízení a volitelná VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Kontrola zařízení na špionážní software, včetně blokování reklam",
+        "description": "Prověří všechny nainstalované aplikace na známý škodlivý a sledovací software — kontrolní součty, podpisové certifikáty a profily oprávnění — a zkontroluje systém: přidané kořenové certifikáty, aktivní služby přístupnosti a správce zařízení. Běží zcela offline a obsahuje místní filtr reklam a sledovacích prvků. Špionážní software na státní úrovni na této úrovni neodhalí žádná aplikace, což je v aplikaci i uvedeno.",
+        "category": "Zabezpečení"
       }
     },
     "el": {
@@ -587,6 +637,11 @@
         "tagline": "Ο messenger σου χωρίς διακομιστή",
         "category": "Επικοινωνία",
         "description": "Peer-to-peer messenger με κρυπτογράφηση end-to-end. Μηνύματα, φωτογραφίες, ηχητικά μηνύματα και κλήσεις πάνε απευθείας από συσκευή σε συσκευή – κανένας διακομιστής δεν διαβάζει. Προσθέτεις φίλους μόνο από κοντά μέσω NFC ή QR. Κλείδωμα εφαρμογής (PIN/δαχτυλικό/πρόσωπο), κρυπτογράφηση στη συσκευή και προαιρετικό VPN."
+      },
+      "com.selfguard.app": {
+        "tagline": "Έλεγχος συσκευής για κατασκοπευτικά προγράμματα, με φραγή διαφημίσεων",
+        "description": "Ελέγχει όλες τις εγκατεστημένες εφαρμογές για γνωστό κακόβουλο και κατασκοπευτικό λογισμικό — αθροίσματα ελέγχου, πιστοποιητικά υπογραφής και προφίλ δικαιωμάτων — και εξετάζει το σύστημα: πρόσθετα πιστοποιητικά ρίζας, ενεργές υπηρεσίες προσβασιμότητας και διαχειριστές συσκευής. Λειτουργεί εντελώς εκτός σύνδεσης και περιλαμβάνει τοπικό φίλτρο διαφημίσεων και ιχνηλατών. Κατασκοπευτικό λογισμικό κρατικού επιπέδου δεν ανιχνεύεται σε αυτό το επίπεδο, και η εφαρμογή το δηλώνει.",
+        "category": "Ασφάλεια"
       }
     }
   }

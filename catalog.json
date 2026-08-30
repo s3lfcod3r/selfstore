@@ -534,17 +534,71 @@
         "phone"
       ],
       "tagline": "Geräte-Check auf Spyware, Werbeblocker inklusive",
-      "taglineEn": "Device check for spyware, with ad blocker",
       "description": "Prüft alle installierten Apps auf bekannte Schadsoftware und Überwachungsprogramme: Prüfsummen der Programmdateien, Signaturzertifikate und Berechtigungsprofile. Dazu ein Systemcheck auf offene Türen — nachträglich eingerichtete Wurzelzertifikate, aktive Bedienungshilfen, Geräteverwalter. Der Scan läuft vollständig offline. Eingebaut ist außerdem ein Werbe- und Trackerfilter, der Namensanfragen lokal beantwortet, ohne Verkehr an Dritte weiterzuleiten. Auffällige Apps lassen sich direkt entfernen oder deaktivieren. Staatliche Spionagesoftware erkennt keine App auf dieser Ebene — das steht auch so in der App.",
-      "descriptionEn": "Checks every installed app against known malware and monitoring software: file checksums, signing certificates and permission profiles. Adds a device check for open doors — user-installed root certificates, active accessibility services, device administrators. The scan runs entirely offline. Also includes an ad and tracker filter that answers name lookups locally without forwarding traffic to third parties. Suspicious apps can be removed or disabled straight away. No app at this level can detect state-grade spyware — and the app says so.",
       "icon": "icons/selfguard.png",
       "category": "Sicherheit",
-      "categoryEn": "Security",
       "author": "SelfCoder",
       "versionName": "0.7.0",
       "versionCode": 7,
       "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.7.0/SelfGuard-0.7.0.apk",
-      "sha256": "37697c21519ff328f81e9c776d9799aa52e5afd4681c6bc1adcd848f8f50a862"
+      "sha256": "37697c21519ff328f81e9c776d9799aa52e5afd4681c6bc1adcd848f8f50a862",
+      "i18n": {
+        "en": {
+          "tagline": "Device check for spyware, ad blocker included",
+          "description": "Checks every installed app for known malware and stalkerware — file checksums, signing certificates and permission profiles — plus a system check for open doors such as added root certificates, active accessibility services and device admins. Runs completely offline and includes a local ad and tracker filter. State-grade spyware cannot be detected at this level, and the app says so.",
+          "category": "Security"
+        },
+        "fr": {
+          "tagline": "Contrôle de l’appareil contre les logiciels espions, bloqueur de pubs inclus",
+          "description": "Analyse toutes les applications installées à la recherche de logiciels malveillants et de stalkerware — sommes de contrôle, certificats de signature et profils d’autorisations — et vérifie le système : certificats racine ajoutés, services d’accessibilité actifs, administrateurs de l’appareil. Fonctionne entièrement hors ligne et intègre un filtre local de publicités et de traceurs. Les logiciels espions d’État ne sont pas détectables à ce niveau, et l’application le dit clairement.",
+          "category": "Sécurité"
+        },
+        "es": {
+          "tagline": "Revisión del dispositivo contra software espía, con bloqueador de anuncios",
+          "description": "Revisa todas las aplicaciones instaladas en busca de malware y stalkerware conocidos — sumas de verificación, certificados de firma y perfiles de permisos — además de un chequeo del sistema: certificados raíz añadidos, servicios de accesibilidad activos y administradores del dispositivo. Funciona totalmente sin conexión e incluye un filtro local de anuncios y rastreadores. El software espía estatal no se detecta a este nivel, y la aplicación lo indica.",
+          "category": "Seguridad"
+        },
+        "it": {
+          "tagline": "Controllo del dispositivo contro spyware, con blocco pubblicità",
+          "description": "Controlla tutte le app installate alla ricerca di malware e stalkerware noti — checksum dei file, certificati di firma e profili di autorizzazioni — e verifica il sistema: certificati radice aggiunti, servizi di accessibilità attivi, amministratori del dispositivo. Funziona completamente offline e include un filtro locale per pubblicità e tracker. Lo spyware di livello statale non è rilevabile a questo livello, e l’app lo dichiara.",
+          "category": "Sicurezza"
+        },
+        "nl": {
+          "tagline": "Apparaatcontrole op spyware, advertentieblokkering inbegrepen",
+          "description": "Controleert alle geïnstalleerde apps op bekende malware en stalkerware — controlegetallen, ondertekeningscertificaten en rechtenprofielen — plus een systeemcontrole op openstaande deuren: toegevoegde hoofdcertificaten, actieve toegankelijkheidsdiensten en apparaatbeheerders. Werkt volledig offline en bevat een lokaal advertentie- en trackerfilter. Spyware van staatsniveau is op dit niveau niet te herkennen; de app zegt dat er ook bij.",
+          "category": "Beveiliging"
+        },
+        "pl": {
+          "tagline": "Kontrola urządzenia pod kątem programów szpiegujących, z blokadą reklam",
+          "description": "Sprawdza wszystkie zainstalowane aplikacje pod kątem znanego złośliwego oprogramowania i stalkerware — sumy kontrolne, certyfikaty podpisu i profile uprawnień — oraz kontroluje system: dodane certyfikaty główne, aktywne usługi ułatwień dostępu, administratorów urządzenia. Działa całkowicie offline i zawiera lokalny filtr reklam i modułów śledzących. Oprogramowania szpiegowskiego klasy państwowej nie wykryje na tym poziomie żadna aplikacja — i tak też jest napisane w aplikacji.",
+          "category": "Bezpieczeństwo"
+        },
+        "pt": {
+          "tagline": "Verificação do dispositivo contra spyware, com bloqueador de anúncios",
+          "description": "Verifica todas as aplicações instaladas em busca de malware e stalkerware conhecidos — somas de verificação, certificados de assinatura e perfis de permissões — e faz uma verificação do sistema: certificados raiz adicionados, serviços de acessibilidade ativos e administradores do dispositivo. Funciona totalmente offline e inclui um filtro local de anúncios e rastreadores. Spyware de nível estatal não é detetável a este nível, e a aplicação diz isso mesmo.",
+          "category": "Segurança"
+        },
+        "sv": {
+          "tagline": "Enhetskontroll mot spionprogram, annonsblockerare ingår",
+          "description": "Kontrollerar alla installerade appar mot känd skadlig kod och stalkerware — kontrollsummor, signeringscertifikat och behörighetsprofiler — plus en systemkontroll av öppna dörrar: tillagda rotcertifikat, aktiva tillgänglighetstjänster och enhetsadministratörer. Körs helt offline och innehåller ett lokalt annons- och spårfilter. Spionprogram på statsnivå går inte att upptäcka på den här nivån, vilket appen också säger.",
+          "category": "Säkerhet"
+        },
+        "da": {
+          "tagline": "Enhedstjek for spionprogrammer, annonceblokering inkluderet",
+          "description": "Tjekker alle installerede apps for kendt malware og stalkerware — kontrolsummer, signeringscertifikater og tilladelsesprofiler — plus et systemtjek for åbne døre: tilføjede rodcertifikater, aktive tilgængelighedstjenester og enhedsadministratorer. Kører helt offline og indeholder et lokalt annonce- og sporingsfilter. Spionprogrammer på statsniveau kan ikke opdages på dette niveau, og det siger appen også selv.",
+          "category": "Sikkerhed"
+        },
+        "cs": {
+          "tagline": "Kontrola zařízení na špionážní software, včetně blokování reklam",
+          "description": "Prověří všechny nainstalované aplikace na známý škodlivý a sledovací software — kontrolní součty, podpisové certifikáty a profily oprávnění — a zkontroluje systém: přidané kořenové certifikáty, aktivní služby přístupnosti a správce zařízení. Běží zcela offline a obsahuje místní filtr reklam a sledovacích prvků. Špionážní software na státní úrovni na této úrovni neodhalí žádná aplikace, což je v aplikaci i uvedeno.",
+          "category": "Zabezpečení"
+        },
+        "el": {
+          "tagline": "Έλεγχος συσκευής για κατασκοπευτικά προγράμματα, με φραγή διαφημίσεων",
+          "description": "Ελέγχει όλες τις εγκατεστημένες εφαρμογές για γνωστό κακόβουλο και κατασκοπευτικό λογισμικό — αθροίσματα ελέγχου, πιστοποιητικά υπογραφής και προφίλ δικαιωμάτων — και εξετάζει το σύστημα: πρόσθετα πιστοποιητικά ρίζας, ενεργές υπηρεσίες προσβασιμότητας και διαχειριστές συσκευής. Λειτουργεί εντελώς εκτός σύνδεσης και περιλαμβάνει τοπικό φίλτρο διαφημίσεων και ιχνηλατών. Κατασκοπευτικό λογισμικό κρατικού επιπέδου δεν ανιχνεύεται σε αυτό το επίπεδο, και η εφαρμογή το δηλώνει.",
+          "category": "Ασφάλεια"
+        }
+      }
     }
   ]
 }
