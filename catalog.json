@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.78.0",
-      "versionCode": 86,
+      "versionName": "1.79.0",
+      "versionCode": 87,
       "changelog": "Ruhigere Oberflaeche beim Lesen: der Kopf ueber einer Mail traegt jetzt vier Bedienelemente statt zwoelf, alles Weitere liegt gruppiert unter „Mehr“. Der Echtheits-Hinweis meldet sich nur noch, wenn wirklich etwas nicht stimmt. In der Mailliste erscheinen Auswahl und Stern erst, wenn man sie braucht.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.78.0/SelfMailer-1.78.0.apk",
-      "sha256": "94bcef0375f3500af32e18840b9ce21047b94da7b8ddaed8c0ffc65bd4071632",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.79.0/SelfMailer-1.79.0.apk",
+      "sha256": "3cf971c26382924dd5c15108039344ebd259c7dc7e0f3672dafe75563b90a04b",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
