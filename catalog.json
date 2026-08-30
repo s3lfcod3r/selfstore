@@ -92,7 +92,7 @@
       "versionCode": 84,
       "changelog": "Fehlerbehebungen: Job-Status abrufbar, Absender als Kontakt speichern behaelt den Namen, Aufraeumen beim Konto-Loeschen.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.76.0/SelfMailer-1.76.0.apk",
-      "sha256": "6f067b2423ce514abe6b283ce71566ab1576a7f4c7b43bc95ced2b784004b789",
+      "sha256": "20995bb264808b36f0896244e1ac09fdca284161ad3eb6f30afe0449d7ec3980",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
@@ -167,7 +167,7 @@
       "versionCode": 27,
       "changelog": "Farbige Ablauf-Anzeige: Ring UND Code-Ziffern färben die verbleibende Zeit (teal → gelb → rot) und pulsieren in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
       "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.1/SelfAuthenticator-v2.6.1.apk",
-      "sha256": "443f4e4a035bd2377a99266fd957f518b27813b4218e26ba76dd4e3abef69932",
+      "sha256": "65d888d0f6572adfcae4c2eaab7f295bc559cb325ea59431cf61ca2b2ea79584",
       "i18n": {
         "en": {
           "tagline": "Your 2FA / TOTP vault",
@@ -242,7 +242,7 @@
       "versionCode": 4,
       "changelog": "Aktuelle Version.",
       "apk": "https://github.com/s3lfcod3r/selfdashboard/releases/download/v1.0.3/SelfDashboard-v1.0.3.apk",
-      "sha256": "052d0fcba69a4dad435682c317f737d505a60d95d2aa4572061d2738d30e280d",
+      "sha256": "b834f409013ec3e67795e53d8340d9bff2dac69042639bc5a6cc1b8a31fee7b3",
       "i18n": {
         "en": {
           "tagline": "Your Self hub",
@@ -317,7 +317,7 @@
       "versionCode": 9,
       "changelog": "Backup + Import (Daten als JSON zwischen Handy/Tablet/PC umziehen); Export lässt den Speicherort wählen. Auch als Webseite unter pool.selfcoder.de.",
       "apk": "https://github.com/s3lfcod3r/selfpooltracker/releases/download/v1.2.1/selfpooltracker-1.2.1.apk",
-      "sha256": "2a97234d1d821f9af82cd5fca6c18d617ef45412aa98f87f35b445ac6a7188c3",
+      "sha256": "a4067027afd53a483d74340cce5ea81d254454a1a34bc5b350ff43ef8f88098d",
       "i18n": {
         "en": {
           "tagline": "Your pool water values under control",
@@ -392,7 +392,7 @@
       "versionCode": 6,
       "changelog": "Erste Store-Version.",
       "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.3/SelfWG-v1.2.3.apk",
-      "sha256": "0a505cf08460df8f7e2811935e697475021846b160685591862d3f81f7429d74",
+      "sha256": "f42f56dcf7dee0e9bc8b0080086f879926ef3392d2891152dbe8b3239e58908f",
       "i18n": {
         "en": {
           "tagline": "WireGuard that stays up",
@@ -467,7 +467,7 @@
       "versionCode": 19,
       "changelog": "Erste Version.",
       "apk": "https://github.com/s3lfcod3r/selfmessenger/releases/download/v0.1.18/selfmessenger-0.1.18.apk",
-      "sha256": "9570249094d0e0bf9793010e4b8df3ecf16c437cc105ca9a9b8014fb685c2b20",
+      "sha256": "e616c85dc8cb8a3dee0cfdd5d18d11afcd22f9e6d4ac3fbe6962b3a340dacf81",
       "i18n": {
         "en": {
           "tagline": "Your serverless messenger",
@@ -541,7 +541,7 @@
       "versionName": "0.7.0",
       "versionCode": 7,
       "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.7.0/SelfGuard-0.7.0.apk",
-      "sha256": "37697c21519ff328f81e9c776d9799aa52e5afd4681c6bc1adcd848f8f50a862",
+      "sha256": "785266676333fb8c1e9d209222e1315f69cb367fe107a6e0d5cdd6a608dc137a",
       "i18n": {
         "en": {
           "tagline": "Device check for spyware, ad blocker included",
