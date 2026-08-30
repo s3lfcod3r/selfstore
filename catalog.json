@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.76.0",
-      "versionCode": 84,
+      "versionName": "1.77.0",
+      "versionCode": 85,
       "changelog": "Fehlerbehebungen: Job-Status abrufbar, Absender als Kontakt speichern behaelt den Namen, Aufraeumen beim Konto-Loeschen.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.76.0/SelfMailer-1.76.0.apk",
-      "sha256": "20995bb264808b36f0896244e1ac09fdca284161ad3eb6f30afe0449d7ec3980",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.77.0/SelfMailer-1.77.0.apk",
+      "sha256": "16bb56c8499ed6ef1663aac5838d17fdbf47ac3f78bfa4d58ab3357633aac833",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
