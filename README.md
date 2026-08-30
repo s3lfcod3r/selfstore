@@ -422,6 +422,22 @@ $env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
 → `app/build/outputs/apk/release/app-release.apk` (Release-signiert, sofern
 `keystore.properties` vorhanden ist; sonst Debug-Fallback).
 
+> ⚠️ **v1-Signatur erzwingen.** Ältere, abgespeckte TV-ROMs können die Signatur einer
+> APK-**Datei** nur lesen, wenn sie einen v1-Block (JAR) trägt — seit dem
+> Signatur-Pinning bricht die Installation dort sonst ab. `enableV1Signing = true`
+> in Gradle reicht NICHT: sowohl AGP als auch `apksigner` lassen v1 bei
+> `minSdk >= 24` weg. Die APK deshalb nach dem Build nachsignieren:
+>
+> ```bash
+> apksigner sign --ks <keystore.jks> --ks-key-alias <alias> \
+>   --min-sdk-version 21 \
+>   --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
+>   --out SelfStore-v<Version>.apk app-release.apk
+> ```
+>
+> `--min-sdk-version 21` ist der entscheidende Teil — ohne ihn bleibt v1 aus.
+> Danach prüfen: `apksigner verify --verbose <apk>` muss `v1 scheme … true` zeigen.
+
 ### 🔒 Security
 
 Zuletzt geprüft: **August 2026** (Code **und** Betrieb). **Umgesetzte Härtungen:**
