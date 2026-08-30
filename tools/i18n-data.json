@@ -213,11 +213,6 @@
         "description": "Standalone WireGuard client with an auto-reconnect watchdog: reconnects automatically after the daily forced IP change. Multiple tunnels, per-app split tunnel, labeled-field editor, fingerprint lock.",
         "category": "Network"
       },
-      "com.selfmessenger.app": {
-        "tagline": "Your serverless messenger",
-        "category": "Communication",
-        "description": "End-to-end-encrypted peer-to-peer messenger. Messages, photos, voice notes and calls go straight from device to device – no server can read along. You add friends only in person via NFC or QR. App lock (PIN/fingerprint/face), on-device encryption and an optional VPN."
-      },
       "com.selfguard.app": {
         "tagline": "Device check for spyware, ad blocker included",
         "description": "Checks every installed app for known malware and stalkerware — file checksums, signing certificates and permission profiles — plus a system check for open doors such as added root certificates, active accessibility services and device admins. Runs completely offline and includes a local ad and tracker filter. State-grade spyware cannot be detected at this level, and the app says so.",
@@ -254,11 +249,6 @@
         "tagline": "WireGuard qui reste connecté",
         "description": "Client WireGuard autonome avec un gardien de reconnexion automatique : se reconnecte tout seul après le changement d'IP forcé quotidien. Plusieurs tunnels, split tunnel par appli, éditeur à champs étiquetés, verrouillage par empreinte.",
         "category": "Réseau"
-      },
-      "com.selfmessenger.app": {
-        "tagline": "Ta messagerie sans serveur",
-        "category": "Communication",
-        "description": "Messagerie pair-à-pair chiffrée de bout en bout. Messages, photos, notes vocales et appels vont directement d'un appareil à l'autre – aucun serveur ne peut lire. On ajoute des amis uniquement en personne via NFC ou QR. Verrouillage (PIN/empreinte/visage), chiffrement sur l'appareil et VPN optionnel."
       },
       "com.selfguard.app": {
         "tagline": "Contrôle de l’appareil contre les logiciels espions, bloqueur de pubs inclus",
@@ -297,11 +287,6 @@
         "description": "Cliente WireGuard independiente con un vigilante de reconexión automática: se reconecta solo tras el cambio de IP forzado diario. Múltiples túneles, split tunnel por app, editor de campos con etiquetas y bloqueo por huella.",
         "category": "Red"
       },
-      "com.selfmessenger.app": {
-        "tagline": "Tu mensajería sin servidor",
-        "category": "Comunicación",
-        "description": "Mensajería entre pares cifrada de extremo a extremo. Mensajes, fotos, notas de voz y llamadas van directamente de un dispositivo a otro; ningún servidor puede leerlos. Los amigos se añaden solo en persona mediante NFC o QR. Bloqueo (PIN/huella/cara), cifrado en el dispositivo y VPN opcional."
-      },
       "com.selfguard.app": {
         "tagline": "Revisión del dispositivo contra software espía, con bloqueador de anuncios",
         "description": "Revisa todas las aplicaciones instaladas en busca de malware y stalkerware conocidos — sumas de verificación, certificados de firma y perfiles de permisos — además de un chequeo del sistema: certificados raíz añadidos, servicios de accesibilidad activos y administradores del dispositivo. Funciona totalmente sin conexión e incluye un filtro local de anuncios y rastreadores. El software espía estatal no se detecta a este nivel, y la aplicación lo indica.",
@@ -338,11 +323,6 @@
         "tagline": "WireGuard che resta connesso",
         "description": "Client WireGuard autonomo con un watchdog di riconnessione automatica: si riconnette da solo dopo il cambio IP forzato quotidiano. Tunnel multipli, split tunnel per app, editor a campi etichettati, blocco con impronta digitale.",
         "category": "Rete"
-      },
-      "com.selfmessenger.app": {
-        "tagline": "Il tuo messenger senza server",
-        "category": "Comunicazione",
-        "description": "Messenger peer-to-peer cifrato end-to-end. Messaggi, foto, note vocali e chiamate vanno direttamente da un dispositivo all'altro: nessun server può leggere. Gli amici si aggiungono solo di persona tramite NFC o QR. Blocco (PIN/impronta/volto), cifratura sul dispositivo e VPN opzionale."
       },
       "com.selfguard.app": {
         "tagline": "Controllo del dispositivo contro spyware, con blocco pubblicità",
@@ -381,11 +361,6 @@
         "description": "Zelfstandige WireGuard-client met een automatische herverbindingswaakhond: verbindt automatisch opnieuw na de dagelijkse gedwongen IP-wissel. Meerdere tunnels, split-tunnel per app, editor met gelabelde velden, vingerafdrukvergrendeling.",
         "category": "Netwerk"
       },
-      "com.selfmessenger.app": {
-        "tagline": "Jouw serverloze messenger",
-        "category": "Communicatie",
-        "description": "Peer-to-peer messenger met end-to-end-versleuteling. Berichten, foto's, spraaknotities en gesprekken gaan rechtstreeks van apparaat naar apparaat – geen server leest mee. Vrienden voeg je alleen in persoon toe via NFC of QR. Appvergrendeling (pincode/vingerafdruk/gezicht), versleuteling op het apparaat en optionele VPN."
-      },
       "com.selfguard.app": {
         "tagline": "Apparaatcontrole op spyware, advertentieblokkering inbegrepen",
         "description": "Controleert alle geïnstalleerde apps op bekende malware en stalkerware — controlegetallen, ondertekeningscertificaten en rechtenprofielen — plus een systeemcontrole op openstaande deuren: toegevoegde hoofdcertificaten, actieve toegankelijkheidsdiensten en apparaatbeheerders. Werkt volledig offline en bevat een lokaal advertentie- en trackerfilter. Spyware van staatsniveau is op dit niveau niet te herkennen; de app zegt dat er ook bij.",
@@ -422,11 +397,6 @@
         "tagline": "WireGuard, który się nie rozłącza",
         "description": "Samodzielny klient WireGuard z czuwakiem automatycznego ponownego łączenia: po codziennej wymuszonej zmianie IP łączy się z powrotem automatycznie. Wiele tuneli, dzielony tunel per aplikacja, edytor z opisanymi polami, blokada odciskiem palca.",
         "category": "Sieć"
-      },
-      "com.selfmessenger.app": {
-        "tagline": "Twój komunikator bez serwera",
-        "category": "Komunikacja",
-        "description": "Komunikator peer-to-peer z szyfrowaniem end-to-end. Wiadomości, zdjęcia, notatki głosowe i połączenia idą bezpośrednio z urządzenia na urządzenie – żaden serwer nie czyta. Znajomych dodajesz tylko osobiście przez NFC lub QR. Blokada aplikacji (PIN/odcisk/twarz), szyfrowanie na urządzeniu i opcjonalny VPN."
       },
       "com.selfguard.app": {
         "tagline": "Kontrola urządzenia pod kątem programów szpiegujących, z blokadą reklam",
@@ -465,11 +435,6 @@
         "description": "Cliente WireGuard autónomo com um vigilante de reconexão automática: religa-se automaticamente após a mudança forçada de IP diária. Vários túneis, split tunnel por aplicação, editor de campos identificados e bloqueio por impressão digital.",
         "category": "Rede"
       },
-      "com.selfmessenger.app": {
-        "tagline": "O teu mensageiro sem servidor",
-        "category": "Comunicação",
-        "description": "Mensageiro peer-to-peer com encriptação ponta a ponta. Mensagens, fotos, notas de voz e chamadas vão diretamente de dispositivo para dispositivo – nenhum servidor consegue ler. Adicionas amigos só presencialmente via NFC ou QR. Bloqueio (PIN/impressão/rosto), encriptação no dispositivo e VPN opcional."
-      },
       "com.selfguard.app": {
         "tagline": "Verificação do dispositivo contra spyware, com bloqueador de anúncios",
         "description": "Verifica todas as aplicações instaladas em busca de malware e stalkerware conhecidos — somas de verificação, certificados de assinatura e perfis de permissões — e faz uma verificação do sistema: certificados raiz adicionados, serviços de acessibilidade ativos e administradores do dispositivo. Funciona totalmente offline e inclui um filtro local de anúncios e rastreadores. Spyware de nível estatal não é detetável a este nível, e a aplicação diz isso mesmo.",
@@ -506,11 +471,6 @@
         "tagline": "WireGuard som håller sig uppe",
         "description": "Fristående WireGuard-klient med en vakthund för automatisk återanslutning: återansluter automatiskt efter det dagliga påtvingade IP-bytet. Flera tunnlar, split tunnel per app, redigerare med namngivna fält, fingeravtryckslås.",
         "category": "Nätverk"
-      },
-      "com.selfmessenger.app": {
-        "tagline": "Din serverlösa meddelandeapp",
-        "category": "Kommunikation",
-        "description": "Peer-to-peer-meddelandeapp med totalsträckskryptering. Meddelanden, foton, röstmeddelanden och samtal går direkt enhet till enhet – ingen server kan läsa med. Vänner lägger du bara till personligen via NFC eller QR. Applås (PIN/fingeravtryck/ansikte), kryptering på enheten och valfri VPN."
       },
       "com.selfguard.app": {
         "tagline": "Enhetskontroll mot spionprogram, annonsblockerare ingår",
@@ -549,11 +509,6 @@
         "description": "Selvstændig WireGuard-klient med en vagthund til automatisk genforbindelse: genforbinder automatisk efter det daglige tvungne IP-skift. Flere tunneler, split tunnel pr. app, editor med navngivne felter, fingeraftrykslås.",
         "category": "Netværk"
       },
-      "com.selfmessenger.app": {
-        "tagline": "Din serverløse messenger",
-        "category": "Kommunikation",
-        "description": "Peer-to-peer-messenger med ende-til-ende-kryptering. Beskeder, billeder, talebeskeder og opkald går direkte fra enhed til enhed – ingen server kan læse med. Venner tilføjer du kun personligt via NFC eller QR. App-lås (PIN/fingeraftryk/ansigt), kryptering på enheden og valgfri VPN."
-      },
       "com.selfguard.app": {
         "tagline": "Enhedstjek for spionprogrammer, annonceblokering inkluderet",
         "description": "Tjekker alle installerede apps for kendt malware og stalkerware — kontrolsummer, signeringscertifikater og tilladelsesprofiler — plus et systemtjek for åbne døre: tilføjede rodcertifikater, aktive tilgængelighedstjenester og enhedsadministratorer. Kører helt offline og indeholder et lokalt annonce- og sporingsfilter. Spionprogrammer på statsniveau kan ikke opdages på dette niveau, og det siger appen også selv.",
@@ -591,11 +546,6 @@
         "description": "Samostatný klient WireGuard s hlídačem automatického znovupřipojení: po denní vynucené změně IP se připojí automaticky. Více tunelů, rozdělené tunelování podle aplikace, editor s pojmenovanými poli, zámek otiskem prstu.",
         "category": "Síť"
       },
-      "com.selfmessenger.app": {
-        "tagline": "Tvůj messenger bez serveru",
-        "category": "Komunikace",
-        "description": "Peer-to-peer messenger se šifrováním end-to-end. Zprávy, fotky, hlasové zprávy a hovory jdou přímo ze zařízení do zařízení – žádný server nečte. Přátele přidáváš jen osobně přes NFC nebo QR. Zámek aplikace (PIN/otisk/obličej), šifrování v zařízení a volitelná VPN."
-      },
       "com.selfguard.app": {
         "tagline": "Kontrola zařízení na špionážní software, včetně blokování reklam",
         "description": "Prověří všechny nainstalované aplikace na známý škodlivý a sledovací software — kontrolní součty, podpisové certifikáty a profily oprávnění — a zkontroluje systém: přidané kořenové certifikáty, aktivní služby přístupnosti a správce zařízení. Běží zcela offline a obsahuje místní filtr reklam a sledovacích prvků. Špionážní software na státní úrovni na této úrovni neodhalí žádná aplikace, což je v aplikaci i uvedeno.",
@@ -632,11 +582,6 @@
         "tagline": "WireGuard που δεν πέφτει",
         "description": "Αυτόνομο πρόγραμμα-πελάτης WireGuard με έναν επιτηρητή αυτόματης επανασύνδεσης: επανασυνδέεται αυτόματα μετά την καθημερινή αναγκαστική αλλαγή IP. Πολλαπλά tunnel, split tunnel ανά εφαρμογή, επεξεργαστής με πεδία με ετικέτες, κλείδωμα με δακτυλικό αποτύπωμα.",
         "category": "Δίκτυο"
-      },
-      "com.selfmessenger.app": {
-        "tagline": "Ο messenger σου χωρίς διακομιστή",
-        "category": "Επικοινωνία",
-        "description": "Peer-to-peer messenger με κρυπτογράφηση end-to-end. Μηνύματα, φωτογραφίες, ηχητικά μηνύματα και κλήσεις πάνε απευθείας από συσκευή σε συσκευή – κανένας διακομιστής δεν διαβάζει. Προσθέτεις φίλους μόνο από κοντά μέσω NFC ή QR. Κλείδωμα εφαρμογής (PIN/δαχτυλικό/πρόσωπο), κρυπτογράφηση στη συσκευή και προαιρετικό VPN."
       },
       "com.selfguard.app": {
         "tagline": "Έλεγχος συσκευής για κατασκοπευτικά προγράμματα, με φραγή διαφημίσεων",
