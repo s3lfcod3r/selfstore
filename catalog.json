@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.80.0",
-      "versionCode": 88,
+      "versionName": "1.81.0",
+      "versionCode": 89,
       "changelog": "Sync & Export und die Konten-Seite zeigen nicht mehr jedes Formular gleichzeitig: Abschnitte sind aufklappbar, offen bleibt nur, was gerade Zustand zeigt. Beim Bearbeiten eines Kontos stehen drei Felder statt zwoelf — beim Anlegen klappen die Server-Einstellungen weiterhin von selbst auf.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.80.0/SelfMailer-1.80.0.apk",
-      "sha256": "c5c3119537da85271e54fa05f046855b857e857b3e4a54ccaf2bd924104c35b1",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.81.0/SelfMailer-1.81.0.apk",
+      "sha256": "5ab61e067ee64852dec69d6635248479706231af77578aefe1cbfc9510ac0d11",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
