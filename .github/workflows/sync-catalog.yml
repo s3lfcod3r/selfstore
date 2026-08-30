@@ -50,6 +50,12 @@ jobs:
           export SYNC_DATE="$(date -u +%F)"
           python tools/sync_catalog.py
 
+      # Waechter: kaputte Kodierung, ungueltiges JSON oder fehlende Pflichtfelder
+      # duerfen nicht veroeffentlicht werden — dann bricht der Job ab und der
+      # letzte gute Katalog bleibt stehen.
+      - name: Katalog pruefen
+        run: node tools/check_catalog.js
+
       - name: Änderungen committen
         run: |
           if [ -n "$(git status --porcelain)" ]; then
