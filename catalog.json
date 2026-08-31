@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-08-31T12:21:35Z",
+  "updated": "2026-08-31T13:19:16Z",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -534,18 +534,18 @@
       "icon": "icons/self-remote.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "0.1.0",
-      "versionCode": 1,
-      "changelog": "Erste Fassung: Bildschirmübertragung, Tippen und Wischen, Zurück/Start/Übersicht.",
-      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.1.0-android/SelfRemote-0.1.0.apk",
-      "sha256": "e5d8aa7e117d664cd16237c0acd26a8aa8555b637219310b929178bc313b7d4a",
+      "versionName": "0.2.0",
+      "versionCode": 2,
+      "changelog": "Kein Token mehr abtippen: Serveradresse und Gerätenamen eintragen, anmelden — der Administrator gibt das Gerät frei.",
+      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.2.0-android/SelfRemote-0.2.0.apk",
+      "sha256": "12fdeccd609b4e701cfc2b4a1bbe3790c7209dc119fd4a66e1c7cb66592450cc",
       "platforms": [
         "phone"
       ],
       "i18n": {
         "en": {
           "tagline": "Let this device be supported remotely",
-          "description": "Makes this device reachable for your own SelfRemote support server: share the screen, allow taps and swipes. Only administrators of your own server may connect — no third-party relay, no open ports. Control works without root through an accessibility service you enable yourself.",
+          "description": "Makes this device reachable for your own SelfRemote support server: share the screen, allow taps and swipes. No token to type — enter the server address and a name, then an administrator approves the device. Only administrators of your own server may connect: no third-party relay, no open ports. Control works without root through an accessibility service you enable yourself.",
           "category": "System"
         },
         "fr": {
