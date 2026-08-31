@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-08-31T13:19:16Z",
+  "updated": "2026-08-31T14:00:42Z",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -534,11 +534,11 @@
       "icon": "icons/self-remote.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "0.2.0",
-      "versionCode": 2,
-      "changelog": "Kein Token mehr abtippen: Serveradresse und Gerätenamen eintragen, anmelden — der Administrator gibt das Gerät frei.",
-      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.2.0-android/SelfRemote-0.2.0.apk",
-      "sha256": "12fdeccd609b4e701cfc2b4a1bbe3790c7209dc119fd4a66e1c7cb66592450cc",
+      "versionName": "0.3.0",
+      "versionCode": 3,
+      "changelog": "Erklärt jetzt die Android-Sperre „eingeschränkte Einstellungen“ und führt direkt zur richtigen Einstellung.",
+      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.3.0-android/SelfRemote-0.3.0.apk",
+      "sha256": "b0a1811256f491632874dc97d8e535037cba704b5a5bf0e948694d66f1ed1d5b",
       "platforms": [
         "phone"
       ],
