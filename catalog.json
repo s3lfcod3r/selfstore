@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-08-30",
+  "updated": "2026-08-31T12:21:35Z",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -522,6 +522,81 @@
           "tagline": "Έλεγχος συσκευής για κατασκοπευτικά προγράμματα, με φραγή διαφημίσεων",
           "description": "Ελέγχει όλες τις εγκατεστημένες εφαρμογές για γνωστό κακόβουλο και κατασκοπευτικό λογισμικό — αθροίσματα ελέγχου, πιστοποιητικά υπογραφής και προφίλ δικαιωμάτων — και εξετάζει το σύστημα: πρόσθετα πιστοποιητικά ρίζας, ενεργές υπηρεσίες προσβασιμότητας και διαχειριστές συσκευής. Λειτουργεί εντελώς εκτός σύνδεσης και περιλαμβάνει τοπικό φίλτρο διαφημίσεων και ιχνηλατών. Κατασκοπευτικό λογισμικό κρατικού επιπέδου δεν ανιχνεύεται σε αυτό το επίπεδο, και η εφαρμογή το δηλώνει.",
           "category": "Ασφάλεια"
+        }
+      }
+    },
+    {
+      "id": "de.selfcoder.selfremote",
+      "source": "s3lfcod3r/selfremote",
+      "name": "SelfRemote",
+      "tagline": "Dieses Gerät fernwarten lassen",
+      "description": "Macht dieses Gerät für die eigene SelfRemote-Fernwartung erreichbar: Bildschirm übertragen, tippen und wischen lassen. Nur Administratoren des eigenen Servers dürfen zugreifen — kein fremder Vermittler, keine offenen Ports. Steuerung läuft ohne Root über einen Bedienungshilfe-Dienst, den du selbst freischaltest.",
+      "icon": "icons/self-remote.png",
+      "category": "System",
+      "author": "SelfCoder",
+      "versionName": "0.1.0",
+      "versionCode": 1,
+      "changelog": "Erste Fassung: Bildschirmübertragung, Tippen und Wischen, Zurück/Start/Übersicht.",
+      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.1.0-android/SelfRemote-0.1.0.apk",
+      "sha256": "e5d8aa7e117d664cd16237c0acd26a8aa8555b637219310b929178bc313b7d4a",
+      "platforms": [
+        "phone"
+      ],
+      "i18n": {
+        "en": {
+          "tagline": "Let this device be supported remotely",
+          "description": "Makes this device reachable for your own SelfRemote support server: share the screen, allow taps and swipes. Only administrators of your own server may connect — no third-party relay, no open ports. Control works without root through an accessibility service you enable yourself.",
+          "category": "System"
+        },
+        "fr": {
+          "tagline": "Laisser dépanner cet appareil à distance",
+          "description": "Rend cet appareil accessible à votre propre serveur SelfRemote : partage d'écran, appuis et balayages. Seuls les administrateurs de votre serveur peuvent se connecter — aucun relais tiers, aucun port ouvert. Le contrôle fonctionne sans root via un service d'accessibilité que vous activez vous-même.",
+          "category": "Système"
+        },
+        "es": {
+          "tagline": "Permitir asistencia remota en este dispositivo",
+          "description": "Hace que este dispositivo sea accesible para tu propio servidor SelfRemote: comparte la pantalla y permite toques y deslizamientos. Solo los administradores de tu servidor pueden conectarse, sin intermediarios ajenos ni puertos abiertos. El control funciona sin root mediante un servicio de accesibilidad que activas tú.",
+          "category": "Sistema"
+        },
+        "it": {
+          "tagline": "Consenti l'assistenza remota su questo dispositivo",
+          "description": "Rende questo dispositivo raggiungibile dal tuo server SelfRemote: condivide lo schermo e consente tocchi e scorrimenti. Solo gli amministratori del tuo server possono connettersi — nessun intermediario esterno, nessuna porta aperta. Il controllo funziona senza root tramite un servizio di accessibilità che attivi tu.",
+          "category": "Sistema"
+        },
+        "nl": {
+          "tagline": "Dit apparaat op afstand laten ondersteunen",
+          "description": "Maakt dit apparaat bereikbaar voor je eigen SelfRemote-server: scherm delen, tikken en vegen toestaan. Alleen beheerders van je eigen server kunnen verbinden — geen externe tussenpersoon, geen open poorten. Bediening werkt zonder root via een toegankelijkheidsdienst die je zelf inschakelt.",
+          "category": "Systeem"
+        },
+        "pt": {
+          "tagline": "Permitir suporte remoto neste dispositivo",
+          "description": "Torna este dispositivo acessível ao seu próprio servidor SelfRemote: partilha do ecrã, toques e deslizes. Apenas os administradores do seu servidor podem ligar-se — sem intermediários externos, sem portas abertas. O controlo funciona sem root através de um serviço de acessibilidade que você ativa.",
+          "category": "Sistema"
+        },
+        "pl": {
+          "tagline": "Zezwól na zdalną pomoc na tym urządzeniu",
+          "description": "Udostępnia to urządzenie własnemu serwerowi SelfRemote: przesyła ekran, pozwala na dotknięcia i przesunięcia. Połączyć mogą się wyłącznie administratorzy Twojego serwera — bez obcego pośrednika i bez otwartych portów. Sterowanie działa bez roota przez usługę ułatwień dostępu, którą sam włączasz.",
+          "category": "System"
+        },
+        "cs": {
+          "tagline": "Povolit vzdálenou správu tohoto zařízení",
+          "description": "Zpřístupní toto zařízení vlastnímu serveru SelfRemote: sdílí obrazovku a umožňuje klepnutí a přejetí. Připojit se mohou jen správci vašeho serveru — žádný cizí prostředník, žádné otevřené porty. Ovládání funguje bez rootu přes službu přístupnosti, kterou si sami zapnete.",
+          "category": "Systém"
+        },
+        "da": {
+          "tagline": "Lad denne enhed fjernsupporteres",
+          "description": "Gør denne enhed tilgængelig for din egen SelfRemote-server: deler skærmen og tillader tryk og strygninger. Kun administratorer på din egen server kan forbinde — ingen fremmed mellemmand, ingen åbne porte. Styring virker uden root via en tilgængelighedstjeneste, du selv slår til.",
+          "category": "System"
+        },
+        "sv": {
+          "tagline": "Låt den här enheten fjärrsupportas",
+          "description": "Gör enheten nåbar för din egen SelfRemote-server: delar skärmen och tillåter tryck och svep. Endast administratörer på din egen server kan ansluta — ingen extern förmedlare, inga öppna portar. Styrning fungerar utan root via en tillgänglighetstjänst som du själv aktiverar.",
+          "category": "System"
+        },
+        "el": {
+          "tagline": "Επιτρέψτε την απομακρυσμένη υποστήριξη σε αυτή τη συσκευή",
+          "description": "Κάνει τη συσκευή προσβάσιμη στον δικό σας διακομιστή SelfRemote: μοιράζεται την οθόνη και επιτρέπει πατήματα και σαρώσεις. Μόνο οι διαχειριστές του δικού σας διακομιστή μπορούν να συνδεθούν — χωρίς ξένο μεσάζοντα, χωρίς ανοιχτές θύρες. Ο έλεγχος λειτουργεί χωρίς root μέσω μιας υπηρεσίας προσβασιμότητας που ενεργοποιείτε εσείς.",
+          "category": "Σύστημα"
         }
       }
     }
