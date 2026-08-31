@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-08-31T14:00:42Z",
+  "updated": "2026-08-31T14:18:10Z",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -534,11 +534,11 @@
       "icon": "icons/self-remote.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "0.3.0",
-      "versionCode": 3,
-      "changelog": "Erklärt jetzt die Android-Sperre „eingeschränkte Einstellungen“ und führt direkt zur richtigen Einstellung.",
-      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.3.0-android/SelfRemote-0.3.0.apk",
-      "sha256": "b0a1811256f491632874dc97d8e535037cba704b5a5bf0e948694d66f1ed1d5b",
+      "versionName": "0.4.0",
+      "versionCode": 4,
+      "changelog": "Behebt den Abbruch beim Sitzungsstart auf Android 14 und neuer.",
+      "apk": "https://github.com/s3lfcod3r/selfremote/releases/download/v0.4.0-android/SelfRemote-0.4.0.apk",
+      "sha256": "9305bb59760ee38210b560f681cd39817c904801eada921a0af42ad4179da207",
       "platforms": [
         "phone"
       ],
