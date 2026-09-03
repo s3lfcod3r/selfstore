@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.82.0",
-      "versionCode": 90,
+      "versionName": "1.83.0",
+      "versionCode": 91,
       "changelog": "Deutlich schneller: sieben von acht Postfaechern synchronisieren jetzt unter einer Sekunde. SelfMailer haelt pro Postfach mehrere Verbindungen statt einer - vorher musste sich alles anstellen, vom Abholen bis zum Loeschen. Loeschen dauert jetzt Millisekunden statt fehlzuschlagen.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.82.0/SelfMailer-1.82.0.apk",
-      "sha256": "416b125267b27e667b6965192dbf0e254723558a0441ba51d37ad2eb1d3f863c",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.83.0/SelfMailer-1.83.0.apk",
+      "sha256": "48acc836a38e53cae9d2c617dfafbdaf136c4ac7c283b3e195299071b42690fb",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
