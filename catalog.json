@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.86.0",
-      "versionCode": 94,
-      "changelog": "Ungelesen-Zahlen stimmen wieder: Mails, die du irgendwann gelesen hattest, waren dauerhaft dagegen gesperrt, spaeter auf dem Server als ungelesen markiert zu werden - sie fehlten dann im Badge. Deine eigene Entscheidung gewinnt jetzt eine Minute lang statt fuer immer; danach zaehlt der Mailserver. Der Altbestand korrigiert sich beim naechsten Abgleich selbst.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.86.0/SelfMailer-1.86.0.apk",
-      "sha256": "f8ccf35a586bd207d3699f0e99df9d75686f1040e01310ea70fe50e41cadbb8b",
+      "versionName": "1.87.0",
+      "versionCode": 95,
+      "changelog": "Nachtrag zu 1.86.0: die Korrektur dort kam gar nicht zum Zug. Der schnelle Flag-Abgleich fragt nur, was sich SEIT dem letzten Stand geaendert hat - und hatte den vollstaendigen Abgleich ganz abgeschaltet. Damit konnte eine einmal falsche Ungelesen-Markierung nie mehr korrigiert werden. Jetzt laeuft alle 15 Minuten zusaetzlich der vollstaendige Abgleich.",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.87.0/SelfMailer-1.87.0.apk",
+      "sha256": "f92c5bcc881f303c84945ab6e103308c8716aa062921a3f840e398e7ceb02bd9",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
