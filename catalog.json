@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.89.0",
       "versionCode": 97,
-      "changelog": "Eine geloeschte Mail wird kurz ausgeblendet, damit sie nicht wieder aufblitzt, wenn der Server sie noch mitliefert. Ging die Loeschung aber gar nicht durch, blieb sie dauerhaft unsichtbar - vorhanden, abrufbar, nur nicht in der Liste. Die Ausblendung haelt jetzt zehn Minuten; fuehrt der Server die Mail dann noch, kommt sie zurueck.",
+      "changelog": "Der Gelesen-Status wurde nur fuer die neuesten 120 Mails aufgefrischt - in grossen Postfaechern erfuhr SelfMailer bei allem Aelteren nie, wenn sich woanders etwas aenderte. Jetzt sucht der Mailserver selbst und meldet den ganzen Ordner in zwei winzigen Antworten. Passt die Zahl nicht zum Ordnerstatus, wird sie verworfen statt uebernommen.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.89.0/SelfMailer-1.89.0.apk",
       "sha256": "a83347acf447085144913fd0a9d336783dd1878e32f0b1e354064647f51eb49e",
       "i18n": {
