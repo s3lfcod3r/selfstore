@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.85.0",
-      "versionCode": 93,
+      "versionName": "1.86.0",
+      "versionCode": 94,
       "changelog": "SelfMailer fragte den Mailserver vor JEDER Handlung erst, ob die offene Verbindung noch steht - ein eigener Hin- und Rueckweg, der auf einem langsamen Konto 2,8 Sekunden kostete und nichts garantierte. Die Frage ist weg; abgesichert wird weiter darueber, dass alte Verbindungen ohnehin geschlossen werden.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.85.0/SelfMailer-1.85.0.apk",
-      "sha256": "54ef3f401546d942f93104f9382d43a40cf29562e1119a1ff5ce88f6480eba1c",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.86.0/SelfMailer-1.86.0.apk",
+      "sha256": "f8ccf35a586bd207d3699f0e99df9d75686f1040e01310ea70fe50e41cadbb8b",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
