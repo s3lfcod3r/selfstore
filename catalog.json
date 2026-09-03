@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.82.0",
       "versionCode": 90,
-      "changelog": "Tastaturbedienung nachgezogen: Escape schliesst jetzt das offene Menue statt der ganzen Mail, und der Fokus kehrt dorthin zurueck, wo er war. Ausserdem tragen 51 Symbol-Knoepfe endlich eine Beschriftung, die Screenreader auch vorlesen koennen.",
+      "changelog": "Deutlich schneller: sieben von acht Postfaechern synchronisieren jetzt unter einer Sekunde. SelfMailer haelt pro Postfach mehrere Verbindungen statt einer - vorher musste sich alles anstellen, vom Abholen bis zum Loeschen. Loeschen dauert jetzt Millisekunden statt fehlzuschlagen.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.82.0/SelfMailer-1.82.0.apk",
       "sha256": "416b125267b27e667b6965192dbf0e254723558a0441ba51d37ad2eb1d3f863c",
       "i18n": {
