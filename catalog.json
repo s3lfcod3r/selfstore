@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.83.0",
       "versionCode": 91,
-      "changelog": "Deutlich schneller: sieben von acht Postfaechern synchronisieren jetzt unter einer Sekunde. SelfMailer haelt pro Postfach mehrere Verbindungen statt einer - vorher musste sich alles anstellen, vom Abholen bis zum Loeschen. Loeschen dauert jetzt Millisekunden statt fehlzuschlagen.",
+      "changelog": "Die Zahlen neben den Ordnernamen brauchten laenger als das Abholen der Mails selbst - SelfMailer fragte jeden Ordner einzeln nacheinander ab. Jetzt laufen diese Abfragen nebeneinander, ueber die mehreren Verbindungen aus 1.82.0. Bekommt SelfMailer keine freie Verbindung, zaehlt es allein weiter: langsamer, aber nie unvollstaendig.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.83.0/SelfMailer-1.83.0.apk",
       "sha256": "48acc836a38e53cae9d2c617dfafbdaf136c4ac7c283b3e195299071b42690fb",
       "i18n": {
