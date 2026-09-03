@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.88.0",
-      "versionCode": 96,
+      "versionName": "1.89.0",
+      "versionCode": 97,
       "changelog": "Eine geloeschte Mail wird kurz ausgeblendet, damit sie nicht wieder aufblitzt, wenn der Server sie noch mitliefert. Ging die Loeschung aber gar nicht durch, blieb sie dauerhaft unsichtbar - vorhanden, abrufbar, nur nicht in der Liste. Die Ausblendung haelt jetzt zehn Minuten; fuehrt der Server die Mail dann noch, kommt sie zurueck.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.88.0/SelfMailer-1.88.0.apk",
-      "sha256": "7732db30f47bca4adabc1f98dd0a911c923b9b43094fe289efb304b57729207d",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.89.0/SelfMailer-1.89.0.apk",
+      "sha256": "a83347acf447085144913fd0a9d336783dd1878e32f0b1e354064647f51eb49e",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
