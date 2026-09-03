@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.84.0",
-      "versionCode": 92,
+      "versionName": "1.85.0",
+      "versionCode": 93,
       "changelog": "Die Ordnerliste selbst war zuletzt das Langsamste - laenger als alle Zaehler zusammen. SelfMailer holt sie in mehreren Varianten, weil manche Server Unterordner sonst verschweigen; die liefen bisher stur nacheinander. Jetzt laufen sie nebeneinander, und eine ueberfluessige dritte Abfrage entfaellt.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.84.0/SelfMailer-1.84.0.apk",
-      "sha256": "5d57b6d994241b946beef513f444ef3449824466b67a17260b89439521de4db8",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.85.0/SelfMailer-1.85.0.apk",
+      "sha256": "54ef3f401546d942f93104f9382d43a40cf29562e1119a1ff5ce88f6480eba1c",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
