@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.90.0",
-      "versionCode": 98,
-      "changelog": "Nimmt eine Aenderung von 1.89.0 zurueck: der Zaehler meldete ungelesene Mails, die sich in der Liste nicht finden liessen. Eine Zahl, der man nicht folgen kann, ist schlimmer als eine, die eine alte Aenderung verpasst. SelfMailer verhaelt sich beim Gelesen-Status wieder wie in 1.88.0. Die Ursache wird noch untersucht.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.90.0/SelfMailer-1.90.0.apk",
-      "sha256": "a3894248714352ad11db49de93f69a831163a1a2a2ee0b383dd35088ec33a491",
+      "versionName": "1.91.0",
+      "versionCode": 99,
+      "changelog": "Der Filter \"ungelesen\" zeigte nichts an, obwohl der Zaehler ungelesene Mails meldete. Der Zaehler hatte recht: die Mails lagen weiter hinten im Ordner, und der Filter durchsuchte nur die geladene Seite mit 50 Eintraegen. Er laeuft jetzt auf dem Server ueber den ganzen Ordner - so wie Stern und Etikett es laengst tun.",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.91.0/SelfMailer-1.91.0.apk",
+      "sha256": "5c465c03df116f65594052fc62fa353e39a03185ebd85645b161f388e1ea0b0a",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
