@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.92.0",
       "versionCode": 100,
-      "changelog": "Der Filter \"ungelesen\" zeigte nichts an, obwohl der Zaehler ungelesene Mails meldete. Der Zaehler hatte recht: die Mails lagen weiter hinten im Ordner, und der Filter durchsuchte nur die geladene Seite mit 50 Eintraegen. Er laeuft jetzt auf dem Server ueber den ganzen Ordner - so wie Stern und Etikett es laengst tun.",
+      "changelog": "Beim Abarbeiten ungelesener Mails verschwanden Zeilen unter den Fingern: eine geoeffnete Mail gilt sofort als gelesen und fiel damit aus dem Filter. Die Liste bleibt jetzt stehen, bis man sie neu laedt - so laesst sich eine Reihe ungelesener Mails der Reihe nach durchgehen.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.92.0/SelfMailer-1.92.0.apk",
       "sha256": "2f1625053bf52df2f0c73ee17011cf3189feb41c6474228d08d3a1e6fae5d2a2",
       "i18n": {
