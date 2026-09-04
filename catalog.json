@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.90.0",
       "versionCode": 98,
-      "changelog": "Der Gelesen-Status wurde nur fuer die neuesten 120 Mails aufgefrischt - in grossen Postfaechern erfuhr SelfMailer bei allem Aelteren nie, wenn sich woanders etwas aenderte. Jetzt sucht der Mailserver selbst und meldet den ganzen Ordner in zwei winzigen Antworten. Passt die Zahl nicht zum Ordnerstatus, wird sie verworfen statt uebernommen.",
+      "changelog": "Nimmt eine Aenderung von 1.89.0 zurueck: der Zaehler meldete ungelesene Mails, die sich in der Liste nicht finden liessen. Eine Zahl, der man nicht folgen kann, ist schlimmer als eine, die eine alte Aenderung verpasst. SelfMailer verhaelt sich beim Gelesen-Status wieder wie in 1.88.0. Die Ursache wird noch untersucht.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.90.0/SelfMailer-1.90.0.apk",
       "sha256": "a3894248714352ad11db49de93f69a831163a1a2a2ee0b383dd35088ec33a491",
       "i18n": {
