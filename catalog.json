@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.91.0",
-      "versionCode": 99,
+      "versionName": "1.92.0",
+      "versionCode": 100,
       "changelog": "Der Filter \"ungelesen\" zeigte nichts an, obwohl der Zaehler ungelesene Mails meldete. Der Zaehler hatte recht: die Mails lagen weiter hinten im Ordner, und der Filter durchsuchte nur die geladene Seite mit 50 Eintraegen. Er laeuft jetzt auf dem Server ueber den ganzen Ordner - so wie Stern und Etikett es laengst tun.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.91.0/SelfMailer-1.91.0.apk",
-      "sha256": "5c465c03df116f65594052fc62fa353e39a03185ebd85645b161f388e1ea0b0a",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.92.0/SelfMailer-1.92.0.apk",
+      "sha256": "2f1625053bf52df2f0c73ee17011cf3189feb41c6474228d08d3a1e6fae5d2a2",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
