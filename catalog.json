@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.93.0",
       "versionCode": 101,
-      "changelog": "Beim Abarbeiten ungelesener Mails verschwanden Zeilen unter den Fingern: eine geoeffnete Mail gilt sofort als gelesen und fiel damit aus dem Filter. Die Liste bleibt jetzt stehen, bis man sie neu laedt - so laesst sich eine Reihe ungelesener Mails der Reihe nach durchgehen.",
+      "changelog": "Zwei Fehler im Zusammenspiel mit dem Verbindungs-Pool behoben. Beim Öffnen eines Verlaufs über mehrere Ordner konnte eine Folgeaktion im falschen Ordner landen (auch beim Verschieben/Löschen). Und lud man denselben Ordner gleichzeitig in Web und App, erschien eine Mail doppelt und der Ungelesen-Zähler war zu hoch. Beides behoben; vorhandene Doppel werden beim ersten Start automatisch bereinigt.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.93.0/SelfMailer-1.93.0.apk",
       "sha256": "d0ae4c45400ad158a709bb9f82b18d2f6aba467cab2403c2c00ed24d001b9a77",
       "i18n": {
