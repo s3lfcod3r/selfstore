@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-09-04",
+  "updated": "2026-09-07",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.92.0",
-      "versionCode": 100,
+      "versionName": "1.93.0",
+      "versionCode": 101,
       "changelog": "Beim Abarbeiten ungelesener Mails verschwanden Zeilen unter den Fingern: eine geoeffnete Mail gilt sofort als gelesen und fiel damit aus dem Filter. Die Liste bleibt jetzt stehen, bis man sie neu laedt - so laesst sich eine Reihe ungelesener Mails der Reihe nach durchgehen.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.92.0/SelfMailer-1.92.0.apk",
-      "sha256": "2f1625053bf52df2f0c73ee17011cf3189feb41c6474228d08d3a1e6fae5d2a2",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.93.0/SelfMailer-1.93.0.apk",
+      "sha256": "d0ae4c45400ad158a709bb9f82b18d2f6aba467cab2403c2c00ed24d001b9a77",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
