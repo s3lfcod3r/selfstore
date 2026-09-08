@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.95.1",
-      "versionCode": 104,
+      "versionName": "1.95.5",
+      "versionCode": 105,
       "changelog": "Web und Backend 1.95.1: Notizentwürfe mit Verlassen-Schutz, Notizübersicht ohne vollständige Texte, verbesserte Kalenderdialoge und maskierte OAuth-Felder. Weniger wiederholte Thread-Abfragen, abgesicherte Kontowechsel und Sicherheitsupdates. Android-Funktionen unverändert gegenüber 1.95.0; signierter Build 104 für die gemeinsame Veröffentlichung. Web und Backend gemeinsam aktualisieren.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.1/SelfMailer-1.95.1.apk",
-      "sha256": "26190420738a2b3265e51e9b0cf919f08538756e5ba4be225bb545f17956fef3",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.5/SelfMailer-1.95.5.apk",
+      "sha256": "d9224c3ecd8108ab46fc94fc9bf60f96d6d441724830f6b24968c53d37fda0f2",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
