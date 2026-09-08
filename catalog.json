@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.95.5",
       "versionCode": 105,
-      "changelog": "Web und Backend 1.95.1: Notizentwürfe mit Verlassen-Schutz, Notizübersicht ohne vollständige Texte, verbesserte Kalenderdialoge und maskierte OAuth-Felder. Weniger wiederholte Thread-Abfragen, abgesicherte Kontowechsel und Sicherheitsupdates. Android-Funktionen unverändert gegenüber 1.95.0; signierter Build 104 für die gemeinsame Veröffentlichung. Web und Backend gemeinsam aktualisieren.",
+      "changelog": "Web, Backend und Android 1.95.5: Beschäftigte Mailkonten werden korrekt erkannt; begrenzte Wiederholungsabstände und Schutz vor parallelen Syncs reduzieren zusätzliche Last. Weniger vollständige Ordnerzählungen und zusätzliche IMAP-Abfragen beim Öffnen von Nachrichten. Bestehende Schutzprüfungen vor dem Verschieben und Löschen bleiben erhalten. Signierte Android-APK, Build 105, mit eigenem Sync-Fix. Server und App gemeinsam aktualisieren; die tatsächliche Gmail-Ladezeit muss danach erneut gemessen werden.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.5/SelfMailer-1.95.5.apk",
       "sha256": "d9224c3ecd8108ab46fc94fc9bf60f96d6d441724830f6b24968c53d37fda0f2",
       "i18n": {
