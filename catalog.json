@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.95.0",
-      "versionCode": 103,
+      "versionName": "1.95.1",
+      "versionCode": 104,
       "changelog": "Gmail und langsame IMAP-Konten: Listen und Threads laden nur Kopfzeilen und MIME-Metadaten, keine Anhänge. Öffnen und Löschen behalten reservierte Verbindungen; Vorladen und Sync-Wartezeiten sind begrenzt. Einzellöschen reagiert in Web und App sofort, Fehler werden sichtbar zurückgenommen. Backend und App gemeinsam auf 1.95.0 aktualisieren.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.0/SelfMailer-1.95.0.apk",
-      "sha256": "0402e4991006dfc8aa265d875e5019dc5acaa08c3f9aa56afb375a2e1132f5f3",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.1/SelfMailer-1.95.1.apk",
+      "sha256": "26190420738a2b3265e51e9b0cf919f08538756e5ba4be225bb545f17956fef3",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
