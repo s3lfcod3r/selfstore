@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.94.0",
-      "versionCode": 102,
+      "versionName": "1.95.0",
+      "versionCode": 103,
       "changelog": "Zwei Fehler im Zusammenspiel mit dem Verbindungs-Pool behoben. Beim Öffnen eines Verlaufs über mehrere Ordner konnte eine Folgeaktion im falschen Ordner landen (auch beim Verschieben/Löschen). Und lud man denselben Ordner gleichzeitig in Web und App, erschien eine Mail doppelt und der Ungelesen-Zähler war zu hoch. Beides behoben; vorhandene Doppel werden beim ersten Start automatisch bereinigt.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.94.0/SelfMailer-1.94.0.apk",
-      "sha256": "4cf604590d6d13b0e53aa2cf5470527f4f162ef26a95147f2b0a67bebc5c1ed8",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.0/SelfMailer-1.95.0.apk",
+      "sha256": "0402e4991006dfc8aa265d875e5019dc5acaa08c3f9aa56afb375a2e1132f5f3",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
