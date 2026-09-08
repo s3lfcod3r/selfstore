@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.95.0",
       "versionCode": 103,
-      "changelog": "Zwei Fehler im Zusammenspiel mit dem Verbindungs-Pool behoben. Beim Öffnen eines Verlaufs über mehrere Ordner konnte eine Folgeaktion im falschen Ordner landen (auch beim Verschieben/Löschen). Und lud man denselben Ordner gleichzeitig in Web und App, erschien eine Mail doppelt und der Ungelesen-Zähler war zu hoch. Beides behoben; vorhandene Doppel werden beim ersten Start automatisch bereinigt.",
+      "changelog": "Gmail und langsame IMAP-Konten: Listen und Threads laden nur Kopfzeilen und MIME-Metadaten, keine Anhänge. Öffnen und Löschen behalten reservierte Verbindungen; Vorladen und Sync-Wartezeiten sind begrenzt. Einzellöschen reagiert in Web und App sofort, Fehler werden sichtbar zurückgenommen. Backend und App gemeinsam auf 1.95.0 aktualisieren.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.0/SelfMailer-1.95.0.apk",
       "sha256": "0402e4991006dfc8aa265d875e5019dc5acaa08c3f9aa56afb375a2e1132f5f3",
       "i18n": {
