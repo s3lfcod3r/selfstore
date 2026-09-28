@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.96.1",
       "versionCode": 107,
-      "changelog": "1.96.0: Benachrichtigungen zeigen wieder Absender und Betreff – ohne dass Google sie sieht: Der Push bleibt ein inhaltsleeres Wecksignal, die App holt die Vorschau selbst über die eigene, angemeldete Verbindung zum SelfMailer-Server. Auf dem Sperrbildschirm entscheidet die Android-Einstellung für sensible Inhalte. Dazu das Sicherheits-Update des Servers (Feed-Token nicht mehr im Log und nur noch als Hash gespeichert, Sitzungs-Widerruf bei Passwortwechsel, Schutz gegen DNS-Rebinding, Mail-Ansicht mit CSP und DOMPurify). Signierte Android-APK, Build 106.",
+      "changelog": "1.96.1: Fix – die Vorschau aus 1.96.0 wurde beim Beenden des Push-Dienstes abgebrochen, jetzt erscheinen Absender und Betreff wirklich. 1.96.0: Benachrichtigungen zeigen wieder Absender und Betreff – ohne dass Google sie sieht: Der Push bleibt ein inhaltsleeres Wecksignal, die App holt die Vorschau selbst über die eigene, angemeldete Verbindung zum SelfMailer-Server. Auf dem Sperrbildschirm entscheidet die Android-Einstellung für sensible Inhalte. Dazu das Sicherheits-Update des Servers (Feed-Token nicht mehr im Log und nur noch als Hash gespeichert, Sitzungs-Widerruf bei Passwortwechsel, Schutz gegen DNS-Rebinding, Mail-Ansicht mit CSP und DOMPurify). Signierte Android-APK, Build 107.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.1/SelfMailer-1.96.1.apk",
       "sha256": "59aa6cee67c5c88bbfd8ed40c8dab4b4262b26991530314e3154b6ac2c5a8085",
       "i18n": {
