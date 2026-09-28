@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-09-08",
+  "updated": "2026-09-28",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.95.5",
-      "versionCode": 105,
+      "versionName": "1.96.0",
+      "versionCode": 106,
       "changelog": "Web, Backend und Android 1.95.5: Beschäftigte Mailkonten werden korrekt erkannt; begrenzte Wiederholungsabstände und Schutz vor parallelen Syncs reduzieren zusätzliche Last. Weniger vollständige Ordnerzählungen und zusätzliche IMAP-Abfragen beim Öffnen von Nachrichten. Bestehende Schutzprüfungen vor dem Verschieben und Löschen bleiben erhalten. Signierte Android-APK, Build 105, mit eigenem Sync-Fix. Server und App gemeinsam aktualisieren; die tatsächliche Gmail-Ladezeit muss danach erneut gemessen werden.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.95.5/SelfMailer-1.95.5.apk",
-      "sha256": "d9224c3ecd8108ab46fc94fc9bf60f96d6d441724830f6b24968c53d37fda0f2",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.0/SelfMailer-1.96.0.apk",
+      "sha256": "d9221b965e3d42c05986331fd2ce71080a12926b3bfecd2a7ccb6707b8f753ae",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
