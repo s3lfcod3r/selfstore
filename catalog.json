@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.0",
-      "versionCode": 106,
+      "versionName": "1.96.1",
+      "versionCode": 107,
       "changelog": "1.96.0: Benachrichtigungen zeigen wieder Absender und Betreff – ohne dass Google sie sieht: Der Push bleibt ein inhaltsleeres Wecksignal, die App holt die Vorschau selbst über die eigene, angemeldete Verbindung zum SelfMailer-Server. Auf dem Sperrbildschirm entscheidet die Android-Einstellung für sensible Inhalte. Dazu das Sicherheits-Update des Servers (Feed-Token nicht mehr im Log und nur noch als Hash gespeichert, Sitzungs-Widerruf bei Passwortwechsel, Schutz gegen DNS-Rebinding, Mail-Ansicht mit CSP und DOMPurify). Signierte Android-APK, Build 106.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.0/SelfMailer-1.96.0.apk",
-      "sha256": "d9221b965e3d42c05986331fd2ce71080a12926b3bfecd2a7ccb6707b8f753ae",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.1/SelfMailer-1.96.1.apk",
+      "sha256": "59aa6cee67c5c88bbfd8ed40c8dab4b4262b26991530314e3154b6ac2c5a8085",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
