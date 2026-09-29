@@ -36,6 +36,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Bootstrap-Sync Regressionstests
+        run: python -B -m unittest discover -s tests -v
+
       # Feste Versionen inkl. aller Transitiven + --require-hashes: pip
       # installiert nur exakt diese Artefakte. Aktualisieren via
       # tools/requirements.txt (Kommentar dort erklaert das Vorgehen).

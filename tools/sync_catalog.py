@@ -46,6 +46,36 @@ def sha256_of(path):
     return h.hexdigest()
 
 
+def write_atomic(path, data):
+    """Vollstaendig schreiben, bevor eine veroeffentlichte Datei ersetzt wird."""
+    destination = os.path.abspath(path)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            dir=os.path.dirname(destination),
+            prefix="." + os.path.basename(destination) + ".",
+            delete=False,
+        ) as f:
+            temporary = f.name
+            f.write(data)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temporary, destination)
+    finally:
+        if temporary is not None:
+            try:
+                os.unlink(temporary)
+            except FileNotFoundError:
+                pass
+
+
+def bootstrap_matches(expected_sha):
+    try:
+        return bool(expected_sha) and sha256_of("selfstore.apk") == expected_sha
+    except FileNotFoundError:
+        return False
+
+
 def pick_apk(assets):
     apks = [a for a in assets if a["name"].lower().endswith(".apk")]
     # bevorzugt das versionierte Asset (enthält "-v"), sonst das erste APK
@@ -62,7 +92,7 @@ def main():
         cat = json.load(f)
 
     changed = False
-    selfstore_updated = False
+    bootstrap = None
     for app in cat.get("apps", []):
         src = app.get("source")
         if not src:
@@ -77,10 +107,16 @@ def main():
             print(f"WARN {src}: kein APK-Asset gefunden")
             continue
         url = asset["browser_download_url"]
-        # Effizient: nur herunterladen, wenn sich die APK-URL geändert hat ODER der
-        # sha256 noch fehlt (einmaliges Nachtragen). Sonst ist alles aktuell — spart
-        # bei häufigem Cron-Lauf 6 überflüssige APK-Downloads pro Durchgang.
-        if app.get("apk") == url and app.get("sha256"):
+        # Unveraenderte Releases nicht erneut laden. Bei SelfStore muss aber
+        # auch die lokale Bootstrap-Datei zum Katalog passen; sonst reparieren.
+        if (
+            app.get("apk") == url
+            and app.get("sha256")
+            and (
+                app.get("id") != "com.selfstore.app"
+                or bootstrap_matches(app["sha256"])
+            )
+        ):
             print(f"OK   {app['name']}: schon aktuell")
             continue
         with tempfile.TemporaryDirectory() as td:
@@ -89,6 +125,11 @@ def main():
             apk = APK(apkp)
             vc, vn, pkg = int(apk.version_code), apk.version_name, apk.package
             sha = sha256_of(apkp)
+            if app.get("id") == pkg == "com.selfstore.app":
+                # Exakt die APK mit geprueften Paketdaten und berechnetem Hash
+                # uebernehmen, keinen zweiten ungeprueften Release-Download.
+                with open(apkp, "rb") as f:
+                    bootstrap = (f.read(), sha)
         if app.get("id") != pkg:
             print(f"WARN {src}: id '{app.get('id')}' != APK-Package '{pkg}' — übersprungen")
             continue
@@ -96,28 +137,20 @@ def main():
         if any(app.get(k) != v for k, v in new.items()):
             app.update(new)
             changed = True
-            if app["id"] == "com.selfstore.app":
-                selfstore_updated = True
             print(f"UPDATE {app['name']}: v{vn} ({vc}) sha256={sha[:12]}… -> {asset['name']}")
         else:
             print(f"OK   {app['name']}: schon aktuell")
 
-    # Bootstrap-APK auf der eigenen Domain aktuell halten (store.selfcoder.de/selfstore.apk)
-    if selfstore_updated:
-        try:
-            rel = gh_api("/repos/s3lfcod3r/selfstore/releases/latest")
-            a = next((x for x in rel.get("assets", []) if x["name"] == "selfstore.apk"), None)
-            if a:
-                download(a["browser_download_url"], "selfstore.apk")
-                print("selfstore.apk (Bootstrap) aktualisiert")
-        except Exception as e:
-            print(f"WARN selfstore.apk: {e}")
+    # Erst nach allen Downloads schreiben. Fehler muessen den Workflow stoppen,
+    # damit keine unvollstaendigen Dateien committed werden.
+    if bootstrap is not None and not bootstrap_matches(bootstrap[1]):
+        write_atomic("selfstore.apk", bootstrap[0])
+        print("selfstore.apk (Bootstrap) aus gepruefter Katalog-APK aktualisiert")
 
     if changed:
         cat["updated"] = os.environ.get("SYNC_DATE", cat.get("updated", ""))
-        with open(CATALOG, "w", encoding="utf-8") as f:
-            json.dump(cat, f, ensure_ascii=False, indent=2)
-            f.write("\n")
+        data = (json.dumps(cat, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+        write_atomic(CATALOG, data)
         print("catalog.json aktualisiert")
     else:
         print("keine Änderungen")
