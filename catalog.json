@@ -388,11 +388,11 @@
       "icon": "icons/self-wg.png",
       "category": "Netzwerk",
       "author": "SelfCoder",
-      "versionName": "1.2.4",
-      "versionCode": 7,
+      "versionName": "1.2.5",
+      "versionCode": 8,
       "changelog": "Erste Store-Version.",
-      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.4/selfwg-v1.2.4.apk",
-      "sha256": "df18afcf0f05c77868abaed0e521fc037a79b73eec95044ca3796716d2f383d6",
+      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.5/selfwg-v1.2.5.apk",
+      "sha256": "cf7bc1457f591f8de225c989b713193a7f2e3becac800683eeb99c8ddd0f3623",
       "i18n": {
         "en": {
           "tagline": "WireGuard that stays up",
