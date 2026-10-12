@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-09-30",
+  "updated": "2026-10-12",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.1",
-      "versionCode": 107,
+      "versionName": "1.96.2",
+      "versionCode": 109,
       "changelog": "1.96.1: Fix – die Vorschau aus 1.96.0 wurde beim Beenden des Push-Dienstes abgebrochen, jetzt erscheinen Absender und Betreff wirklich. 1.96.0: Benachrichtigungen zeigen wieder Absender und Betreff – ohne dass Google sie sieht: Der Push bleibt ein inhaltsleeres Wecksignal, die App holt die Vorschau selbst über die eigene, angemeldete Verbindung zum SelfMailer-Server. Auf dem Sperrbildschirm entscheidet die Android-Einstellung für sensible Inhalte. Dazu das Sicherheits-Update des Servers (Feed-Token nicht mehr im Log und nur noch als Hash gespeichert, Sitzungs-Widerruf bei Passwortwechsel, Schutz gegen DNS-Rebinding, Mail-Ansicht mit CSP und DOMPurify). Signierte Android-APK, Build 107.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.1/SelfMailer-1.96.1.apk",
-      "sha256": "59aa6cee67c5c88bbfd8ed40c8dab4b4262b26991530314e3154b6ac2c5a8085",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.2/SelfMailer-1.96.2.apk",
+      "sha256": "fb000453d44c78c806ebdc23efbc78eefaf024bdb3ecd45289f9ad90aefc67ee",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
