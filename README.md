@@ -53,7 +53,7 @@ The current list lives in [`catalog.json`](catalog.json) and is live at
 | App | Purpose |
 |-----|---------|
 | **SelfStore** | The store itself (self-update) |
-| **SelfMailer** | Self-hosted mail client (IMAP/POP3/SMTP, calendar) |
+| **SelfMailer** | Self-hosted mail client (IMAP/SMTP, calendar) |
 | **SelfAuthenticator** | Zero-knowledge 2FA / TOTP vault |
 | **SelfDashboard** | Central overview of your Self services |
 
@@ -292,7 +292,7 @@ Die aktuelle Liste steht in [`catalog.json`](catalog.json) und ist live unter
 | App | Zweck |
 |-----|-------|
 | **SelfStore** | Der Store selbst (self-update) |
-| **SelfMailer** | Self-hosted Mail-Client (IMAP/POP3/SMTP, Kalender) |
+| **SelfMailer** | Self-hosted Mail-Client (IMAP/SMTP, Kalender) |
 | **SelfAuthenticator** | Zero-Knowledge 2FA-/TOTP-Tresor |
 | **SelfDashboard** | Zentrale Übersicht über deine Self-Dienste |
 

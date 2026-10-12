@@ -190,7 +190,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Your own mail client",
-        "description": "Multi-user mail client (IMAP/POP3/SMTP) with calendar and contacts. Connects to your self-hosted SelfMailer server.",
+        "description": "Multi-user mail client (IMAP/SMTP) with calendar and contacts. Connects to your self-hosted SelfMailer server.",
         "category": "Productivity"
       },
       "com.selfauthenticator.viewer": {
@@ -227,7 +227,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Votre propre client mail",
-        "description": "Client mail multi-utilisateur (IMAP/POP3/SMTP) avec calendrier et contacts. Se connecte à votre serveur SelfMailer auto-hébergé.",
+        "description": "Client mail multi-utilisateur (IMAP/SMTP) avec calendrier et contacts. Se connecte à votre serveur SelfMailer auto-hébergé.",
         "category": "Productivité"
       },
       "com.selfauthenticator.viewer": {
@@ -264,7 +264,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Tu propio cliente de correo",
-        "description": "Cliente de correo multiusuario (IMAP/POP3/SMTP) con calendario y contactos. Se conecta a tu servidor SelfMailer autoalojado.",
+        "description": "Cliente de correo multiusuario (IMAP/SMTP) con calendario y contactos. Se conecta a tu servidor SelfMailer autoalojado.",
         "category": "Productividad"
       },
       "com.selfauthenticator.viewer": {
@@ -301,7 +301,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Il tuo client di posta personale",
-        "description": "Client di posta multiutente (IMAP/POP3/SMTP) con calendario e contatti. Si collega al tuo server SelfMailer self-hosted.",
+        "description": "Client di posta multiutente (IMAP/SMTP) con calendario e contatti. Si collega al tuo server SelfMailer self-hosted.",
         "category": "Produttività"
       },
       "com.selfauthenticator.viewer": {
@@ -338,7 +338,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Je eigen mailclient",
-        "description": "Mailclient voor meerdere gebruikers (IMAP/POP3/SMTP) met agenda en contacten. Maakt verbinding met je zelf-gehoste SelfMailer-server.",
+        "description": "Mailclient voor meerdere gebruikers (IMAP/SMTP) met agenda en contacten. Maakt verbinding met je zelf-gehoste SelfMailer-server.",
         "category": "Productiviteit"
       },
       "com.selfauthenticator.viewer": {
@@ -375,7 +375,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Twój własny klient poczty",
-        "description": "Wieloużytkownikowy klient poczty (IMAP/POP3/SMTP) z kalendarzem i kontaktami. Łączy się z Twoim własnym serwerem SelfMailer.",
+        "description": "Wieloużytkownikowy klient poczty (IMAP/SMTP) z kalendarzem i kontaktami. Łączy się z Twoim własnym serwerem SelfMailer.",
         "category": "Produktywność"
       },
       "com.selfauthenticator.viewer": {
@@ -412,7 +412,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "O seu próprio cliente de e-mail",
-        "description": "Cliente de e-mail multiutilizador (IMAP/POP3/SMTP) com calendário e contactos. Liga-se ao seu servidor SelfMailer alojado por si.",
+        "description": "Cliente de e-mail multiutilizador (IMAP/SMTP) com calendário e contactos. Liga-se ao seu servidor SelfMailer alojado por si.",
         "category": "Produtividade"
       },
       "com.selfauthenticator.viewer": {
@@ -449,7 +449,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Din egen e-postklient",
-        "description": "Fleranvändar-e-postklient (IMAP/POP3/SMTP) med kalender och kontakter. Ansluter till din egen SelfMailer-server.",
+        "description": "Fleranvändar-e-postklient (IMAP/SMTP) med kalender och kontakter. Ansluter till din egen SelfMailer-server.",
         "category": "Produktivitet"
       },
       "com.selfauthenticator.viewer": {
@@ -486,7 +486,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Din egen mailklient",
-        "description": "Mailklient til flere brugere (IMAP/POP3/SMTP) med kalender og kontakter. Forbinder til din selv-hostede SelfMailer-server.",
+        "description": "Mailklient til flere brugere (IMAP/SMTP) med kalender og kontakter. Forbinder til din selv-hostede SelfMailer-server.",
         "category": "Produktivitet"
       },
       "com.selfauthenticator.viewer": {
@@ -523,7 +523,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Váš vlastní e-mailový klient",
-        "description": "Víceuživatelský e-mailový klient (IMAP/POP3/SMTP) s kalendářem a kontakty. Připojuje se k vašemu vlastnímu serveru SelfMailer.",
+        "description": "Víceuživatelský e-mailový klient (IMAP/SMTP) s kalendářem a kontakty. Připojuje se k vašemu vlastnímu serveru SelfMailer.",
         "category": "Produktivita"
       },
       "com.selfauthenticator.viewer": {
@@ -560,7 +560,7 @@
       },
       "com.selfmailer.viewer": {
         "tagline": "Το δικό σου πρόγραμμα email",
-        "description": "Πρόγραμμα email πολλών χρηστών (IMAP/POP3/SMTP) με ημερολόγιο και επαφές. Συνδέεται με τον δικό σου self-hosted διακομιστή SelfMailer.",
+        "description": "Πρόγραμμα email πολλών χρηστών (IMAP/SMTP) με ημερολόγιο και επαφές. Συνδέεται με τον δικό σου self-hosted διακομιστή SelfMailer.",
         "category": "Παραγωγικότητα"
       },
       "com.selfauthenticator.viewer": {
