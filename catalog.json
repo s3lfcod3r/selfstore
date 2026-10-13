@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.96.7",
       "versionCode": 119,
-      "changelog": "1.96.6 / Build 117: Handyimport in der APK korrigiert. Auswahl prüfen, Importieren und Import bestätigen stehen jetzt in der festen unteren Buttonleiste und bleiben auch auf kleinen Bildschirmen erreichbar. Der Kontaktimportdialog ist scrollbar; Duplikatvorschau und Konfliktschutz bleiben erhalten. Die Korrektur gilt auch beim manuellen Aktualisieren verknüpfter Handykontakte. Signierte APK mit bisherigem Release-Zertifikat; Build 117 aktualisiert auch den lokalen Test-Build 116. Kompatibel mit Server 1.96.5.",
+      "changelog": "1.96.7 / Build 119: SelfMailer-Kontakte aufs Handy exportieren, mit Auswahl, Suche, Duplikatvorschau und ausdrücklicher Bestätigung. Übernimmt Namen, E-Mail-Adressen, Telefonnummern, Firma/Tätigkeit, Website, Anschrift, Notizen und Geburtstag; keine Fotos. Vorhandene, mehrdeutige und gleichnamige Treffer werden angezeigt und übersprungen. Bestehende Handy-Kontakte werden weder überschrieben noch gelöscht. Wiederholte Versuche erkennen bereits abgeschlossene Exporte; Serveränderungen seit der Vorschau werden geprüft. Schreibfreigabe erst beim bestätigten Export. Ziel ist das Android-Standardadressbuch, je nach Handyeinstellung lokal oder in einem synchronisierten Konto. Maximal 200 Kontakte pro Vorgang; kein automatischer Rückabgleich. Signierte APK mit bisherigem Zertifikat; Build 119 aktualisiert auch den lokalen Test-Build 118. Kompatibel mit Server 1.96.6.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.7/SelfMailer-1.96.7.apk",
       "sha256": "5e095df48ef0314445cceac89aa00b342438d4ed5a40bb3864aed27d75ae564d",
       "i18n": {
