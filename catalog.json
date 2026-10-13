@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.5",
-      "versionCode": 115,
+      "versionName": "1.96.6",
+      "versionCode": 117,
       "changelog": "1.96.5 / Build 115: Neuer Kontaktbereich in der APK mit Suche und Bearbeitung. Ausgewählte Handykontakte importieren: Vorschau und Duplikaterkennung nach E-Mail und Telefonnummer; mehrere Adressen und Nummern bleiben erhalten. Import von Namen, E-Mail-Adressen, Telefonnummern und Organisation. Manuelle Aktualisierung sowie optionaler automatischer Abgleich zum SelfMailer-Server, standardmäßig aus. Konflikte werden nicht still überschrieben; keine automatische Löschung und kein Rückschreiben ins Handyadressbuch. Kalender-Agenda für heute und die nächsten sieben Tage, laufende und ganztägige Termine. Erinnerungen mit Vorlaufzeiten und 10 Minuten später; Terminverschiebungen passen die Planung an. Android-Berechtigungen für Kontakte, Benachrichtigungen und genaue Alarme; Hintergrundabgleich kann durch Android verzögert werden. Schlanke Zusammenfassungen und additive Datenbankmigration. Signierte APK mit bisherigem Zertifikat, Build 115; aktualisiert auch den lokalen Test-Build 114. Server und APK gemeinsam aktualisieren.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.5/SelfMailer-1.96.5.apk",
-      "sha256": "728f9a65a2df70150abd30903efd490bcd48a8c317a3956068574e6fd6d58ba1",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.6/SelfMailer-1.96.6.apk",
+      "sha256": "ff698bcb24c6c2ebcec88f004f2fb86c8b55316fc286222928d64921790cabdc",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
