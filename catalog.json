@@ -90,7 +90,7 @@
       "author": "SelfCoder",
       "versionName": "1.96.9",
       "versionCode": 123,
-      "changelog": "1.96.8 / Build 121: Optionaler automatischer Kontakt-Sync in beide Richtungen für ausgewählte verknüpfte Kontakte. Duplikat- und Konflikterkennung, gemeinsame Änderungsbasis, manuelles Abgleichen und bewusste Konfliktauflösung. Nur unterstützte Kontaktdaten; keine Fotos und kein automatisches Anlegen oder Löschen ganzer Kontakte. Schreibgeschützte und mehrdeutige Kontakte werden pausiert. Lese-/Schreibfreigabe erforderlich; Android kann stündliche Hintergrundläufe verzögern. Backend und APK gemeinsam aktualisieren. Bisheriges Signaturzertifikat; aktualisiert auch Test-Build 120.",
+      "changelog": "1.96.9 / Build 123: Aufräumdialog am PC und in der APK korrigiert. Suche und Trefferliste scrollen getrennt von Zielordner, Bestätigung und Schließen; Aktionen bleiben erreichbar. Checkboxen im Web korrekt ausgerichtet, Vorschau nach der Suche direkt sichtbar. APK gibt beim Suchen den Tastaturfokus frei. Weiterhin nur angezeigte Mails (maximal 100 pro Seite) nach zweiter Bestätigung verschieben. Zusätzliche Tests für veraltete Vorschauen und Fehlerfälle; reale Browserprüfung in sechs Bildschirmgrößen. Bisheriges Signaturzertifikat; aktualisiert auch Test-Build 122. Für beide Oberflächen Server und APK aktualisieren.",
       "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.9/SelfMailer-1.96.9.apk",
       "sha256": "2b9ebd46f41000c2db815348388b6cdbd74585ebeed2e316ae44c026eca7d8f8",
       "i18n": {
