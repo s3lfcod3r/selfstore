@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.8",
-      "versionCode": 121,
+      "versionName": "1.96.9",
+      "versionCode": 123,
       "changelog": "1.96.8 / Build 121: Optionaler automatischer Kontakt-Sync in beide Richtungen für ausgewählte verknüpfte Kontakte. Duplikat- und Konflikterkennung, gemeinsame Änderungsbasis, manuelles Abgleichen und bewusste Konfliktauflösung. Nur unterstützte Kontaktdaten; keine Fotos und kein automatisches Anlegen oder Löschen ganzer Kontakte. Schreibgeschützte und mehrdeutige Kontakte werden pausiert. Lese-/Schreibfreigabe erforderlich; Android kann stündliche Hintergrundläufe verzögern. Backend und APK gemeinsam aktualisieren. Bisheriges Signaturzertifikat; aktualisiert auch Test-Build 120.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.8/SelfMailer-1.96.8.apk",
-      "sha256": "ce9cb5318b3d913ab99a06a10058db4916a377f587eb93f66d82a7ec380102af",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.9/SelfMailer-1.96.9.apk",
+      "sha256": "2b9ebd46f41000c2db815348388b6cdbd74585ebeed2e316ae44c026eca7d8f8",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
