@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.4",
-      "versionCode": 113,
+      "versionName": "1.96.5",
+      "versionCode": 115,
       "changelog": "1.96.4 / Build 113: Ähnliche Mails nach Absender, Domain, Betreff, Stichwort oder Label im gesamten Ordner finden; Vorschau mit Gesamtzahl und 100 Treffern pro Seite. Postfach gemeinsam aufräumen: Altersfilter, nur gelesene Mails, Schutz markierter Mails und geprüftes Verschieben ins Archiv, den Papierkorb oder einen eigenen Ordner. Gespeicherte Suchansichten sowie Absender-/Domain-/Betreffregeln für künftige Posteingangsmails. Kompakte Listen und Hinweis auf neue Mails beim Scrollen. Weniger doppelte API-Abfragen und unnötige Mailtext-/Datenbankübertragungen; ungenutzten Android-UI-Code entfernt. Signierte APK mit bisherigem Release-Zertifikat, Build 113; aktualisiert auch den lokalen Test-Build 112. Server und APK gemeinsam aktualisieren.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.4/SelfMailer-1.96.4.apk",
-      "sha256": "7cc02d4cb03be4eec08ae007cc69e0613560bee34040aba6a7687317a62507a5",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.5/SelfMailer-1.96.5.apk",
+      "sha256": "728f9a65a2df70150abd30903efd490bcd48a8c317a3956068574e6fd6d58ba1",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
