@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.6",
-      "versionCode": 117,
+      "versionName": "1.96.7",
+      "versionCode": 119,
       "changelog": "1.96.6 / Build 117: Handyimport in der APK korrigiert. Auswahl prüfen, Importieren und Import bestätigen stehen jetzt in der festen unteren Buttonleiste und bleiben auch auf kleinen Bildschirmen erreichbar. Der Kontaktimportdialog ist scrollbar; Duplikatvorschau und Konfliktschutz bleiben erhalten. Die Korrektur gilt auch beim manuellen Aktualisieren verknüpfter Handykontakte. Signierte APK mit bisherigem Release-Zertifikat; Build 117 aktualisiert auch den lokalen Test-Build 116. Kompatibel mit Server 1.96.5.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.6/SelfMailer-1.96.6.apk",
-      "sha256": "ff698bcb24c6c2ebcec88f004f2fb86c8b55316fc286222928d64921790cabdc",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.7/SelfMailer-1.96.7.apk",
+      "sha256": "5e095df48ef0314445cceac89aa00b342438d4ed5a40bb3864aed27d75ae564d",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
