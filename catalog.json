@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.96.2",
-      "versionCode": 109,
+      "versionName": "1.96.3",
+      "versionCode": 111,
       "changelog": "1.96.2: Sicherheits-Update für Web, Backend und Android. Logout widerruft die aktuelle Sitzung dauerhaft; Passwort- und 2FA-Änderungen sperren alte Tokens und SSE-Zugriff. Benutzer- und Kontolöschung bereinigen abhängige Daten transaktional. DAV-Zugangsdaten bleiben am konfigurierten Server-Origin. Unklare geplante Versandversuche werden angezeigt und nicht automatisch erneut gesendet. Android widerruft beim Online-Logout zusätzlich das bisherige Server-Token. Signierte Android-APK, Build 109. Server und App gemeinsam aktualisieren.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.2/SelfMailer-1.96.2.apk",
-      "sha256": "fb000453d44c78c806ebdc23efbc78eefaf024bdb3ecd45289f9ad90aefc67ee",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.96.3/SelfMailer-1.96.3.apk",
+      "sha256": "07e9b3b399172903076f599e20394a6e0654b15acdae1f2415e93a020c5f2ec4",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
