@@ -75,6 +75,7 @@ export default {
       if (len > 65536) return json({ error: "body_too_large" }, 413, req);
       try { body = await req.json(); } catch { return json({ error: "bad_json" }, 400, req); }
       const code = String(body.code || "").trim().toUpperCase();
+      console.log("[POST] ip=" + ip + " code=" + code + " len=" + (req.headers.get("Content-Length") || "?"));
       if (!/^[A-Z0-9]{6,10}$/.test(code)) return json({ error: "bad_code" }, 400, req);
 
       // Nur noch Ende-zu-Ende verschluesselte Beitraege: "enc" ist
@@ -102,6 +103,7 @@ export default {
 
       const code = m[1];
       const val = await env.PAIR.get("c:" + code);
+      console.log("[GET] ip=" + ip + " code=" + code + " pending=" + (val ? "no" : "yes"));
       // Noch nichts abgelegt -> einfach weiter warten. Den Slot NICHT löschen!
       // Der frühere Fehlversuch-Zähler (MAX_MISSES) konnte durch die KV-Konsistenz-
       // Verzögerung zwischen Cloudflare-Rechenzentren die gerade erst abgelegte Quelle
