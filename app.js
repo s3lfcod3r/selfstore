@@ -337,6 +337,19 @@
       link.textContent = "APK";
       link.href = apk;
 
+      var copyBtn = document.createElement("span");
+      copyBtn.className = "copy";
+      copyBtn.textContent = "copy";
+      copyBtn.addEventListener("click", function () {
+        if (navigator.clipboard && apk) {
+          navigator.clipboard.writeText(apk).then(function () {
+            copyBtn.textContent = "ok";
+            setTimeout(function () { copyBtn.textContent = "copy"; }, 1500);
+          });
+        }
+      });
+      link.appendChild(copyBtn);
+
       card.appendChild(img);
       card.appendChild(meta);
       card.appendChild(link);
