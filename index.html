@@ -21,11 +21,20 @@
       --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
       --sans:"Exo 2",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
     }
+    [data-theme="light"]{
+      --bg-0:#f0f4f7; --bg-1:#ffffff; --bg-2:#f8fafc; --bg-3:#e2e8f0;
+      --line:rgba(100,120,140,.10); --line-2:rgba(100,120,140,.22);
+      --teal:#1a7a65; --teal-br:#1a7a65; --ice:#4a6a7a;
+      --text:#1a2a3a; --text-2:#5a6a7a; --text-3:#8a9aa0;
+      --amber:#b87a00;
+    }
     *{box-sizing:border-box}
     body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#10212a,var(--bg-0));
       color:var(--text);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
     .wrap{max-width:920px;margin:0 auto;padding:0 22px}
-    .langbar{display:flex;justify-content:flex-end;padding-top:18px}
+    .langbar{display:flex;justify-content:flex-end;padding-top:18px;gap:10px}
+    .theme-toggle{background:var(--bg-2);border:1px solid var(--line-2);color:var(--text-2);font-size:14px;padding:6px 10px;border-radius:7px;cursor:pointer;transition:border-color .15s}
+    .theme-toggle:hover,.theme-toggle:focus{border-color:var(--teal);outline:none}
     .lang-select{background:var(--bg-2);border:1px solid var(--line-2);color:var(--text);
       font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;
       padding:6px 30px 6px 12px;border-radius:7px;cursor:pointer;transition:border-color .15s;
@@ -70,6 +79,7 @@
 <body>
   <div class="wrap">
     <div class="langbar">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Theme wechseln" title="Theme">🌙</button>
       <select class="lang-select" id="lang-select" aria-label="Sprache / Language"></select>
     </div>
 
