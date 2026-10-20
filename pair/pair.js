@@ -216,6 +216,7 @@
     if (!user) return show("err", "err_user");
 
     $("send").disabled = true;
+    $("send").textContent = "Sendet …";
     try {
       var enc = await encryptPayload(parts.slot, parts.secret, {
         url: url, user: user, pw: pw, label: name,
@@ -233,10 +234,12 @@
       } else {
         show("err", "err_send");
         $("send").disabled = false;
+        $("send").textContent = t("send");
       }
     } catch (e) {
       show("err", "err_net");
       $("send").disabled = false;
+      $("send").textContent = t("send");
     }
   });
 })();
