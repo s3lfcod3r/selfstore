@@ -273,12 +273,24 @@
     if (sel) sel.value = lang;
   }
 
+  // TV-Boxen erkennen: nur TV-fähige Apps zeigen (Katalogfeld "platforms").
+  function isTV() {
+    var ua = (navigator.userAgent || "").toLowerCase();
+    return /android\s+t?v|androidtv|fire\s+t?v/i.test(ua);
+  }
+
   function renderApps(lang) {
     var cat = STORE.cat;
     if (!cat) return;
     var host = document.getElementById("apps");
     host.textContent = "";
+    var tv = isTV();
     (cat.apps || []).forEach(function (a) {
+      // Plattform-Filter: nur auf TV zeigen, wenn "tv" in platforms ist.
+      if (a.platforms && Array.isArray(a.platforms)) {
+        if (tv && a.platforms.indexOf("tv") < 0) return;
+        if (!tv && a.platforms.indexOf("phone") < 0) return;
+      }
       var apk = httpsOnly(a.apk || (a.abis && (a.abis["arm64-v8a"] || a.abis["armeabi-v7a"])));
 
       var card = document.createElement("div");
