@@ -309,11 +309,16 @@
       var ver = document.createElement("div");
       ver.className = "ver";
       ver.textContent = "v" + (a.versionName || "?") + " \u00b7 " + field(a, "category", lang);
-
       meta.appendChild(name);
       meta.appendChild(tl);
       meta.appendChild(desc);
       meta.appendChild(ver);
+      if (a.sha256) {
+        var sh = document.createElement("div");
+        sh.className = "sha";
+        sh.textContent = "sha256: " + a.sha256.slice(0,16) + "…";
+        meta.appendChild(sh);
+      }
 
       var link = document.createElement("a");
       link.className = "btn ghost";
