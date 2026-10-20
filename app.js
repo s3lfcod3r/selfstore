@@ -376,6 +376,25 @@
     if (STORE.cat) renderApps(lang);
   }
 
+  // Theme Toggle
+  var themeBtn = document.getElementById("theme-toggle");
+  if (themeBtn) {
+    var savedTheme = "";
+    try { savedTheme = localStorage.getItem("selfstore-theme"); } catch (e) {}
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var theme = savedTheme || (prefersDark ? "dark" : "light");
+    if (theme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+    else document.documentElement.removeAttribute("data-theme");
+    themeBtn.textContent = theme === "dark" ? "🌙" : "☀️";
+    themeBtn.addEventListener("click", function () {
+      theme = theme === "dark" ? "light" : "dark";
+      if (theme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      else document.documentElement.removeAttribute("data-theme");
+      themeBtn.textContent = theme === "dark" ? "🌙" : "☀️";
+      try { localStorage.setItem("selfstore-theme", theme); } catch (e) {}
+    });
+  }
+
   // --- Init ---
   var dl = document.getElementById("dl-self");
   if (dl) dl.href = SELF_APK;
