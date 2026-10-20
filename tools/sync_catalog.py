@@ -19,7 +19,7 @@ CATALOG = "catalog.json"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 
-def gh_api(path):
+def gh_api(path: str) -> dict:
     req = urllib.request.Request(
         f"https://api.github.com{path}",
         headers={
@@ -32,13 +32,13 @@ def gh_api(path):
         return json.load(r)
 
 
-def download(url, dest):
+def download(url: str, dest: str) -> None:
     req = urllib.request.Request(url, headers={"User-Agent": "selfstore-sync"})
     with urllib.request.urlopen(req) as r, open(dest, "wb") as f:
         f.write(r.read())
 
 
-def sha256_of(path):
+def sha256_of(path: str) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
         for chunk in iter(lambda: f.read(1 << 20), b""):
@@ -46,7 +46,7 @@ def sha256_of(path):
     return h.hexdigest()
 
 
-def write_atomic(path, data):
+def write_atomic(path: str, data: bytes) -> None:
     """Vollstaendig schreiben, bevor eine veroeffentlichte Datei ersetzt wird."""
     destination = os.path.abspath(path)
     temporary = None
@@ -69,14 +69,14 @@ def write_atomic(path, data):
                 pass
 
 
-def bootstrap_matches(expected_sha):
+def bootstrap_matches(expected_sha: str) -> bool:
     try:
         return bool(expected_sha) and sha256_of("selfstore.apk") == expected_sha
     except FileNotFoundError:
         return False
 
 
-def pick_apk(assets):
+def pick_apk(assets: list) -> dict | None:
     apks = [a for a in assets if a["name"].lower().endswith(".apk")]
     # bevorzugt das versionierte Asset (enthält "-v"), sonst das erste APK
     for a in apks:
@@ -85,7 +85,7 @@ def pick_apk(assets):
     return apks[0] if apks else None
 
 
-def main():
+def main() -> int:
     from pyaxmlparser import APK
 
     with open(CATALOG, encoding="utf-8") as f:
