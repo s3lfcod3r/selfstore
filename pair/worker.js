@@ -57,6 +57,9 @@ export default {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { headers: cors(req) });
 
+    // Health-Check für Monitoring (Uptime-Kicker etc.)
+    if (url.pathname === "/health") return json({ ok: true }, 200, req);
+
     // Browser legt Daten ab (rate-limitiert pro IP gegen Brute-Force).
     if (req.method === "POST" && url.pathname === "/pair") {
       const ip = req.headers.get("CF-Connecting-IP") || "unknown";
