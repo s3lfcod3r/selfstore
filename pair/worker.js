@@ -66,6 +66,10 @@ export default {
       await env.PAIR.put(rlKey, String(n + 1), { expirationTtl: 60 });
 
       let body;
+      // Body-Größe begrenzen, bevor geparst wird (Cloudflare-Limit 1MB, aber
+      // wir wollen keine riesigen Payloads durchlaufen lassen).
+      const len = parseInt(req.headers.get("Content-Length") || "0", 10);
+      if (len > 65536) return json({ error: "body_too_large" }, 413, req);
       try { body = await req.json(); } catch { return json({ error: "bad_json" }, 400, req); }
       const code = String(body.code || "").trim().toUpperCase();
       if (!/^[A-Z0-9]{6,10}$/.test(code)) return json({ error: "bad_code" }, 400, req);
