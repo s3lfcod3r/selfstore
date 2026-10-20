@@ -51,6 +51,9 @@ const seen = new Set();
 
 for (const [i, app] of (cat.apps || []).entries()) {
   const where = `apps[${i}] (${app.id || 'ohne id'})`;
+  if (app.versionName && !/^\d+\.\d+\.\d+([-.][0-9A-Za-z-]+)*$/.test(app.versionName)) {
+    problems.push(where + ": versionName \"" + app.versionName + "\" ist kein gueltiges SemVer");
+  }
   for (const field of ['id', 'name']) {
     if (!app[field]) problems.push(`${where}: Pflichtfeld "${field}" fehlt`);
   }

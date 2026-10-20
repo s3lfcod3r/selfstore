@@ -148,6 +148,20 @@ function main() {
     const f11 = setup(emptyApps);
     expectOk('leeres apps-Array → Exit 0', f11);
 
+    // --- versionName kein SemVer ---
+    const badVer = JSON.stringify({
+      store: 'SelfStore',
+      apps: [{ id: 'com.test.v', name: 'Bad Ver', apk: 'https://example.com/v.apk', sha256: 'ggg', versionName: 'v1.5.7' }]
+    });
+    const f13 = setup(badVer);
+    expectFail('versionName kein SemVer -> Fehler', f13, 'SemVer');
+    // --- versionName gültig ---
+    const goodVer = JSON.stringify({
+      store: 'SelfStore',
+      apps: [{ id: 'com.test.gv', name: 'Good Ver', apk: 'https://example.com/gv.apk', sha256: 'hhh', versionName: '1.5.7-beta.1' }]
+    });
+    const f14 = setup(goodVer);
+    expectOk('versionName gültiges SemVer -> Exit 0', f14);
     // --- abis statt apk (keine sha256 nötig) ---
     const abis = JSON.stringify({
       store: 'SelfStore',
