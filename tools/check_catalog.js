@@ -12,11 +12,21 @@
  */
 const fs = require('fs');
 const file = process.argv[2] || 'catalog.json';
-const raw = fs.readFileSync(file, 'utf8');
+const rawBuf = fs.readFileSync(file);
+// BOM-Check auf den rohen Buffer (utf8-Read stripet den BOM, der Check wuerde sonst tot sein).
+if (rawBuf.length >= 3 && rawBuf[0]===0xEF && rawBuf[1]===0xBB && rawBuf[2]===0xBF) {
+  console.error('FEHLER: BOM am Dateianfang (bricht strikte JSON-Parser)');
+  process.exit(1);
+}
+const raw = rawBuf.toString('utf8');
 const problems = [];
 
-if (/^(<<<<<<<|=======|>>>>>>>)/m.test(raw)) problems.push('Merge-Konfliktmarker in der Datei');
-if (raw.charCodeAt(0) === 0xFEFF) problems.push('BOM am Dateianfang (bricht strikte JSON-Parser)');
+// Merge-Konfliktmarker vor dem JSON-Parser melden (Konfliktmarker machen das JSON
+// sonst ungültig, der Parser bricht ab und der Check wuerde nie greifen).
+if (/^(<<<<<<<|=======|>>>>>>>)/m.test(raw)) {
+  console.error('FEHLER: Merge-Konfliktmarker in der Datei');
+  process.exit(1);
+}
 
 let cat;
 try {
