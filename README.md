@@ -1,49 +1,63 @@
 <div align="center">
 
-<img src="icons/self-store.png" alt="SelfStore" width="116" />
+<img src="assets/logo.png" width="240" alt="SelfStore logo" />
 
-# SelfStore
+**Your own app store for all Self projects — without Google Play.**<br>
+*Dein eigener App-Store für alle Self-Projekte — ohne Google Play.*
 
-**Your own app store for all Self projects — without Google Play.**
+[![Catalog sync](https://github.com/s3lfcod3r/selfstore/actions/workflows/sync-catalog.yml/badge.svg)](https://github.com/s3lfcod3r/selfstore/actions/workflows/sync-catalog.yml)
+[![Version](https://img.shields.io/badge/version-1.5.8-33A78C)](https://github.com/s3lfcod3r/selfstore/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-8A9CAA)](LICENSE)
+[![Store](https://img.shields.io/website?url=https%3A%2F%2Fstore.selfcoder.de%2F&up_color=33a78c&up_message=online&label=catalog)](https://store.selfcoder.de/)
+![Web](https://img.shields.io/badge/web-GitHub%20Pages-43D3AD)
+![App](https://img.shields.io/badge/android-8.0%2B%20%C2%B7%20armv7%20%2B%20armv8-9DBDD0)
+![TV](https://img.shields.io/badge/Android%20TV-Leanback-9DBDD0)
 
-Install and update your self-hosted apps straight on your phone and TV box.
+**[🇬🇧 English](#-english) · [🇩🇪 Deutsch](#-deutsch)**
 
-[![Release](https://img.shields.io/github/v/release/s3lfcod3r/selfstore?color=33a78c&label=Release)](https://github.com/s3lfcod3r/selfstore/releases/latest)
-[![Store](https://img.shields.io/website?url=https%3A%2F%2Fstore.selfcoder.de%2F&up_color=33a78c&up_message=online&label=Catalog)](https://store.selfcoder.de/)
-![Platform](https://img.shields.io/badge/Android-6.0%2B%20·%20armv7%20%2B%20armv8-33a78c)
-![TV](https://img.shields.io/badge/Android%20TV-Leanback-9dbdd0)
-[![License: MIT](https://img.shields.io/badge/License-MIT-33a78c)](LICENSE)
-
-[**Open store**](https://store.selfcoder.de/) · [English](#english) · [Deutsch](#deutsch)
+📰 **What's new / Neuigkeiten** → [CHANGELOG.md](CHANGELOG.md)
 
 </div>
 
 ---
 
-## English
+<a id="-english"></a>
 
-### What is SelfStore?
+## 🇬🇧 English
 
-SelfStore is a **lean, self-hosted app store** exclusively for the **Self projects**
-(SelfMailer, SelfAuthenticator, SelfDashboard, …). A native Android app reads a fixed
-catalog from GitHub Pages and installs/updates the apps directly – ideal for **TV
-boxes** that have no Google Play, or where it isn't wanted.
+SelfStore is a **lean, self-hosted app store** exclusively for the **Self projects**. A native Android app reads a fixed catalog from GitHub and installs/updates the apps directly on your **phone and TV box** — ideal for boxes that have no Google Play, or where it isn't wanted. It is **not** a public store: no third-party repos, only your own Self apps. → [**Open store**](https://store.selfcoder.de/)
 
-This repository provides the **server side** (catalog + bootstrap landing page) via
-GitHub Pages. The Android app's source code is maintained separately and is not part
-of this repo.
+This repository provides the **server side** (catalog + bootstrap landing page + pairing page) via GitHub Pages. The Android app's source code is maintained separately and is not part of this repo.
+
+Part of the **Self** family (SelfMailer, SelfAuthenticator, SelfDashboard …) — same design system, same deploy style (GitHub Releases → SelfStore).
+
+> **TL;DR** — fixed catalog of Self apps · install/update without Google Play · Android TV (Leanback) · armv7 + armv8 · custom sources (NextCloud/WebDAV) · end-to-end encrypted web pairing · signature pinning + SHA-256 check · runs entirely on GitHub.
+
+### 📑 Table of contents
+
+[Features](#en-features) · [Included apps](#en-apps) · [Architecture](#en-architecture) · [Catalog sync](#en-catalog-sync) · [Add an app](#en-add-app) · [Quick start](#en-quick-start) · [Configuration](#en-configuration) · [Android app](#en-android) · [Security](#en-security) · [Tech stack](#en-tech-stack) · [Development](#en-development) · [Roadmap](#en-roadmap)
+
+<a id="en-features"></a>
 
 ### ✨ Features
 
-- 📦 **One fixed store** – only your own Self apps, no third-party repos.
-- 🔄 **Update detection** – shows *Install · Open · Update* per device state.
-- 📺 **TV-ready** – appears on the Android TV home (Leanback), remote-friendly.
-- 🧩 **armv7 + armv8** – automatically picks the right APK per box.
-- 🌐 **No own server needed** – catalog + APKs run entirely on GitHub.
-- 🔒 **Custom sources** – add private app repos (e.g. NextCloud/WebDAV) with username + app password; credentials stored encrypted (Android Keystore), HTTPS only. → [guide](docs/EIGENE-QUELLEN.en.md)
-- 🔗 **Add via web** – enter a source in the browser on your PC/phone (`store.selfcoder.de/pair`); the TV box picks it up automatically via a code — no typing on the remote. **End-to-end encrypted** (since v1.5.0): the two-part code `SLOT-KEY` sends only the slot to the service, leaving link and password unreadable to it. → [setup](docs/WEB-KOPPLUNG-SETUP.en.md)
-- 📱 **Device filter** – on a TV only TV-capable apps are shown; phone-only apps stay hidden there (catalog field `platforms`).
-- 🎨 **Self branding** – consistent Self look (teal, dark).
+**📦 Store**
+- **One fixed store** — only your own Self apps, no third-party repos
+- **Update detection** — shows *Install · Open · Update* per device state
+- **armv7 + armv8** — automatically picks the right APK per box
+- **Device filter** — on a TV only TV-capable apps are shown; phone-only apps stay hidden there (catalog field `platforms`)
+- **No own server needed** — catalog + APKs run entirely on GitHub
+
+**📺 TV**
+- **TV-ready** — appears on the Android TV home (Leanback), remote-friendly
+- **Add via web** — enter a source in the browser on your PC/phone (`store.selfcoder.de/pair`); the TV box picks it up automatically via a code — no typing on the remote. → [setup](docs/WEB-KOPPLUNG-SETUP.en.md)
+
+**🔐 Security & platform**
+- **Custom sources** — add private app repos (e.g. NextCloud/WebDAV) with username + app password; credentials stored encrypted (Android Keystore), HTTPS only. → [guide](docs/EIGENE-QUELLEN.en.md)
+- **End-to-end encrypted pairing** (since v1.5.0) — the two-part code `SLOT-KEY` sends only the slot to the service, leaving link and password unreadable to it
+- **Self branding** — consistent Self look (teal, dark)
+
+<a id="en-apps"></a>
 
 ### 📲 Included apps
 
@@ -51,60 +65,61 @@ The current list lives in [`catalog.json`](catalog.json) and is live at
 **<https://store.selfcoder.de/catalog.json>**.
 
 | App | Purpose |
-|-----|---------|
+|---|---|
 | **SelfStore** | The store itself (self-update) |
 | **SelfMailer** | Self-hosted mail client (IMAP/SMTP, calendar) |
 | **SelfAuthenticator** | Zero-knowledge 2FA / TOTP vault |
 | **SelfDashboard** | Central overview of your Self services |
+| **SelfPoolTracker** | Your pool water values under control |
+| **SelfWG** | WireGuard that stays up |
+| **SelfGuard** | Device check for spyware, ad blocker included |
+| **SelfRemote** | Let this device be supported remotely |
 
-### 🚀 Install on the TV box
+<a id="en-architecture"></a>
 
-1. Allow **"install unknown apps"** on the box (Settings → Security, or confirm later
-   during install).
-2. Install the **"Downloader"** app (by AFTVnews) from the box's store.
-3. In Downloader, open this address: **`store.selfcoder.de`**
-4. Download and install the **SelfStore APK**.
-5. Open SelfStore → all Self apps are ready to install / update.
+### 🧭 Architecture
 
-### 🏗️ Architecture
-
-```mermaid
-flowchart LR
-    subgraph GitHub
-      P["GitHub Pages<br/>catalog.json + landing"]
-      R["GitHub Releases<br/>signed APKs"]
-    end
-    A["SelfStore app<br/>(Android / TV)"]
-    A -- "reads catalog (HTTPS)" --> P
-    A -- "downloads matching APK (ABI)" --> R
-    A -- "system installer" --> D["box / phone"]
+```text
+   ┌────────────────────────────── GitHub ───────────────────────────────┐
+   │  GitHub Pages                          GitHub Releases              │
+   │  catalog.json + landing page           signed APKs (per app repo)   │
+   └──────────────▲────────────────────────────────────▲─────────────────┘
+                  │ reads catalog (HTTPS)               │ downloads matching APK (ABI)
+           ┌──────┴─────────────────────────────────────┴──────┐
+           │            SelfStore app (Android / TV)           │
+           └─────────────────────────┬─────────────────────────┘
+                                     │ system installer
+                              ┌──────▼──────┐
+                              │ box / phone │
+                              └─────────────┘
 ```
 
 - **Catalog** = static `catalog.json` (this repo, via GitHub Pages).
 - **Delivery** = APKs as **GitHub release assets** per app repo.
 - **Client** = native Compose app, picks the right APK via `Build.SUPPORTED_ABIS`.
 
-### 📁 Repository contents
+<a id="en-catalog-sync"></a>
 
-```
-selfstore/
-├── catalog.json              # app list (source of truth)
-├── index.html                # bootstrap landing page (Self look)
-├── app.js                    # landing logic (renders the catalog XSS-safe)
-├── pair/                     # pairing page (DE/EN) + Cloudflare Worker
-├── docs/                     # guides, each as NAME.md (DE) + NAME.en.md (EN)
-├── icons/                    # app icons (512×512, dark Self background)
-├── tools/
-│   └── sync_catalog.py       # auto-sync: pulls release versions into catalog.json
-├── .github/workflows/
-│   └── sync-catalog.yml      # auto-sync workflow (every 15 min + on release)
-├── LICENSE                   # MIT
-└── .nojekyll                 # GitHub Pages: serve files as-is
-```
+### 🤖 Automatic catalog sync
+
+A GitHub workflow ([`.github/workflows/sync-catalog.yml`](.github/workflows/sync-catalog.yml))
+keeps the **versions of existing apps** up to date automatically: it periodically
+(every 15 min, on every release, and manually via *Run workflow*) reads the latest
+release of each app repo, pulls `versionCode`/`versionName`/`applicationId` straight
+from the release APK, computes its **SHA-256** and updates `catalog.json`. The app
+verifies that hash before every installation.
+
+Requirement per entry: a **`"source": "<owner>/<repo>"`** field (ignored by the app).
+So for updates: **build APK → upload release → done** — the catalog follows on its own.
+
+> **💡 Tip:** **new apps** still have to be added **once by hand** (name, description, icon, correct
+> `id`/`applicationId`, `source`) — see [Add an app](#en-add-app). After that their version updates run automatically.
+
+<a id="en-add-app"></a>
 
 ### ➕ Add an app to the store
 
-Append a block in [`catalog.json`](catalog.json) → `apps`:
+Append a block in [`catalog.json`](catalog.json) → `apps` (step-by-step guide: [docs/NEUE-APP.en.md](docs/NEUE-APP.en.md)):
 
 ```json
 {
@@ -121,12 +136,12 @@ Append a block in [`catalog.json`](catalog.json) → `apps`:
 }
 ```
 
-> ⚠️ **`id` MUST be the real `applicationId`** of the app, otherwise update detection
+> **⚠️ `id` MUST be the real `applicationId`** of the app, otherwise update detection
 > won't work. When unsure, read it from the APK:
 > `aapt dump badging <app>.apk | findstr package`.
 > Bump `versionCode` on **every** update.
 
-### armv7 / armv8
+#### armv7 / armv8
 
 - **Apps without native code** (WebView wrappers, pure Compose apps): a single
   **universal APK** in the `apk` field is enough — runs on armv7 **and** armv8.
@@ -139,7 +154,7 @@ Append a block in [`catalog.json`](catalog.json) → `apps`:
 }
 ```
 
-### Release convention (APK file names)
+#### Release convention (APK file names)
 
 Upload **two assets** per release:
 
@@ -148,56 +163,70 @@ Upload **two assets** per release:
 - **`selfstore.apk`** (stable name, this repo only) — so the bootstrap link
   `…/releases/latest/download/selfstore.apk` always works.
 
-> `latest/download/<name>` only works with a **stable** file name; link versioned
+> **💡 Tip:** `latest/download/<name>` only works with a **stable** file name; link versioned
 > files via `releases/download/<tag>/<file>`.
 
-### 🤖 Automatic catalog sync
+<a id="en-quick-start"></a>
 
-A GitHub workflow ([`.github/workflows/sync-catalog.yml`](.github/workflows/sync-catalog.yml))
-keeps the **versions of existing apps** up to date automatically: it periodically
-(every 15 min, on every release, and manually via *Run workflow*) reads the latest
-release of each app repo, pulls `versionCode`/`versionName`/`applicationId` straight
-from the release APK, computes its **SHA-256** and updates `catalog.json`. The app
-verifies that hash before every installation.
+### 🚀 Quick start (TV box)
 
-Requirement per entry: a **`"source": "<owner>/<repo>"`** field (ignored by the app).
-So for updates: **build APK → upload release → done** — the catalog follows on its own.
+1. Allow **"install unknown apps"** on the box (Settings → Security, or confirm later
+   during install).
+2. Install the **"Downloader"** app (by AFTVnews) from the box's store.
+3. In Downloader, open this address:
 
-> **New apps** still have to be added **once by hand** (name, description, icon, correct
-> `id`/`applicationId`, `source`). After that their version updates run automatically.
-
-### 🔧 Build the Android app
-
-Build via the bundled toolchain (no Android Studio needed):
-
-```powershell
-$env:JAVA_HOME    = "<TOOLCHAIN>\jdk21"
-$env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
-& "<TOOLCHAIN>\gradle-8.10.2\bin\gradle.bat" `
-    -p "<PATH-TO-APP>" `
-    :app:assembleRelease --no-daemon --console=plain
+```text
+store.selfcoder.de
 ```
 
-→ `app/build/outputs/apk/release/app-release.apk` (release-signed if
-`keystore.properties` exists; otherwise debug fallback).
+4. Download and install the **SelfStore APK**.
 
-> ⚠️ **Force the v1 signature.** Older, stripped-down TV ROMs can only read the
-> signature of an APK **file** if it carries a v1 (JAR) block — since signature
-> pinning was added, installation fails there otherwise. `enableV1Signing = true`
-> in Gradle is NOT enough: both AGP and `apksigner` skip v1 when `minSdk >= 24`.
-> Re-sign the APK after building:
->
-> ```bash
-> apksigner sign --ks <keystore.jks> --ks-key-alias <alias> \
->   --min-sdk-version 21 \
->   --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
->   --out SelfStore-v<version>.apk app-release.apk
-> ```
->
-> `--min-sdk-version 21` is the decisive part — without it v1 stays off.
-> Verify afterwards: `apksigner verify --verbose <apk>` must report `v1 scheme … true`.
+Open SelfStore → all Self apps are ready to install / update.
 
-### 🔒 Security
+<a id="en-configuration"></a>
+
+### ⚙️ Configuration
+
+No environment variables — everything lives in [`catalog.json`](catalog.json). Fields per app (checked by `tools/check_catalog.js`):
+
+| Field | Required | Default | Purpose |
+|---|---|---|---|
+| `id` | ✅ | – | Real `applicationId` of the app |
+| `name` | ✅ | – | Display name |
+| `apk` / `abis` | ✅ (one of them) | – | HTTPS link to the universal APK, or per-ABI links |
+| `sha256` | ✅ with `apk` | – | Hash of the APK, checked before install (maintained by the auto-sync) |
+| `versionName` | – | – | SemVer version shown in the store |
+| `versionCode` | – | – | Must go up on every update |
+| `platforms` | – | empty = everywhere | e.g. `["phone","tv"]` — device filter |
+| `source` | – | – | `<owner>/<repo>` for the auto-sync (ignored by the app) |
+| `i18n` | – | – | Per-language `tagline`/`description`/`category` for the landing page only |
+
+At top level, `pairEndpoint` sets the pairing service used by **Add via web**.
+
+#### GitHub Pages (one-time)
+
+Settings → **Pages** → Source: `Deploy from a branch`, branch `main` / `/ (root)`.
+Live after ~1 min at `https://store.selfcoder.de/` (custom domain via `CNAME`).
+
+> **⚠️ Catalog URL:** the app loads `https://raw.githubusercontent.com/s3lfcod3r/selfstore/main/catalog.json`
+> (`CATALOG_URL` in `Catalog.kt`), falling back to `https://store.selfcoder.de/catalog.json`.
+> Different repo/path → adjust it there.
+
+<a id="en-android"></a>
+
+### 📱 Android app
+
+A native **Jetpack Compose** client — runs on phones, tablets and **Android TV** (Leanback launcher).
+
+- Picks the right APK per device via `Build.SUPPORTED_ABIS` (armv7 / armv8)
+- Shows *Install · Open · Update* per app; on a TV only apps whose `platforms` contain `tv` (or are empty)
+- **Background update check** (WorkManager, about twice a day) with a notification — installing always needs your confirmation
+- **Custom sources** and **Add via web** — guides: [custom sources](docs/EIGENE-QUELLEN.en.md) · [web pairing](docs/WEB-KOPPLUNG-SETUP.en.md)
+- Verifies **signature, package name and SHA-256** before handing an APK to the system installer
+
+<a id="en-security"></a>
+
+### 🛡️ Security
 
 Last reviewed: **August 2026** (code **and** operations). **Hardening applied:**
 
@@ -230,59 +259,150 @@ Last reviewed: **August 2026** (code **and** operations). **Hardening applied:**
 - **App manifest:** `allowBackup=false`, FileProvider limited to `cache/downloads` and
   not exported, no cleartext, and **no** `QUERY_ALL_PACKAGES` (a narrow `<queries>` list
   instead, which also avoids Play Protect warnings).
+- **Deliberate trade-offs** (documented):
+  - The pairing service runs on Cloudflare — but with end-to-end encryption it is just
+    a mailbox with no visibility. Its rate limit is per IP and not atomic.
+  - Keystore/passwords stay **local only** and are in `.gitignore` — never in the repo.
+  - GitHub Pages cannot set HTTP headers, so `frame-ancestors` is unavailable by design
+    (a meta CSP cannot express it).
 
-**Knowingly accepted / roadmap:**
+Found a security issue? Please report it privately / directly to SelfCoder, not in public.
 
-- ℹ️ The pairing service runs on Cloudflare — but with end-to-end encryption it is just
-  a mailbox with no visibility. Its rate limit is per IP and not atomic.
-- ℹ️ Keystore/passwords stay **local only** and are in `.gitignore` — never in the repo.
-- ℹ️ GitHub Pages cannot set HTTP headers, so `frame-ancestors` is unavailable by design
-  (a meta CSP cannot express it).
+Security update history → [CHANGELOG.md](CHANGELOG.md) (entries marked 🔒).
 
-Found a security issue? Please report it privately / directly to SelfCoder, not in
-public.
+<a id="en-tech-stack"></a>
 
-### 🌐 Enable GitHub Pages (one-time)
+### 🧱 Tech stack
 
-Settings → **Pages** → Source: `Deploy from a branch`, branch `main` / `/ (root)`.
-Live after ~1 min at `https://s3lfcod3r.github.io/selfstore/`.
+| Part | Tech |
+|---|---|
+| App | Kotlin · Jetpack Compose · OkHttp · Coil · WorkManager · EncryptedSharedPreferences |
+| Web | Static HTML/JS · GitHub Pages · 12-language landing page (i18n) |
+| Pairing | Cloudflare Worker · AES-256-GCM (in the browser) |
+| Catalog tooling | Python (`sync_catalog.py`) · Node (`check_catalog.js`) · GitHub Actions |
+| Delivery | GitHub Releases · custom domain `store.selfcoder.de` |
 
-> The app is hard-wired to `…/selfstore/catalog.json` (`CATALOG_URL` in `Catalog.kt`).
-> Different path → adjust it there.
+<a id="en-development"></a>
+
+### 🛠️ Development
+
+#### Repository contents
+
+```text
+selfstore/
+├── catalog.json              # app list (source of truth)
+├── index.html                # bootstrap landing page (Self look)
+├── app.js                    # landing logic (renders the catalog XSS-safe)
+├── pair/                     # pairing page (DE/EN) + Cloudflare Worker
+├── docs/                     # guides, each as NAME.md (DE) + NAME.en.md (EN)
+├── icons/                    # app icons (512×512, dark Self background)
+├── tools/
+│   └── sync_catalog.py       # auto-sync: pulls release versions into catalog.json
+├── .github/workflows/
+│   └── sync-catalog.yml      # auto-sync workflow (every 15 min + on release)
+├── LICENSE                   # MIT
+└── .nojekyll                 # GitHub Pages: serve files as-is
+```
+
+```bash
+# check the catalog (also runs in the sync workflow)
+node tools/check_catalog.js
+# helper to add a new app
+python tools/add_app.py <new-app.json>
+```
+
+**Tests:**
+
+```bash
+node tests/test_check_catalog.js
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+#### Build the Android app
+
+Build via the bundled toolchain (no Android Studio needed):
+
+```powershell
+$env:JAVA_HOME    = "<TOOLCHAIN>\jdk21"
+$env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
+& "<TOOLCHAIN>\gradle-8.10.2\bin\gradle.bat" `
+    -p "<PATH-TO-APP>" `
+    :app:assembleRelease --no-daemon --console=plain
+```
+
+→ `app/build/outputs/apk/release/app-release.apk` (release-signed if
+`keystore.properties` exists; otherwise debug fallback).
+
+> **⚠️ Force the v1 signature.** Older, stripped-down TV ROMs can only read the
+> signature of an APK **file** if it carries a v1 (JAR) block — since signature
+> pinning was added, installation fails there otherwise. `enableV1Signing = true`
+> in Gradle is NOT enough: both AGP and `apksigner` skip v1 when `minSdk >= 24`.
+> Re-sign the APK after building:
+>
+> ```bash
+> apksigner sign --ks <keystore.jks> --ks-key-alias <alias> \
+>   --min-sdk-version 21 \
+>   --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
+>   --out SelfStore-v<version>.apk app-release.apk
+> ```
+>
+> `--min-sdk-version 21` is the decisive part — without it v1 stays off.
+> Verify afterwards: `apksigner verify --verbose <apk>` must report `v1 scheme … true`.
+
+<a id="en-roadmap"></a>
+
+### 🗺️ Roadmap
+
+- [x] Fixed catalog + bootstrap landing page on GitHub Pages (own domain)
+- [x] Automatic catalog sync with SHA-256 integrity check
+- [x] Custom sources (NextCloud/WebDAV) · device filter (TV vs. phone)
+- [x] Add via web (pairing) — end-to-end encrypted since v1.5.0
+- [x] Background update check with notification
+- [x] Signature pinning · pinned CI · strict CSP
+- [x] Landing page in 12 languages
+- [ ] Atomic rate limit for the pairing service
+
+<p align="right"><a href="#-english">⬆ back to top</a></p>
 
 ---
 
-<div align="center">
-<sub>Part of the <b>Self</b> ecosystem · © SelfCoder</sub>
-</div>
+<a id="-deutsch"></a>
 
----
+## 🇩🇪 Deutsch
 
-## Deutsch
+SelfStore ist ein **schlanker, selbstgehosteter App-Store** ausschließlich für die **Self-Projekte**. Eine native Android-App liest einen festen Katalog von GitHub und installiert bzw. aktualisiert die Apps direkt auf **Handy und TV-Box** — ideal für Boxen, auf denen es kein Google Play gibt oder es gar nicht erwünscht ist. Er ist **kein** öffentlicher Store: keine Fremd-Repos, nur deine eigenen Self-Apps. → [**Store öffnen**](https://store.selfcoder.de/)
 
-### Was ist SelfStore?
+Dieses Repository liefert die **Server-Seite** (Katalog + Bootstrap-Landingpage + Kopplungsseite) über GitHub Pages. Der Quellcode der Android-App wird separat gepflegt und ist nicht Teil dieses Repos.
 
-SelfStore ist ein **schlanker, selbst gehosteter App-Store** ausschließlich für die
-**Self-Projekte** (SelfMailer, SelfAuthenticator, SelfDashboard, …). Eine native
-Android-App liest einen festen Katalog von GitHub Pages und installiert bzw.
-aktualisiert die Apps direkt – ideal für **TV-Boxen**, auf denen es kein Google Play
-gibt oder gar nicht erwünscht ist.
+Teil der **Self**-Familie (SelfMailer, SelfAuthenticator, SelfDashboard …) — gleiches Design-System, gleicher Deploy-Stil (GitHub Releases → SelfStore).
 
-Dieses Repository liefert die **Server-Seite** (Katalog + Bootstrap-Landingpage) über
-GitHub Pages. Der Quellcode der Android-App wird separat gepflegt und ist nicht Teil
-dieses Repos.
+> **Kurz** — fester Katalog der Self-Apps · installieren/aktualisieren ohne Google Play · Android TV (Leanback) · armv7 + armv8 · eigene Quellen (NextCloud/WebDAV) · Ende-zu-Ende-verschlüsselte Web-Kopplung · Signatur-Pinning + SHA-256-Prüfung · läuft komplett über GitHub.
 
-### ✨ Features
+### 📑 Inhaltsverzeichnis
 
-- 📦 **Ein fester Store** – nur deine eigenen Self-Apps, keine Fremd-Repos.
-- 🔄 **Update-Erkennung** – zeigt *Installieren · Öffnen · Aktualisieren* je Gerätelage.
-- 📺 **TV-tauglich** – erscheint im Android-TV-Start (Leanback), per Fernbedienung bedienbar.
-- 🧩 **armv7 + armv8** – wählt automatisch die passende APK je Box.
-- 🌐 **Kein eigener Server nötig** – Katalog + APKs laufen komplett über GitHub.
-- 🔒 **Eigene Quellen** – private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer + App-Passwort einbinden; Zugangsdaten verschlüsselt gespeichert (Android-Keystore), nur HTTPS. → [Anleitung](docs/EIGENE-QUELLEN.md)
-- 🔗 **Per Web hinzufügen** – Quelle am PC/Handy im Browser (`store.selfcoder.de/pair`) eingeben; die TV-Box übernimmt sie per Code automatisch, kein Tippen auf der Fernbedienung. **Ende-zu-Ende verschlüsselt** (ab v1.5.0): der zweiteilige Code `SLOT-SCHLUESSEL` schickt nur den Slot an den Dienst, Link und Passwort bleiben für ihn unlesbar. → [Einrichtung](docs/WEB-KOPPLUNG-SETUP.md)
-- 📱 **Geräte-Filter** – auf dem Fernseher erscheinen nur TV-taugliche Apps; reine Handy-Apps bleiben dort ausgeblendet (Katalog-Feld `platforms`).
-- 🎨 **Self-Branding** – durchgängig im Self-Look (Teal, dark).
+[Funktionen](#de-funktionen) · [Enthaltene Apps](#de-apps) · [Architektur](#de-architektur) · [Katalog-Sync](#de-katalog-sync) · [App hinzufügen](#de-app-hinzufuegen) · [Schnellstart](#de-schnellstart) · [Konfiguration](#de-konfiguration) · [Android-App](#de-android) · [Sicherheit](#de-sicherheit) · [Tech-Stack](#de-tech-stack) · [Entwicklung](#de-entwicklung) · [Roadmap](#de-roadmap)
+
+<a id="de-funktionen"></a>
+
+### ✨ Funktionen
+
+**📦 Store**
+- **Ein fester Store** — nur deine eigenen Self-Apps, keine Fremd-Repos
+- **Update-Erkennung** — zeigt *Installieren · Öffnen · Aktualisieren* je Gerätelage
+- **armv7 + armv8** — wählt automatisch die passende APK je Box
+- **Geräte-Filter** — auf dem Fernseher erscheinen nur TV-taugliche Apps; reine Handy-Apps bleiben dort ausgeblendet (Katalog-Feld `platforms`)
+- **Kein eigener Server nötig** — Katalog + APKs laufen komplett über GitHub
+
+**📺 TV**
+- **TV-tauglich** — erscheint im Android-TV-Start (Leanback), per Fernbedienung bedienbar
+- **Per Web hinzufügen** — Quelle am PC/Handy im Browser (`store.selfcoder.de/pair`) eingeben; die TV-Box übernimmt sie per Code automatisch, kein Tippen auf der Fernbedienung. → [Einrichtung](docs/WEB-KOPPLUNG-SETUP.md)
+
+**🔐 Sicherheit & Plattform**
+- **Eigene Quellen** — private App-Repos (z. B. NextCloud/WebDAV) mit Benutzer + App-Passwort einbinden; Zugangsdaten verschlüsselt gespeichert (Android-Keystore), nur HTTPS. → [Anleitung](docs/EIGENE-QUELLEN.md)
+- **Ende-zu-Ende-verschlüsselte Kopplung** (ab v1.5.0) — der zweiteilige Code `SLOT-SCHLUESSEL` schickt nur den Slot an den Dienst, Link und Passwort bleiben für ihn unlesbar
+- **Self-Branding** — durchgängig im Self-Look (Teal, dunkel)
+
+<a id="de-apps"></a>
 
 ### 📲 Enthaltene Apps
 
@@ -290,60 +410,62 @@ Die aktuelle Liste steht in [`catalog.json`](catalog.json) und ist live unter
 **<https://store.selfcoder.de/catalog.json>**.
 
 | App | Zweck |
-|-----|-------|
-| **SelfStore** | Der Store selbst (self-update) |
-| **SelfMailer** | Self-hosted Mail-Client (IMAP/SMTP, Kalender) |
-| **SelfAuthenticator** | Zero-Knowledge 2FA-/TOTP-Tresor |
+|---|---|
+| **SelfStore** | Der Store selbst (aktualisiert sich selbst) |
+| **SelfMailer** | Selbstgehosteter Mail-Client (IMAP/SMTP, Kalender) |
+| **SelfAuthenticator** | Zero-Knowledge-2FA-/TOTP-Tresor |
 | **SelfDashboard** | Zentrale Übersicht über deine Self-Dienste |
+| **SelfPoolTracker** | Deine Pool-Wasserwerte im Griff |
+| **SelfWG** | WireGuard, der oben bleibt |
+| **SelfGuard** | Geräte-Check auf Spyware, Werbeblocker inklusive |
+| **SelfRemote** | Dieses Gerät fernwarten lassen |
 
-### 🚀 Installation auf der TV-Box
+<a id="de-architektur"></a>
 
-1. Auf der Box **„Unbekannte Apps zulassen"** erlauben (Einstellungen → Sicherheit,
-   bzw. später beim Installieren bestätigen).
-2. Die App **„Downloader"** (von AFTVnews) aus dem Box-Store installieren.
-3. In Downloader diese Adresse öffnen: **`store.selfcoder.de`**
-4. **SelfStore-APK** herunterladen und installieren.
-5. SelfStore öffnen → alle Self-Apps stehen zum Installieren / Aktualisieren bereit.
+### 🧭 Architektur
 
-### 🏗️ Architektur
-
-```mermaid
-flowchart LR
-    subgraph GitHub
-      P["GitHub Pages<br/>catalog.json + Landing"]
-      R["GitHub Releases<br/>signierte APKs"]
-    end
-    A["SelfStore-App<br/>(Android / TV)"]
-    A -- "liest Katalog (HTTPS)" --> P
-    A -- "lädt passende APK (ABI)" --> R
-    A -- "System-Installer" --> D["Box / Handy"]
+```text
+   ┌────────────────────────────── GitHub ───────────────────────────────┐
+   │  GitHub Pages                          GitHub Releases              │
+   │  catalog.json + Landingpage            signierte APKs (je App-Repo) │
+   └──────────────▲────────────────────────────────────▲─────────────────┘
+                  │ liest Katalog (HTTPS)               │ lädt passende APK (ABI)
+           ┌──────┴─────────────────────────────────────┴──────┐
+           │            SelfStore-App (Android / TV)           │
+           └─────────────────────────┬─────────────────────────┘
+                                     │ System-Installer
+                              ┌──────▼──────┐
+                              │ Box / Handy │
+                              └─────────────┘
 ```
 
 - **Katalog** = statisches `catalog.json` (dieses Repo, via GitHub Pages).
 - **Auslieferung** = APKs als **GitHub-Release-Assets** je App-Repo.
 - **Client** = native Compose-App, wählt per `Build.SUPPORTED_ABIS` die richtige APK.
 
-### 📁 Repository-Inhalt
+<a id="de-katalog-sync"></a>
 
-```
-selfstore/
-├── catalog.json              # App-Liste (Quelle der Wahrheit)
-├── index.html                # Bootstrap-Landingpage (Self-Look)
-├── app.js                    # Landing-Logik (rendert den Katalog XSS-sicher)
-├── pair/                     # Kopplungsseite (DE/EN) + Cloudflare Worker
-├── docs/                     # Anleitungen, je NAME.md (DE) + NAME.en.md (EN)
-├── icons/                    # App-Icons (512×512, dunkler Self-Hintergrund)
-├── tools/
-│   └── sync_catalog.py       # Auto-Sync: zieht Release-Versionen in catalog.json
-├── .github/workflows/
-│   └── sync-catalog.yml      # Auto-Sync (alle 15 Min + bei jedem Release)
-├── LICENSE                   # MIT
-└── .nojekyll                 # GitHub Pages: Dateien unverändert ausliefern
-```
+### 🤖 Automatischer Katalog-Sync
+
+Ein GitHub-Workflow ([`.github/workflows/sync-catalog.yml`](.github/workflows/sync-catalog.yml))
+hält die **Versionen bestehender Apps** automatisch aktuell: er liest periodisch
+(alle 15 Min, bei jedem Release und manuell per *Run workflow*) das neueste Release
+jedes App-Repos, zieht `versionCode`/`versionName`/`applicationId` direkt aus dem
+Release-APK, berechnet dessen **SHA-256** und aktualisiert `catalog.json`. Den Hash
+prüft die App vor jeder Installation.
+
+Voraussetzung je Eintrag: ein Feld **`"source": "<owner>/<repo>"`** (von der App
+ignoriert). Damit gilt für Updates: **APK bauen → Release hochladen → fertig** — der
+Katalog zieht von selbst nach.
+
+> **💡 Tipp:** **neue Apps** müssen weiterhin **einmalig von Hand** angelegt werden (Name,
+> Beschreibung, Icon, korrekte `id`/`applicationId`, `source`) — siehe [App hinzufügen](#de-app-hinzufuegen). Danach laufen ihre Versions-Updates automatisch.
+
+<a id="de-app-hinzufuegen"></a>
 
 ### ➕ Eine App in den Store legen
 
-Block in [`catalog.json`](catalog.json) → `apps` anhängen:
+Block in [`catalog.json`](catalog.json) → `apps` anhängen (Schritt-für-Schritt-Anleitung: [docs/NEUE-APP.md](docs/NEUE-APP.md)):
 
 ```json
 {
@@ -360,12 +482,12 @@ Block in [`catalog.json`](catalog.json) → `apps` anhängen:
 }
 ```
 
-> ⚠️ **`id` MUSS die echte `applicationId`** der App sein, sonst funktioniert die
+> **⚠️ `id` MUSS die echte `applicationId`** der App sein, sonst funktioniert die
 > Update-Erkennung nicht. Im Zweifel aus der APK auslesen:
 > `aapt dump badging <app>.apk | findstr package`.
 > `versionCode` bei **jedem** Update hochzählen.
 
-### armv7 / armv8
+#### armv7 / armv8
 
 - **Apps ohne Native-Code** (WebView-Wrapper, reine Compose-Apps): ein
   **Universal-APK** im Feld `apk` reicht — läuft auf armv7 **und** armv8.
@@ -378,7 +500,7 @@ Block in [`catalog.json`](catalog.json) → `apps` anhängen:
 }
 ```
 
-### Release-Konvention (APK-Dateinamen)
+#### Release-Konvention (APK-Dateinamen)
 
 Pro Release **zwei Assets** hochladen:
 
@@ -387,58 +509,70 @@ Pro Release **zwei Assets** hochladen:
 - **`selfstore.apk`** (stabiler Name, nur dieses Repo) — damit der Bootstrap-Link
   `…/releases/latest/download/selfstore.apk` immer funktioniert.
 
-> `latest/download/<name>` klappt nur mit **stabilem** Dateinamen; versionierte
+> **💡 Tipp:** `latest/download/<name>` klappt nur mit **stabilem** Dateinamen; versionierte
 > Dateien per `releases/download/<tag>/<datei>` verlinken.
 
-### 🤖 Automatischer Katalog-Sync
+<a id="de-schnellstart"></a>
 
-Ein GitHub-Workflow ([`.github/workflows/sync-catalog.yml`](.github/workflows/sync-catalog.yml))
-hält die **Versionen bestehender Apps** automatisch aktuell: er liest periodisch
-(alle 15 Min, bei jedem Release und manuell per *Run workflow*) das neueste Release
-jedes App-Repos, zieht `versionCode`/`versionName`/`applicationId` direkt aus dem
-Release-APK, berechnet dessen **SHA-256** und aktualisiert `catalog.json`. Den Hash
-prüft die App vor jeder Installation.
+### 🚀 Schnellstart (TV-Box)
 
-Voraussetzung je Eintrag: ein Feld **`"source": "<owner>/<repo>"`** (von der App
-ignoriert). Damit gilt für Updates: **APK bauen → Release hochladen → fertig** — der
-Katalog zieht von selbst nach.
+1. Auf der Box **„Unbekannte Apps zulassen“** erlauben (Einstellungen → Sicherheit,
+   bzw. später beim Installieren bestätigen).
+2. Die App **„Downloader“** (von AFTVnews) aus dem Box-Store installieren.
+3. In Downloader diese Adresse öffnen:
 
-> **Neue Apps** müssen weiterhin **einmalig von Hand** angelegt werden (Name,
-> Beschreibung, Icon, korrekte `id`/`applicationId`, `source`). Danach laufen ihre
-> Versions-Updates automatisch.
-
-### 🔧 Android-App bauen
-
-Build über die mitgelieferte Toolchain (kein Android Studio nötig):
-
-```powershell
-$env:JAVA_HOME    = "<TOOLCHAIN>\jdk21"
-$env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
-& "<TOOLCHAIN>\gradle-8.10.2\bin\gradle.bat" `
-    -p "<PFAD-ZUR-APP>" `
-    :app:assembleRelease --no-daemon --console=plain
+```text
+store.selfcoder.de
 ```
 
-→ `app/build/outputs/apk/release/app-release.apk` (Release-signiert, sofern
-`keystore.properties` vorhanden ist; sonst Debug-Fallback).
+4. **SelfStore-APK** herunterladen und installieren.
 
-> ⚠️ **v1-Signatur erzwingen.** Ältere, abgespeckte TV-ROMs können die Signatur einer
-> APK-**Datei** nur lesen, wenn sie einen v1-Block (JAR) trägt — seit dem
-> Signatur-Pinning bricht die Installation dort sonst ab. `enableV1Signing = true`
-> in Gradle reicht NICHT: sowohl AGP als auch `apksigner` lassen v1 bei
-> `minSdk >= 24` weg. Die APK deshalb nach dem Build nachsignieren:
->
-> ```bash
-> apksigner sign --ks <keystore.jks> --ks-key-alias <alias> \
->   --min-sdk-version 21 \
->   --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
->   --out SelfStore-v<Version>.apk app-release.apk
-> ```
->
-> `--min-sdk-version 21` ist der entscheidende Teil — ohne ihn bleibt v1 aus.
-> Danach prüfen: `apksigner verify --verbose <apk>` muss `v1 scheme … true` zeigen.
+SelfStore öffnen → alle Self-Apps stehen zum Installieren / Aktualisieren bereit.
 
-### 🔒 Security
+<a id="de-konfiguration"></a>
+
+### ⚙️ Konfiguration
+
+Keine Umgebungsvariablen — alles steht in [`catalog.json`](catalog.json). Felder je App (geprüft von `tools/check_catalog.js`):
+
+| Feld | Pflicht | Standard | Zweck |
+|---|---|---|---|
+| `id` | ✅ | – | Echte `applicationId` der App |
+| `name` | ✅ | – | Anzeigename |
+| `apk` / `abis` | ✅ (eins davon) | – | HTTPS-Link zur Universal-APK oder Links je ABI |
+| `sha256` | ✅ bei `apk` | – | Hash der APK, wird vor der Installation geprüft (pflegt der Auto-Sync) |
+| `versionName` | – | – | SemVer-Version, die im Store angezeigt wird |
+| `versionCode` | – | – | Muss bei jedem Update steigen |
+| `platforms` | – | leer = überall | z. B. `["phone","tv"]` — Geräte-Filter |
+| `source` | – | – | `<owner>/<repo>` für den Auto-Sync (von der App ignoriert) |
+| `i18n` | – | – | `tagline`/`description`/`category` je Sprache, nur für die Landingpage |
+
+Auf oberster Ebene legt `pairEndpoint` den Pairing-Dienst für **Per Web hinzufügen** fest.
+
+#### GitHub Pages (einmalig)
+
+Settings → **Pages** → Source: `Deploy from a branch`, Branch `main` / `/ (root)`.
+Live nach ~1 Min unter `https://store.selfcoder.de/` (eigene Domain per `CNAME`).
+
+> **⚠️ Katalog-Adresse:** die App lädt `https://raw.githubusercontent.com/s3lfcod3r/selfstore/main/catalog.json`
+> (`CATALOG_URL` in `Catalog.kt`), ersatzweise `https://store.selfcoder.de/catalog.json`.
+> Anderes Repo / anderer Pfad → dort anpassen.
+
+<a id="de-android"></a>
+
+### 📱 Android-App
+
+Ein nativer **Jetpack-Compose**-Client — läuft auf Handy, Tablet und **Android TV** (Leanback-Startbildschirm).
+
+- Wählt per `Build.SUPPORTED_ABIS` die passende APK je Gerät (armv7 / armv8)
+- Zeigt *Installieren · Öffnen · Aktualisieren* je App; auf dem Fernseher nur Apps, deren `platforms` `tv` enthält (oder leer ist)
+- **Update-Prüfung im Hintergrund** (WorkManager, ca. 2× täglich) mit Benachrichtigung — installiert wird immer erst nach deiner Bestätigung
+- **Eigene Quellen** und **Per Web hinzufügen** — Anleitungen: [Eigene Quellen](docs/EIGENE-QUELLEN.md) · [Web-Kopplung](docs/WEB-KOPPLUNG-SETUP.md)
+- Prüft **Signatur, Paketname und SHA-256**, bevor eine APK an den System-Installer geht
+
+<a id="de-sicherheit"></a>
+
+### 🛡️ Sicherheit
 
 Zuletzt geprüft: **August 2026** (Code **und** Betrieb). **Umgesetzte Härtungen:**
 
@@ -472,28 +606,116 @@ Zuletzt geprüft: **August 2026** (Code **und** Betrieb). **Umgesetzte Härtunge
 - **App-Manifest:** `allowBackup=false`, FileProvider auf `cache/downloads` beschränkt
   und nicht exportiert, kein Cleartext, **kein** `QUERY_ALL_PACKAGES` (stattdessen
   enge `<queries>`-Liste, das vermeidet auch Play-Protect-Warnungen).
+- **Bewusste Kompromisse** (dokumentiert):
+  - Der Pairing-Dienst läuft bei Cloudflare — durch die Verschlüsselung ist er aber
+    nur noch ein Briefkasten ohne Einsicht. Sein Rate-Limit ist pro IP und nicht atomar.
+  - Keystore/Passwörter liegen **nur lokal** und sind in `.gitignore` — niemals im Repo.
+  - Auf GitHub Pages lassen sich keine HTTP-Header setzen; `frame-ancestors` fehlt
+    deshalb systembedingt (Meta-CSP kann das nicht abbilden).
 
-**Bewusst akzeptiert / Roadmap:**
+Sicherheitslücke gefunden? Bitte privat / direkt an SelfCoder melden, nicht öffentlich posten.
 
-- ℹ️ Der Pairing-Dienst läuft bei Cloudflare — durch die Verschlüsselung ist er aber
-  nur noch ein Briefkasten ohne Einsicht. Sein Rate-Limit ist pro IP und nicht atomar.
-- ℹ️ Keystore/Passwörter liegen **nur lokal** und sind in `.gitignore` — niemals im Repo.
-- ℹ️ Auf GitHub Pages lassen sich keine HTTP-Header setzen; `frame-ancestors` fehlt
-  deshalb systembedingt (Meta-CSP kann das nicht abbilden).
+Verlauf der Sicherheitsupdates → [CHANGELOG.md](CHANGELOG.md) (Einträge mit 🔒).
 
-Sicherheitslücke gefunden? Bitte als privates Issue / direkt an SelfCoder melden,
-nicht öffentlich posten.
+<a id="de-tech-stack"></a>
 
-### 🌐 GitHub Pages aktivieren (einmalig)
+### 🧱 Tech-Stack
 
-Settings → **Pages** → Source: `Deploy from a branch`, Branch `main` / `/ (root)`.
-Live nach ~1 Min unter `https://s3lfcod3r.github.io/selfstore/`.
+| Teil | Technik |
+|---|---|
+| App | Kotlin · Jetpack Compose · OkHttp · Coil · WorkManager · EncryptedSharedPreferences |
+| Web | Statisches HTML/JS · GitHub Pages · Landingpage in 12 Sprachen (i18n) |
+| Kopplung | Cloudflare Worker · AES-256-GCM (im Browser) |
+| Katalog-Werkzeuge | Python (`sync_catalog.py`) · Node (`check_catalog.js`) · GitHub Actions |
+| Auslieferung | GitHub Releases · eigene Domain `store.selfcoder.de` |
 
-> Die App ist fest auf `…/selfstore/catalog.json` verdrahtet (`CATALOG_URL` in
-> `Catalog.kt`). Anderer Pfad → dort anpassen.
+<a id="de-entwicklung"></a>
+
+### 🛠️ Entwicklung
+
+#### Repository-Inhalt
+
+```text
+selfstore/
+├── catalog.json              # App-Liste (Quelle der Wahrheit)
+├── index.html                # Bootstrap-Landingpage (Self-Look)
+├── app.js                    # Landing-Logik (rendert den Katalog XSS-sicher)
+├── pair/                     # Kopplungsseite (DE/EN) + Cloudflare Worker
+├── docs/                     # Anleitungen, je NAME.md (DE) + NAME.en.md (EN)
+├── icons/                    # App-Icons (512×512, dunkler Self-Hintergrund)
+├── tools/
+│   └── sync_catalog.py       # Auto-Sync: zieht Release-Versionen in catalog.json
+├── .github/workflows/
+│   └── sync-catalog.yml      # Auto-Sync (alle 15 Min + bei jedem Release)
+├── LICENSE                   # MIT
+└── .nojekyll                 # GitHub Pages: Dateien unverändert ausliefern
+```
+
+```bash
+# Katalog prüfen (läuft auch im Sync-Workflow)
+node tools/check_catalog.js
+# Helfer zum Anlegen einer neuen App
+python tools/add_app.py <neue-app.json>
+```
+
+**Tests:**
+
+```bash
+node tests/test_check_catalog.js
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+#### Android-App bauen
+
+Build über die mitgelieferte Toolchain (kein Android Studio nötig):
+
+```powershell
+$env:JAVA_HOME    = "<TOOLCHAIN>\jdk21"
+$env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
+& "<TOOLCHAIN>\gradle-8.10.2\bin\gradle.bat" `
+    -p "<PFAD-ZUR-APP>" `
+    :app:assembleRelease --no-daemon --console=plain
+```
+
+→ `app/build/outputs/apk/release/app-release.apk` (Release-signiert, sofern
+`keystore.properties` vorhanden ist; sonst Debug-Fallback).
+
+> **⚠️ v1-Signatur erzwingen.** Ältere, abgespeckte TV-ROMs können die Signatur einer
+> APK-**Datei** nur lesen, wenn sie einen v1-Block (JAR) trägt — seit dem
+> Signatur-Pinning bricht die Installation dort sonst ab. `enableV1Signing = true`
+> in Gradle reicht NICHT: sowohl AGP als auch `apksigner` lassen v1 bei
+> `minSdk >= 24` weg. Die APK deshalb nach dem Build nachsignieren:
+>
+> ```bash
+> apksigner sign --ks <keystore.jks> --ks-key-alias <alias> \
+>   --min-sdk-version 21 \
+>   --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
+>   --out SelfStore-v<Version>.apk app-release.apk
+> ```
+>
+> `--min-sdk-version 21` ist der entscheidende Teil — ohne ihn bleibt v1 aus.
+> Danach prüfen: `apksigner verify --verbose <apk>` muss `v1 scheme … true` zeigen.
+
+<a id="de-roadmap"></a>
+
+### 🗺️ Roadmap
+
+- [x] Fester Katalog + Bootstrap-Landingpage auf GitHub Pages (eigene Domain)
+- [x] Automatischer Katalog-Sync mit SHA-256-Integritätsprüfung
+- [x] Eigene Quellen (NextCloud/WebDAV) · Geräte-Filter (TV vs. Handy)
+- [x] Per Web hinzufügen (Kopplung) — ab v1.5.0 Ende-zu-Ende verschlüsselt
+- [x] Update-Prüfung im Hintergrund mit Benachrichtigung
+- [x] Signatur-Pinning · gepinnte CI · strikte CSP
+- [x] Landingpage in 12 Sprachen
+- [ ] Atomares Rate-Limit für den Pairing-Dienst
+
+<p align="right"><a href="#-deutsch">⬆ nach oben</a></p>
 
 ---
 
 <div align="center">
-<sub>Teil des <b>Self</b>-Ökosystems · © SelfCoder</sub>
+
+**SelfStore** · part of the Self family · Teil der Self-Familie<br>
+made with 🛍️ for self-hosting
+
 </div>
