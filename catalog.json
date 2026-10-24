@@ -88,11 +88,11 @@
       "icon": "icons/self-mailer.png",
       "category": "Produktivität",
       "author": "SelfCoder",
-      "versionName": "1.97.1",
-      "versionCode": 127,
+      "versionName": "1.97.2",
+      "versionCode": 128,
       "changelog": "1.96.9 / Build 123: Aufräumdialog am PC und in der APK korrigiert. Suche und Trefferliste scrollen getrennt von Zielordner, Bestätigung und Schließen; Aktionen bleiben erreichbar. Checkboxen im Web korrekt ausgerichtet, Vorschau nach der Suche direkt sichtbar. APK gibt beim Suchen den Tastaturfokus frei. Weiterhin nur angezeigte Mails (maximal 100 pro Seite) nach zweiter Bestätigung verschieben. Zusätzliche Tests für veraltete Vorschauen und Fehlerfälle; reale Browserprüfung in sechs Bildschirmgrößen. Bisheriges Signaturzertifikat; aktualisiert auch Test-Build 122. Für beide Oberflächen Server und APK aktualisieren.",
-      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.97.1/SelfMailer-1.97.1.apk",
-      "sha256": "a01ab32ec531a10e081d40354081cbfaabc39f549fa97ff8601e59170bb16cf3",
+      "apk": "https://github.com/s3lfcod3r/selfmailer/releases/download/v1.97.2/SelfMailer-1.97.2.apk",
+      "sha256": "844ac62e01d1dcabb633ce65c841128ba16ca0e551158d56e76913aafc7707e1",
       "i18n": {
         "en": {
           "tagline": "Your own mail client",
