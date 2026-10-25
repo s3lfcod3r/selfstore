@@ -7,7 +7,7 @@
 
 [![Catalog sync](https://github.com/s3lfcod3r/selfstore/actions/workflows/sync-catalog.yml/badge.svg)](https://github.com/s3lfcod3r/selfstore/actions/workflows/sync-catalog.yml)
 [![Version](https://img.shields.io/badge/version-1.5.8-33A78C)](https://github.com/s3lfcod3r/selfstore/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-8A9CAA)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20rights%20reserved-8A9CAA)](LICENSE)
 [![Store](https://img.shields.io/website?url=https%3A%2F%2Fstore.selfcoder.de%2F&up_color=33a78c&up_message=online&label=catalog)](https://store.selfcoder.de/)
 ![Web](https://img.shields.io/badge/web-GitHub%20Pages-43D3AD)
 ![App](https://img.shields.io/badge/android-8.0%2B%20%C2%B7%20armv7%20%2B%20armv8-9DBDD0)
@@ -300,7 +300,7 @@ selfstore/
 │   └── sync_catalog.py       # auto-sync: pulls release versions into catalog.json
 ├── .github/workflows/
 │   └── sync-catalog.yml      # auto-sync workflow (every 15 min + on release)
-├── LICENSE                   # MIT
+├── LICENSE                   # All rights reserved / Alle Rechte vorbehalten
 └── .nojekyll                 # GitHub Pages: serve files as-is
 ```
 
@@ -647,7 +647,7 @@ selfstore/
 │   └── sync_catalog.py       # Auto-Sync: zieht Release-Versionen in catalog.json
 ├── .github/workflows/
 │   └── sync-catalog.yml      # Auto-Sync (alle 15 Min + bei jedem Release)
-├── LICENSE                   # MIT
+├── LICENSE                   # All rights reserved / Alle Rechte vorbehalten
 └── .nojekyll                 # GitHub Pages: Dateien unverändert ausliefern
 ```
 
@@ -710,6 +710,26 @@ $env:ANDROID_HOME = "<TOOLCHAIN>\sdk"
 - [ ] Atomares Rate-Limit für den Pairing-Dienst
 
 <p align="right"><a href="#-deutsch">⬆ nach oben</a></p>
+
+---
+
+## ⚖️ Lizenz / License
+
+**🇩🇪 Alle Rechte vorbehalten.** © 2026 s3lfcod3r / SelfCoder
+
+Du darfst die Software **privat und nicht-kommerziell** installieren und benutzen (z. B. im Homelab, über Docker oder Unraid).
+
+**Ohne schriftliche Erlaubnis verboten:** kommerzielle Nutzung · Kopieren · Verändern · Weitergeben · Einbauen in eigene Projekte (auch Closed Source) · Verkaufen.
+
+Details: [LICENSE](LICENSE)
+
+**🇬🇧 All rights reserved.** © 2026 s3lfcod3r / SelfCoder
+
+You may install and use the software **privately and non-commercially** (e.g. in your home lab, via Docker or Unraid).
+
+**Not permitted without written permission:** commercial use · copying · modifying · redistributing · incorporating into other projects (including closed source) · selling.
+
+Details: [LICENSE](LICENSE)
 
 ---
 
