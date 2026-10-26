@@ -1,3 +1,6 @@
 
 # Android-Quellcode: nur lokal, NICHT pushen
 /_android-src/
+
+# Lokale Werkzeug-Konfiguration (Serena)
+.serena/
