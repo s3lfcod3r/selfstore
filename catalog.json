@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-10-25",
+  "updated": "2026-11-01",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -163,11 +163,11 @@
       "icon": "icons/self-authenticator.png",
       "category": "Sicherheit",
       "author": "SelfCoder",
-      "versionName": "2.6.1",
-      "versionCode": 27,
+      "versionName": "2.6.2",
+      "versionCode": 28,
       "changelog": "Farbige Ablauf-Anzeige: Ring UND Code-Ziffern färben die verbleibende Zeit (teal → gelb → rot) und pulsieren in den letzten Sekunden — man sieht sofort, wenn ein Code gleich abläuft.",
-      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.1/SelfAuthenticator-v2.6.1.apk",
-      "sha256": "65d888d0f6572adfcae4c2eaab7f295bc559cb325ea59431cf61ca2b2ea79584",
+      "apk": "https://github.com/s3lfcod3r/selfauthenticator/releases/download/v2.6.2/SelfAuthenticator-v2.6.2.apk",
+      "sha256": "57fff0742c00c6c9a5f138819c4ae2742838f0690de4e8ecf3a21b62066f16ed",
       "i18n": {
         "en": {
           "tagline": "Your 2FA / TOTP vault",
