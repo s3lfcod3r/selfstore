@@ -388,11 +388,11 @@
       "icon": "icons/self-wg.png",
       "category": "Netzwerk",
       "author": "SelfCoder",
-      "versionName": "1.2.5",
-      "versionCode": 8,
+      "versionName": "1.2.6",
+      "versionCode": 9,
       "changelog": "Erste Store-Version.",
-      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.5/selfwg-v1.2.5.apk",
-      "sha256": "cf7bc1457f591f8de225c989b713193a7f2e3becac800683eeb99c8ddd0f3623",
+      "apk": "https://github.com/s3lfcod3r/selfwg/releases/download/v1.2.6/selfwg-v1.2.6.apk",
+      "sha256": "c81150864594beecd47dca600f874a7aacca005f6a7b37d84a32ed74fc5d231a",
       "i18n": {
         "en": {
           "tagline": "WireGuard that stays up",
@@ -463,10 +463,10 @@
       "icon": "icons/selfguard.png",
       "category": "Sicherheit",
       "author": "SelfCoder",
-      "versionName": "0.7.0",
-      "versionCode": 7,
-      "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.7.0/SelfGuard-0.7.0.apk",
-      "sha256": "785266676333fb8c1e9d209222e1315f69cb367fe107a6e0d5cdd6a608dc137a",
+      "versionName": "0.7.1",
+      "versionCode": 8,
+      "apk": "https://github.com/s3lfcod3r/selfguard/releases/download/v0.7.1/SelfGuard-0.7.1.apk",
+      "sha256": "c3f8d76f5011b651ad478fc8f214cb372f024e3fac026ba1b38e74b15bbe0c4f",
       "i18n": {
         "en": {
           "tagline": "Device check for spyware, ad blocker included",
