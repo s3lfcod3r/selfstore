@@ -73,8 +73,6 @@ The current list lives in [`catalog.json`](catalog.json) and is live at
 | **SelfDashboard** | Central overview of your Self services |
 | **SelfPoolTracker** | Your pool water values under control |
 | **SelfWG** | WireGuard that stays up |
-| **SelfGuard** | Device check for spyware, ad blocker included |
-| **SelfRemote** | Let this device be supported remotely |
 
 <a id="en-architecture"></a>
 
@@ -418,8 +416,6 @@ Die aktuelle Liste steht in [`catalog.json`](catalog.json) und ist live unter
 | **SelfDashboard** | Zentrale Übersicht über deine Self-Dienste |
 | **SelfPoolTracker** | Deine Pool-Wasserwerte im Griff |
 | **SelfWG** | WireGuard, der oben bleibt |
-| **SelfGuard** | Geräte-Check auf Spyware, Werbeblocker inklusive |
-| **SelfRemote** | Dieses Gerät fernwarten lassen |
 
 <a id="de-architektur"></a>
 
