@@ -22,7 +22,9 @@
       'c/o Online-Impressum 13327<br>' +
       'Europaring 90<br>' +
       '53757 Sankt Augustin</p>' +
-      '<p>E-Mail: ' + mailLink() + '</p>' +
+      '<p>E-Mail: ' + mailLink() + '<br>' +
+      'Zweiter Kontaktweg: <a href="https://mein.online-impressum.de/selfcoder/#zweiterkontaktweg" ' +
+      'target="_blank" rel="noopener">Kontaktformular</a></p>' +
       '<p><strong>Zuständige Aufsichtsbehörde</strong><br>' +
       'Medienanstalt Hamburg/Schleswig-Holstein</p>' +
       '<p class="sbl-muted">Nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer ' +
@@ -38,37 +40,53 @@
       'E-Mail: ' + mailLink() + ' (siehe Impressum).</p>' +
 
       '<h4>2. Hosting</h4>' +
-      '<p>Diese Seite wird über <strong>GitHub Pages</strong> (GitHub Inc., USA) bereitgestellt, die Domain ' +
-      'läuft über <strong>Cloudflare</strong> (Cloudflare Inc., USA). Beim Aufruf verarbeiten diese Dienste ' +
-      'technisch notwendige Server-Logdaten (u. a. IP-Adresse, Zeitpunkt, abgerufene Datei) zur sicheren ' +
-      'Auslieferung. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sicherer Betrieb). Für die Übermittlung in ' +
-      'die USA greifen die Standardvertragsklauseln der Anbieter.</p>' +
+      '<p>Alle Self-Seiten werden über <strong>GitHub Pages</strong> (GitHub Inc., USA) bereitgestellt. Beim ' +
+      'Aufruf verarbeitet GitHub technisch notwendige Server-Logdaten (u. a. IP-Adresse, Zeitpunkt, ' +
+      'abgerufene Datei) zur sicheren Auslieferung; auf Umfang und Speicherdauer haben wir keinen Einfluss. ' +
+      'Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sicherer, stabiler Betrieb). Die Übermittlung in die USA ' +
+      'stützt GitHub auf das EU-US Data Privacy Framework bzw. die Standardvertragsklauseln.</p>' +
 
       '<h4>3. Lokale Speicherung im Browser</h4>' +
-      '<p>Einstellungen (z. B. Sprache) werden nur <strong>lokal in deinem Browser</strong> (localStorage) ' +
-      'gespeichert und <strong>nicht</strong> an uns übertragen. Du kannst sie jederzeit über die ' +
-      'Browser-Einstellungen löschen. <strong>Keine Cookies, kein Tracking, keine Analyse-Tools, keine ' +
-      'Nutzerkonten.</strong></p>' +
+      '<p>Einstellungen und eigene Eingaben (z. B. Sprache, Verlauf, bei SelfPoolTracker deine Einträge)' +
+      'werden nur <strong>lokal in deinem Browser</strong> gespeichert (localStorage / IndexedDB) und ' +
+      '<strong>nicht</strong> an uns übertragen. Das ist für die Funktion erforderlich (§ 25 Abs. 2 Nr. 2 ' +
+      'TDDDG); du kannst die Daten jederzeit über die Browser-Einstellungen löschen. <strong>Keine Cookies, ' +
+      'kein Tracking, keine Analyse-Tools, keine Nutzerkonten.</strong></p>' +
 
-      '<h4>4. Anonyme Nutzung (nur SelfBike)</h4>' +
-      '<p>Beim Auslesen sendet SelfBike einen anonymen Zähl-Ping (System-Typ + gewählte Sprache); das Land ' +
-      'wird serverseitig grob aus der Verbindung abgeleitet, <strong>ohne deine IP zu speichern</strong>. Der ' +
-      'freiwillige „Zur Liste beitragen“-Knopf überträgt <strong>nur Modell-Codes deines Rads</strong>, keine ' +
-      'Seriennummern oder persönlichen Daten. Die Verbindung zum E-Bike (USB) läuft <strong>lokal</strong> im ' +
-      'Browser — es werden keine Fahrzeugdaten an uns gesendet.</p>' +
+      '<h4>4. SelfBike</h4>' +
+      '<p>Die Verbindung zum E-Bike (USB) läuft <strong>lokal</strong> im Browser. Für einzelne Funktionen ' +
+      'ruft SelfBike eigene Dienste bei <strong>Cloudflare Workers</strong> (Cloudflare Inc., USA) auf; dabei ' +
+      'fällt technisch bedingt deine IP-Adresse bei Cloudflare an.</p>' +
+      '<p><strong>Zählung:</strong> Beim Auslesen wird ein anonymer Zähl-Ping gesendet (System-Typ + gewählte ' +
+      'Sprache); das Land wird grob aus der Verbindung abgeleitet, <strong>ohne deine IP zu speichern</strong>. ' +
+      '<strong>BES2 (Gen 2–4):</strong> Die ausgelesenen Rohwerte von Motor, Akku und Display (darin können ' +
+      'Seriennummern enthalten sein) sowie die Schlüsselanfrage des Rads werden zum Entschlüsseln an den ' +
+      'eigenen Dienst übertragen, dort nur verarbeitet und <strong>nicht gespeichert</strong>. ' +
+      '<strong>Zur Liste beitragen:</strong> nur wenn du es auslöst, werden die <strong>Modell-Codes</strong> ' +
+      'deines Rads übertragen (keine Seriennummern) und nach Prüfung veröffentlicht. Rechtsgrundlage: ' +
+      'Art. 6 Abs. 1 lit. f DSGVO (Bereitstellung der Funktion), beim Beitrag deine Einwilligung ' +
+      '(Art. 6 Abs. 1 lit. a DSGVO).</p>' +
 
-      '<h4>5. Externe Dienste (je nach Seite)</h4>' +
-      '<p>Je nach Anwendung werden externe Fachdienste direkt in deinem Browser aufgerufen; dabei wird ' +
-      'technisch bedingt deine IP-Adresse an den jeweiligen Anbieter übertragen. <strong>SelfStorm</strong> ' +
-      '(Wetter) nutzt dafür Open-Meteo, den DWD über Bright Sky sowie Zippopotam (PLZ-Auflösung). Links zu ' +
-      'externen Seiten (z. B. Ko-fi) werden erst beim Anklicken aufgerufen.</p>' +
+      '<h4>5. SelfStorm (Wetter)</h4>' +
+      '<p>Für Wetter und Warnungen ruft dein Browser externe Dienste direkt auf: <strong>Open-Meteo</strong> ' +
+      '(Vorhersage, Ortssuche), <strong>Bright Sky</strong> (DWD-Warnungen), <strong>Zippopotam</strong> ' +
+      '(PLZ-Auflösung) und <strong>warnung.bund.de</strong> (Warnmeldungen des BBK). Dabei werden deine ' +
+      'IP-Adresse und der gewählte Ort (PLZ/Ortsname bzw. Koordinaten) an diese Anbieter übertragen. Den ' +
+      'Gerätestandort nutzt die Seite nur, wenn du ihn im Browser freigibst. Rechtsgrundlage: Art. 6 Abs. 1 ' +
+      'lit. f DSGVO (Anzeige der angefragten Wetterdaten).</p>' +
 
-      '<h4>6. Deine Rechte</h4>' +
+      '<h4>6. Kontakt und externe Links</h4>' +
+      '<p>Schreibst du uns per E-Mail, verarbeiten wir deine Angaben nur zur Beantwortung (Art. 6 Abs. 1 ' +
+      'lit. f DSGVO) und löschen sie, sobald sie nicht mehr gebraucht werden. Links zu externen Seiten ' +
+      '(z. B. Ko-fi, GitHub) werden erst beim Anklicken aufgerufen; dort gelten die Regeln des Anbieters.</p>' +
+
+      '<h4>7. Deine Rechte</h4>' +
       '<p>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Datenübertragbarkeit ' +
-      '(Art. 15–21 DSGVO) — per E-Mail an ' + mailLink() + '. Beschwerderecht bei der Aufsichtsbehörde: ' +
+      '(Art. 15–21 DSGVO) — per E-Mail an ' + mailLink() + '. Eine Einwilligung kannst du jederzeit ' +
+      'widerrufen. Beschwerderecht bei der Aufsichtsbehörde: ' +
       '<strong>Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit</strong>.</p>' +
 
-      '<h4>7. Stand</h4>' +
+      '<h4>8. Stand</h4>' +
       '<p class="sbl-muted">Diese Erklärung wird bei Bedarf angepasst. Stand: November 2026.</p>';
   }
 
