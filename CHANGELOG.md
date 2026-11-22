@@ -26,8 +26,8 @@ Neueste Version zuerst. Versionen der **SelfStore-Android-App** (Build = `versio
 - 🇩🇪 Erkennt jetzt **SelfWG** (Paket-Sichtbarkeit ergänzt): Installieren / Öffnen / Aktualisieren wird korrekt angezeigt.
 
 ## 1.1.9 · Build 21
-- 🇬🇧 **Update detection for private-source apps** (e.g. SelfStream Player from NextCloud): the installed version is compared with the catalog. Requires bumping `versionCode` in `catalog.json`.
-- 🇩🇪 **Update-Erkennung für Apps aus eigenen Quellen** (z. B. SelfStream Player aus NextCloud): die installierte Version wird mit dem Katalog verglichen. Voraussetzung: `versionCode` in `catalog.json` hochsetzen.
+- 🇬🇧 **Update detection for private-source apps** (e.g. from NextCloud): the installed version is compared with the catalog. Requires bumping `versionCode` in `catalog.json`.
+- 🇩🇪 **Update-Erkennung für Apps aus eigenen Quellen** (z. B. aus NextCloud): die installierte Version wird mit dem Katalog verglichen. Voraussetzung: `versionCode` in `catalog.json` hochsetzen.
 
 ## 1.1.8 · Build 20
 - 🇬🇧 **Automatic update notice**: SelfStore checks for new versions in the background about twice a day and notifies you; installing still needs your confirmation.
@@ -66,8 +66,6 @@ Neueste Version zuerst. Versionen der **SelfStore-Android-App** (Build = `versio
 - 🇩🇪 **SelfPlayer** im Katalog; Install-Erkennung dafür ergänzt.
 
 ## 1.0.8 · Build 9
-- 🇬🇧 **SelfStream Player** in the catalog; install detection added for it.
-- 🇩🇪 **SelfStream Player** im Katalog; Install-Erkennung dafür ergänzt.
 
 ## 1.0.7 · Build 8
 - 🇬🇧 Version/update display no longer cut off.
