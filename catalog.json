@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-11-19",
+  "updated": "2026-11-26",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -448,6 +448,81 @@
           "tagline": "WireGuard που δεν πέφτει",
           "description": "Αυτόνομο πρόγραμμα-πελάτης WireGuard με έναν επιτηρητή αυτόματης επανασύνδεσης: επανασυνδέεται αυτόματα μετά την καθημερινή αναγκαστική αλλαγή IP. Πολλαπλά tunnel, split tunnel ανά εφαρμογή, επεξεργαστής με πεδία με ετικέτες, κλείδωμα με δακτυλικό αποτύπωμα.",
           "category": "Δίκτυο"
+        }
+      }
+    },
+    {
+      "id": "de.selfcoder.selfbike",
+      "source": "s3lfcod3r/SelfBike",
+      "name": "SelfBike",
+      "platforms": [
+        "phone"
+      ],
+      "tagline": "Bosch eBike auslesen und einstellen",
+      "description": "Liest dein Bosch eBike über USB aus: Akku-Zustand, Fehlerspeicher, Service. Dazu sichere Einstellungen wie Licht und Service-Reset — kein Tuning. Für Smart System und BES2 (Kiox, Nyon, Intuvia). Braucht einen USB-OTG-Adapter.",
+      "icon": "icons/self-bike.png",
+      "category": "Werkzeuge",
+      "author": "SelfCoder",
+      "versionName": "1.0.1",
+      "versionCode": 2,
+      "changelog": "1.0.1: Offline-sicher — nach dem ersten Öffnen mit Internet läuft das Smart System auch ohne Netz. Update-Hinweis in der App.",
+      "apk": "https://github.com/s3lfcod3r/SelfBike/releases/download/app-v1.0.1/SelfBike-1.0.1.apk",
+      "sha256": "2323f38d210792e76888768c36917dfd6f0166cdb51f2ea3a62419836b917e5d",
+      "i18n": {
+        "en": {
+          "tagline": "Read and adjust your Bosch eBike",
+          "description": "Reads your Bosch eBike over USB: battery health, fault memory, service. Plus safe settings like light and service reset — no tuning. For the Smart System and BES2 (Kiox, Nyon, Intuvia). Needs a USB OTG adapter.",
+          "category": "Tools"
+        },
+        "fr": {
+          "tagline": "Lire et régler ton Bosch eBike",
+          "description": "Lit ton Bosch eBike par USB : état de la batterie, mémoire de défauts, entretien. Réglages sûrs comme l’éclairage et la réinitialisation de l’entretien — aucun tuning. Pour le Smart System et BES2 (Kiox, Nyon, Intuvia). Nécessite un adaptateur USB OTG.",
+          "category": "Outils"
+        },
+        "es": {
+          "tagline": "Lee y ajusta tu Bosch eBike",
+          "description": "Lee tu Bosch eBike por USB: estado de la batería, memoria de fallos, servicio. Ajustes seguros como la luz y el reinicio del servicio, sin tuning. Para el Smart System y BES2 (Kiox, Nyon, Intuvia). Necesita un adaptador USB OTG.",
+          "category": "Herramientas"
+        },
+        "it": {
+          "tagline": "Leggi e regola la tua Bosch eBike",
+          "description": "Legge la tua Bosch eBike via USB: stato batteria, memoria guasti, service. Impostazioni sicure come luce e reset del service, nessun tuning. Per lo Smart System e BES2 (Kiox, Nyon, Intuvia). Serve un adattatore USB OTG.",
+          "category": "Strumenti"
+        },
+        "nl": {
+          "tagline": "Je Bosch eBike uitlezen en instellen",
+          "description": "Leest je Bosch eBike via USB: accustatus, foutgeheugen, service. Veilige instellingen zoals licht en service-reset — geen tuning. Voor het Smart System en BES2 (Kiox, Nyon, Intuvia). Vereist een USB-OTG-adapter.",
+          "category": "Gereedschap"
+        },
+        "pl": {
+          "tagline": "Odczyt i ustawienia roweru Bosch eBike",
+          "description": "Odczytuje Twój rower Bosch eBike przez USB: stan akumulatora, pamięć usterek, serwis. Bezpieczne ustawienia jak światło i reset serwisu — bez tuningu. Dla Smart System i BES2 (Kiox, Nyon, Intuvia). Wymaga adaptera USB OTG.",
+          "category": "Narzędzia"
+        },
+        "pt": {
+          "tagline": "Lê e ajusta a tua Bosch eBike",
+          "description": "Lê a tua Bosch eBike por USB: estado da bateria, memória de falhas, serviço. Definições seguras como luz e reset do serviço — sem tuning. Para o Smart System e BES2 (Kiox, Nyon, Intuvia). Precisa de um adaptador USB OTG.",
+          "category": "Ferramentas"
+        },
+        "sv": {
+          "tagline": "Läs av och ställ in din Bosch eBike",
+          "description": "Läser av din Bosch eBike via USB: batteristatus, felminne, service. Säkra inställningar som ljus och service-återställning — ingen trimning. För Smart System och BES2 (Kiox, Nyon, Intuvia). Kräver en USB-OTG-adapter.",
+          "category": "Verktyg"
+        },
+        "da": {
+          "tagline": "Aflæs og indstil din Bosch eBike",
+          "description": "Aflæser din Bosch eBike via USB: batteristatus, fejlhukommelse, service. Sikre indstillinger som lys og service-nulstilling — ingen tuning. Til Smart System og BES2 (Kiox, Nyon, Intuvia). Kræver en USB-OTG-adapter.",
+          "category": "Værktøjer"
+        },
+        "cs": {
+          "tagline": "Načti a nastav své Bosch eBike",
+          "description": "Načítá tvé Bosch eBike přes USB: stav baterie, paměť závad, servis. Bezpečná nastavení jako světlo a reset servisu — žádný tuning. Pro Smart System a BES2 (Kiox, Nyon, Intuvia). Vyžaduje USB OTG adaptér.",
+          "category": "Nástroje"
+        },
+        "el": {
+          "tagline": "Διάβασε και ρύθμισε το Bosch eBike σου",
+          "description": "Διαβάζει το Bosch eBike σου μέσω USB: κατάσταση μπαταρίας, μνήμη σφαλμάτων, σέρβις. Ασφαλείς ρυθμίσεις όπως φως και επαναφορά σέρβις — χωρίς tuning. Για το Smart System και BES2 (Kiox, Nyon, Intuvia). Χρειάζεται προσαρμογέα USB OTG.",
+          "category": "Εργαλεία"
         }
       }
     }
