@@ -13,11 +13,11 @@
       "icon": "icons/self-store.png",
       "category": "System",
       "author": "SelfCoder",
-      "versionName": "1.5.9",
-      "versionCode": 41,
+      "versionName": "1.5.10",
+      "versionCode": 42,
       "changelog": "SelfStore 1.5.8: HTTPS-Check in fetchPair (Pairing-Endpoint muss HTTPS sein), SHA-256-basierter Filenamen für APK-Downloads (keine hashCode-Kollision). Build-Abhängigkeiten aktualisiert.",
-      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.5.9/SelfStore-v1.5.9.apk",
-      "sha256": "bd3a4c1fb35cac7e988d4875bb6dee9f10274b140128c5dd26b96b9f793f88f0",
+      "apk": "https://github.com/s3lfcod3r/selfstore/releases/download/v1.5.10/selfstore.apk",
+      "sha256": "406d6cc8a922bf3a33ec688f1bfc55b0429ac56cc96e6bd7b4a738533e1c7cd4",
       "i18n": {
         "en": {
           "tagline": "The Self app store",
