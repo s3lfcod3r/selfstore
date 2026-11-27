@@ -1,6 +1,6 @@
 {
   "store": "SelfStore",
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "pairEndpoint": "https://selfstore-pair.s3lfcod3r.workers.dev",
   "_note": "Fester Katalog - nur Self-Projekte. Neue App = neuen Block in 'apps' anhaengen. 'apk' = Universal-APK (laeuft auf armv7 UND armv8). Fuer Apps mit Native-Libs stattdessen 'abis' nutzen: {\"armeabi-v7a\": \"...\", \"arm64-v8a\": \"...\"}. 'id' MUSS die echte applicationId sein, sonst funktioniert die Update-Erkennung nicht. Das 'i18n'-Feld (pro Sprache tagline/description/category) ist nur fuer die Landing-Sprachumschaltung; die App ignoriert es und zeigt die deutschen Basis-Felder.",
   "apps": [
@@ -463,11 +463,11 @@
       "icon": "icons/self-bike.png",
       "category": "Werkzeuge",
       "author": "SelfCoder",
-      "versionName": "1.0.1",
-      "versionCode": 2,
+      "versionName": "1.0.2",
+      "versionCode": 3,
       "changelog": "1.0.1: Offline-sicher — nach dem ersten Öffnen mit Internet läuft das Smart System auch ohne Netz. Update-Hinweis in der App.",
-      "apk": "https://github.com/s3lfcod3r/SelfBike/releases/download/app-v1.0.1/SelfBike-1.0.1.apk",
-      "sha256": "2323f38d210792e76888768c36917dfd6f0166cdb51f2ea3a62419836b917e5d",
+      "apk": "https://github.com/s3lfcod3r/SelfBike/releases/download/app-v1.0.2/SelfBike-1.0.2.apk",
+      "sha256": "349797c0df2c6ed9d73109870c8c443b62286cc4b3ac25ace98096a240930ec3",
       "i18n": {
         "en": {
           "tagline": "Read and adjust your Bosch eBike",
